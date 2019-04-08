@@ -1,0 +1,15 @@
+<Alloy>
+	<Window id="howToUse" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="How to use application" rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="contentView">
+			<ImageView id="mainImage"></ImageView>
+			<WebView id="contentWebView"></WebView>
+		</View>
+		<View id="contentView1" visible="false">
+			<Label id="noDataLabel"></Label>
+		</View>
+		<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+	</Window>
+</Alloy>

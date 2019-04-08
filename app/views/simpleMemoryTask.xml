@@ -1,0 +1,36 @@
+<Alloy>
+	<Window id="simpleMemoryTask" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Simple Memory" homeButtonImage="/images/home/home.png" ></Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="01:00"></Label>
+			
+			<View id="largeView">
+				<ImageView id="displayImage"></ImageView>
+				<Label id="timerLabel" text=""></Label>
+			</View>
+			<View id="smallView" visible="false">
+				<View id="questionNumberView">
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+						<Label id="numberLabel" text="1/4"></Label>
+						<Label id="answerlabel" text="Answered"></Label>>
+					</View>
+				</View>
+				<View id="progressBarContainer">
+					<ImageView id="progressBarBgImage" ></ImageView>
+					<View id="progressBarLine"></View>
+				</View>
+				<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" layout="horizontal" top="20dp">
+					<ImageView id="compareImage1" class="imageSelectionView" onClick="image1Click"></ImageView>
+					<ImageView id="compareImage2" class="imageSelectionView" onClick="image2Click"  left="20dp"></ImageView>
+				</View>
+				<Label id="nextButton"  text="Next" onClick="doneClick"  ></Label>
+				
+			</View>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" bottom="20dp"  backgroundColor="#ffffff">
+				<Label id="messageLabel" text="L('SimpleMemoryMessage1')" ></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

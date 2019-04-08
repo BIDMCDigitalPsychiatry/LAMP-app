@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id='win' title='Add Workout Event'>
+		<Button id='saveButton' title='Save' onClick='onSaveClick'
+				top=20 right=20 enabled='false'/>
+		<TableView id='table' top=80 height='Ti.UI.SIZE'
+			onClick='onTableClick'>
+			<TableViewRow id='pauseRow' title='Pause' hasCheck='true'/>
+			<TableViewRow id='resumeRow' title='Resume' />
+			<TableViewRow>
+				<View height=40>
+					<Label text='Event time' left=20 />
+					<Label id='eventTimeValue' right=10 />
+				</View>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

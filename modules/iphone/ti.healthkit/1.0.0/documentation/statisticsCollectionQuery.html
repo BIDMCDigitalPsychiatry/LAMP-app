@@ -1,0 +1,17 @@
+<h1>Ti.Healthkit.StatisticsCollectionQuery</h1>
+<h2>Description</h2>
+<p>The statistics collection query lets you perform multiple statistics queries over a series of fixed-length time intervals. For example, you might create a statistics collection query that calculates the total number of steps for each day or the average heart rate for each hour. Statistics collection queries are often used to produce data for graphs and charts. Like observer queries, collection queries can also receive updates when matching samples are added to or removed from the HealthKit store.</p>
+<p>Statistics collection queries use an anchor point and a time interval to partition the set of matching samples into collections. The anchor point defines an arbitrary starting point. The position of this point often does not matter. It could be in the future or in the past. Time intervals will extend away from this anchor point in both directions.</p>
+<p>For example, if you use a 1-day time interval, the anchor point defines the time when each collection begins. The exact date for the anchor point doesn't matter. It could be 3:34 am, January 1, 1970 or 3:34 am, March 15, 2065. In both cases, the statistics collection query partitions the matching samples into days, starting each day at 3:34 am.</p>
+<p>You can use statistics collection queries only with quantity samples. If you want to calculate statistics over workouts or correlation samples, you must perform the appropriate query and process the data yourself.</p>
+<p>Statistics collection queries are immutable.</p>
+<h2>Properties</h2>
+<h3>anchorDate : Date</h3>
+<p>The anchor date for the collection's time intervals. (read-only)</p>
+<p>The date used to anchor the collection's time intervals.</p>
+<p>Use the anchor date to set the start time for your time intervals. For example, if you are using a day interval, you might create a date object with a time of 2:00 a.m. This value sets the start of each day for all of your time intervals.</p>
+<p>Technically, the anchor sets the start time for a single time interval. All other time intervals must align with this interval. The time intervals can extend before or after the anchor date. Each time interval has the same length, and there is no gap between adjacent intervals. Think of time as a number line: The anchor date represents its origin, with the intervals creating tick marks that extend away from the origin in both directions.</p>
+<h3>interval : Number</h3>
+<p>The time interval, in seconds, for each statistics object in the collection. (read-only)</p>
+<h3>options : Number</h3>
+<p>A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. (read-only)</p>

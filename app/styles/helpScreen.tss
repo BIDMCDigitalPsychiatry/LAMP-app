@@ -1,0 +1,153 @@
+"#helpScrollView":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.FILL,
+	bottom: "65dp",
+	top: "50dp",
+	backgroundColor: '#E7EAED'
+}
+"#helpScreen":{
+	backgroundColor: '#E7EAED'
+}
+"#MainView":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	top: "60dp",
+}
+"#MainView[formFactor=tablet]":{
+	visible: "false"
+}
+"#outerView":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	top: "0dp",
+	bottom: "65dp",
+	backgroundColor: '#E7EAED',
+	layout: "vertical"
+}
+"#outerView[formFactor=tablet]":{
+	bottom: "60dp",
+}
+"#emergencyView":{
+	height: "16%",
+	width:Ti.UI.FILL,
+	backgroundColor: "#ffffff"
+}
+"#emergencycontactTitle":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.HeaderFontBold,
+	text: L( 'emergencycontactTitle')
+}
+"#emergencycontactTitle[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#emergencycontactLabel":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	color: '#90a4ae',
+	font:Alloy.Globals.HeaderFontLight,
+	value: "123 456 7890",
+	editable: false,
+	scrollable: false,
+	autoLink: Ti.UI.AUTOLINK_PHONE_NUMBERS,
+	backgroundColor: 'transparent',
+	tintColor: '#90a4ae'
+}
+"#emergencycontactLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLightTablet
+}
+"#callView":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	top: "5dp",
+	layout: "horizontal"
+}
+"#callView[formFactor=tablet]":{
+}
+".callBtn":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	image: "/images/settings/icn-call.png"
+}
+"#helpLineView":{
+	height: "16%",
+	width:Ti.UI.FILL,
+	top: "5dp",
+	backgroundColor: "#ffffff"
+}
+"#helpLineTitle":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.HeaderFontBold,
+	text: L( 'helpLineTitle')
+}
+"#helpLineTitle[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#helpLineLabel":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	color: '#90a4ae',
+	tintColor: '#90a4ae',
+	font:Alloy.Globals.HeaderFontLight,
+	value: "123 456 7890",
+	editable: false,
+	scrollable: false,
+	autoLink: Ti.UI.AUTOLINK_PHONE_NUMBERS,
+	backgroundColor: 'transparent'
+}
+"#helpLineLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLightTablet
+}
+"#policyLabel":{
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE,
+	top: "6dp",
+	left: "10dp",
+	color: '#90a4ae',
+	font:Alloy.Globals.LargeMenuFontBold,
+	text: L( 'policyTitle')
+}
+"#policyLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	top: "6dp"
+}
+"#policyView":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	top: "10dp",
+	willHandleTouches:false,
+	enableZoomControls:false,
+	backgroundColor: "#ffffff",
+	left: "10dp",
+	right: "10dp"
+}
+"#deleteAccountView":{
+	height: '42dp',
+	width: '205dp',
+	color: "#546e7a",
+	borderColor: '#546e7a',
+	borderRadius: '21dp',
+	borderWidth: '1dp',
+	bottom: "10dp",
+	backgroundColor: "transparent"
+}
+"#deleteAccountView[formFactor=tablet]": {
+	width: '240dp',
+	height: '42dp',
+	borderRadius: '21dp'
+}
+"#deleteAccountLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: 1,
+	color: "#546e7a",
+	touchEnabled: false,
+	font: Alloy.Globals.LargeFontBold,
+	text: L( 'deleteAccountTitle')
+}
+"#deleteAccountLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}

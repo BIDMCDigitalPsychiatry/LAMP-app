@@ -1,0 +1,108 @@
+<Alloy>
+	<Window id="likertSurvey" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title=""  rightButtonImage="/images/common/report_icn.png">
+			</Require>
+		</View>
+		<View id="mainView">
+			<View id="contentView">
+				<View id="questionNumberView">
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+						<Label id="numberLabel">
+						</Label>
+						<Label id="answerlabel" text="Answered">
+						</Label>>
+					</View>
+				</View>
+				<View id="progressBarContainer" >
+					<ImageView id="progressBarBgImage" >
+					</ImageView>
+					<View id="progressBarLine">
+					</View>
+				</View>
+				<View id="likertView">
+					<View class="likertTopView">
+						<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+							<View class="questionView">
+								<Label class="questionLabel" id="questionLabel">
+								</Label>
+							</View>
+							<View height="Titanium.UI.SIZE" top="30dp" width="Titanium.UI.FILL">
+								<View id="linkertAnswerview1" onClick="answerOneClick">
+									<View class="singleView" id="neverButtonView">
+										<ImageView class="singleImageView" id="neverButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Never">
+										</Label>
+									</View>
+									<View class="singleView"  id="rarelyButtonView">
+										<ImageView class="singleImageView" id="rarelyButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Rarely">
+										</Label>
+									</View>
+									<View class="singleView"  id="someTimesButtonView">
+										<ImageView class="singleImageView" id="someTimesButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Sometimes">
+										</Label>
+									</View>
+									<View class="singleView" id="oftenButtonView">
+										<ImageView class="singleImageView" id="oftenButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="often">
+										</Label>
+									</View>
+									<View class="singleView" width="19.5%" id="alltimeButtonView">
+										<ImageView class="singleImageView" id="alltimeButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="All the time">
+										</Label>
+									</View>
+								</View>
+								<View id="linkertAnswerview2" visible="false" onClick="answerTwoClick" >
+									<View class="singleView" id="agreeButtonView">
+										<ImageView class="singleImageView" id="agreeButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Agree">
+										</Label>
+									</View>
+									<View class="singleView" id="stronglyAgreeButtonView" >
+										<ImageView class="singleImageView" id="stronglyAgreeButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Strongly Agree">
+										</Label>
+									</View>
+									<View class="singleView" id="normalButtonView">
+										<ImageView class="singleImageView" id="normalButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Normal">
+										</Label>
+									</View>
+									<View class="singleView" id="disAgreeButtonView">
+										<ImageView class="singleImageView" id="disAgreeButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Disagree">
+										</Label>
+									</View>
+									<View class="singleView" width="19.5%" id="stronglyDisagreeButtonView">
+										<ImageView class="singleImageView" id="stronglyDisagreeButton">
+										</ImageView>
+										<Label class="selectiontypeLabel" text="Strongly Disagree">
+										</Label>
+									</View>
+								</View>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View id="footerView">
+			<View id="submitButton" onClick="onSubmitClick">
+				<Label id="submitLabel" touchEnabled="false" text="SUBMIT & CONTINUE">
+				</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

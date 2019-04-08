@@ -1,0 +1,78 @@
+<Alloy>
+	<Window id="catAndDogGameNew" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Cats and Dogs(New)" homeButtonImage="/images/home/home.png" >
+			</Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="06:00">
+			</Label>
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" top="30dp">
+				<View id="boxOuterImage" >
+					<View  id="imageBox1" class="boxStyleImage">
+						<ImageView id="index1" index="1" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox2" class="boxStyleImage">
+						<ImageView id="index2" index="2" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox3" class="boxStyleImage">
+						<ImageView id="index3" index="3" class="imageStyle">
+						</ImageView>
+					</View>
+					<View id="imageBox4" class="boxStyleImage">
+						<ImageView id="index4" index="4" class="imageStyle">
+						</ImageView>
+					</View>
+					<View id="imageBox5" class="boxStyleImage">
+						<ImageView id="index5" index="5" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox6" class="boxStyleImage">
+						<ImageView id="index6" index="6" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox7" class="boxStyleImage">
+						<ImageView id="index7" index="7" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox8" class="boxStyleImage">
+						<ImageView id="index8" index="8" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox9" class="boxStyleImage">
+						<ImageView id="index9" index="9" class="imageStyle">
+						</ImageView>
+					</View>
+					<View  id="imageBox10" class="boxStyleImage">
+						<ImageView id="index10" index="10" class="imageStyle">
+						</ImageView>
+					</View>
+				</View>
+				<View id="boxOuter" onClick="boxSelectionClick">
+					<View id="box1" index="1"  class="boxStyle">
+					</View>
+					<View id="box2" index="2"  class="boxStyle">
+					</View>
+					<View id="box3" index="3" class="boxStyle">
+					</View>
+					<View id="box4" index="4" class="boxStyle">
+					</View>
+					<View id="box5" index="5"  class="boxStyle">
+					</View>
+					<View id="box6" index="6"  class="boxStyle">
+					</View>
+					<View id="box7" index="7"  class="boxStyle">
+					</View>
+					<View id="box8" index="8"  class="boxStyle">
+					</View>
+					<View id="box9" index="9"  class="boxStyle">
+					</View>
+					<View id="box10" index="10" class="boxStyle">
+					</View>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

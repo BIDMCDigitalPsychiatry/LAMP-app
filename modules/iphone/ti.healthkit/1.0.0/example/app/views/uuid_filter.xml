@@ -1,0 +1,25 @@
+<Alloy>
+	<Window id='win' title='UUID Filter'>
+		<RightNavButton platform='ios'>
+			<Button id='searchButton' title='Search' onClick='onSearchClick' />
+		</RightNavButton>
+		<ScrollView layout='vertical'>
+			<Label
+				top=10 left=10 right=10
+				>
+Select object type:
+			</Label>
+			<Picker id='typePicker' onChange='onTypePickerChange'/>
+			<Label
+				top=10 left=10 right=10
+				>
+Enter UUIDs, one per line (might want to cut&paste from Object Details page).
+			</Label>
+			<TextArea id='textArea'
+				top=10 left=10 right=10
+				height=120
+				borderColor='black'
+				borderRadius=5/>
+		</ScrollView>
+	</Window>
+</Alloy>

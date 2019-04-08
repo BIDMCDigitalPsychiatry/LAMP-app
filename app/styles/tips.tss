@@ -1,0 +1,35 @@
+
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	backgroundColor: '#ffffff',
+}
+"#tipsLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '20dp',
+	left: '10dp',
+	right: '10dp',
+	font:Alloy.Globals.LargeFontBold,
+	color: 'black',
+	wordWrap:true
+}
+"#noDataLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#50545d',
+	font:Alloy.Globals.LargeMenuFontBold,
+	visible: false
+}
+"#noDataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeMenuFontBoldTablet
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

@@ -1,0 +1,33 @@
+<Alloy>
+	<Window id="scoreScreen" class="container">
+		<View id="headerView">
+			<View id="titleview">
+				<Label id="headerLabel"  text="Score"></Label>
+			</View>
+			<View id="backView" onClick="onCloseClick">
+				<ImageView id="backImage"></ImageView>
+			</View>
+		</View>
+		<View id="scrollView">
+			<Label id="currentScoreLabel"></Label>
+			<View id="upperView">
+				<View id="highScoreView">
+					<Label class="titleLabel" id="highTitleLbl"></Label>
+					<Label class="scoreLabel" id="highScoreLbl"></Label>
+				</View>
+				<View id="seperatorView"></View>
+				<View id="lowScoreView">
+					<Label class="titleLabel" id="lowTitleLbl"></Label>
+					<Label class="scoreLabel" id="lowScoreLbl"></Label>
+				</View>
+			</View>
+			<View id="middleView">
+				<ImageView id="brainImage"></ImageView>
+			</View>
+			<View id="lowerView">
+				<Widget src="com.lp.highChart" id="pie_chart"/>
+			</View>
+		</View>
+
+	</Window>
+</Alloy>

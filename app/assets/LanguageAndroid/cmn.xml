@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+	
+	<string name="appTitle">LAMP</string>
+	<string name="signIn">登录</string>
+	<string name="next">下一步</string>
+	<string name="notImplement">不可执行</string>
+	<string name="activityValidating">验证中…</string>
+	<string name="activitySaving">保存中……</string>
+	<string name="activitySubmitting">提交中……</string>
+	<string name="activityLoading">加载中……</string>
+	<string name="languageCapsSelect">请选择一种语言</string>
+	
+	
+	<string name="unexpectedError">出现了一个意想不到的错误。请稍后重试！</string>
+	<string name="noNetwork">当前没有互联网连接。网络连接恢复时请重试！</string>
+	<string name="enableLocation">启用定位服务并继续！</string>
+	<string name="sessionExpired">用户会话已结束。请登录并继续！</string>
+	<string name="exitApp">您确定要退出应用程序吗？</string>
+	
+	<string name="signInStudent">研究ID注册</string>
+	<string name="signInUserSignUp">访客用户注册</string>
+	<string name="userName">用户名</string>
+	<string name="userNameEmailOrStudyId">用户名（电子邮箱/研究ID号）</string>
+	<string name="specifyUsername">指定的用户名</string>
+	<string name="loginErrorAlert">无效证件</string>
+	<string name="studyIdLbl">研究编码</string>
+	
+	<string name="signInStudentPageTitle">注册</string>
+	<string name="studyCode">输入您的研究代码</string>
+	<string name="studyId">输入您的研究ID号</string>
+	<string name="createPassword">创建您的密码</string>
+	<string name="confirmPassword">确认密码</string>
+	<string name="specifyStudyCode">指定的研究代码</string>
+	<string name="specifyStudyId">指定的研究ID号</string>
+	<string name="specifyPassword">指定的密码</string>
+	<string name="specifyConfirmPassword">指定确认密码</string>
+	<string name="specifySameConfirmPassword">密码与确认密码的输入必须相同</string>
+	<string name="errorSignInWithSudyId">登录过程中发生错误。请稍后重试</string>
+	<string name="enterfirstNameLbl">请输入您的名</string>
+	<string name="enterlastNameLbl">请输入您的姓</string>
+	
+	<string name="quizHeading">测验</string>
+	<string name="quizDescriptionLine1">请回答几个审查问题</string>
+	<string name="quizDescriptionLine2">确保您了解知情同意书</string>
+	<string name="pleaseAnswerQuestion">指定一个答案</string>
+	
+	<string name="firstName">名</string>
+	<string name="specifyfirstName">指定的名</string>
+	<string name="lastName">姓</string>
+	<string name="specifyLastName">指定的姓</string>
+	<string name="specifyEmail">指定的电子邮箱</string>
+	<string name="emailId">电子邮箱</string>
+	<string name="password">密码</string>
+	<string name="createAndContinue">创建并继续</string>
+	<string name="specifyValidEmail">指定一个有效的电子邮箱地址</string>
+	
+	<string name="surveyMenu">症状调查</string>
+	<string name="cognitionMenu">认知测验</string>
+	<string name="environmentMenu">环境</string>
+	<string name="helpMenu">帮助</string>
+	<string name="dismissLabel">撤回</string>
+	<string name="noDataLabel">无可用数据</string>
+	<string name="environmentCapsMenu">环境</string>
+	<string name="locCapsMenu">位置</string>
+	<string name="whereLbl">你在哪里？</string>
+	
+	
+	<string name="surveysLabel">调查表</string>
+	<string name="completedLabel">已完成</string>
+	<string name="startlabel">开始</string>
+	<string name="resultlabel">查看结果</string>
+	<string name="surveyListHeader">调查表</string>
+	
+	<string name="appColor">应用程序的颜色</string>
+	<string name="symptomSurveyHeader">症状调查</string>
+	<string name="cognitionTestHeader">认知测验</string>
+	<string name="emergencyContact">紧急联系人</string>
+	<string name="selectSlot">请选择一个间隙</string>
+	<string name="selectRepeat">重复间隔</string>
+	<string name="settingsHeader">设置</string>
+	<string name="sureSignout">您确定要退出吗？</string>
+	<string name="yes">是</string>
+	<string name="no">否</string>
+	<string name="validContactNumb">请输入一个有效的联系号码</string>
+	<string name="validPersonalNumb">请输入一个有效的个人号码</string>
+	<string name="selectTimeLbl">选择时间</string>
+	<string name="repeatInterval">重复间隔</string>
+	<string name="selectsurveytitle">选择调查表</string>
+	
+	<string name="surveyDescriptionLabel">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</string>
+	<string name="enterHere">在这里输入……</string>
+	<string name="slectSurveyType">选择至少一种调查类型</string>
+	<string name="validSymptomTime">间隙与间隙时段须吻合</string>
+	<string name="validCognitionTime">间隙与间隙时段须吻合</string>
+	<string name="symptomTimeReminder">症状调查提醒</string>
+	<string name="cognitionTimeReminder">认知测试提醒</string>
+	
+	<string name="surveyResultTitle">调查结果</string>
+	<string name="helpTitle">帮助</string>
+	<string name="emergencycontactTitle">24×7紧急联系</string>
+	<string name="helpLineTitle">个人帮助热线</string>
+	<string name="policyTitle">隐私保护</string>
+	<string name="deleteAccountTitle">删除我的账号</string>
+	<string name="deleteConfirmation">您确定要删除您的帐户吗？</string>
+
+	<string name="cognitionTestTitle">认知测试</string>
+	<string name="startGameLabel">游戏开始</string>
+	
+	<string name="environmentTitle">环境</string>
+	<string name="pictureLabel">你在哪里？</string>
+	<string name="surveyTypeHeader">症状调查</string>
+	<string name="helpconfirmation">您的回答表明您可能会有不安全的想法。您想连接到帮助么？</string>
+	
+	<string name="slectAnswerType">至少选择一个答案</string>
+	<string name="enterComment">指定注释</string>
+
+	<string name="enterAnswer">指定一个答案</string>
+	
+	<string name="slectLikertAnswerType">选择一个答案</string>
+	
+	<string name="intructionLabel">画一条线到匹配的字母</string>
+	<string name="intructionLabel1">完成</string>
+	<string name="intructionLabel2">点击“1”开始测试</string>
+	<string name="restartGame">重新开始</string>
+	<string name="intructionLabel3">已超时</string>
+
+	
+	<string name="forgotYourPasswordLabel">忘记您的密码?</string>
+	<string name="forgotPasswordTitle">忘记密码</string>
+	<string name="questionLabel">在下面输入您的邮箱以找回您的账户   </string>
+	<string name="sendLabel">提交</string>
+	<string name="emailLabel">电子邮件地址</string>
+	<string name="alertLabel">密码已发送到您的电子邮件。</string>
+	
+	<string name="digitLabel">开始数字</string>
+	<string name="serial7LabelMessage">从此数字中减去7然后输入结果</string>
+	
+	<string name="SpatialSpanMessage1">记住您看到的高亮显示方格的顺序</string>	
+	<string name="SpatialSpanMessage2">现在开始按顺序依次点击高亮显示的方格</string>	
+	<string name="SpatialSpanMessage3">现在开始按相反顺序依次点击高亮显示的方格</string>
+	<string name="SimpleMemoryMessage1">请记住在您眼前出现的图片</string>
+	<string name="SimpleMemoryMessage2">请点击您刚才看到过的图片</string>	
+	
+	<string name="CatandDogMessage1">请记住在您眼前出现的图片</string>
+	<string name="CatandDogMessage2">请点击您刚才看到过的图片</string>
+	<string name="CatandDogInstruction1">选择猫的图像</string>
+	<string name="CatandDogInstruction2">选择狗的图像</string>
+
+	<string name="jewelsTrail1">游戏的目标是尽可能多的收集钻石</string>	
+	<string name="jewelsTrail2">为收集钻石，请按先后顺序点击它们</string>
+	<string name="jewelsTrailB2">为收集钻石，要求按先后顺序交替点击不同形状的钻石</string>	
+	<string name="jewelsTrail3">每个错误都会让你放慢速度，倒数计时器每秒钟都会给你加分以达到下一个水平</string>
+	
+	<string name="tempAlert1">点击缺失的图片</string>
+	<string name="tempAlert2">记住显示给您的图片</string>
+	<string name="tempAlert3">记住每一张图片上的两个物体</string>
+	<string name="tempAlert4">点击您看到的图片</string>
+	<string name="tempAlert5">记住那个物体，包括它呈现的位置与顺序</string>
+	<string name="tempAlert6">请等待并观看</string>
+
+	<string name="nbackTest">n-back测试</string>	
+	<string name="trailsBTest">连线-b测试</string>	
+	<string name="spatialFrwd">空间广度测验（顺序）</string>	
+	<string name="spatialBckwrd">空间广度测验（逆序）</string>	
+	<string name="spatialSpan">空间广度测验</string>
+	<string name="memoryTest">简单记忆测试</string>	
+	<string name="serial7">连续7秒</string>	
+	<string name="visualGame">视觉关联任务</string>	
+	<string name="temporalOrder">时间顺序</string>
+	<string name="digitFWrdGame">数字广度</string>	
+	<string name="digitFWrd">数字广度（顺序）</string>	
+	<string name="digitBckWrd">数字广度（倒序）</string>	
+	<string name="catdog">猫与狗 (新)</string>	
+	<string name="trailsBTestNew"> 连线-b 测试(新)</string>	
+	<string name="nbackTestNew">n-back 测试(新)</string>	
+	<string name="trailsBTouch">连线-b（点触）</string>	
+	<string name="jwelA">珠宝连线-A</string>	
+	<string name="jwelB">珠宝连线-B</string>	
+	<string name="figCopy">3D 图像游戏</string>
+	<string name="scratchCard">刮刮卡</string>
+	<string name="memoryGame">记忆游戏</string>
+	<string name="attentionGame">注意力游戏</string>
+
+	<string name="dogBox">点击藏有狗的箱子</string>	
+	<string name="selectThe">选择</string>
+	<string name="imgCatBox">你到有猫图案的盒子</string>	
+	<string name="imgDogBox">你到有狗图案的盒子</string>
+	<string name="continueDogBox">继续点击藏有狗的箱子。不要点击藏有猫的箱子。</string>
+	<string name="continueCatBox">现在点击藏有猫的箱子。不要点击藏有狗的箱子。</string>	
+
+	<string name="soundalert">请确保设备声音已打开</string>	
+	<string name="audioalert">请您仔细聆听发出的声音</string>
+	<string name="digitalert">现在请您依序输入听到的数字</string>
+	<string name="digitReversealert">现在请您按相反的顺序输入听到的数字</string>	
+	
+	<string name="articleLbl">条款</string>	
+	<string name="tipLbl">提示</string>
+	<string name="profileLbl">文件</string>
+	<string name="appUse">如何使用应用程序</string>
+	<string name="reprtLbl">报告</string>
+	
+	
+	<string name="tapfirstImg">点击第一张图片</string>
+	<string name="tapNxtImg">点击下一张图片</string>
+	<string name="tapREsBox">点击相应的框</string>
+	<string name="pickMatchingalphabet">选择匹配的字母表</string>
+	
+	<string name="exmLbl">例子 </string>
+	<string name="tapNxtNumber">现在，点击下一个数字“2“</string>
+	<string name="continueTap">按此顺序继续点击数字</string>
+	<string name="wrongTapLbl">点击错误</string>
+	
+	<string name="nbackLvl">n-back水平</string>
+	<string name="oneBackTest">1-back测试</string>
+	<string name="twoBackTest">2-back测试</string>
+	<string name="treeBackTest">3-back测试</string>
+	
+	<string name="pickdimnd">选择钻石：</string>
+	<string name="exitLbl">退出</string>
+	
+	<string name="resultLbL">结果</string>
+	<string name="pointLbl">分数</string>
+	<string name="scoregrapgLbl">分数图表</string>
+	<string name="envLbl">环境数据</string>
+	<string name="cogscore">认知评分</string>
+	
+	<string name="pointnextLvl">达到下一个水平的分数</string>
+	<string name="maxLbl">您已达到最高水平</string>
+	<string name="gameNameLbl">游戏名称</string>
+	
+	<string name="learnLbl">代表学习</string>
+	<string name="accessLbl">评估</string>
+	<string name="manageLbl">管理</string>
+	<string name="prevntLbl">预防</string>
+	
+	<string name="instructionLbl">说明</string>
+	<string name="instructionsubmit">让我们开始吧！</string>
+	
+	<string name="preventcontent">预防精神疾病的复发是LAMP平台的一个重要目标。随着心理卫生领域学习的不断深入，以及如LAMP等工具产生了新的重要的研究数据，我们希望预防将成为精神科领域的焦点。目前，LAMP并不是一种可以帮助预防精神疾病的工具，但是您参与到研究中可以使预防成为可能。</string>
+	<string name="manageContent">管理您的心理卫生应该始终由专业人士来完成。LAMP目前旨在帮助采集可能有助于管理您心理卫生的信息。 但它无法代替专业的治疗。将来，LAMP会提供定制的大脑练习、治疗活动、同伴网络、以及个体化目标，以帮助您管理您的心理卫生。</string>
+	<string name="copyrightLbl">BIDMC © 2018版权。版权所有。</string>
+
+	<string name="SchoolLbl">学校/班级</string>
+	<string name="wrkLbl">工作</string>
+	<string name="clicnicLbl">诊所/医院</string>
+	<string name="outsideLbl">外面</string>
+	<string name="shopingLbl">购物/就餐</string>
+	<string name="trainLbl">巴士/火车/汽车</string>
+	<string name="aloneLbl">一个人</string>
+	<string name="friendsLbl">与朋友在一起</string>
+	<string name="incrowdLbl">在人群中</string>
+	<string name="withPeersLbl">与同事在一起</string>
+	<string name="whowithLbl">您与谁在一起？</string>
+	<string name="submitLbl">提交</string>
+	<string name="homeLbl">家</string>
+	<string name="familyLbl">和家人一起</string>
+	
+	<string name="beginerLbl">初学</string>
+	<string name="expertLbl">专家</string>
+	<string name="intermediateLbl">中等</string>
+	<string name="advancedLbl">高级</string>
+	<string name="difficultyLbl">难度</string>
+	<string name="secLbl">秒</string>
+	<string name="hintLbl">提示</string>
+	<string name="levelLbl">等级</string>
+	<string name="lastnumberLbl">尾数</string>
+	<string name="finishLbl">完成</string>
+	
+	<string name="emailNotconfigred">该设备中未配置电子邮件客户端</string>
+	
+	<string name="cancelLbl">取消</string>
+	<string name="deleteLbl">删除</string>
+	<string name="selectcognitionLbl">选择认知</string>
+	<string name="contactnumberLbl">24/7联系号码</string>
+	<string name="personalHelpLine">个人帮助热线</string>
+	<string name="protocolLbl">协议</string>
+	<string name="signoutLbl">登出</string>
+	<string name="notAvailableLbl">无法获取</string>
+	<string name="drawfigLbl">画图</string>
+	<string name="nxtLbl">下一个</string>
+	<string name="answeredLbl">已回答</string>
+	<string name="goLbl">开始</string>
+	<string name="backLbl">返回</string>
+	<string name="totalScoreLbl">总分</string>
+	<string name="totalScoreCapsLbl">总分</string>
+	<string name="jwelcollectedLbl">收集的珠宝</string>
+	<string name="totalbonusLbl">总分</string>
+	<string name="okLbl">好</string>
+	
+	<string name="lastmnthLbl">上个月</string>
+	<string name="lastweekLbl">上周</string>
+	<string name="languageSelect">请选择一种语言</string>
+	
+	<string name="repeatLbl">重复</string>
+	<string name="selectSurveyLbl">选择调查表</string>
+	<string name="selectTimeLbl">选择时间</string>
+	<string name="slottinmeLbl">间隙时间</string>
+	<string name="repeatInterval">重复间隔</string>
+	<string name="avgScoreLbl">平均分</string>
+	<string name="scoreLbl">分数</string>
+	<string name="bonusLbl">奖金</string>
+	<string name="continueLbl">继续</string>
+	<string name="healthDataTitle">健康数据</string>
+	
+	
+	<string name="scoreCardLbl">分数卡</string>
+	<string name="closeLbl">关</string>
+	<string name="pointEarnedLbl">获得的分数</string>
+	<string name="timetakenLbl">所用的时间</string>
+	
+	<string name="term1">我理解LAMP是一个致力于治疗、管理或预防任何疾病的研究平台。LAMP无法代替这一领域临床医师的医学专业知识。</string>
+	<string name="term2">我理解LAMP应用程序不会受到任何人的监视，甚至当我表示我需要帮助时，LAMP应用程序也不能做出回应。</string>
+	<string name="term3">我理解LAMP会收集我使用这个应用程序的信息及所作出的反应，并用于研究目的。我理解我的数据将用于科学研究。</string>
+	<string name="term4">我理解LAMP应用程序收集的数据类型包括我对调查和认知测验的应答。如果我选择加入，LAMP可能也会收集关于我的位置、活动水平以及其他来自 Apple Health Kit 或Google Fit等兼容设备收集的数据。</string>
+
+
+	<string name="consentLbl">同意</string>
+	<string name="consentNote">请查看下面的表单，如果您准备好继续，请点击同意.</string>
+	<string name="agree">同意</string>
+	<string name="disagree">不同意</string>
+	
+	<string name="iamLbl">我是</string>
+	<string name="atLbl">在</string>
+	<string name="inLbl">在</string>
+	
+	<string name="morningLbl">早上</string>
+	<string name="noonLbl">下午</string>
+	<string name="eveningLbl">晚上</string>
+	
+	<string name="threeHrLbl">每3小时</string>
+	<string name="sixHrLbl">每6小时</string>
+	<string name="twelveLbl">每12小时</string>
+	
+	<string name="dailLbl">每天（周一、周二、周三、周四、周五、周六、周日）</string>
+	<string name="biweekLbl">每周2次（周二、周四）</string>
+	<string name="triWeekLbl">每周3次（周一、周三、周五）</string>
+	<string name="weeklyLbl">每周</string>
+	<string name="monthlyLbl">每月2次</string>
+	<string name="bimonthlyLbl">每月</string>
+	
+	<string name="heartLbl">心率</string>
+	<string name="stepLbl">步数</string>
+	<string name="sleepLbl">睡眠</string>
+	<string name="BpLbl">血压</string>
+	<string name="respiratoryLbl">呼吸频率</string>
+	<string name="flightLbl">爬楼的层阶</string>
+	<string name="segmnetLbl">段</string>
+	<string name="heightLbl">身高</string>
+	<string name="distanceLbl">路程</string>
+	<string name="wieghtLbl">体重</string>
+	
+	<string name="maleLbl">男性</string>
+	<string name="femaleLbl">女性</string>
+	<string name="otherLbl">其他</string>
+	<string name="notSetLbl">未设置</string>
+	<string name="agreeTermLbl">同意条款并继续</string>
+	<string name="dobLbl">DOB</string>
+	<string name="bloodtypeLbl">血型</string>
+	<string name="sexLbl">性别</string>
+	<string name="surveyPointLbl">调查点</string>
+	
+	<string name="nwLbl">现在</string>
+	<string name="tapLbl">龙头</string>
+	
+	<string name="oneBiginLbl">点按1开始。</string>
+	<string name="surveyPointLbl">调查点</string>
+	
+	<string name="severaltimesLbl">有时 </string>
+	<string name="notatallLbl">一点也不 </string>
+	<string name="moreHalfTimeLbl">超过一半的时间</string>
+	<string name="nearlyalltimeLbl">近乎所有时间</string>
+	
+	
+	<string name="sundayLbl">星期日</string>
+	<string name="monLbl">星期一</string>
+	<string name="tueLbl">星期二</string>
+	<string name="wedLbl">星期三</string>
+	<string name="thuLbl">星期四</string>
+	<string name="friLbl">星期五</string>
+	<string name="satLbl">星期六</string>
+	
+	<string name="janLbl">一 月</string>
+	<string name="febLbl">二 月</string>
+	<string name="marLbl">三 月</string>
+	<string name="aprLbl">四 月</string>
+	<string name="mayLbl">五 月</string>
+	<string name="junLbl">六 月</string>
+	<string name="julLbl">七 月</string>
+	<string name="augLbl">八 月</string>
+	<string name="sepLbl">九 月</string>
+	<string name="octLbl">十 月</string>
+	<string name="novLbl">十一 月</string>
+	<string name="decLbl">十二 月</string>
+	<string name="weekLbl">周</string>
+	<string name="maybeLbl">也许</string>
+	<string name="validLbl">有效</string>
+	<string name="yearLbl">年份</string>
+	<string name="mnthLbl">个月</string>
+	<string name="dayLbl">天</string>
+	
+	<string name="highScoreLbl">高分</string>
+	<string name="lowscoreLbl">低分</string>
+	<string name="daystreakLbl">日条纹</string>
+	<string name="boostScoreLbl">提升我的</string>
+	<string name="boostLampScoreLbl">LAMP分数</string>
+	<string name="todayLbl">今天</string>
+	<string name="streakspinLbl">条纹旋转</string>
+	<string name="todaySpinLbl">今天的旋转</string>
+	<string name="seemoreLbl">查看更多结果</string>
+	<string name="spinwinLbl">旋转赢</string>
+	<string name="wonLbl">你赢了</string>
+	<string name="starLbl">明星!!</string>
+	<string name="continueCapsLbl">继续</string>
+	<string name="tryagainLbl">再试一次</string>
+	<string name="badlickLbl">厄运！！</string>
+	
+	<string name="youravgLbl">你的平均分</string>
+	<string name="totalavgLbl">总的平均分</string>
+	
+	<string name="yourScoreLbl">你的分数</string>
+	<string name="weeklyScoreLbl ">游戏周刊得分</string>
+	
+	<string name="gameSuccess">您已成功完成此游戏。</string>
+	<string name="spinWheelLabel">旋转轮</string>
+	<string name="surveyResponse">您的回复已成功提交。</string>
+	
+</resources>

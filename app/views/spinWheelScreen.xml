@@ -1,0 +1,36 @@
+<Alloy>
+	<Window id="spinWheelScreen">
+		<View id="headerView">
+			<View id="homeView" onClick="onHomeClick">
+				<ImageView id="homeImage"></ImageView>
+			</View>
+			<View id="titleview">
+				<Label id="headerLabel"  text="Prevent"></Label>
+			</View>
+			<View id="reportView" onClick="onReportClick">
+				<ImageView id="reportImage"></ImageView>
+			</View>
+		</View>
+		<View id="contentView">
+			<View id="spinnerView">
+				<ImageView id="spinWheel"></ImageView>
+				<ImageView id="spinner"></ImageView>
+			</View>
+			<View id="spinOuterView">
+				<View id="spinTapView">
+					<Label id="spinLabel">SPIN TO WIN</Label>
+				</View>
+				<View id="androidView" platform="android"></View>
+			</View>
+		</View>
+		<View id="bgview"></View>
+		<View id="popupView">
+			<ImageView id="bonusImage"></ImageView>
+			<Label id="commentLabel">You Won</Label>
+			<Label id="bonusLabel">20 Stars !!</Label>
+			<View id="continueView" onClick="continueClickHandler">
+				<Label id="continueLabel">CONTINUE</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

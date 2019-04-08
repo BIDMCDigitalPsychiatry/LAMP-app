@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="helpScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src = "innerHeader" title="L('helpTitle')" rightButtonImage="/images/common/report_icn.png" ></Require>
+		</View>
+		<View id="MainView">
+			<View id="outerView">
+				<View id="emergencyView" >
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE"  onClick="emergencyCallClick">
+						<View  height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+							<Label id="emergencycontactTitle"></Label>
+							<View id="callView">
+								<ImageView class="callBtn" ></ImageView>
+								<TextArea id="emergencycontactLabel" touchEnabled="false"></TextArea>
+							</View>
+						</View>
+					</View>
+				</View>
+				<View id="helpLineView" >
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" onClick="helpLineCallClick">
+						<View  height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+							<Label id="helpLineTitle"></Label>
+							<View id="callView">
+								<ImageView class="callBtn"></ImageView>
+								<TextArea id="helpLineLabel"  touchEnabled="false"></TextArea>
+							</View>
+						</View>
+					</View>
+				</View>
+				<Label id="policyLabel"></Label>
+				<WebView id="policyView" url="/htmlPages/privacy-policy.html"></WebView>
+			</View>
+			<View id="deleteAccountView" onClick="onDeleteAccountClick">
+				<Label id="deleteAccountLabel"></Label>
+			</View>
+		</View> 
+	</Window>
+</Alloy>

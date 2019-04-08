@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id='win' title='Quantities and Units'>
+		<ScrollView layout='vertical'>
+			<Label text='Enter two quantities such as "10lb", "3in", or "2ft", then check the output at the bottom of the screen.'
+				left=10 right=10 top=10 />
+			<View class='inputParent'>
+				<Label text='Quantity A:' class='inputLabel' />
+				<TextField id='quantityAInput' class='inputField' onChange='onInputChange'/>
+			</View>
+			<View class='inputParent'>
+				<Label text='Quantity B:' class='inputLabel' />
+				<TextField id='quantityBInput' class='inputField' onChange='onInputChange'/>
+			</View>
+			<TextArea id='textArea' editable='false' top=5 width='100%' height='200'/>
+		</ScrollView>
+	</Window>
+</Alloy>

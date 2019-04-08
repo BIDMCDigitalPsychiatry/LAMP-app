@@ -1,0 +1,76 @@
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.HeaderFont,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#outerView": {
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	backgroundColor: 'transparent',
+	top: '10dp'
+}
+".innerView": {
+	width: '162dp',
+	height: '162dp',
+	backgroundColor: '#ffffff',
+	borderRadius: '10dp',
+	borderColor: '#ffffff',
+	borderWidth: '3dp'
+}
+".innerView[formFactor=tablet]": {
+	width: '192dp',
+	height: '192dp',
+	backgroundColor: '#ffffff'
+}
+".alphabetsLabel": {
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#5856d6',
+	font:Alloy.Globals.ExtraLargeSemiBold,
+	touchEnabled: false
+}
+"#gameLabel": {
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.ExtraLargeFontLight
+}
+"#answerView": {
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	backgroundColor: 'transparent',
+	top: '60dp',
+	layout: 'horizontal'
+}
+"#yesImage": {
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	image: '/images/nBack/yes.png'
+}
+"#noImage": {
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	image: '/images/nBack/no.png',
+	left: '60dp'
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '10dp',
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	//text: '00:00'
+}

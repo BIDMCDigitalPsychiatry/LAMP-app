@@ -1,0 +1,237 @@
+"#scoreTable":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+'#scoreTable[platform=android]': {
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}
+"#outerView":{
+	top: '60dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	layout:"vertical"
+}
+"#contentView": {
+	height:"50%",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	top: "0dp",
+	layout: "vertical",
+	//bottom: '20dp'
+}
+
+"#contentView2":{
+	height:"50%",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	top: "0dp",
+	layout: "vertical",
+	bottom: '20dp'
+}
+
+"#contentView[formFactor=tablet]": {
+	height:"60%",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	top: "0dp",
+	layout: "vertical",
+	//bottom: '20dp'
+}
+
+"#contentView2[formFactor=tablet]":{
+	height:"40%",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	top: "0dp",
+	layout: "vertical",
+	bottom: '20dp'
+}
+
+"#contentLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "20dp",
+	text: "Managing your mental health should always be done with a professional. LAMP is currently designed to help collect information that may be useful in managing your mental health. But it is in no way a substitute for professional care. In the future, LAMP will offer customized brain exercises, therapy activities, peer networks, and personalized goals to help you manage your mental health. For now, you can use this section to review your LAMP scores."
+}
+"#contentLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#titleView":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+	top: "6dp"
+}
+"#gameTitle1":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBold,
+	left: '10dp',
+	top: "0dp",
+	text: "Game Name"
+}
+"#pointTitle1":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBold,
+	right: '10dp',
+	top: "0dp",
+	text: "Score"
+}
+"#pointTitle2":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBold,
+	right: '10dp',
+	top: "0dp",
+	text: "Score"
+}
+
+"#gameTitle1[formFactor=tablet]":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBoldQuest22,
+	left: '10dp',
+	top: "0dp",
+	text: "Game Name"
+}
+"#pointTitle1[formFactor=tablet]":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBoldQuest22,
+	right: '10dp',
+	top: "0dp",
+	text: "Score"
+}
+"#pointTitle2[formFactor=tablet]":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBoldQuest22,
+	right: '10dp',
+	top: "0dp",
+	text: "Score"
+}
+
+"#gameTitle2[formFactor=tablet]":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBoldQuest22,
+	left: '10dp',
+	top: "0dp",
+	text: "Game Name"
+}
+
+"#titleView2":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+	//top: "6dp"
+}
+"#gameTitle2":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeSemiBold,
+	left: '10dp',
+	top: "0dp",
+	text: "Game Name"
+}
+
+".listOuterViewStyle": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: '50dp',
+	right: '4dp',
+	left: '4dp',
+	top: "10dp"
+}
+".listOuterViewStyle[platform=android]": {
+	height: '60dp'
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '70dp'
+}
+".seperator":{
+	width: Ti.UI.FILL,
+	height: '1dp',
+	right: '10dp',
+	left: '10dp',
+	bottom: "5dp",
+	backgroundColor: '#ffffff',
+	opacity: 0.2
+}
+".dataFieldView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+".dataLabel": {
+	width: "50%",
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontLight,
+	left: '10dp',
+	backgroundColor: "transparent"
+}
+".dataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#surveyTitle":{
+	width: "50%",
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumLargeFontLight,
+	left: '10dp',
+	backgroundColor: "transparent"
+}
+"#surveyTitle[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+".valueLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	touchEnabled: false,
+	font:Alloy.Globals.MediumSemiBoldScore,
+	right: '10dp',
+	backgroundColor: "transparent"
+}
+".valueLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+"#surveyLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.ExtraSmallSemiBoldTablet,
+	right: '10dp',
+	backgroundColor: "transparent"
+}
+"#surveyLbl[formFactor=tablet]":{
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+".valueLabel[platform=android]":{
+	backgroundColor: "transparent",
+	top: "5dp"
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

@@ -1,0 +1,310 @@
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.HeaderFontLight,
+	top: '0dp'
+}
+"#outerBox": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '0dp',
+	backgroundColor: 'transparent',
+	layout: 'vertical'
+}
+"#boxOuter": {
+	width:Alloy.Globals.BOX_WIDTH,
+	height:Titanium.UI.SIZE,
+	top: '80dp',
+	backgroundColor: 'transparent'
+}
+"#boxOuterImage": {
+	width:Alloy.Globals.BOX_WIDTH,
+	height:Titanium.UI.SIZE,
+	top: '80dp',
+	backgroundColor: 'transparent'
+}
+
+
+
+".rowView": {
+	width:Titanium.UI.FILL,
+	height: '25%',
+	top: '0dp',
+	layout: 'horizontal',
+	backgroundColor: '#ffffff'
+}
+".horizontalBorder": {
+	width:Titanium.UI.FILL,
+	height: '1dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: false
+}
+".childView": {
+	width: '25%',
+	height:Titanium.UI.FILL,
+	left: '0dp'
+}
+"#messageView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10dp" ,
+	backgroundColor: "#ffffff"
+}
+"#messageView[formFactor=tablet]":{
+	top: "20dp"
+}
+"#messageViewWatch":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: "0.8" ,
+	backgroundColor: "#3394CB"
+}
+
+".verticalBorder": {
+	width: '1dp',
+	height:Titanium.UI.FILL,
+	right: '0dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: false
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.HeaderFontBold,
+	right: '10dp',
+	left: '10dp'
+}
+"#messageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#messageLabelWatch": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '0dp',
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white'
+}
+".imageStyle": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	image: "/images/catDogs/dog.png",
+	visible: false
+}
+".boxStyle": {
+	width: '50dp',
+	height: '50dp',
+	backgroundColor: '#ffffff'
+}
+".boxStyle[formFactor=tablet]": {
+	width: '70dp',
+	height: '70dp',
+	backgroundColor: '#ffffff'
+}
+".boxStyleImage": {
+	width: '50dp',
+	height: '50dp',
+	backgroundColor: 'transparent'
+}
+".boxStyleImage[formFactor=tablet]": {
+	width: '70dp',
+	height: '70dp',
+	backgroundColor: 'transparent'
+}
+"#nextButton":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	bottom: '10dp',
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+},
+"#imageBox1":{
+	left: '70dp',
+	top: '0dp'
+},
+"#imageBox2":{
+	right: '70dp',
+	top: '0dp'
+},
+"#imageBox3":{
+	left: '0dp',
+	top: '40dp'
+},
+"#imageBox4":{
+	right: '0dp',
+	top: '40dp'
+},
+"#imageBox5":{
+	left: '70dp',
+	top: '130dp'
+},
+"#imageBox6":{
+	right: '60dp',
+	top: '140dp'
+},
+"#imageBox7":{
+	left: '130dp',
+	top: '280dp'
+},
+"#imageBox8":{
+	right: '0dp',
+	top: '220dp'
+},
+"#imageBox9":{
+	left: '5dp',
+	top: '190dp'
+},
+"#imageBox10":{
+	left: '50dp',
+	top: '300dp'
+},
+
+"#box1":{
+	left: '70dp',
+	top: '0dp'
+},
+"#box2":{
+	right: '70dp',
+	top: '0dp'
+},
+"#box3":{
+	left: '0dp',
+	top: '40dp'
+},
+"#box4":{
+	right: '0dp',
+	top: '40dp'
+},
+"#box5":{
+	left: '70dp',
+	top: '130dp'
+},
+"#box6":{
+	right: '60dp',
+	top: '140dp'
+},
+"#box7":{
+	left: '130dp',
+	top: '280dp'
+},
+"#box8":{
+	right: '0dp',
+	top: '220dp'
+},
+"#box9":{
+	left: '5dp',
+	top: '190dp'
+},
+"#box10":{
+	left: '50dp',
+	top: '300dp'
+},
+
+
+
+
+
+
+"#imageBox1[formFactor=tablet]":{
+	left: '170dp',
+	top: '0dp'
+},
+"#imageBox2[formFactor=tablet]":{
+	right: '170dp',
+	top: '0dp'
+},
+"#imageBox3[formFactor=tablet]":{
+	left: '0dp',
+	top: '120dp'
+},
+"#imageBox4[formFactor=tablet]":{
+	right: '0dp',
+	top: '120dp'
+},
+"#imageBox5[formFactor=tablet]":{
+	left: '150dp',
+	top: '210dp'
+},
+"#imageBox6[formFactor=tablet]":{
+	right: '140dp',
+	top: '200dp'
+},
+"#imageBox7[formFactor=tablet]":{
+	left: '270dp',
+	top: '280dp'
+},
+"#imageBox8[formFactor=tablet]":{
+	right: '0dp',
+	top: '330dp'
+},
+"#imageBox9[formFactor=tablet]":{
+	left: '15dp',
+	top: '310dp'
+},
+"#imageBox10[formFactor=tablet]":{
+	left: '150dp',
+	top: '420dp'
+},
+
+"#box1[formFactor=tablet]":{
+	left: '170dp',
+	top: '0dp'
+},
+"#box2[formFactor=tablet]":{
+	right: '170dp',
+	top: '0dp'
+},
+"#box3[formFactor=tablet]":{
+	left: '0dp',
+	top: '120dp'
+},
+"#box4[formFactor=tablet]":{
+	right: '0dp',
+	top: '120dp'
+},
+"#box5[formFactor=tablet]":{
+	left: '150dp',
+	top: '210dp'
+},
+"#box6[formFactor=tablet]":{
+	right: '140dp',
+	top: '200dp'
+},
+"#box7[formFactor=tablet]":{
+	left: '270dp',
+	top: '280dp'
+},
+"#box8[formFactor=tablet]":{
+	right: '0dp',
+	top: '330dp'
+},
+"#box9[formFactor=tablet]":{
+	left: '15dp',
+	top: '310dp'
+},
+"#box10[formFactor=tablet]":{
+	left: '150dp',
+	top: '420dp'
+},

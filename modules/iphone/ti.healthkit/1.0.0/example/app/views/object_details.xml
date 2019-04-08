@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id='win' title='Object Details'>
+		<RightNavButton platform='ios'>
+			<Button id='deleteButton' title='Delete' onClick='onDeleteClick' />
+		</RightNavButton>
+		<TextArea id='textArea' editable='false' width='100%' height='100%'/>
+	</Window>
+</Alloy>

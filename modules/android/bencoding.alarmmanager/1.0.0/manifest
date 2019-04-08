@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 3
+architectures: armeabi-v7a x86
+description: bencodingalarmmanager
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2018 by Your Company
+
+# these should not be edited
+name: bencodingalarmmanager
+moduleid: bencoding.alarmmanager
+guid: 33dd5afb-8eb9-47a9-8209-7aa62b82675b
+platform: android
+minsdk: 6.3.0.GA

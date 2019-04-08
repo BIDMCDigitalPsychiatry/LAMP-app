@@ -1,0 +1,195 @@
+"#contentView": {
+	top: '60dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: '#E7EAED'
+}
+"#surveyResultListView": {
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	top: "0dp",
+	allowsSelection: false,
+	separatorColor: 'transparent'
+}
+"#surveyResultTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#freeResponseSurveyResultTemplate":{
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#likertSurveyResultTemplate":{
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '80dp',
+	right: '4dp',
+	left: '4dp',
+	top: '4dp'
+}
+
+"#listOuterView[formFactor=tablet]": {
+	height: '130dp'
+}
+"#outerView":{
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'transparent',
+	//layout: "horizontal",
+	left: '0dp'
+}
+"#leftNumberview": {
+	backgroundColor: 'transparent',
+	width: '60dp',
+	height: Titanium.UI.SIZE,
+	left: '0dp'
+}
+"#leftNumberview[formFactor=tablet]": {
+	left: '10dp'
+}
+"#upperLineView": {
+	backgroundColor: '#E7EAED',
+	width: '1dp',
+	height: '40dp',
+	top: '0dp'
+}
+"#bottomLineView": {
+	backgroundColor: '#E7EAED',
+	width: '1dp',
+	top: '39dp',
+	height: '40dp'
+}
+"#numberRoundView": {
+	backgroundColor: '#ffffff',
+	width: '32dp',
+	height: '32dp',
+	borderRadius: '16dp',
+	borderColor: '#E7EAED'
+}
+"#resultContentView": {
+	backgroundColor: 'transparent',
+	left: '60dp',
+	height: Titanium.UI.FILL,
+	width: Titanium.UI.FILL
+}
+"#resultContentView[formFactor=tablet]": {
+	left: '70dp'
+}
+"#questionLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	opacity: 1,
+	font:Alloy.Globals.MediumMenuFontLight,
+	left: '0dp'
+	
+}
+"#questionLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+}
+"#answerView": {
+	backgroundColor: 'transparent',
+	left: '0dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	layout: 'horizontal',
+	top: '10dp'
+}
+"#userAnswerView":{
+	
+	left: '0dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	layout: 'vertical',
+	top: '10dp'
+}
+"#answerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#bobec5',
+	font:Alloy.Globals.MediumMenuFontBold,
+	left: '0dp',
+	top: '0dp',
+	bottom: '10dp',
+	opacity: 1
+}
+"#answerLabel[platform=android]": {
+	height: "20dp"
+}
+"#answerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBold
+}
+"#indexLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#aab5bb',
+	//color: '#cscfd8',
+	opacity: 1,
+	font:Alloy.Globals.MediumMenuFontLight
+}
+"#indexLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+}
+"#answerImageView": {
+	top: '0dp',
+	left: '5dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	image: '/images/surveyTypes/icn-yes-min.png'
+}
+"#resultLabel": {
+	top: '0dp',
+	left: '5dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#08da83',
+	opacity: 1,
+	font:Alloy.Globals.MediumMenuFontBold
+}
+"#userResultLabel":{
+	left: '10dp',
+	right: '10dp',
+	top: '10dp',
+	bottom: '10dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	opacity: 1,
+	font: Alloy.Globals.MediumMenuFontLight
+}
+"#likertAnswerView":{
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: "50%",
+	opacity: 1,
+	backgroundColor: '#546e7a'
+}
+"#freeResponseAnswerView":{
+	left: '0dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	opacity: 1,
+	backgroundColor: '#546e7a',
+}
+"#likertAnswerView[formFactor=tablet]":{
+	height: "45%"
+}
+"#likertResultLabel":{
+	left: '10dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	opacity: 1,
+	right: "10dp",
+	font: Alloy.Globals.MediumMenuFontLight
+}
+"#resultLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBold
+}

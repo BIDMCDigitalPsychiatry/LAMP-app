@@ -1,0 +1,46 @@
+
+"#footerView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '62dp',
+	bottom: '0dp',
+	layout: 'horizontal'
+}
+".footerBoxStyle": {
+	width: '25%',
+	height: Ti.UI.FILL
+}
+".footrlDivider": {
+	width: '1dp',
+	height: Ti.UI.FILL,
+	right: '0dp',
+	backgroundColor: 'black'
+}
+".circleView": {
+	width: '40dp',
+	height: '40dp',
+	borderRadius: '20dp',
+	borderWidth:1,
+	borderColor: '#90a4ae',
+	backgroundColor: 'transparent',
+	touchEnabled: false
+}
+".outercircleBox": {
+	width: '45dp',
+	height: '45dp',
+	backgroundColor: 'transparent',
+	touchEnabled: false
+}
+".menuLabel": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font:Alloy.Globals.mediumLargeSemiBoldFooter,
+	color: '#90a4ae'
+}
+"#notificationview": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	top: '0dp',
+	right: '0dp',
+	image: '/images/common/notify-icon_sm.png'
+}

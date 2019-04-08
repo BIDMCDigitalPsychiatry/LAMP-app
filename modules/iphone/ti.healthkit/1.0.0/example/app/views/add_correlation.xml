@@ -1,0 +1,63 @@
+<Alloy>
+	<Window id='win' title='Add Correlation'>
+		<ScrollView>
+			<TableView id='table' >
+				<TableViewSection>
+					<HeaderView>
+						<View backgroundColor='#eee' height=50>
+							<Label text='Blood Pressure' left=20 />
+							<Button title='Add' height=40 right=20
+								onClick='onAddBloodPressureButtonClick' />
+						</View>
+					</HeaderView>
+					<TableViewRow>
+						<View class='inputParent'>
+							<Label text='Systolic:' class='inputLabel' />
+							<TextField id='systolicInput' class='inputField' />
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class='inputParent'>
+							<Label text='Diastolic:' class='inputLabel' />
+							<TextField id='diastolicInput' class='inputField' />
+						</View>
+					</TableViewRow>
+				</TableViewSection>
+				<TableViewSection>
+					<HeaderView>
+						<View backgroundColor='#eee' height=50>
+							<Label text='Food' left=20 />
+							<Button title='Add' height=40 right=20
+								onClick='onAddFoodButtonClick' />
+						</View>
+					</HeaderView>
+					<TableViewRow>
+						<View class='inputParent'>
+							<Label text='Name:' class='inputLabel' />
+							<TextField id='foodName' class='inputField'
+								keyboardType='Ti.UI.KEYBOARD_DEFAULT'/>
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class='inputParent'>
+							<Label text='Sugar:' class='inputLabel' />
+							<TextField id='sugarInput' class='inputField' />
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class='inputParent'>
+							<Label text='Protein:' class='inputLabel' />
+							<TextField id='proteinInput' class='inputField' />
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class='inputParent'>
+							<Label text='Fat:' class='inputLabel' />
+							<TextField id='fatInput' class='inputField' />
+						</View>
+					</TableViewRow>
+				</TableViewSection>
+			</TableView>
+		</ScrollView>
+	</Window>
+</Alloy>

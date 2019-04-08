@@ -1,0 +1,282 @@
+
+"#symptomSurvey": {
+	backgroundColor: "#eceff1"
+}
+"#contentView": {
+	//backgroundColor: "#ffffff",
+	backgroundColor: "#eceff1",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout: 'vertical',
+	top: '0dp'
+}
+"#outerMostView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#outerMostView[formFactor=tablet]": {
+	visible: false
+}
+"#mainView": {
+	top: '0dp',
+	backgroundColor: "transparent",
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	//bottom: '80dp',
+	scrollType: "vertical"
+}
+// "#mainView[platform=android]": {
+// scrollingEnabled: false
+// }
+"#questionNumberView": {
+	width:Titanium.UI.FILL,
+	height: '80dp',
+	top: '0dp',
+	backgroundColor: "#ffffff"
+}
+"#numberLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#b0bec5',
+	font:Alloy.Globals.HeaderThinFontlarge,
+	opacity: 1
+}
+"#numberLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderThinFontlargeTablet
+}
+"#answerlabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '0dp',
+	color: '#b0bec5',
+	font:Alloy.Globals.MediumMenuFontLight
+}
+"#answerlabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+}
+"#progressBarContainer": {
+	top: '0dp',
+	//top:"10dp",
+	width: Titanium.UI.FILL,
+	height: Ti.UI.SIZE,
+	left: '30dp',
+	right: '30dp'
+},
+"#progressBarBgImage": {
+	image: "/images/surveys/progress-bg-white.png",
+	height:Ti.UI.SIZE,
+	width:Titanium.UI.FILL,
+	left: '0dp'
+},
+"#progressBarLine": {
+	top: '3dp',
+	backgroundColor: "#00ff00",
+	height: "4dp",
+	width: "0%",
+	left: "0dp"
+},
+"#progressBarLine[formFactor=tablet]": {
+	top: '8dp',
+	height: "5dp",
+	width: "0%",
+	left: '12dp'
+},
+".questionViewStyle": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	left: '30dp',
+	right: '30dp',
+	top: '20dp'
+},
+".questionLabelStyle": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	textAlign: 'center',
+	font: Alloy.Globals.LargeSemiBoldQuest,
+	opacity: 1
+},
+"#questionLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeSemiBoldTab
+}
+"#questionLabelBottom[formFactor=tablet]":{
+	font:Alloy.Globals.LargeSemiBoldTab
+}
+".checkBoxViewStyle": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: 'horizontal'
+},
+".checkBoxImage": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE
+},
+"#footerView": {
+	bottom: '0dp',
+	backgroundColor: "transparent",
+	width:Titanium.UI.FILL,
+	height: '80dp'
+}
+"#submitButton": {
+	height: '42dp',
+	width: '250dp',
+	color: "#546e7a",
+	borderColor: '#546e7a',
+	borderRadius: '21dp',
+	borderWidth: '1dp'
+}
+"#submitLabel": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#546e7a",
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold
+}
+"#submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}
+"#linkertAnswerview1": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	top: '0dp',
+	layout: 'horizontal',
+	left: '5dp',
+	right: '5dp'
+},
+"#linkertAnswerview2": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	top: '0dp',
+	layout: 'horizontal',
+	left: '5dp',
+	right: '5dp'
+},
+".singleView": {
+	top: '0dp',
+	left: '0dp',
+	height: Titanium.UI.SIZE,
+	width: '25%',
+	layout: 'vertical'
+}
+".singleRadioView":{
+	top: '0dp',
+	left: '20dp',
+	height: Titanium.UI.SIZE,
+	width: '25%',
+	layout: 'vertical'
+}
+".singleRadioView[formFactor=tablet]":{
+	left: '5%'
+}
+".singleImageView": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	image: '/images/surveyTypes/check-box.png',
+	touchEnabled: 'false'
+}
+".radioImageView":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	image: '/images/surveyTypes/check-box.png',
+	touchEnabled: 'false'
+}
+".selectiontypeLabel": {
+	top: '10dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.MediumFontSemi,
+	opacity: 1,
+	textAlign: 'center',
+	touchEnabled: 'false'
+}
+".selectiontypeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+".commentBoxViewStyle": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: 'vertical'
+},
+".pickerViewStyle": {
+	height: '90dp',
+	width:Titanium.UI.SIZE
+},
+".pickerViewStyle[formFactor=tablet]": {
+	height: '160dp'
+},
+".pickerViewLabelStyle": {
+	height: '100dp',
+	width:Titanium.UI.SIZE,
+	color: 'black',
+	font:Alloy.Globals.HeaderUltraFontExtraLargeTablet
+},
+".pickerViewLabelStyle[formFactor=tablet]": {
+	height: '160dp'
+},
+".textBoxBroderLess": {
+	width:Titanium.UI.FILL,
+	height: "50dp",
+	top: "0dp",
+	right: '30dp',
+	left: '30dp',
+	color: "#456e7a" ,
+	returnKeyType:Titanium.UI.RETURNKEY_DEFAULT,
+	maxLength: '15',
+	autocorrect: true,
+	autocapitalization:Titanium.UI.TEXT_AUTOCAPITALIZATION_SENTENCES,
+	textAlign: 'left',
+	horizontalWrap: true,
+	suppressReturn: false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:Alloy.Globals.HeaderFontLight
+}
+".textBoxBroderLess[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLightTablet
+}
+".textBottomLine": {
+	backgroundColor: "#456e7a",
+	height: "1dp",
+	width:Titanium.UI.FILL,
+	left: '30dp',
+	right: '30dp',
+	top: '0dp'
+},
+"#QuestionContentFullview": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '0dp',
+	//backgroundColor: "#ffffff"
+	backgroundColor: "transparent"
+}
+"#QuestionContentTopView": {
+	width:Titanium.UI.FILL,
+	height: '50%',
+	top: '0dp',
+	backgroundColor: "#ffffff"
+}
+"#QuestionContentBottomView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '50%',
+	backgroundColor: "#ffffff"
+}
+"#questionDevider": {
+	width:Titanium.UI.FILL,
+	height: '1dp',
+	top: '0dp',
+	backgroundColor: '#eceff1'
+}
+"#selfQuestionView": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	top: '0dp',
+	layout: 'horizontal'
+},
+"#selfQuestionViewBottom":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	top: '0dp',
+	layout: 'horizontal'
+}

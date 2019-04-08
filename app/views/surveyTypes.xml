@@ -1,0 +1,64 @@
+<Alloy>
+	<Window id="surveyTypes" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="L('surveyTypeHeader')" rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="contentView" >
+			<View id="radioButtonSurvey" class="itemView" onClick="surveyTypeClick">
+				<View id="radioOverlay" class="itemOverlayView"></View>
+				<View height="Titanium.UI.SIZE" touchEnabled="false" width="Titanium.UI.SIZE" layout="vertical">
+					<Label class="surveyDescriptionLabel" text="L('surveyDescriptionLabel')"></Label>
+					<View class="surveyButtonsView">
+						<ImageView id="okButton"></ImageView>
+						<ImageView id="cancelButton"></ImageView>
+					</View>
+				</View>
+			</View>
+			<View id="freeResponseSurvey"  class="itemView" top="4dp" onClick="surveyTypeClick">
+				<View id="freeResponseOverlay" class="itemOverlayView"></View>
+				<View height="Titanium.UI.SIZE" touchEnabled="false" width="Titanium.UI.SIZE"  layout="vertical">
+					<Label class="surveyDescriptionLabel" text="L('surveyDescriptionLabel')"></Label>
+					<View class="surveyTextView" >
+						<Label id="enterLabel" text="L('enterHere')"></Label>
+						<View id="lineView"></View>
+					</View>
+				</View>
+			</View>
+			<View  id="likertResponseSurvey" class="itemView" top="4dp" onClick="surveyTypeClick">
+				<View id="likertResponseOverlay" class="itemOverlayView"></View>
+				<View height="Titanium.UI.SIZE" touchEnabled="false" width="Titanium.UI.SIZE" layout="vertical">
+					<Label class="surveyDescriptionLabel" text="L('surveyDescriptionLabel')"></Label>
+					<View class="surveySelectionsView">
+						<View class="singleView">
+							<ImageView class="singleImageView"></ImageView>
+							<Label class="selectiontypeLabel" text="Never"></Label>
+						</View>
+						<View class="singleView">
+							<ImageView class="singleImageView"></ImageView>
+							<Label class="selectiontypeLabel" text="Rarely"></Label>
+						</View>
+						<View class="singleView">
+							<ImageView class="singleImageView"></ImageView>
+							<Label class="selectiontypeLabel" text="Sometimes"></Label>
+						</View>
+						<View class="singleView">
+							<ImageView class="singleImageView"></ImageView>
+							<Label class="selectiontypeLabel" text="Often"></Label>
+						</View>
+						<View class="singleView" width="19.5%">
+							<ImageView class="singleImageView"></ImageView>
+							<Label class="selectiontypeLabel" text="All the time"></Label>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View id="footerView">
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE">
+				<View id="submitButton" onClick="submitButtonClick">
+					<Label id="submitLabel" touchEnabled="false" text="SUBMIT"></Label>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

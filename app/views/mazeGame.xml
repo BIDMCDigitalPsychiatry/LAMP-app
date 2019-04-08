@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="mazeGame" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="MAZE" >
+			</Require>
+		</View>
+		<View id="contentView">
+			<View id="mainView">
+			</View>
+		</View>
+	</Window>
+</Alloy>

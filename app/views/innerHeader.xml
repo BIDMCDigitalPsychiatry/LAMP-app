@@ -1,0 +1,24 @@
+<Alloy>
+	<View id="headerOuterView">
+		<View id="headerView">
+			<View id="backView" onClick="onBackClick">
+				<ImageView id="backImage"></ImageView>
+			</View>
+			<View id="titleView">
+				<View id="titleOuterView">
+					<Label text=""  id="titleLabel"/>
+					<Label id="statusLabel" color="#000000"></Label>
+				</View>
+			</View>
+			<View id="reportView"  onClick="onReportClick" visible="false">
+				<ImageView id="reportImage"></ImageView>
+			</View>
+			<View id="rightView"  onClick="onRightClick" visible="false">
+				<ImageView id="rightImage"></ImageView>
+			</View>
+			<View id="quitView"  onClick="onQuitClick" visible="false">
+				<Label text="EXIT"  id="quitLabel"/>
+			</View>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,84 @@
+<Alloy>
+	<Window id="temporalOrder" swipeToClose="false">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Temporal Order" homeButtonImage="/images/home/home.png" ></Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="04:00"></Label>
+			
+			<View id="boxOuter">
+				<View id="outerBox" onClick="imageSelectionClick">
+					<View class="rowView">
+						<View id="index1" index="1" class="childView" >
+							<View class="verticalBorder" ></View>
+						</View>
+						<View id="index2" index="2" class="childView">
+							<View class="verticalBorder"></View>
+						</View>
+						<View id="index3" index="3" width="33%" class="childView" ></View>
+					</View>
+					<View class="horizontalBorder"></View>
+					<View class="rowView">
+						<View id="index4" index="4" class="childView">
+							<View class="verticalBorder"></View>
+						</View>
+						<View id="index5" index="5" class="childView" >
+							<View class="verticalBorder"></View>
+						</View>
+						<View id="index6" index="6" width="33%" class="childView"></View>
+					</View>
+					<View class="horizontalBorder"></View>
+					<View class="rowView" >
+						<View id="index7" index="7" class="childView">
+							<View class="verticalBorder"></View>
+						</View>
+						<View id="index8" index="8" class="childView" >
+							<View class="verticalBorder"></View>
+						</View>
+						<View id="index9" index="9" width="33%" class="childView"></View>
+					</View>
+					<View class="horizontalBorder"></View>
+				</View>
+				<View id="messageViewWatch" touchEnabled="false" visible="false">
+					<Label id="messageLabelWatch" touchEnabled="false" text="Remember the item,location and order." ></Label>
+				</View>
+			</View>
+			<View id="imageThumbOuter" visible="false" onClick="thumbImageClick">
+				<View class="thumbImageView" >
+					<View class="innerThumbView">
+						<ImageView id="image1" index="1" class="thumbnailImage"></ImageView>
+					</View>
+					<View class="innerThumbView">
+						<ImageView id="image2"  index="2" class="thumbnailImage"></ImageView>
+					</View>
+					<View class="innerThumbView" width="33%">
+						<ImageView id="image3"  index="3" class="thumbnailImage"></ImageView>
+					</View>
+
+				</View>
+				<View class="thumbImageView"   >
+					<View class="innerThumbView">
+						<ImageView id="image4"  index="4" class="thumbnailImage"></ImageView>
+					</View>
+					<View class="innerThumbView">
+						<ImageView id="image5"  index="5" class="thumbnailImage"></ImageView>
+					</View>
+					<View class="innerThumbView" width="33%">
+						<ImageView id="image6"  index="6" class="thumbnailImage"></ImageView>
+					</View>
+				</View>
+				<View class="thumbImageView"  >
+					<View class="innerThumbView">
+						<ImageView id="image7"  index="7" class="thumbnailImage"></ImageView>
+					</View>
+					<View class="innerThumbView">
+						<ImageView id="image8"  index="8" class="thumbnailImage"></ImageView>
+					</View>
+					<View class="innerThumbView" width="33%">
+						<ImageView id="image9"  index="9" class="thumbnailImage"></ImageView>
+					</View>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

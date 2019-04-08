@@ -1,0 +1,28 @@
+<Alloy>
+	<Window id="articles" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Articles" rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="contentView">
+			<Label id="noDataLabel" text="L('noDataLabel')"></Label>
+			<ListView  id="articlesList" onItemclick="openDetails" onScrollend="scrollEndEvent">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="articlesListTemplate">
+						<View id="listOuterView" bindId="listOuterView" >
+							<View id="ListContentView">
+								<ImageView id="thumbImage" bindId="thumbImage"></ImageView>
+								<View id="descrptionView">
+									<Label id="heaerLabel" bindId="heaerLabel"></Label>
+									<Label id="descrptionLabel" bindId="descrptionLabel"></Label>
+								</View>
+							</View>
+							<View id="deviderLine"></View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection"></ListSection>
+			</ListView>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+	</Window>
+</Alloy>

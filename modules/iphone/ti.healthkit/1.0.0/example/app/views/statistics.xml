@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id='mainWin' title='TiHealthkit Example'>
+		<TableView id='tableView' onClick='onTableViewClick'>
+			<TableViewRow title='Max Weight' />
+			<TableViewRow title='Max Weight by Source' />
+			<TableViewRow title='Min Weight' />
+			<TableViewRow title='Average Weight' />
+			<TableViewRow title='Total Calories Burned' />
+		</TableView>
+	</Window>		
+</Alloy>

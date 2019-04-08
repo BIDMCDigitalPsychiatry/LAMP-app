@@ -1,0 +1,84 @@
+<Alloy>
+	<Window id="newHomeScreen" class="container">
+		<View id="menuSectionview">
+			<View id="headerView">
+				<Label id="headerLabel" text="L('appTitle')" >
+				</Label>
+				<View id="reportView"  onClick="onReportClick">
+					<ImageView id="reportImage">
+					</ImageView>
+				</View>
+				<View id="settingsView" onClick="settingsClick" >
+					<ImageView id="settingsImage">
+					</ImageView>
+				</View>
+			</View>
+			<View id="menuView">
+				<View id="menuTopView">
+					<View id="lView" class="leftMenu" onClick="onLearnClick" >
+						<View class="innerMenuView"  id="learnMenu">
+							<Label class="menuLabel" text="Learn" id="learnLbl">
+							</Label>
+						</View>
+					</View>
+					<View class="verticalDividerTop">
+					</View>
+					<View id="aView" class="rightMenu" onClick="onAssessClick">
+						<View class="innerMenuView" >
+							<Label class="menuLabel" text="Assess" id="AssessLbl">
+							</Label>
+						</View>
+					</View>
+				</View>
+				<View class="horizontalDivider">
+				</View>
+				<View id="menuBottomView">
+					<View id="mView" class="leftMenu" onClick="onManageClick">
+						<View class="innerMenuView"  id="manageMenu">
+							<Label class="menuLabel" text="Manage" id="manageLbl">
+							</Label>
+						</View>
+					</View>
+					<View class="verticalDividerBottom">
+					</View>
+					<View id="pview" class="rightMenu" onClick="onPreventClick">
+						<View class="innerMenuView"  id="preventMenu">
+							<Label class="menuLabel" text="Prevent" id="preventLbl">
+							</Label>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View id="notificationSectionview">
+			<ListView  id="notificationList">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="notificationListTemplate">
+						<View id="listOuterView" bindId="listOuterView" onClick="listViewClick" onSwipe="listViewSwipe">
+							<View id="notificationImageView">
+								<ImageView id="notificationImage">
+								</ImageView>
+							</View>
+							<Label id="notificationLabel" bindId="notificationLabel">
+							</Label>
+						</View>
+						<View id="dismissView" bindId="dismissView" onClick="deleteAlerts">
+							<Label id="dismissLabel" text="L('dismissLabel')">
+							</Label>
+						</View>
+						<View id="listViewSeperator">
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection">
+				</ListSection>
+			</ListView>
+			<Label id="noDataLabel" text="L('noDataLabel')">
+			</Label>
+		</View>
+		<View id="submitButton" onClick="helpClick">
+			<Label id="submitLabel" touchEnabled="false" text="HELP">
+			</Label>
+		</View>
+	</Window>
+</Alloy>

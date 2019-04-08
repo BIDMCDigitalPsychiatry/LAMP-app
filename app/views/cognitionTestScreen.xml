@@ -1,0 +1,62 @@
+<Alloy>
+	<Window  id="cognitionTestScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="L('cognitionTestTitle')"  rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="contentView">
+			<View id="contentInnerView">
+				<View id="memoryGameView">
+					<View id="labelView">
+						<Label id="memoryGameLabel">Memory Game</Label>
+					</View>
+					<ListView  id="surveyList" onItemclick="onStartMemoryGame">
+						<Templates>
+							<ItemTemplate id="lstTemplate" name="surveyListTemplate" >
+								<View id="listOuterView" bindId="listOuterView">
+									<View id="leftView">
+										<View id="gameNameViewLeft" bindId="gameNameViewLeft">
+											<Label id="gameNameLabel1" bindId="gameNameLabel1"></Label>
+										</View>
+									</View>
+									<View id="rightView">
+										<View id="gameNameViewRight" bindId="gameNameViewRight">
+											<Label id="gameNameLabel2" bindId="gameNameLabel2"></Label>
+										</View>
+									</View>
+
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="lstSection"></ListSection>
+					</ListView>
+				</View>
+				<View id="mindGameView">
+					<View id="labelView">
+						<Label id="mindGameLabel">Attention Game</Label>
+					</View>
+					<ListView  id="mindGameList" onItemclick="onStartAttentionGame">
+						<Templates>
+							<ItemTemplate id="mindTemplate" name="mindGameTemplate" >
+								<View id="mindOuterView" bindId="mindOuterView">
+									<View id="mindLeftView">
+										<View id="mindGameViewLeft" bindId="mindGameViewLeft">
+											<Label id="mindGameLabel1" bindId="mindGameLabel1"></Label>
+										</View>
+									</View>
+									<View id="mindRightView">
+										<View id="mindGameViewRight" bindId="mindGameViewRight">
+											<Label id="mindGameLabel2" bindId="mindGameLabel2"></Label>
+										</View>
+									</View>
+
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="mindSelection"></ListSection>
+					</ListView>
+				</View>
+			</View>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+	</Window>
+</Alloy>

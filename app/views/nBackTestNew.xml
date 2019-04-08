@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="nBackTestNew" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="n-back(New)" homeButtonImage="/images/home/home.png" >
+			</Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="00:25">
+			</Label>
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+				<Label id="gameLabel" text="0 BACK">
+				</Label>
+				<View id="outerView">
+					<View id="outerBox1" index="0"  class="innerView">
+						<View id="box1" right="5dp" left="5dp" top="5dp" bottom="5dp" width="Titanium.UI.FILL" height="Titanium.UI.FILL"  >
+						</View>
+					</View>
+				</View>
+				<View id="answerView">
+					<ImageView id="yesImage" onClick="yesClick">
+					</ImageView>
+					<ImageView id="noImage" onClick="noClick">
+					</ImageView>
+				</View>
+			</View>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" visible="false" bottom="20dp" backgroundColor="#ffffff">
+				<Label id="messageLabel" text="">
+				</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

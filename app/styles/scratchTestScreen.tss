@@ -1,0 +1,19 @@
+"#scratchTestScreen":{
+	backgroundImage:Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+
+'#scratchTestScreen[platform=android]': {
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}
+
+"#innerImageView":{
+	height: "350dp",
+	width: Titanium.UI.FILL
+}
+
+"#innerImageView[formFactor=tablet platform=android]":{
+	height: "500dp",
+	width: Titanium.UI.FILL
+}
+

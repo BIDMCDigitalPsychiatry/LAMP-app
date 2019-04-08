@@ -1,0 +1,55 @@
+<Alloy>
+	<Window id="catAndDogGame" swipeToClose="false">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Cats and Dogs" homeButtonImage="/images/home/home.png" rightButtonImage="/images/common/report_icn.png" ></Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="04:00"></Label>
+			<View id="largeView" visible="true">
+				<ImageView id="displayImage"></ImageView>
+			</View>
+			<View id="outerBox" onClick="imageSelectionClick" visible="false">
+				<View class="rowView">
+					<View id="index1" index="1" class="childView" >
+						<View class="verticalBorder" ></View>
+					</View>
+					<View id="index2" index="2" class="childView">
+						<View class="verticalBorder"></View>
+					</View>
+					<View id="index3" index="3" width="33%" class="childView" >
+						
+					</View>
+				</View>
+				<View class="horizontalBorder"></View>
+				<View class="rowView">
+					<View id="index4" index="4" class="childView">
+						<View class="verticalBorder"></View>
+					</View>
+					<View id="index5" index="5" class="childView" >
+						<View class="verticalBorder"></View>
+					</View>
+					<View id="index6" index="6" width="33%" class="childView">
+						
+					</View>
+				</View>
+				<View class="horizontalBorder"></View>
+				<View class="rowView" >
+					<View id="index7" index="7" class="childView">
+						<View class="verticalBorder"></View>
+					</View>
+					<View id="index8" index="8" class="childView" >
+						<View class="verticalBorder"></View>
+					</View>
+					<View id="index9" index="9" width="33%" class="childView">
+						
+					</View>
+				</View>
+				<View class="horizontalBorder"></View>
+			</View>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" bottom="10dp"  backgroundColor="#ffffff">
+				<Label id="messageLabel" text="L('CatandDogMessage1')" ></Label>
+			</View>
+			<!-- </View> -->
+		</View>
+	</Window>
+</Alloy>

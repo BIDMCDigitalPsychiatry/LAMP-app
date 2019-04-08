@@ -1,0 +1,188 @@
+<Alloy>
+	<Window id="scoreTable">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Cognition Score" rightButtonImage="/images/common/report_icn.png">
+			</Require>
+		</View>
+		<View id="outerView">
+			<ScrollView id="contentView">
+				<View id="titleView">
+					<Label id="gameTitle1">
+					</Label>
+					<Label id="pointTitle1">
+					</Label>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="n-back Test" id="nBackLblTitle">
+						</Label>
+						<TextField  id="nBackLbl" class="valueLabel"  value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Spatial Span Forward" id="spanFrwdLbl">
+						</Label>
+						<TextField  id="spatialFrwdLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label class="dataLabel" text="Spatial Span Backward" id="spanBackLbl">
+						</Label>
+						<TextField  id="spatialBackLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label class="dataLabel" text="Simple Memory Test" id="memoryLbl">
+						</Label>
+						<TextField  id="simpleMemoryLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label class="dataLabel" text="Serial 7s" id="serialLbl">
+						</Label>
+						<TextField  id="serail7Lbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="n-back Test(New)" id="nBackNewLbltitle">
+						</Label>
+						<TextField  id="nBackTestNewLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label class="dataLabel" text="Visual Association Task" id="visualLblTitle">
+						</Label>
+						<TextField  id="visualLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Digit Span Forward" id="digitFrwdLbl">
+						</Label>
+						<TextField  id="digitSpanLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Digit Span Backward" id="digitBackLbl">
+						</Label>
+						<TextField  id="digitSpanBackLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Cats And Dogs(New)" id="catDogLbl">
+						</Label>
+						<TextField  id="catdogNewLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Temporal Order" id="tempOrderLbl">
+						</Label>
+						<TextField  id="TemporalLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+			</ScrollView>
+			<ScrollView id="contentView2">
+				<View id="titleView">
+					<Label id="gameTitle2">
+					</Label>
+					<Label id="pointTitle2">
+					</Label>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Trails-b test" id="trailBLbl">
+						</Label>
+						<TextField id="trailsLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Trails-b test(New)" id="trailBNewLbl">
+						</Label>
+						<TextField  id="trailsBNewLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="trails-b(Dot Touch)" id="traildotLbl">
+						</Label>
+						<TextField  id="trailsBDotLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Jewels Trail - A" id="jwelALbl">
+						</Label>
+						<TextField  id="jewelTrailsALbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+				<View class="listOuterViewStyle">
+					<View class="dataFieldView">
+						<Label  class="dataLabel" text="Jewels Trail - B" id="jwelBLbl">
+						</Label>
+						<TextField  id="jewelTrailsBLbl" class="valueLabel" value="0">
+						</TextField>
+					</View>
+					<View class="seperator">
+					</View>
+				</View>
+			</ScrollView>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved.">
+			</Label>
+		</View>
+	</Window>
+</Alloy>

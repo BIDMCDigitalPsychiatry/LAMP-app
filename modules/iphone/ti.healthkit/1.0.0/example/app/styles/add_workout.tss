@@ -1,0 +1,13 @@
+'.inputParent': {
+	backgroundColor: '#c0c0c0c0',
+	height: 60,
+}
+'.inputLabel': {
+	left: 10 
+}
+'.inputField': {
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	keyboardType: Ti.UI.KEYBOARD_DECIMAL_PAD,
+	left: '50%',
+	width: '40%'
+}

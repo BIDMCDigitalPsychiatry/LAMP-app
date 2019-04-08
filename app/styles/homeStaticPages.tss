@@ -1,0 +1,157 @@
+"#homeStaticPages":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	bottom: '62dp',
+	backgroundColor: '#E7EAED'
+}
+"#contentText":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	willHandleTouches: false,
+	enableZoomControls: false,
+	top: '0dp',
+	left: "5dp",
+	right: "5dp",
+	backgroundColor: 'transparent',
+	url: "/htmlPages/learn.html"
+}
+"#contentText[formFactor=tablet]":{
+	url: "/htmlPages/learn~ipad.html"
+}
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#reportView[formFactor=tablet]": {
+	right: '20dp'
+}
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png",
+	bottom: '10dp'
+}
+"#homeView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#homeView[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+"#homeImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home/home.png',
+	left: '10dp',
+	bottom: '10dp'
+}
+"#homeImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home.png'
+}
+
+"#homeImage[formFactor=tablet]": {
+	left: '15dp'
+}
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '0dp',
+	backgroundColor: 'transparent'
+}
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '0dp'
+}
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '60dp'
+}
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	bottom: '10dp'
+}
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#surveyList": {
+	top: '0dp',
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	canScroll: true,
+	bottom: '20dp'
+}
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '50dp',
+	right: '4dp',
+	left: '4dp',
+	top: '6dp'
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '60dp'
+}
+"#gameNameView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	right: '50dp',
+	left: '0dp'
+}
+"#notificationImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '10dp',
+	image: '/images/common/notify-icon_lg.png'
+}
+"#gameNameView[formFactor=tablet]": {
+	top: "20%"
+}
+"#gameNameLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.HeaderFontBold,
+	left: '10dp'
+}
+"#gameNameLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

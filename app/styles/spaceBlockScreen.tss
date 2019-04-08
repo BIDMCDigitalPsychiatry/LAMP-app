@@ -1,0 +1,315 @@
+"#spaceBlockScreen": {
+	//backgroundColor: '#E7EAED'
+}
+"#environmentScrollView":{
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	bottom: "95dp",
+	top: '0dp',
+	backgroundColor: '#ffffff',
+	layout: "vertical",
+	scrollType: "vertical",
+	showVerticalScrollIndicator: true
+}
+"#environmentScrollView[formFactor=tablet]":{
+	bottom: "108dp"
+}
+"#MainView":{
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	top: '60dp'
+}
+"#MainView[formFactor=tablet]":{
+	visible: false
+}
+"#menuSectionView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	layout: 'vertical',
+	top: "10dp"
+}
+"#menuView": {
+	backgroundColor: 'transparent',
+	top: '0dp',
+	bottom: '20dp',
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	layout: 'vertical'
+}
+"#spaceLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.LargeFontBold,
+	opacity: 1,
+	text: "Where are you?",
+	top: "10dp"
+}
+"#spaceLabel[formFactor=tablet]":{
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+"#peopleView":{
+	height: "30%",
+	width:Titanium.UI.FILL,
+	top: "10dp",
+	layout: "vertical",
+	touchEnabled: false
+}
+"#peopleView[platform=android]":{
+	height: "150dp",
+	width:Titanium.UI.FILL,
+	top: "10dp",
+	layout: "vertical",
+	touchEnabled: false
+}
+"#peopleView[formFactor=tablet]":{
+	height: "23%"
+}
+".subViewStyle":{
+	height: "33%",
+	width: Titanium.UI.FILL
+}
+".subViewStyle[platform=android]":{
+	height: "50dp"
+}
+"#subView1":{
+	height:Titanium.UI.FILL,
+	width: "50%",
+	layout: "vertical"
+}
+".innerView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	layout: "horizontal"
+}
+".innerViewRight":{
+	height: '30dp',
+	width:Titanium.UI.FILL,
+	//layout: "horizontal",
+	top: "15dp"
+}
+".subView2":{
+	height:Titanium.UI.FILL,
+	width: "49%",
+	layout: "vertical"
+}
+"#selectedView":{
+	height: '40dp',
+	width:Titanium.UI.SIZE,
+	bottom: "58dp",
+	backgroundColor: '#ffffff'
+	//layout: "horizontal"
+}
+"#selectedView[formFactor=tablet]":{
+	height: '50dp'
+}
+"#selectedImage":{
+	height: '20dp',
+	width: '20dp',
+	left: '10dp'
+}
+"#selectedImage[formFactor=tablet]":{
+	height: '40dp',
+	width: '40dp'
+}
+"#lblView":{
+	left:"30dp",
+	height:'40dp',
+	width:Titanium.UI.FILL
+}
+"#selectedLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.LargeFontLight,
+	opacity: 1,
+	left: "5dp",
+	right: '20dp',
+	textAlign:'center'
+	
+}
+"#selectedLabel[formFactor=tablet]":{
+	font: Alloy.Globals.LargeFontLightTablet
+}
+".checkBox":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/environment/checkbox_uncheck.png",
+	left: "20dp",
+	touchEnabled: false
+}
+".checkBoxRight":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/environment/checkbox_uncheck.png",
+	//left: "20dp",
+	touchEnabled: false
+}
+".contentLabel":{
+	height:Titanium.UI.SIZE,
+	width: "50%",
+	//width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.LargeFontLight,
+	opacity: 1,
+	left: "20dp",
+	touchEnabled: false
+}
+".contentLabel[formFactor=tablet]":{
+	font: Alloy.Globals.LargeFontLightTablet
+}
+"#peopleLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.LargeFontBold,
+	opacity: 1,
+	text: "Who are you with?",
+	top: "10dp"
+}
+"#peopleLabel[formFactor=tablet]":{
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+".menuLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.MediumLargeFontLight,
+	opacity: 1,
+	touchEnabled: false,
+	top: "10dp"
+}
+".menuLabel[formFactor=tablet]":{
+	font: Alloy.Globals.LargeFontLightTablet
+}
+"#menuTopView": {
+	width: Ti.UI.FILL,
+	height: "20%"
+}
+"#menuTopView[platform=android]": {
+
+	height: "125dp"
+}
+"#menuTopView[formFactor=tablet]":{
+	height: "18%"
+}
+"#menuBottomView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: "20%"
+}
+"#menuBottomView[platform=android]": {
+
+	height: "125dp"
+}
+"#menuBottomView[formFactor=tablet]":{
+	height: "18%"
+}
+".horizontalDivider": {
+	backgroundColor: '#E7EAED',
+	width: Ti.UI.FILL,
+	height: '1dp',
+	left: "20dp",
+	right: "20dp"
+}
+"#seperator":{
+	backgroundColor: '#E7EAED',
+	width: Ti.UI.FILL,
+	height: '1dp',
+	top: "0dp"
+}
+"#verticalDivider":{
+	left: "50%",
+	backgroundColor: '#E7EAED',
+	width: '1dp',
+	height: Ti.UI.FILL
+}
+".verticalDividerTop": {
+	left: "50%",
+	backgroundColor: '#E7EAED',
+	width: '1dp',
+	height: Ti.UI.FILL
+}
+".verticalDividerBottom": {
+	backgroundColor: '#E7EAED',
+	width: '1dp',
+	height: Ti.UI.FILL
+}
+".verticalDividerBottom[formFactor=tablet]": {
+	//bottom: '10%'
+}
+".leftMenu": {
+	left: "0dp",
+	backgroundColor: 'transparent',
+	width: '50%',
+	height: Ti.UI.FILL
+}
+".rightMenu": {
+	right: "0dp",
+	backgroundColor: 'transparent',
+	width: '50%',
+	height: Ti.UI.FILL
+}
+".checkImage":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	touchEnabled: false,
+	right: "20dp",
+	image: "/images/environment/checkbox_check.png",
+	top: "15dp"
+}
+".innerMenuView": {
+	width: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	height: Ti.UI.SIZE,
+	touchEnabled: false,
+	layout: "vertical"
+}
+".innerRightMenuView":{
+	width: Ti.UI.SIZE,
+	backgroundColor: 'transparent',
+	height: Ti.UI.SIZE,
+	touchEnabled: false,
+	layout: "vertical"
+}
+".menuIcon": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	touchEnabled: false
+}
+"#footerView":{
+	width: Ti.UI.FILL,
+	height: "55dp",
+	backgroundColor: '#E7EAED',
+	bottom: "0dp"
+}
+"#pictureLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	text:L( 'pictureLabel'),
+	color: '#546e7a',
+	font:Alloy.Globals.HeaderFontBold
+}
+"#pictureLabel[formFactor=tablet]":{
+	//bottom: '60dp',
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#submitButton": {
+	height: '42dp',
+	width: '200dp',
+	color: "#546e7a",
+	borderColor: '#546e7a',
+	borderRadius: '21dp',
+	borderWidth: '1dp'
+}
+"#submitLabel": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.LargeFontBold,
+	opacity: 1
+}
+"#submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}
+

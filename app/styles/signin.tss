@@ -1,0 +1,189 @@
+"#signincontainer":{
+	//backgroundColor: "#359ffe",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL
+},
+"#scrollFillContainer[platform=android]": {
+	layout: "vertical",
+	bottom: "50dp"
+}
+"#formContainer":{
+	backgroundColor: "#359ffe",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	layout: 'vertical'
+	//top : '50dp
+},
+"#autologinRecoveryCotainer":{
+	//backgroundColor: "#ffffff",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	//layout:'vertical',
+	top: '10dp'
+},
+"#logoContainerView":{
+	height: '55%',
+	backgroundColor: '#ffffff',
+	layout: 'vertical'
+},
+"#logo":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	image: '/images/signinStudy/logo.png'
+},
+
+"#buttonContainerView[platform=ios]":{
+	width: '98%',
+	height:Ti.UI.SIZE,
+	//layout:'horizontal',
+	bottom: '12dp'
+},
+
+"#buttonContainerView[platform=android]": {
+	width: '98%',
+	height:Ti.UI.SIZE,
+	bottom: '10dp'
+
+}
+
+ "#signInButton":{
+ 	top: '45dp',
+ }
+
+"#signInStudent":{
+	left: '0dp',
+	width: "49%",
+	height: '44dp',
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.LargeFontBold
+},
+"#signInStudent[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet
+},
+"#forgetPassword":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	color: '#ffffff',
+	font: Alloy.Globals.LargeFontBold,
+	top:"18dp" 
+},
+"#forgetPassword[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet
+},
+"#signInUserSignUp":{
+	right: '0dp',
+	width: "49%",
+	height: '44dp',
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.LargeFontBold
+},
+"#signInUserSignUp[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet
+},
+"#buttonSeperator": {
+	height: '22dp',
+	width: '1dp',
+	backgroundColor: "#ffffff",
+	opacity: "0.6"
+},
+"#buttonSeperator[formFactor=tablet]": {
+	height: '36dp',
+	width: '1dp',
+	backgroundColor: "#ffffff",
+	opacity: "0.6"
+}
+"#logoView[platform=ios]": {
+	height: '50%',
+	width:Titanium.UI.FILL,
+	top: '0dp'
+}
+
+"#logoView[platform=android]": {
+	height: '0',
+	width:Titanium.UI.FILL,
+	top: '0dp'
+
+}
+"#bodyContainer[platform=android]": {
+	top: '10dp',
+	height: Ti.UI.SIZE,
+	width:Titanium.UI.FILL
+}
+
+
+"#logoInnerView": {
+	height: Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	top: '0dp',
+	bottom: '100dp'
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '3dp'
+},
+"#languageView": {
+	top: '10dp',
+	height: '70dp',
+	width:"90%",
+	backgroundColor: 'transparent'
+}
+"#languageView[formFactor=tablet]": {
+	height: '80dp',
+}
+"#languageSlot": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	layout: 'vertical',
+	top:"0dp"
+}
+"#languageSlot[formFactor=tablet]": {
+}
+"#langHeader": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	left: '0dp',
+	top: '5dp',
+	color: "#ffffff",
+	opacity: 1,
+	font:Alloy.Globals.LargeFontLight
+}
+"#langHeader[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontLightTablet
+}
+".controllerView": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: '5dp'
+}
+"#languageSlotLabel": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	left: '0dp',
+	top: '10dp',
+	color: "#ffffff",
+	font:Alloy.Globals.LargeFontLight,
+	touchEnabled: true
+}
+"#languageSlotLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#downButtonImage": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	right: '0dp',
+	image: '/images/settings/icn-arrow-down.png'
+}
+"#horizontalDivider": {
+	height: '1dp',
+	width:Titanium.UI.FILL,
+	backgroundColor: '#ffffff',
+	opacity: "0.2",
+	top: '3dp'
+}

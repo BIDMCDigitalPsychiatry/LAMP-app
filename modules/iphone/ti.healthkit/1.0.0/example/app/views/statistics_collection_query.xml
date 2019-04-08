@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id='win' title='Steps Count Per Day' onClose='onWindowClose'>
+		<View top=0 height=40 width='100%' backgroundColor='gray'>
+			<Label color='white'
+				text='Use the Health app to add step data.'
+			/>
+		</View>
+		<TableView id='tableView' top=40 bottom=0/>
+	</Window>
+</Alloy>

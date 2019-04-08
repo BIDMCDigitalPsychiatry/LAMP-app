@@ -1,0 +1,34 @@
+<Alloy>
+	<Window swipeToClose="false">
+		<View id="signupConsentContainer" class="container" backgroundColor="#359ffe" >
+			<View id='headerContainer' class="headerContainer">
+				<Require id = 'headerView' src ="innerHeader" title="L('signInUserSignUp')" >
+				</Require>
+			</View>
+			<ScrollView id="bodyOuterContainer" class="bodyOuterContainer" >
+				<View id='bodyContainer' class="bodyContainer">
+					<View id="consentMatterContainer">
+						<Label id="consentHeadLabel" >
+						</Label>
+						<Label id="consentNoteLabel" >
+						</Label>
+						<WebView id="consentDescriptionLabel">
+						</WebView>
+					</View>
+				</View>
+			</ScrollView>
+			<View id="consentButtonContainer">
+				<View id="disagreeContainer">
+					<Label id="signUpDisagreeButton"  text="L('disagree')" onClick="signUpDisagreeClick"  >
+					</Label>
+				</View>
+				<View id="agreeContainer">
+					<Label id="signUpAgreeButton" text="L('agree')" onClick="signUpAgreeClick" >
+					</Label>
+				</View>
+			</View>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved.">
+			</Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,114 @@
+<Alloy>
+	<Window  id="digitSpanTest" class="container">
+		<View id='headerContainer' class="headerContainer" >
+			<Require id = 'headerView' src ="innerHeader" title="Digit Span" homeButtonImage="/images/home/home.png">
+			</Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="03:00">
+			</Label>
+			<Label id="levelLabel" text="Level 1">
+			</Label>
+			<ImageView id="selectedDigitImage">
+			</ImageView>
+			<View id="selectionView">
+				<View id="boxView" visible="false">
+					<View id="firstRowView">
+						<View class="childTop">
+							<View id="index0"  index="0"  class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label0" index="0"  class="labelClass" text="0">
+								</Label>
+							</View>
+						</View>
+						<View class="childTop">
+							<View id="index1"  index="1" class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label1" index="1"  class="labelClass" text="1">
+								</Label>
+							</View>
+						</View>
+						<View class="childTop">
+							<View id="index2" index="2"  class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label2" index="2" class="labelClass" text="2">
+								</Label>
+							</View>
+						</View>
+						<View class="childTop">
+							<View id="index3" index="3"  class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label3" index="3" class="labelClass" text="3">
+								</Label>
+							</View>
+						</View>
+					</View>
+					<View id="secondRowView">
+						<View class="childTop" >
+							<View id="index4" index="4" class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label4"  index="4"  class="labelClass" text="4">
+								</Label>
+							</View>
+						</View>
+						<View class="childTop">
+							<View id="index5" index="5" class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label5" index="5"  class="labelClass" text="5">
+								</Label>
+							</View>
+						</View>
+						<View class="childTop">
+							<View id="index6" index="6"  class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label6" index="6" class="labelClass" text="6">
+								</Label>
+							</View>
+						</View>
+						<View class="childTop" >
+							<View id="index7" index="7"  class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label7" index="7"  class="labelClass" text="7">
+								</Label>
+							</View>
+						</View>
+					</View>
+					<View id="thirdRowView">
+						<View class="thirdChildTop" >
+							<View id="index8" index="8" class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label8"  index="8"  class="labelClass" text="8">
+								</Label>
+							</View>
+						</View>
+						<View class="thirdChildTop">
+							<View id="index9" index="9" class="childView" onClick="boxSelectionClick">
+								<View class="innerView">
+								</View>
+								<Label id="label19" index="9"  class="labelClass" text="9">
+								</Label>
+							</View>
+						</View>
+					</View>
+				</View>
+			</View>
+			<View id="numberView">
+				<Label id="numberLabel">
+				</Label>
+			</View>
+			<View id="messageView">
+				<Label id="messageLabel">
+				</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

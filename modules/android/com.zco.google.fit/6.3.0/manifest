@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 6.3.0
+apiversion: 3
+architectures: armeabi-v7a x86
+description: googlefitmodule
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2017 by Your Company
+
+# these should not be edited
+name: googlefitmodule
+moduleid: com.zco.google.fit
+guid: 18b79b9c-dda2-4c82-ad83-56b214c8e190
+platform: android
+minsdk: 6.3.0.GA

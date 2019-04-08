@@ -1,0 +1,18 @@
+<h1>Ti.Healthkit.Query</h1>
+<h2>Description</h2>
+<p>The Ti.Healthkit.Query class is the basis for all the query objects that retrieve data from the HealthKit store. The HKQuery class is an abstract class. You should never instantiate an Ti.Healthkit.Query object directly. Instead, you always work with one of its concrete subclasses:</p>
+<ul>
+<li><a href="objectQuery.html">Ti.Healthkit.ObjectQuery</a></li>
+<li><a href="correlationQuery.html">Ti.Healthkit.CorrelationQuery</a></li>
+<li><a href="observerQuery.html">Ti.Healthkit.ObserverQuery</a></li>
+<li><a href="sampleQuery.html">Ti.Healthkit.SampleQuery</a></li>
+<li><a href="sourceQuery.html">Ti.Healthkit.SourceQuery</a></li>
+<li><a href="statisticsQuery.html">Ti.Healthkit.StatisticsQuery</a></li>
+<li><a href="statisticsCollectionQuery.html">Ti.Healthkit.StatisticsCollectionQuery</a></li>
+</ul>
+<h2>Properties</h2>
+<h3>filter : [Ti.Healthkit.Filter][]</h3>
+<p>A [Ti.Healthkit.Filter][] object used to filter the objects returned from the HealthKit store. (read-only)</p>
+<p>If this property is undefined, the query does not filter its results. Instead, it returns all the objects matching the query's other parameters.</p>
+<h3>sampleType : String</h3>
+<p>The type of the objects being queried.</p>

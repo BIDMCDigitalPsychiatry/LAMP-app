@@ -1,0 +1,45 @@
+<h1>Ti.Healthkit.Unit</h1>
+<h2>Description</h2>
+<p>The unit class manages a wide range of different units for HealthKit.</p>
+<p>The unit class supports most standard SI units (meters, seconds, and grams), SI units with prefixes (centimeters, milliseconds and kilograms) and equivalent non-SI units (feet, minutes, and pounds). HealthKit also supports creating complex units by mathematically combining existing units.</p>
+<p>Units are used when working with HealthKit quantities. Quantities store both a double value and its corresponding unit. You can then request the value from the quantity in any compatible units.</p>
+<p>You can use the string representation of a unit whenever a Ti.Healthkit.Unit
+object is required as parameter -- the module will automatically create the
+Unit object from the string, as long as the string represents a valid unit.
+See the <a href="https://developer.apple.com/library/prerelease/ios/documentation/HealthKit/Reference/HKUnit_Class/index.html#//apple_ref/occ/clm/HKUnit/unitFromString:">native documentation</a> for the rules of creating
+a valid unit string.</p>
+<h2>Functions</h2>
+<h3>&lt;String&gt; toString()</h3>
+<p>Returns the string representation of the unit.</p>
+<h3>&lt;Boolean&gt; isNull()</h3>
+<p>Returns a Boolean value indicating whether the unit is null.
+Null units occur only when creating compound units where all the units cancel out. For example, if you created a dL/L unit, you would have a null unit.</p>
+<h3>&lt;Ti.Healthkit.Unit&gt; multiplyBy(unit)</h3>
+<p>Creates a complex unit by multiplying the receiving unit with another unit.
+You can create a complex unit by multiplying two units together. For example,
+you could create a foot-pound unit by multiplying a foot unit by a pound unit.</p>
+<ul>
+<li>unit (String or Ti.Healthkit.Unit): The unit to multiply with. This can be
+a Ti.Healthkit.Unit object or a string representing a unit. If the string does
+not represent a valid unit, this method throws an exception.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Unit&gt; divideBy(unit)</h3>
+<p>Creates a complex unit by dividing the receiving unit with another unit.
+You can create a complex unit by multiplying two units together. For example,
+you can create a meters-per-second unit by dividing a meters unit by a seconds
+unit.</p>
+<ul>
+<li>unit (String or Ti.Healthkit.Unit): The unit to multiply with. This can be
+a Ti.Healthkit.Unit object or a string representing a unit. If the string does
+not represent a valid unit, this method throws an exception.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Unit&gt; raisedToPower(exponent)</h3>
+<p>This method creates a new, complex unit by raising the receiving unit by the
+given power. This task is often only one step in a series of operations. For
+example, you can use this method to create a meters-per-second-squared unit.</p>
+<ul>
+<li>exponent (Number): The exponent; should be an integer and will be truncated
+to one if it isn't.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Unit&gt; reciprocal()</h3>
+<p>This method creates a new, complex unit by dividing 1 by the receiving unit.</p>

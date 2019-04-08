@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id='win' title='Source Query' layout='vertical'>
+		<RightNavButton platform='ios'>
+			<Button id='searchButton' title='Search' onClick='onSearchClick' />
+		</RightNavButton>
+		<Label
+			top=10 left=10 right=10
+			>
+Select object type then tap "Search":
+			</Label>
+		<Picker id='typePicker' top=10 onChange='onTypePickerChange'/>
+	</Window>
+</Alloy>

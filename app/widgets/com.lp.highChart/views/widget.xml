@@ -1,0 +1,3 @@
+<Alloy>
+	<WebView id='chartWebView' height="Titanium.UI.FILL" width="Titanium.UI.FILL" enableZoomControls="false"></WebView>
+</Alloy>

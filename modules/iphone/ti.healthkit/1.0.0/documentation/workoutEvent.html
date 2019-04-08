@@ -1,0 +1,9 @@
+<h1>Ti.Healthkit.WorkoutEvent</h1>
+<h2>Description</h2>
+<p>You can use workout events to toggle a workout object between an active and an inactive state. Workouts start in an active state. A pause event switches it to an inactive state; a resume event switches it back to an active state. Adding a pause event when the workout is already inactive, or a resume event when the workout is already active, does not affect the workout's state. These events are ignored.</p>
+<h2>Properties</h2>
+<h3>date : Date</h3>
+<p>The time when the transition occurred. (read-only)</p>
+<p>For a pause event, this date indicates the start of the break. For a resume event, this date indicates the end of the break. You must use a date between the starting and ending dates of the workout that you intend to modify.</p>
+<h3>type : Number</h3>
+<p>The type of workout event. See the WORKOUT_EVENT_TYPE_* constants for possible values.</p>

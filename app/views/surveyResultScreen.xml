@@ -1,0 +1,106 @@
+<Alloy>
+	<Window id="surveyResultScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src = "innerHeader" title="L('surveyResultTitle')" rightButtonImage="/images/common/report_icn.png">
+			</Require>
+		</View>
+		<View id="contentView">
+			<ListView id="surveyResultListView">
+				<Templates>
+					<ItemTemplate  id="surveyResultTemplate" name="surveyResultTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="outerView">
+								<View id="leftNumberview">
+									<View id="upperLineView" bindId="upperLineView">
+									</View>
+									<View id="bottomLineView" bindId="bottomLineView">
+									</View>
+									<View id="numberRoundView">
+										<Label id="indexLabel" bindId="indexLabel">
+										</Label>
+									</View>
+								</View>
+								<View id="resultContentView">
+									<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" layout="vertical" left="10dp">
+										<Label id="questionLabel" bindId="questionLabel">
+										</Label>
+										<View id="answerView">
+											<Label id="answerLabel" text="Your Answer: ">
+											</Label>
+											<ImageView id="answerImageView" bindId="answerImageView">
+											</ImageView>
+											<Label id="resultLabel" bindId="resultLabel">
+											</Label>>
+										</View>
+									</View>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate  id="freeResponseSurveyResultTemplate" name="freeResponseSurveyResultTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="outerView">
+								<View id="leftNumberview">
+									<View id="upperLineView" bindId="upperLineView">
+									</View>
+									<View id="bottomLineView" bindId="bottomLineView">
+									</View>
+									<View id="numberRoundView">
+										<Label id="indexLabel" bindId="indexLabel">
+										</Label>
+									</View>
+								</View>
+								<View id="resultContentView">
+									<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" layout="vertical" left="10d">
+										<Label id="questionLabel" bindId="questionLabel">
+										</Label>
+										<View id="userAnswerView">
+											<Label id="answerLabel"  bindId="answerLabel"  text="YOUR ANSWER">
+											</Label>
+											<View id="freeResponseAnswerView">
+												<Label id="userResultLabel" bindId="userResultLabel">
+												</Label>
+											</View>
+										</View>
+									</View>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate  id="likertSurveyResultTemplate" name="likertSurveyResultTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="outerView">
+								<View id="leftNumberview">
+									<View id="upperLineView" bindId="upperLineView">
+									</View>
+									<View id="bottomLineView" bindId="bottomLineView">
+									</View>
+									<View id="numberRoundView">
+										<Label id="indexLabel" bindId="indexLabel">
+										</Label>
+									</View>
+								</View>
+								<View id="resultContentView">
+									<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" layout="vertical" left="10dp">
+										<Label id="questionLabel" bindId="questionLabel">
+										</Label>
+										<View id="userAnswerView">
+											<Label id="answerLabel"  bindId="answerLabel"  text="YOUR ANSWER">
+											</Label>
+											<View id="likertAnswerView">
+												<Label id="likertResultLabel" bindId="likertResultLabel">
+												</Label>
+											</View>
+										</View>
+									</View>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="surveyResultSection" >
+				</ListSection>
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,105 @@
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+
+"#largeView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top: '100dp',
+	layout: 'vertical'
+}
+"#displayImage": {
+	width: '250dp',
+	height: '250dp',
+	top: '0dp'
+}
+"#displayImage[formFactor=tablet]": {
+	width: '300dp',
+	height: '300dp'
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	top: "0dp"
+}
+"#resultView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '80dp',
+	layout: 'vertical'
+}
+"#singleView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top: '0dp'
+}
+"#singleImage": {
+	width: '250dp',
+	height: '250dp',
+	top: '0dp'
+}
+"#singleImage[formFactor=tablet]": {
+	width: '300dp',
+	height: '300dp'
+}
+"#instructionLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBold,
+	top: '10dp'
+}
+".thumbNailOuterView": {
+	width:Titanium.UI.FILL,
+	height: '60dp',
+	top: '10dp',
+	layout: 'horizontal'
+}
+".thumbNailOuterView[formFactor=tablet]": {
+	height: '120dp'
+}
+".thumbNailInnerView": {
+	width: '33.33%',
+	height:Titanium.UI.FILL,
+	left: '0dp',
+	
+}
+".thumbImageStyle": {
+	width:Titanium.UI.SIZE,
+	height: '60dp',
+	left: '10%',
+	right: '10%'
+}
+".thumbImageStyle[platform=android]": {
+	width:Titanium.UI.FILL,
+	height: '60dp',
+	left: '10%',
+	right: '10%'
+}
+".thumbImageStyle[formFactor=tablet]": {
+	height: '120dp',
+	left: '25%',
+	right: '25%'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: "40dp",
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white'
+}

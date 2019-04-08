@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="jewelsTrailsIntro" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Jewels Trail - A"  rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="contentView">
+			<View id="outerView">
+				<Label class="labelStyle"  id="lbl1" text="L('jewelsTrail1')"></Label>
+				<Label class="labelStyle"  id="lbl2" text="L('jewelsTrail2')"></Label>
+				<Label class="labelStyle" id="lbl3" text="L('jewelsTrail3')"></Label>
+				<View class="buttonMainView" top="20dp">
+					<View class="buttonInnerView" left="0dp">
+						<View  class="submitView" onClick="onExampleClick">
+							<Label class="submitLabel" text="Example" id="submitLbl"></Label>
+						</View>
+					</View>
+					<View class="buttonInnerView" left="50%" width="49.5%">
+						<View  class="submitView" onClick="onScoreClick">
+							<Label class="submitLabel" text="Total Score" id="submitLbl1"></Label>
+						</View>
+					</View>
+				</View>
+				<View class="buttonMainView" top="0dp">
+					<View class="buttonInnerView" left="0dp">
+						<View  class="submitView" onClick="onDifficultyClick">
+							<Label class="submitLabel" text= "Difficulty" id="submitLbl2"></Label>
+						</View>
+					</View>
+					<View class="buttonInnerView" left="50%" width="49.5%">
+						<View  class="submitView" onClick="onStartClick">
+							<Label class="submitLabel" id="submitLbl3"   text="Let's Start"></Label>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

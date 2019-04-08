@@ -1,0 +1,40 @@
+<Alloy>
+	<View id="footerView">
+		<View top="0dp" width="Titanium.UI.FILL" height="1dp" backgroundColor="#E7EAED" >
+		</View>
+		<View class="footerBoxStyle" onClick="clickLearn">
+			<View  class="outercircleBox" >
+				<View id="view1"  class="circleView" >
+					<Label id="label1" class="menuLabel" text="L">
+					</Label>
+				</View>
+				<ImageView id="notificationview" visible="false">
+				</ImageView>
+			</View>
+		</View>
+		<View class="footerBoxStyle" onClick="clickAssess">
+			<View  class="outercircleBox" >
+				<View id="view2" class="circleView" >
+					<Label id="label2" class="menuLabel" text="A">
+					</Label>
+				</View>
+			</View>
+		</View>
+		<View class="footerBoxStyle" onClick="clickManage">
+			<View  class="outercircleBox" >
+				<View id="view3" class="circleView" >
+					<Label id="label3" class="menuLabel"  text="M">
+					</Label>
+				</View>
+			</View>
+		</View>
+		<View class="footerBoxStyle" width="24.5%" onClick="clickPrevent">
+			<View  class="outercircleBox" >
+				<View  id="view4" class="circleView" >
+					<Label id="label4" class="menuLabel" text="P">
+					</Label>
+				</View>
+			</View>
+		</View>
+	</View>
+</Alloy>

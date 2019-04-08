@@ -1,0 +1,70 @@
+<Alloy>
+	<Window id="surveysList" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="L('surveyListHeader')" rightButtonImage="/images/common/report_icn.png">
+			</Require>
+		</View>
+		<View id="tabView" top="60dp">
+			<View id="pendingSurvey" onClick="pendingSurveyTabClick">
+				<Label id="pendingLabel" text="L('surveysLabel')" >
+				</Label>
+				<View id="pendingTabDiv" visible="true" class="tabDivider">
+				</View>
+			</View>
+			<View id="completedSurvey" onClick="completedSurveyTabClick">
+				<Label id="completedLabel" text="L('completedLabel')" >
+				</Label>
+				<View id="completedTabDiv" visible="false" class="tabDivider">
+				</View>
+			</View>
+		</View>
+		<View id="contentView">
+			<Label id="noDataLabel" text="L('noDataLabel')">
+			</Label>
+			<ListView  id="surveyList" onItemclick="startSurveyClick" >
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="surveyListTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="leftView">
+								<View id="gameNameViewLeft" bindId="gameNameViewLeft">
+									<Label id="gameNameLabel1" bindId="gameNameLabel1">
+									</Label>
+								</View>
+							</View>
+							<View id="rightView">
+								<View id="gameNameViewRight" bindId="gameNameViewRight">
+									<Label id="gameNameLabel2" bindId="gameNameLabel2">
+									</Label>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="completedSurveyListTemplate">
+						<View id="listOuterViewCompleted" bindId="listOuterView">
+							<View id="surveyNameViewCompleted">
+								<Label id="completedSurveyNameLabel" bindId="surveyNameLabel">
+								</Label>
+								<View height="Titanium.UI.SIZE" width="Titanium.UI.FILL" top="5dp" left="10" bottom="5dp" layout="horizontal">
+									<ImageView id="timerImage">
+									</ImageView>
+									<Label id="completedDateLabel" bindId="completedDateLabel">
+									</Label>
+								</View>
+							</View>
+							<View id="resultButton" onClick="resultSurveyClick">
+								<Label id="resultLabel" touchEnabled="false" text="L('resultlabel')" >
+								</Label>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection">
+				</ListSection>
+			</ListView>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved.">
+			</Label>
+		</View>
+	</Window>
+</Alloy>

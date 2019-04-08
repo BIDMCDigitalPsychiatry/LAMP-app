@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="jewelsTrailsA" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Jewels Trail - A" homeButtonImage="/images/home/home.png"  >
+			</Require>
+		</View>
+		<View id="contentView">
+			<View width="Titanium.UI.SIZE" top="10dp" height="Titanium.UI.SIZE">
+				<Label id="countTimer" text="">
+				</Label>
+			</View>
+			<View id="pentaltyView" width="30dp" height="30dp" top="10dp" borderColor="red" borderRadius="15dp" left="60%" backgroundColor="red" visible="false">
+				<Label id="penaltyLabel" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" color="white" text="">
+				</Label>
+			</View>
+			<View id="alphabetOuterView">
+			</View>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" bottom="20dp" backgroundColor="white" layout="horizontal">
+				<Label id="messageLabel" text="Pick Diamond: " >
+				</Label>
+				<View id="startWithHintContainerVw" layout="horizontal"  right="10dp">
+					<View left="10" width="Titanium.UI.SIZE"  height="30dp" >
+						<ImageView id="informationImage" width="Titanium.UI.SIZE"  height="Titanium.UI.FILL" >
+						</ImageView>
+						<Label id="informationLabel" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE"  color="#ffffff" text="1" zIndex="1" >
+						</Label>
+					</View>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

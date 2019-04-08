@@ -1,0 +1,77 @@
+<Alloy>
+	<Window id="spatialSpan" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Spatial Span" homeButtonImage="/images/home/home.png" ></Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="02:00"></Label>
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical" top="30dp">
+				<Label id="levelLabel" text="Level 1"></Label>
+				<View id="boxOuter">
+					<View id="outerBox" onClick="boxSelectionClick">
+						<View class="rowView">
+							<View id="index1" index="1" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index2" index="2" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index3" index="3" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View  id="index4" index="4" class="childView" width="24.5%" ></View>
+						</View>
+						<View class="horizontalBorder"></View>
+						<View class="rowView">
+							<View id="index5" index="5" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index6" index="6" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index7" index="7" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index8" index="8" class="childView" width="24.5%" ></View>
+						</View>
+						<View class="horizontalBorder"></View>
+						<View class="rowView">
+							<View id="index9" index="9" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index10" index="10" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index11" index="11" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index12" index="12" class="childView" width="24.5%" ></View>
+						</View>
+						<View class="horizontalBorder"></View>
+						<View class="rowView" height="24.5%">
+							<View id="index13" index="13" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index14" index="14" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View id="index15" index="15" class="childView">
+								<View class="verticalBorder"></View>
+							</View>
+							<View  id="index16" index="16" class="childView" width="24.5%" ></View>
+						</View>
+					</View>
+					<View id="messageViewWatch" visible="false">
+						<Label id="messageLabelWatch" text="Pelase wait and Watch." ></Label>
+					</View>
+				</View>
+				<Label id="nextButton" visible="false"  text="Next" onClick="onNextClick"  ></Label>
+				
+
+			</View>
+			<View id="messageView" >
+				<Label id="messageLabel" text="L('SpatialSpanMessage1')" ></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

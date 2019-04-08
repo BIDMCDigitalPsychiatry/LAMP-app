@@ -1,0 +1,23 @@
+<Alloy>
+	<Window id="scratchImageScreen">
+		<View id="headerView">
+			<View id="titleview">
+				<Label id="headerLabel"  text="Scratch Card"></Label>
+			</View>
+			<View id="reportView"  onClick="onReportClick">
+				<ImageView id="reportImage"></ImageView>
+			</View>
+			<View id="quitView"  onClick="onQuitClick">
+				<Label text="EXIT"  id="quitLabel"/>
+			</View>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="02:00"></Label>
+			<View id="canvasView"></View>
+			<View id="outerView" platform="android"></View>
+			<Label id="startButton"  text="Start" onClick="onStartButtonClick"></Label>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+		<Require id = 'footerView' src = "footerView"></Require>
+	</Window>
+</Alloy>

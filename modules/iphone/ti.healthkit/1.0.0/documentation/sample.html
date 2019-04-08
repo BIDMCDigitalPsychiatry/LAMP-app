@@ -1,0 +1,27 @@
+<h1>Ti.Healthkit.Sample</h1>
+<h2>Description</h2>
+<p>The Ti.Healthkit.Sample class is a subclass of <a href="object.html">Ti.Healthkit.Object</a>.</p>
+<p>A Ti.Healthkit.Sample object represents a piece of data associated with a start
+and end time. If the sample represents data over a duration, the start time
+must be earlier than the end time. If the sample represents data at a
+particular instant, the start and end times can be the same.</p>
+<p>This is an abstract class; you always work with one of its concrete subclasses:</p>
+<ul>
+<li><a href="categorySample.html">Ti.Healthkit.CategorySample</a></li>
+<li><a href="correlation.html">Ti.Healthkit.Correlation</a></li>
+<li><a href="quantitySample.html">Ti.Healthkit.QuantitySample</a></li>
+<li><a href="workout.html">Ti.Healthkit.Workout</a></li>
+</ul>
+<h2>Properties</h2>
+<h3>startDate : Date</h3>
+<p>The sample's start date. (read-only)</p>
+<p>The sample's start date must be equal to or earlier than its end date.</p>
+<p>Some samples - for example, body temperature - represent a single point in time. For these samples, both the start and the end date are the same, because they both refer to the point in time when the sample was taken.</p>
+<p>Other samples - for example, step count - represent data over a time interval. Here, the sample should use different start and end dates. These dates mark the beginning and end of the sample's time interval, respectively.</p>
+<h3>endDate : Date</h3>
+<p>The sample's end date. (read-only)</p>
+<p>The sample's end date must be equal to or later than its start date.</p>
+<p>Some samples - for example, body temperature - represent a single point in time. For these samples, both the start and the end date are the same, because they both refer to the point in time when the sample was taken.</p>
+<p>Other samples - for example, step count - represent data over a time interval. Here, the sample should use different start and end dates. These dates mark the beginning and end of the sample's time interval, respectively.</p>
+<h3>sampleType : String</h3>
+<p>The sample type. (read-only)</p>

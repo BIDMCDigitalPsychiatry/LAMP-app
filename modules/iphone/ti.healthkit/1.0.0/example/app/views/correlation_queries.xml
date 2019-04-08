@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id='win' title='High Blood Pressure' onFocus='onWindowFocus'>
+		<TableView id='tableView' onClick='onTableViewClick'/>
+	</Window>
+</Alloy>

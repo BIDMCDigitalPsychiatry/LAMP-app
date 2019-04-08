@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title></title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+			function plotChart(atd, btd, ctd, reg) {
+
+				new Highcharts.chart('container', {
+					title : {
+						text : 'Jewel Score',
+
+					},
+					yAxis : {
+						title : {
+							text : 'Total',
+							margin : 0
+						},
+					},
+					xAxis : {
+						title : {
+							text : 'Day',
+							margin : 0
+						},
+						categories : reg,
+						crosshair : true
+					},
+					legend : {
+						enabled : true
+					},
+					credits : {
+						enabled : false
+					},
+					exporting : {
+						enabled : false
+					},
+					tooltip : {
+						headerFormat : '<span style="font-size:10px">{point.key}</span><table>',
+						pointFormat : '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+						footerFormat : '</table>',
+						shared : true,
+						useHTML : true
+					},
+					plotOptions : {
+						series : {
+							label : {
+								connectorAllowed : false
+							},
+							pointStart : 0,
+							marker : {
+								enabled : false
+							}
+						}
+					},
+					series : [{
+						name : 'Score',
+						data : atd,
+						color : 'green'
+
+					}, {
+						name : 'Jewels Collected',
+						data : btd,
+						color : 'blue'
+
+					}, {
+						name : 'Bonus',
+						data : ctd,
+						color : 'black'
+
+					}],
+					responsive : {
+						rules : [{
+							condition : {
+								maxWidth : 500
+							},
+							chartOptions : {
+								legend : {
+									layout : 'horizontal',
+									align : 'center',
+									verticalAlign : 'bottom'
+								}
+							}
+						}]
+					}
+				});
+			}
+
+		</script>
+	</head>
+
+	<body >
+		<div id="container"  style="min-width: 310px; height: 440px; margin: 0 auto">
+
+		</div>
+	</body>
+</html>

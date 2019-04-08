@@ -1,0 +1,112 @@
+"#contentView": {
+	top: '60dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "#ffffff"
+}
+"#HealthListView":{
+	top: "0dp",
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	bottom: '20dp'
+}
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '50dp',
+	right: '4dp',
+	left: '4dp',
+	top: "6dp"
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '70dp'
+}
+"#seperator":{
+	width: Ti.UI.FILL,
+	height: '1dp',
+	right: '10dp',
+	left: '10dp',
+	bottom: "5dp",
+	backgroundColor: '#E7EAED'
+}
+"#dataFieldView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+"#dataLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "5dp"
+}
+"#averageLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "20dp"
+}
+"#dataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#averageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#valueView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp'
+}
+"#dataValueLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font:Alloy.Globals.smallSemiBold,
+	opacity: 1,
+	top: "5dp",
+	right: 0
+}
+"#dateLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font:Alloy.Globals.smallSemiBold,
+	opacity: 1,
+	top: "20dp",
+	right: 0
+}
+
+"#dataValueLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBold
+}
+"#dateLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

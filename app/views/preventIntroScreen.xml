@@ -1,0 +1,86 @@
+<Alloy>
+	<Window id="preventIntroScreen">
+		<View id="headerView">
+			<View id="homeView" visible="false" onClick="onHomeClick">
+				<ImageView id="homeImage"></ImageView>
+			</View>
+			<View id="titleview">
+				<Label id="headerLabel"  text="Prevent"></Label>
+			</View>
+			<View id="reportView" onClick="onReportClick">
+				<ImageView id="reportImage"></ImageView>
+			</View>
+		</View>
+		<View id="contentView">
+			<View id="innerView">
+				<View id="starRateView">
+					<View id="starView1">
+						<ImageView id="starImage1" class="starClass"></ImageView>
+						<ImageView id="starImage2" class="starClass"></ImageView>
+						<ImageView id="starImage3" class="starClass"></ImageView>
+						<ImageView id="starImage4" class="starClass"></ImageView>
+						<ImageView id="starImage5" class="starClass"></ImageView>
+						<ImageView id="starImage6" class="starClass"></ImageView>
+						<ImageView id="starImage7" class="starClass"></ImageView>
+						<ImageView id="starImage8" class="starClass"></ImageView>
+						<ImageView id="starImage9" class="starClass"></ImageView>
+						<ImageView id="starImage10" class="starClass"></ImageView>
+						<ImageView id="starImage11" class="starClass"></ImageView>
+						<ImageView id="starImage12" class="starClass"></ImageView>
+						<ImageView id="starImage13" class="starClass"></ImageView>
+						<ImageView id="starImage14" class="starClass"></ImageView>
+						<ImageView id="starImage15" class="starClass"></ImageView>
+					</View>
+					<View id="starView2">
+						<ImageView id="star1" class="starClass"></ImageView>
+						<ImageView id="star2" class="starClass"></ImageView>
+						<ImageView id="star3" class="starClass"></ImageView>
+						<ImageView id="star4" class="starClass"></ImageView>
+						<ImageView id="star5" class="starClass"></ImageView>
+						<ImageView id="star6" class="starClass"></ImageView>
+						<ImageView id="star7" class="starClass"></ImageView>
+						<ImageView id="star8" class="starClass"></ImageView>
+						<ImageView id="star9" class="starClass"></ImageView>
+						<ImageView id="star10" class="starClass"></ImageView>
+						<ImageView id="star11" class="starClass"></ImageView>
+						<ImageView id="star12" class="starClass"></ImageView>
+						<ImageView id="star13" class="starClass"></ImageView>
+						<ImageView id="star14" class="starClass"></ImageView>
+						<ImageView id="star15" class="starClass"></ImageView>
+					</View>
+				</View>
+				<View id="blueStarView">
+					<ImageView id="blueStar"></ImageView>
+					<Label id="blueStarCount">0</Label>
+				</View>
+				<View id="scoreView">
+					<View id="scoreView1" class="scoreClass">
+						<Label id="dayValue" class="valueClass">0</Label>
+						<Label id="dayLabel" class="labelClass">Day Streak</Label>
+					</View>
+					<View id="scoreView2" class="scoreClass" onClick="boostScoreHandler">
+						<Label id="boostLabel1">Boost My</Label>
+						<Label id="boostLabel2" class="labelClass">LAMP Score</Label>
+					</View>
+					<View id="scoreView3" class="scoreClass">
+						<Label id="percent" class="valueClass">0</Label>
+						<Label id="today" class="labelClass">Today</Label>
+					</View>
+				</View>
+				<View id="spinView">
+					<View id="spinInnerView" onClick="openSpin">
+						<ImageView id="spinImage"></ImageView>
+						<View id="spinLabelView">
+							<Label id="streakSpin" class="spinClass">Streak Spins: 0</Label>
+							<Label id="todaySpin" class="spinClass">Today's Spins: 0</Label>
+						</View>
+					</View>
+					<View id="spinAndroid" platform="android"></View>
+				</View>
+				<Label id="startButton"  text="See More Result" onClick="openResultScreen"></Label>
+			</View>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+		<Require id = 'footerView' src = "footerView"></Require>
+	</Window>
+</Alloy>

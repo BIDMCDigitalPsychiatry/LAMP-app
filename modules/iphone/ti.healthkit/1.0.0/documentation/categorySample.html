@@ -1,0 +1,10 @@
+<h1>Ti.Healthkit.CategorySample</h1>
+<h2>Description</h2>
+<p>The Ti.Healthkit.CategorySample class is a subclass of <a href="sample.html">Ti.Healthkit.Sample</a>.</p>
+<p>Category samples describe values that can be categorized into an enumeration of values. In iOS 8.0, HealthKit has only a single category sample type, sleep analysis.</p>
+<p>Individual samples represent time periods when the user is in bed or asleep. Samples with different values may have overlapping time intervals. For example, when the user is both in bed and asleep, you would create an in-bed sample and an asleep sample with overlapping times.</p>
+<p>Category samples are immutable: The sample's properties are set when the object is first created, and they cannot change.</p>
+<h2>Properties</h2>
+<h3>value : Number</h3>
+<p>The category value for this sample. (read-only)</p>
+<p>This value must correspond to a matching category value enum. For sleep analysis, use a CATEGORY_VALUE_SLEEP_ANALYSIS_* value.</p>

@@ -1,0 +1,48 @@
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	bottom: '60dp'
+}
+"#footerView": {
+	width:Titanium.UI.FILL,
+	height: '60dp',
+	bottom: '0dp'
+}
+"#leftview": {
+	width: '50%',
+	height: '60dp',
+	left: '0dp'
+}
+"#rightview": {
+	width: '49.5%',
+	height: '60dp',
+	left: '50%'
+}
+".submitView":{
+	height: '42dp',
+	width: '140dp',
+	color: Alloy.Globals.HEADER_COLOR,
+	borderColor: Alloy.Globals.HEADER_COLOR,
+	borderRadius: '21dp',
+	borderWidth: '1dp',
+	backgroundColor: "transparent"
+}
+".submitView[formFactor=tablet]": {
+	width: '170dp',
+	height: '52dp',
+	borderRadius: '26dp'
+}
+".submitLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: 1,
+	color: Alloy.Globals.HEADER_COLOR,
+	touchEnabled: false,
+	font: Alloy.Globals.LargeFontBold
+}
+".submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}

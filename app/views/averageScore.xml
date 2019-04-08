@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="averageScore" class="container" >
+		<View  layout="vertical" height="Titanium.UI.FILL" width="Titanium.UI.FILL" bottom="20dp">
+			<View id='headerContainer' class="headerContainer">
+				<Require id = 'headerView' src ="innerHeader" title="Score Graph" rightButtonImage="/images/common/report_icn.png"></Require>
+			</View>
+			<Widget src="com.lp.highChart" id="pie_chart" top="40dp"  />
+		</View>
+		<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+	</Window>
+</Alloy>

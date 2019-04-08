@@ -1,0 +1,47 @@
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '10dp',
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '30dp',
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white'
+}
+"#undoview": {
+	width: '30dp',
+	height: '30dp',
+	top: '0dp',
+	right: '5dp'
+}
+"#restartButton":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	bottom: '10dp',
+	font: Alloy.Globals.LargeFontBold
+},

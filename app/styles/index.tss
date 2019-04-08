@@ -1,0 +1,18 @@
+"#splashScreenWindow":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	backgroundImage: '/images/common/splash.png'
+}
+"#splashScreenWindow[platform=ios]":{
+	navBarHidden: true,
+	fullscreen: true
+}
+"#splashScreenWindow[platform=android]":{
+	navBarHidden: false,
+	fullscreen: false
+}
+"#splashScreenWindow[platform=ios formFactor=tablet]":{
+	backgroundImage: '/images/common/splash-Portrait.png'
+}
+
+

@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id='win' title='Correlations' onFocus='onWindowFocus'>
+		<RightNavButton platform='ios'>
+			<Button id='addButton' title='Add' onClick='onAddClick' />
+		</RightNavButton>
+		<TableView id='tableView' onClick='onTableViewClick'/>
+	</Window>
+</Alloy>

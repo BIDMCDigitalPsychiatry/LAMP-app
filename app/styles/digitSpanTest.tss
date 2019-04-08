@@ -1,0 +1,160 @@
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	layout: "vertical"
+}
+".textBottomLine": {
+	backgroundColor: "#ffffff",
+	height: "1dp",
+	width:Titanium.UI.FILL,
+	left: '10dp',
+	right: '10dp',
+	top: '5dp'
+},
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.HeaderFontLight,
+	top: '10dp'
+}
+".childTop": {
+	height:Titanium.UI.FILL,
+	width: '20%',
+	left: '10dp',
+	backgroundColor: "transparent"
+}
+"#selectedDigitImage":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: "10dp",
+	image: '/images/digitSpan/speaker-enable.png'
+}
+"#selectionView":{
+	width:Titanium.UI.FILL,
+	height: "35%",
+	top: "30dp",
+	backgroundColor: "transparent"
+}
+"#boxView":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	left: "20dp",
+	right: "20dp",
+	top: "0dp",
+	layout: "vertical",
+	touchEnabled: false
+}
+"#firstRowView":{
+	width:Titanium.UI.FILL,
+	height: "40dp",
+	layout: 'horizontal',
+	top: "0dp",
+	left: "40dp",
+	right: "40dp",
+	backgroundColor: "transparent"
+}
+"#firstRowView[formFactor=tablet]":{
+	height: "60dp"
+}
+"#secondRowView":{
+	width:Titanium.UI.FILL,
+	height: "40dp",
+	layout: 'horizontal',
+	top: "20dp",
+	left: "40dp",
+	right: "40dp",
+	backgroundColor: "transparent"
+}
+"#secondRowView[formFactor=tablet]":{
+	height: "60dp"
+}
+"#thirdRowView":{
+	width:Titanium.UI.FILL,
+	height: "40dp",
+	layout: 'horizontal',
+	top: "20dp",
+	left: "34%",
+	backgroundColor: "transparent"
+}
+"#thirdRowView[formFactor=tablet]":{
+	height: "60dp"
+}
+".childView": {
+	height:Titanium.UI.FILL,
+	width: '90%',
+	backgroundColor: "transparent"
+}
+".thirdChildTop":{
+	height:Titanium.UI.FILL,
+	width: '20%',
+	left: '10dp',
+	backgroundColor: "transparent"
+}
+".labelClass":{
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: "#ffffff",
+	touchEnabled: false
+}
+".innerView":{
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	borderColor: '#ffffff',
+	borderRadius: 5,
+	backgroundColor: "transparent",
+	opacity: 0.2,
+	touchEnabled: false,
+	borderWidth : 1
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	top: "0dp"
+}
+"#numberView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10dp" ,
+	//opacity: "0.5",
+	backgroundColor: "#ffffff",
+	
+	visible: false
+}
+"#numberLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp',
+	text: ""
+}
+"#numberLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontlarge
+}
+"#messageView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10dp" ,
+	backgroundColor: "#ffffff"
+}
+"#messageLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	text: "Please listen to audio carefully.",
+	top: '10dp',
+	bottom: '10dp'
+}

@@ -1,0 +1,97 @@
+
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.ExtraLargeFontLight,
+	top: '0dp'
+}
+"#largeView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top: '100dp',
+	layout: 'vertical'
+}
+"#displayImage": {
+	width: '250dp',
+	height: '250dp',
+	top: '0dp'
+}
+"#displayImage[formFactor=tablet]": {
+	width: '300dp',
+	height: '300dp'
+}
+"#timerLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontLight,
+	top: '30dp'
+}
+"#timeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+},
+"#outerBox": {
+	width:Alloy.Globals.BOX_WIDTH,
+	height:Alloy.Globals.BOX_WIDTH,
+	top: '100dp',
+	layout: 'vertical'
+}
+"#nextButton": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	bottom: '30dp',
+	image: '/images/spatialSpan/next_icon_disable.png'
+}
+".rowView": {
+	width:Titanium.UI.FILL,
+	height: '33.3%',
+	top: '0dp',
+	layout: 'horizontal'
+}
+".horizontalBorder": {
+	width:Titanium.UI.FILL,
+	height: '1dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: false
+}
+".childView": {
+	width: '33.3%',
+	height:Titanium.UI.FILL,
+	left: '0dp',
+	backgroundColor: '#ffffff'
+}
+".verticalBorder": {
+	width: '1dp',
+	height:Titanium.UI.FILL,
+	right: '0dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: true
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#messageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	top: "0dp"
+}

@@ -1,0 +1,188 @@
+<Alloy>
+	<Window id="spaceBlockScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src = "innerHeader" title="L('environmentTitle')" rightButtonImage="/images/common/report_icn.png">
+			</Require>
+		</View>
+		<View id="MainView">
+			<ScrollView id="environmentScrollView">
+				<Label id="spaceLabel">
+				</Label>
+				<View id="menuTopView">
+					<View  class="leftMenu"  id="blockImageView1" onClick="onPictureClick">
+						<View class="innerMenuView" id="blockImage1">
+							<ImageView  class="menuIcon" image="/images/environment/home.png">
+							</ImageView>
+							<Label class="menuLabel" text="Home" id="homeLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage" id="checkImage1" visible="false" >
+						</ImageView>
+					</View>
+					<View id="verticalDivider">
+					</View>
+					<View id="blockImageView2" class="rightMenu" onClick="onPictureClick">
+						<View class="innerRightMenuView" id="blockImage2">
+							<ImageView  class="menuIcon" image="/images/environment/school.png">
+							</ImageView>
+							<Label class="menuLabel" text="School/Class" id="schoolLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage" id="checkImage2" visible="false">
+						</ImageView>
+					</View>
+				</View>
+				<View class="horizontalDivider">
+				</View>
+				<View id="menuTopView">
+					<View id="blockImageView3" class="leftMenu" onClick="onPictureClick">
+						<View class="innerMenuView" id="blockImage3">
+							<ImageView class="menuIcon" image="/images/environment/work.png">
+							</ImageView>
+							<Label class="menuLabel" text="Work" id="wrkLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage" id="checkImage3" visible="false">
+						</ImageView>
+					</View>
+					<View class="verticalDividerTop">
+					</View>
+					<View id="blockImageView4" class="rightMenu" onClick="onPictureClick">
+						<View class="innerRightMenuView" id="blockImage4">
+							<ImageView class="menuIcon"  image="/images/environment/health.png">
+							</ImageView>
+							<Label class="menuLabel" text="Clinic/Hospital" id="clicnicLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage" id="checkImage4" visible="false">
+						</ImageView>
+					</View>
+				</View>
+				<View class="horizontalDivider">
+				</View>
+				<View id="menuTopView">
+					<View id="blockImageView5" class="leftMenu" onClick="onPictureClick">
+						<View class="innerMenuView" id="blockImage5" >
+							<ImageView class="menuIcon" image="/images/environment/outside.png">
+							</ImageView>
+							<Label class="menuLabel" text="Outside" id="outsideLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage"  id="checkImage5" visible="false" >
+						</ImageView>
+					</View>
+					<View class="verticalDividerTop">
+					</View>
+					<View id="blockImageView6" class="rightMenu" onClick="onPictureClick" >
+						<View class="innerRightMenuView" id="blockImage6">
+							<ImageView class="menuIcon"  image="/images/environment/shopping.png">
+							</ImageView>
+							<Label class="menuLabel" text="Shopping/Dining" id="diningLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage" id="checkImage6" visible="false">
+						</ImageView>
+					</View>
+				</View>
+				<View class="horizontalDivider">
+				</View>
+				<View id="menuTopView">
+					<View id="blockImageView7" class="leftMenu" onClick="onPictureClick">
+						<View class="innerMenuView" id="blockImage7">
+							<ImageView  class="menuIcon" image="/images/environment/car.png">
+							</ImageView>
+							<Label class="menuLabel" text="Bus/Train/Car" id="trainLbl">
+							</Label>
+						</View>
+						<ImageView class="checkImage" id="checkImage7" visible="false">
+						</ImageView>
+					</View>
+					<View class="verticalDividerBottom">
+					</View>
+				</View>
+				<Label id="peopleLabel">
+				</Label>
+				<View id="peopleView">
+					<View class="subViewStyle" id="subViewStyle">
+						<View  class="leftMenu">
+							<View class="innerView"  id="innerView1" onClick="onSelectPeopleClick">
+								<ImageView class="checkBox" id="checkBox1">
+								</ImageView>
+								<Label class="contentLabel" text="Alone" id="aloneLbl">
+								</Label>
+							</View>
+						</View>
+						<View id="verticalDivider">
+						</View>
+						<View  class="rightMenu" >
+							<View class="innerView"  id="innerView4" onClick="onSelectPeopleClick">
+								<ImageView class="checkBox" id="checkBox4">
+								</ImageView>
+								<Label class="contentLabel" text="With Friends" id="frndLbl">
+								</Label>
+							</View>
+						</View>
+					</View>
+					<View class="horizontalDivider">
+					</View>
+					<View class="subViewStyle">
+						<View  class="leftMenu"  >
+							<View class="innerView"  id="innerView2" onClick="onSelectPeopleClick">
+								<ImageView class="checkBox" id="checkBox2">
+								</ImageView>
+								<Label class="contentLabel" text="In Crowd" id="crowdLbl">
+								</Label>
+							</View>
+						</View>
+						<View id="verticalDivider" >
+						</View>
+						<View  class="rightMenu" >
+							<View class="innerView"    id="innerView5" onClick="onSelectPeopleClick">
+								<ImageView class="checkBox" id="checkBox5" >
+								</ImageView>
+								<Label class="contentLabel"  text="With Family" id="familyLbl">
+								</Label>
+							</View>
+						</View>
+					</View>
+					<View class="horizontalDivider">
+					</View>
+					<View class="subViewStyle">
+						<View  class="leftMenu"  >
+							<View class="innerView"  id="innerView3" onClick="onSelectPeopleClick">
+								<ImageView class="checkBox"  id="checkBox3">
+								</ImageView>
+								<Label class="contentLabel" text="With Peers" id="peerLbl">
+								</Label>
+							</View>
+						</View>
+						<View id="verticalDivider" >
+						</View>
+						<View  class="rightMenu" >
+						</View>
+					</View>
+				</View>
+			</ScrollView>
+			<View id="selectedView">
+				<View id="seperator">
+				</View>
+				<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="horizontal">
+					<ImageView id="selectedImage">
+					</ImageView>
+					<View id="lblView">
+						<Label id="selectedLabel">
+						</Label>
+					</View>
+				</View>
+			</View>
+			<View id="footerView">
+				<Label id="pictureLabel" visible="true"  >
+				</Label>
+				<View id="submitButton" visible="false" onClick="onPictureSubmit">
+					<Label id="submitLabel" touchEnabled="false" text="SUBMIT">
+					</Label>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

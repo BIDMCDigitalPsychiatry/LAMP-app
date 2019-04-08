@@ -1,0 +1,30 @@
+<Alloy>
+	<Window  id="serial7STestScreen" class="container" onClick="windowClick">
+		<View id='headerContainer' class="headerContainer" >
+			<Require id = 'headerView' src ="innerHeader" title="Serial 7s" homeButtonImage="/images/home/home.png">
+			</Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="01:00">
+			</Label>
+			<Label id="selectedDigitLabel">
+			</Label>
+			<View id="hintView" onClick="hintClick">
+				<Label id="digitLabel">
+				</Label>
+			</View>
+			<View id="selectionView">
+				<TextField id="answerTextArea" >
+				</TextField>
+				<View id="textBorder">
+				</View>
+			</View>
+			<Label id="nextButton" visible="true"  text="Next" onClick="onNextClick"  >
+			</Label>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" top="30dp"  backgroundColor="#ffffff">
+				<Label id="messageLabel" >
+				</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

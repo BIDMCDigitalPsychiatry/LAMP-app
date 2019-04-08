@@ -1,0 +1,112 @@
+
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	backgroundColor: '#E7EAED'
+}
+"#articlesList": {
+	top: '0dp',
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	canScroll: true,
+	bottom :'20dp'
+}
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '120dp'
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '140dp'
+}
+"#deviderLine": {
+	width:Titanium.UI.FILL,
+	right: '10dp',
+	left: '10dp',
+	height: '1dp',
+	bottom: '0dp',
+	backgroundColor: '#E7EAED'
+}
+"#ListContentView": {
+	width:Titanium.UI.FILL,
+	right: '10dp',
+	left: '10dp',
+	height:Titanium.UI.FILL
+}
+"#thumbImage": {
+	width: '80dp',
+	top: '20dp',
+	height: '80dp',
+	left: '0dp',
+	image: "/images/common/no-image-sm.png"
+}
+"#thumbImage[formFactor=tablet]": {
+	width: '100dp',
+	height: '100dp'
+}
+"#descrptionView": {
+	width:Titanium.UI.FILL,
+	right : "0dp",
+	top: '20dp',
+	left: '90dp',
+	height:Titanium.UI.FILL,
+	layout: 'vertical'
+}
+"#descrptionView[formFactor=tablet]": {
+	left : "110dp"
+}
+"#heaerLabel": {
+	left: '0dp',
+	top: '0dp',
+	width:Titanium.UI.FILL,
+	right: '5dp',
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraSmallSemiBoldTablet,
+	color: 'black'
+}
+"#heaerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBoldScore
+}
+"#descrptionLabel": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	right: '5dp',
+	top: '5dp',
+	left: '0dp',
+	font:Alloy.Globals.MediumLargeFontLight,
+	color: 'black'
+}
+"#descrptionLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLight
+}
+"#noDataLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#50545d',
+	font:Alloy.Globals.LargeMenuFontBold,
+	visible: false
+}
+"#noDataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeMenuFontBoldTablet
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

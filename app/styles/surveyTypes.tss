@@ -1,0 +1,145 @@
+
+"#surveyTypes": {
+	backgroundColor: "#eceff1"
+}
+"#contentView": {
+	layout: "vertical",
+	top: '60dp',
+	backgroundColor: '#eceff1',
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	bottom: '80dp'
+}
+"#footerView": {
+	width:Titanium.UI.FILL,
+	bottom: '0dp',
+	height: '80dp'
+}
+".itemView": {
+	top: '0dp',
+	height: '33%',
+	width:Titanium.UI.FILL,
+	backgroundColor: '#ffffff'
+}
+".itemOverlayView": {
+	top: '0dp',
+	height: Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	backgroundColor: '#eceff1',
+	opacity: '0.5',
+	visible: false
+}
+"#submitButton": {
+	height: '42dp',
+	width: '200dp',
+	color: "#546e7a",
+	borderColor: '#546e7a',
+	borderRadius: '21dp',
+	borderWidth: '1dp'
+}
+"#submitLabel": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.LargeFontBold,
+	opacity: 1
+}
+"#submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}
+".surveyDescriptionLabel": {
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	font: Alloy.Globals.LargeFontLight,
+	opacity: 1,
+	color: '#546e7a',
+	left: '30dp',
+	right: '30dp',
+	textAlign: 'center'
+}
+".surveyDescriptionLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+".surveyButtonsView": {
+	top: '10dp',
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: 'horizontal'
+}
+".surveyButtonsView[formFactor=tablet]": {
+	top: '30dp'
+}
+".surveySelectionsView": {
+	top: '10dp',
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	layout: 'horizontal'
+}
+".surveySelectionsView[formFactor=tablet]": {
+	top: '30dp'
+}
+".surveyTextView": {
+	top: '10dp',
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	layout: "vertical"
+}
+".surveyTextView[formFactor=tablet]": {
+	top: '30dp'
+}
+"#okButton": {
+	top: '2dp',
+	bottom: '2dp',
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/surveyTypes/yes.png"
+}
+"#cancelButton": {
+	top: '2dp',
+	bottom: '2dp',
+	left: '26dp',
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: '/images/surveyTypes/no.png'
+}
+"#enterLabel": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#456e7a',
+	font:Alloy.Globals.mediumMenuFontLight,
+	opacity: 0.7,
+	top: '30dp'
+}
+"#enterLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+}
+"#lineView": {
+	height: '1dp',
+	width:Titanium.UI.FILL,
+	backgroundColor: '#eceff1',
+	top: '10dp',
+	left: '30dp',
+	right: '30dp'
+}
+".singleView": {
+	left: '0dp',
+	height: Titanium.UI.SIZE,
+	width: '20%',
+	layout: 'vertical'
+}
+".singleImageView": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	image: '/images/surveyTypes/check-box.png'
+}
+".selectiontypeLabel": {
+	top: '10dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.smallSemiBold,
+	opacity: 1
+}
+".selectiontypeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBold
+}

@@ -1,0 +1,212 @@
+"#manageScreen":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+'#manageScreen[platform=android]': {
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}
+"#homeView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#homeView[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+"#homeImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home/home.png',
+	left: '10dp'
+}
+"#homeImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home.png'
+}
+
+"#homeImage[formFactor=tablet]": {
+	left: '15dp'
+}
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '50dp'
+}
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	top: "10dp"
+}
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#reportView[formFactor=tablet]": {
+	right: '20dp',
+	top: '15dp'
+}
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png"
+}
+"#outerView":{
+	top: '60dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	//layout: 'vertical',
+	bottom :'62dp'
+}
+"#contentView": {
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	top: "10dp",
+	layout: "vertical"
+}
+"#contentLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "20dp",
+	text: "Managing your mental health should always be done with a professional. LAMP is currently designed to help collect information that may be useful in managing your mental health. But it is in no way a substitute for professional care. In the future, LAMP will offer customized brain exercises, therapy activities, peer networks, and personalized goals to help you manage your mental health."
+}
+"#contentLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#titleView":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height:Ti.UI.SIZE,
+	top: "6dp"
+}
+"#gameTitle":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBold,
+	left: '10dp',
+	top: "0dp",
+	text: "Game Name"
+}
+"#pointTitle":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBold,
+	right: '10dp',
+	top: "0dp",
+	text: "Points"
+}
+".listOuterViewStyle": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: '40dp',
+	right: '4dp',
+	left: '4dp',
+	top: "10dp"
+}
+".listOuterViewStyle[platform=android]": {
+	height: '60dp'
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '70dp'
+}
+".seperator":{
+	width: Ti.UI.FILL,
+	height: '1dp',
+	right: '10dp',
+	left: '10dp',
+	bottom: "5dp",
+	backgroundColor: '#ffffff',
+	opacity: 0.2
+}
+".dataFieldView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+".dataLabel": {
+	width: "50%",
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumLargeFontLight,
+	left: '10dp',
+	backgroundColor: "transparent"
+}
+".dataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#surveyTitle":{
+	width: "50%",
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumLargeFontLight,
+	left: '10dp',
+	backgroundColor: "transparent"
+}
+"#surveyTitle[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+".valueLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	touchEnabled: false,
+	font:Alloy.Globals.ExtraSmallSemiBoldTablet,
+	right: '10dp',
+	backgroundColor: "transparent"
+}
+".valueLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+"#surveyLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.ExtraSmallSemiBoldTablet,
+	right: '10dp',
+	backgroundColor: "transparent"
+}
+"#surveyLbl[formFactor=tablet]":{
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+".valueLabel[platform=android]":{
+	backgroundColor: "transparent",
+	top: "5dp"
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '3dp'
+},

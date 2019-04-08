@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id='win' title='Pick A Time' modal='true'>
+		<Button id='saveButton' title='Save' onClick='onSaveClick'
+				top=20 right=20 enabled='false'/>
+		<Label id='title' width='100%' top=40 height=40
+			textAlign='Ti.UI.TEXT_ALIGNMENT_CENTER' />
+		<Picker id='picker' type='Ti.UI.PICKER_TYPE_DATE_AND_TIME'
+			onChange='onPickerChange'
+			selectionIndicator=true/>
+		<Button id='cancelButton' title='Cancel' onClick='onCancelClick'
+				bottom=20 />
+	</Window>		
+</Alloy>

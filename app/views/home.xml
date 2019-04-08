@@ -1,0 +1,71 @@
+<Alloy>
+	<Window id="home" class="container">
+		<View id="menuSectionview">
+			<View id="headerView">
+				<View id="titleview">
+					<Label id="headerLabel" text="Assess" ></Label>
+				</View>
+				<View id="reportView"  onClick="onReportClick">
+					<ImageView id="reportImage"></ImageView>
+				</View>
+				<View id="settingsView" onClick="settingsClick">
+					<ImageView id="settingsImage" onClick="settingsClick"></ImageView>
+				</View>
+			</View>
+			<View id="menuView">
+				<View id="menuTopView">
+					<View id="surveyView" class="leftMenu" onClick="surveyClick">
+						<View class="innerMenuView" id="surveyImage" >
+							<ImageView  class="menuIcon" image="/images/home/symptom-survey.png"></ImageView>
+							<Label class="menuLabel" text="L('surveyMenu')" id="menuLbl"></Label>
+						</View>
+					</View>
+					<View class="verticalDividerTop"></View>
+					<View id="cognitionView" class="rightMenu" onClick="cognitionClick" >
+						<View class="innerMenuView" id="cognitionImage" >
+							<ImageView  class="menuIcon" image="/images/home/cognition-test.png"></ImageView>
+							<Label class="menuLabel" text="L('cognitionMenu')" id="cognitionLbl"></Label>
+						</View>
+					</View>
+				</View>
+				<View class="horizontalDivider"></View>
+				<View id="menuBottomView">
+					<View id="environmentView" class="leftMenu" onClick="environmentClick">
+						<View class="innerMenuView" id="environmentImage"  >
+							<ImageView class="menuIcon" image="/images/home/environment.png"></ImageView>
+							<Label class="menuLabel" text="L('environmentMenu')" id="envLbl"></Label>
+						</View>
+					</View>
+					<View class="verticalDividerBottom"></View>
+					<View id="helpview" class="rightMenu" onClick="activityClick">
+						<View class="innerMenuView" id="helpImage" >
+							<ImageView class="menuIcon"  image="/images/home/health_kit_icon.png"></ImageView>
+							<Label class="menuLabel" id="resultText" text="Results" ></Label>
+						</View>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View id="notificationSectionview">
+			<ListView  id="notificationList">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="notificationListTemplate">
+						<View id="listOuterView" bindId="listOuterView" onClick="listViewClick" onSwipe="listViewSwipe"  >
+							<View id="notificationImageView">
+								<ImageView id="notificationImage"></ImageView>
+							</View>
+							<Label id="notificationLabel" bindId="notificationLabel"></Label>
+						</View>
+						<View id="dismissView" bindId="dismissView" onClick="deleteAlerts">
+							<Label id="dismissLabel" text="L('dismissLabel')"></Label>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection"></ListSection>
+			</ListView>
+			<Label id="supportLabel" text="Copyright BIDMC © 2018. All rights reserved."></Label>
+			<Label id="noDataLabel" text="L('noDataLabel')"></Label>
+		</View>
+		<Require id = 'footerView' src = "footerView"></Require>
+	</Window>
+</Alloy>

@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="jewelsTrailsDifficulty" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Difficulty"  rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="contentView">
+			<View id="outerView">
+				<View  class="submitView" onClick="onBeginnerClick" id="beginerLevel">
+					<Label class="submitLabel" text="Beginner" id="beginerLbl"></Label>
+				</View>
+				<View  class="submitView" onClick="onIntermediateClick" id="intermediateLevel">
+					<Label class="submitLabel" text="Intermediate" id="IntermediateLbl"></Label>
+				</View>
+				<View  class="submitView" onClick="onAdvancedClick" id="advanceLevel">
+					<Label class="submitLabel" text="Advanced" id="Advanced"></Label>
+				</View>
+				<View  class="submitView" onClick="onExpertClick" id="expertLevel">
+					<Label class="submitLabel" text="Expert" id="Expert"></Label>
+				</View>
+
+			</View>
+		</View>
+	</Window>
+</Alloy>

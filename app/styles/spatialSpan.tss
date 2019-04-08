@@ -1,0 +1,108 @@
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.HeaderFontLight,
+	top: '0dp'
+}
+"#outerBox": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '0dp',
+	backgroundColor: 'transparent',
+	layout: 'vertical'
+}
+"#boxOuter": {
+	width:Alloy.Globals.BOX_WIDTH,
+	height:Alloy.Globals.BOX_WIDTH,
+	top: '30dp',
+	backgroundColor: 'transparent'
+}
+
+".rowView": {
+	width:Titanium.UI.FILL,
+	height: '25%',
+	top: '0dp',
+	layout: 'horizontal',
+	backgroundColor: 'transparent'
+}
+".horizontalBorder": {
+	width:Titanium.UI.FILL,
+	height: '1dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: false
+}
+".childView": {
+	width: '25%',
+	height:Titanium.UI.FILL,
+	left: '0dp',
+	backgroundColor: "#ffffff"
+}
+"#messageView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	bottom: "10dp" ,
+	backgroundColor: "#ffffff"
+}
+"#messageView[formFactor=tablet]":{
+	bottom: "20dp"
+}
+"#messageViewWatch":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: "0.8" ,
+	backgroundColor: "#3394CB"
+}
+
+".verticalBorder": {
+	width: '1dp',
+	height:Titanium.UI.FILL,
+	right: '0dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: false
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.HeaderFontBold,
+	right: '10dp',
+	left: '10dp'
+}
+"#messageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#messageLabelWatch": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '0dp',
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white'
+}
+"#nextButton":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	top: '25dp',
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+},

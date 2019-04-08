@@ -1,0 +1,118 @@
+
+"#headerOuterView":{
+	layout: "vertical",
+	height: Ti.UI.SIZE,
+	top: "0dp",
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.HEADER_COLOR
+}
+
+"#headerView": {
+	height: "60dp",
+	top: "0dp",
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.HEADER_COLOR
+}
+"#backView": {
+	left: '0dp',
+	width: '20%',
+	height: Titanium.UI.FILL
+}
+"#backView[platform=android]": {
+	left: '0dp',
+	width: '17%',
+	height: Titanium.UI.FILL
+}
+"#backImage": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	touchEnabled: false,
+	image: "/images/common/arrows-left.png",
+	left: '10dp'
+}
+"#backImage[platform=ios]": {
+	bottom: '10dp'
+}
+"#backImage[platform=ios formFactor=tablet]": {
+	bottom: '15dp'
+}
+
+"#titleView": {
+	width: '60%',
+	height:Titanium.UI.FILL
+}
+
+"#titleLabel": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1
+}
+"#titleLabel[platform=ios]": {
+	bottom: '10dp'
+}
+"#titleLabel[platform=ios formFactor=tablet]": {
+	bottom: '15dp'
+}
+
+"#quitView": {
+	right: '5dp',
+	width: '45dp',
+	height: '25dp',
+	borderColor: '#ffffff',
+	bottom: '10dp'
+}
+"#quitView[platform=android]": {
+	right: '5dp',
+	width: '45dp',
+	height: '25dp',
+	borderColor: '#ffffff',
+	borderWidth: 1,
+	bottom: '16dp'
+}
+"#rightView": {
+	right: '0dp',
+	width: '45dp',
+	height:Titanium.UI.FILL
+}
+"#reportView":{
+	right: '45dp',
+	width: '45dp',
+	height:Titanium.UI.FILL,
+	bottom: '0dp'
+}
+"#quitLabel": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontBold,
+	opacity: 1
+}
+"#rightImage": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	touchEnabled: false,
+	right: '10dp'
+}
+"#rightImage[platform=ios]": {
+	bottom: '10dp'
+}
+"#rightImage[platform=ios formFactor=tablet]": {
+	bottom: '15dp'
+}
+"#reportImage":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	touchEnabled: false
+}
+"#reportImage[platform=ios]": {
+	bottom: '10dp'
+}
+"#reportImage[platform=ios formFactor=tablet]": {
+	bottom: '10dp'
+}
+
+
+
+

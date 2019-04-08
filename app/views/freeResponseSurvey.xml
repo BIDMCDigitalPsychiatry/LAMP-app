@@ -1,0 +1,33 @@
+<Alloy>
+	<Window id="freeResponseSurvey" class="container" onClick="windowClick">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="" rightButtonImage="/images/common/report_icn.png"></Require>
+		</View>
+		<View id="mainView">
+			<View id="contentView">
+				<View id="questionNumberView">
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+						<Label id="numberLabel" text="1/3"></Label>
+						<Label id="answerlabel" text="Answered"></Label>>
+					</View>
+				</View>
+				<View id="progressBarContainer" >		
+					<ImageView id="progressBarBgImage" ></ImageView>
+					<View id="progressBarLine"></View>
+				</View>
+				<View id="questionView">
+					<Label id="questionLabel" text="L('surveyDescriptionLabel')"></Label>
+				</View>
+				<View id="commentBoxView">
+					<TextArea id="commentBoxText" class="textBoxBroderLess"  value="Enter here..."></TextArea>
+					<View class="textBottomLine" ></View>		
+				</View>
+			</View>
+		</View>
+		<View id="footerView">
+			<View id="submitButton" onClick="onSubmitClick">
+				<Label id="submitLabel" touchEnabled="false" text="SUBMIT & CONTINUE"></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

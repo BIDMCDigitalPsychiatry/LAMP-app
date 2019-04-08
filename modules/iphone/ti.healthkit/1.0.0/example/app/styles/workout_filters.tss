@@ -1,0 +1,16 @@
+'.inputParent': {
+	backgroundColor: '#c0c0c0c0',
+	height: 60,
+}
+'.inputLabel': {
+	left: 10 
+}
+'.inputField': {
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	left: '50%',
+	width: '30%'
+}
+'.searchButton': {
+	title: 'Search',
+	right: 10
+}

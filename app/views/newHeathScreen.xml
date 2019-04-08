@@ -1,0 +1,210 @@
+<Alloy>
+	<Window id="newHeathScreen">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Health Data" rightButtonImage="/images/common/report_icn.png">
+			</Require>
+		</View>
+		<View id="contentView">
+			<ScrollView id="healthScrollView">
+				<View id="firstView" platform="ios">
+					<View id="dobouterView" class="outerView" onClick="onDetailsClick">
+						<View id="dobdataFieldView" class="dataFieldView">
+							<Label  id="dobdataLabel" class="dataLabel">
+							</Label>
+							<Label  id="dobaverageLabel" class="averageLabel">
+							</Label>
+						</View>
+						<View id="dobvalueView" class="valueView">
+							<Label  id="dobdataValueLabel" class="dataValueLabel">
+							</Label>
+							<Label  id="dobdateLabel" class="dateLabel">
+							</Label>
+						</View>
+						<View class="seperator">
+						</View>
+					</View>
+					<View id="genderouterView" class="outerView" onClick="onDetailsClick" index="1">
+						<View id="genderdataFieldView" class="dataFieldView">
+							<Label  id="genderdataLabel" class="dataLabel">
+							</Label>
+							<Label  id="genderaverageLabel" class="averageLabel">
+							</Label>
+						</View>
+						<View id="gendervalueView" class="valueView">
+							<Label  id="genderdataValueLabel" class="dataValueLabel">
+							</Label>
+							<Label  id="genderdateLabel" class="dateLabel">
+							</Label>
+						</View>
+						<View class="seperator">
+						</View>
+					</View>
+					<View id="bloodouterView" class="outerView" onClick="onDetailsClick" index="2">
+						<View id="blooddataFieldView" class="dataFieldView">
+							<Label  id="blooddataLabel" class="dataLabel">
+							</Label>
+							<Label  id="bloodaverageLabel" class="averageLabel">
+							</Label>
+						</View>
+						<View id="bloodvalueView" class="valueView">
+							<Label  id="blooddataValueLabel" class="dataValueLabel">
+							</Label>
+							<Label  id="blooddateLabel" class="dateLabel">
+							</Label>
+						</View>
+						<View class="seperator">
+						</View>
+					</View>
+					<View id="heightouterView" class="outerView" onClick="onDetailsClick" index="3">
+						<View id="heightdataFieldView" class="dataFieldView">
+							<Label  id="heightdataLabel" class="dataLabel">
+							</Label>
+							<Label  id="heightaverageLabel" class="averageLabel">
+							</Label>
+						</View>
+						<View id="heightvalueView" class="valueView">
+							<Label  id="heightdataValueLabel" class="dataValueLabel">
+							</Label>
+							<Label  id="heightdateLabel" class="dateLabel">
+							</Label>
+						</View>
+						<View class="seperator">
+						</View>
+					</View>
+					<View id="weightouterView" class="outerView" onClick="onDetailsClick" index="4">
+						<View id="weightdataFieldView" class="dataFieldView">
+							<Label  id="weightdataLabel" class="dataLabel">
+							</Label>
+							<Label  id="weightaverageLabel" class="averageLabel">
+							</Label>
+						</View>
+						<View id="weightvalueView" class="valueView">
+							<Label  id="weightdataValueLabel" class="dataValueLabel">
+							</Label>
+							<Label  id="weightdateLabel" class="dateLabel">
+							</Label>
+						</View>
+						<View class="seperator">
+						</View>
+					</View>
+				</View>
+				<View id="secondView" platform="ios">
+					<View id="topView">
+						<View class="leftView" onClick="onHeartClick" id="heartLeftView">
+							<Label class="valueLbl" id="heartValueLbl">
+							</Label>
+							<ImageView class="imgLbl" id="heartImg" image= '/images/healthKit/heart_rate.png'>
+							</ImageView>
+							<Label class="dataLbl" id="heartDataLbl" text="HEART RATE">
+							</Label>
+							<Label class="valueDateLbl" id="heartValueDataLbl">
+							</Label>
+						</View>
+						<View class="rightView" id="bpRightView" onClick="onBpClick">
+							<Label class="valueLbl" id="bpValueLbl">
+							</Label>
+							<ImageView class="imgLbl" id="bpImg" image= '/images/healthKit/blood_pressure.png'>
+							</ImageView>
+							<Label class="dataLbl" id="bpDataLbl" text="BLOOD PRESSURE">
+							</Label>
+							<Label class="valueDateLbl" id="bpValueDateLbl">
+							</Label>
+						</View>
+					</View>
+					<View id="middleView">
+						<View class="leftView" onClick="onRespiratoryClick" id="respiratoryLeftView">
+							<Label class="valueLbl" id="respiratoryLbl">
+							</Label>
+							<ImageView class="imgLbl" id="respiratoryImg" image= '/images/healthKit/resipiratory_rate.png'>
+							</ImageView>
+							<Label class="dataLbl" id="respiratorydataLbl" text="RESPIRATORY RATE">
+							</Label>
+							<Label class="valueDateLbl" id="respiratoryValueLbl">
+							</Label>
+						</View>
+						<View class="rightView" id="sleepRightView" onClick="onSleepClick">
+							<Label class="valueLbl" id="sleepLbl">
+							</Label>
+							<ImageView class="imgLbl" id="sleepImg" image= '/images/healthKit/sleep.png'>
+							</ImageView>
+							<Label class="dataLbl" id="sleepDataLbl" text="SLEEP">
+							</Label>
+							<Label class="valueDateLbl" id="sleepDateLbl">
+							</Label>
+						</View>
+					</View>
+					<View id="thirdView">
+						<View class="leftView" onClick="onStepsClick" id="stepLeftView">
+							<Label class="valueLbl" id="stepLbl">
+							</Label>
+							<ImageView class="imgLbl" id="stepImg" image= '/images/healthKit/steps.png'>
+							</ImageView>
+							<Label class="dataLbl" id="stepDataLbl" text="STEPS">
+							</Label>
+							<Label class="valueDateLbl" id="stepValueLbl">
+							</Label>
+						</View>
+						<View class="rightView" id="flightRightView" onClick="onFlightsClick">
+							<Label class="valueLbl" id="flightLbl">
+							</Label>
+							<ImageView class="imgLbl" id="flightImg" image= '/images/healthKit/flights_climbed.png'>
+							</ImageView>
+							<Label class="dataLbl" id="flightDataLbl" text="FLIGHTS CLIMBED">
+							</Label>
+							<Label class="valueDateLbl" id="flightDateLbl">
+							</Label>
+						</View>
+					</View>
+				</View>
+				<View id="androidView" platform="android">
+					<View id="topView">
+						<View class="leftView">
+							<Label class="valueLbl" id="heartValueLbl">
+							</Label>
+							<ImageView class="imgLbl" id="heartImg" image= '/images/healthKit/heart_rate.png'>
+							</ImageView>
+							<Label class="dataLbl" id="heartDataLbl" text="HEART RATE">
+							</Label>
+							<Label class="valueDateLbl" id="heartValueDataLbl">
+							</Label>
+						</View>
+						<View class="rightView">
+							<Label class="valueLbl" id="distanceValueLbl">
+							</Label>
+							<ImageView class="imgLbl" id="bpImg" image= '/images/healthKit/distance.png'>
+							</ImageView>
+							<Label class="dataLbl" id="distanceDataLbl" text="DISTANCE">
+							</Label>
+							<Label class="valueDateLbl" id="distanceValueDateLbl">
+							</Label>
+						</View>
+					</View>
+					<View id="middleView">
+						<View class="leftView">
+							<Label class="valueLbl" id="stepLbl">
+							</Label>
+							<ImageView class="imgLbl" id="stepImg" image= '/images/healthKit/steps.png'>
+							</ImageView>
+							<Label class="dataLbl" id="stepDataLbl" text="STEPS">
+							</Label>
+							<Label class="valueDateLbl" id="stepValueLbl">
+							</Label>
+						</View>
+						<View class="rightView">
+							<Label class="valueLbl" id="segmentLbl">
+							</Label>
+							<ImageView class="imgLbl" id="segmentImg" image= '/images/healthKit/segment.png'>
+							</ImageView>
+							<Label class="dataLbl" id="segmentDataLbl" text="SEGMENT">
+							</Label>
+							<Label class="valueDateLbl" id="segmentDateLbl">
+							</Label>
+						</View>
+					</View>
+				</View>
+			</ScrollView>
+			<Label id="supportLabel">
+			</Label>
+		</View>
+	</Window>
+</Alloy>
