@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="preventScreen">
+		<View id="headerView">
+			<View id="homeView" visible="false"  onClick="onHomeClick">
+				<ImageView id="homeImage"></ImageView>
+			</View>
+			<View id="titleview">
+				<Label id="headerLabel"  text="Prevent"></Label>
+			</View>
+			<!-- <View id="reportView"  onClick="onReportClick">
+					<ImageView id="reportImage"></ImageView>
+				</View> -->
+		</View>
+		<View id="contentView">
+			<Label id="contentText" ></Label>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+		<Require id = 'footerView' src = "footerView"></Require>
+	</Window>
+</Alloy>

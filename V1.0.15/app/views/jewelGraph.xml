@@ -1,0 +1,24 @@
+<Alloy>
+	<Window id="jewelGraph" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Report"></Require>
+		</View>
+		<View id="contentView" >
+			<Widget src="com.lp.highChart" id="pie_chart" top="40dp"  />
+		</View>
+		<View id="footerView" >
+			<View id="leftview">
+				<View  class="submitView" id="lastWeekButton" onClick="weeklyClick">
+					<Label class="submitLabel" id="lastWeekLabel" text="Last Week"></Label>
+				</View>
+			</View>
+			<View id="rightview">
+				<View  class="submitView" id="lastMonthButton" onClick="monthlyClick">
+					<Label class="submitLabel" id="lastMonthLabel"  text="Last Month"></Label>
+				</View>
+			</View>
+
+		</View>
+
+	</Window>
+</Alloy>

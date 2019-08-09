@@ -1,0 +1,66 @@
+
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	backgroundColor: '#ffffff',
+	layout: 'vertical',
+	bottom: '20dp'
+}
+"#contentView1": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	backgroundColor: '#ffffff',
+	bottom: '20dp'
+}
+
+"#mainImage": {
+	width:Titanium.UI.FILL,
+	height: '180dp',
+	top: '10dp',
+	left: '10dp',
+	right: '10dp'
+}
+"#mainImage[formFactor=tablet]": {
+	height: '220dp'
+}
+"#headerLabel": {
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	color: "#546e7a",
+	font:Alloy.Globals.HeaderFontLight
+}
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLightTablet
+}
+"#contentWebView":{
+	top: "5dp",
+	width: Ti.UI.FILL,
+	left: "5dp",
+	right: '5dp',
+	height:Ti.UI.FILL,
+	visible: false,
+	bottom: "5dp",
+	showScrollbars: false,
+	scalesPageToFit: false,
+	enableZoomControls: false
+}
+"#noDataLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: "#546e7a",
+	font:Alloy.Globals.HeaderFontLight,
+	text: "No Data Available."
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

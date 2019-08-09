@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="trailsbNonOverlap" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="trails-b(New)" rightButtonImage="/images/common/undo-disabled.png" homeButtonImage="/images/home/home.png" ></Require>
+		</View>
+		
+		<View id="contentView" >
+			
+			<View id="undoview" touchEnabled="false"  onClick="undoClick"></View>
+			<Label id="countTimer" text="03:00"></Label>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" bottom="20dp" backgroundColor="#ffffff">
+				<Label id="messageLabel" text="L('intructionLabel2')" ></Label>
+			</View>
+			<Label id="restartButton" visible="false" text="L('restartGame')" onClick="restartClick"  ></Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,26 @@
+"#splashScreenWindow":{
+	width:Ti.UI.FILL,
+	height:Ti.UI.FILL,
+	backgroundImage: '/images/common/splash.png',
+	//exitOnClose: true
+}
+"#splashScreenWindow[platform=ios]":{
+	navBarHidden :true,
+	fullscreen: true,
+	//exitOnClose: true
+}
+"#splashScreenWindow[platform=android]":{
+	navBarHidden :false,
+	fullscreen: false,
+	//exitOnClose: true
+}
+"#splashScreenWindow[platform=ios formFactor=tablet]":{
+	backgroundImage: '/images/common/splash-Portrait.png'
+}
+// "#splashIndicator[platform=ios]":{
+// style : Titanium.UI.ActivityIndicatorStyle.PLAIN,
+// width : "200dp",
+// height : "40dp",
+// bottom :'100dp'
+// },
+

@@ -1,0 +1,26 @@
+<h1>Ti.Healthkit.StatisticsCollection</h1>
+<h2>Description</h2>
+<p>As the name suggests, a statistics collection object manages a collection of statistics. Each statistics object represents the data calculated over a separate time interval.</p>
+<h2>Properties</h2>
+<h3>statistics : Array of <a href="statistics.html">Ti.Healthkit.Statistics</a> objects</h3>
+<p>An array of statistics objects representing the populated time intervals covered by the statistics collection query.</p>
+<p>The array contains a statistics object for each time interval that has at least one sample that matches the query. The statistics objects are returned in chronological order, but they are not necessarily contiguous. This method ignores time intervals that do not have any samples. As a result, there may be arbitrarily large gaps in time between adjacent statistics objects in the array.</p>
+<h3>sources :  <a href="source.html">Ti.Healthkit.Source</a></h3>
+<p>As array containing all the sources that had samples matched by the statistics collection query.</p>
+<p>If the STATISTICS_OPTION_SEPARATE_BY_SOURCE option was set, each of the statistics objects returned by the statistics collection also has a sources array. The statistic object's array should contain a subset of the sources returned by this method. Specifically, it contains only those sources that contributed samples to that particular statistics object. You can use the source objects in these arrays to request source-specific statistical data.</p>
+<h2>Functions</h2>
+<h3>&lt;void&gt; enumerateStatistics(params)</h3>
+<p>This function enumerates the statistics objects for all the time intervals from the start date until the end date in chronological order. It calls an enumerator function once for each time interval with a <a href="statistics.html">Ti.Healthkit.Statistics</a> object as parameter. If there are no samples for a particular time interval, the quantity value of the corresponding <a href="statistics.html">Ti.Healthkit.Statistics</a> object will be undefined.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>startDate (Date): The start date for the calculation. The initial statistics come from the time interval that contains the start date.</li>
+<li>endDate (Date): The end date for the calculation. The final statistics come from the time interval that contains the end date.</li>
+<li>enumerator (Function): This function will be called once for each time interval. It will receive a single <a href="statistics.html">Ti.Healthkit.Statistics</a> object as argument and is expected to return a Boolean value that indicates whether the enumeration should stop -- the return value should be <code>True</code> if the enumeration should stop and <code>False</code> if the enumeration should continue.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;<a href="statistics.html">Ti.Healthkit.Statistics</a>&gt; getStatisticsForDate(date)</h3>
+<p>Returns the statistics object for the time interval that contains the provided date.</p>
+<ul>
+<li>date (Date): The target date.</li>
+</ul>

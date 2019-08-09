@@ -1,0 +1,64 @@
+
+"#footerView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	//height: '62dp',
+	height: '65dp',
+	bottom: '0dp',
+	layout: 'horizontal'
+}
+".footerBoxStyle": {
+	width: '25%',
+	height: Ti.UI.FILL
+}
+".outerClass":{
+	layout: "vertical",
+	width:Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+".footrlDivider": {
+	width: '1dp',
+	height: Ti.UI.FILL,
+	right: '0dp',
+	backgroundColor: 'black'
+}
+".circleView": {
+	width: '40dp',
+	height: '40dp',
+	borderRadius: '20dp',
+	borderWidth: 1,
+	borderColor: '#90a4ae',
+	backgroundColor: 'transparent',
+	touchEnabled: false
+}
+".outercircleBox": {
+	width: '45dp',
+	height: '45dp',
+	backgroundColor: 'transparent',
+	touchEnabled: false
+}
+".menuLabel": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	font:Alloy.Globals.MediumFontBold,
+	color: '#90a4ae',
+	//color: '#359FFE',
+	//bottom: "5dp",
+	visible: true
+}
+"#notificationview": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	top: '3dp',
+	right: '5dp',
+	image: '/images/common/notify-icon_sm.png',
+	visible: false
+}
+".imageBox":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE
+}
+".footerImage":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE
+}

@@ -1,0 +1,140 @@
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#largeView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top: '75dp',
+	layout: 'vertical'
+}
+"#questionNumberView": {
+	width:Titanium.UI.FILL,
+	height: '80dp',
+	top: '0dp'
+}
+"#numberLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.HeaderThinFontlarge,
+	opacity: 1
+}
+"#numberLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderThinFontlargeTablet
+}
+"#answerlabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '0dp',
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontLight
+}
+"#answerlabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+}
+"#progressBarContainer": {
+	top: '0dp',
+	width: Titanium.UI.FILL,
+	height: Ti.UI.SIZE,
+	left: '30dp',
+	right: '30dp'
+},
+"#progressBarBgImage": {
+	image: "/images/surveys/progress-bg-white.png",
+	height:Ti.UI.SIZE,
+	width:Titanium.UI.FILL,
+	left: '0dp'
+},
+"#progressBarLine": {
+	top: '2dp',
+	backgroundColor: "#00ff00",
+	height: "4dp",
+	width: "25%",
+	left: "0dp"
+},
+"#progressBarLine[formFactor=tablet]": {
+	top: '8dp',
+	height: "5dp",
+	width: "25%",
+	left: '12dp'
+},
+"#displayImage": {
+	width: '250dp',
+	height: '250dp',
+	top: '0dp'
+}
+"#displayImage[formFactor=tablet]": {
+	width: '300dp',
+	height: '300dp'
+}
+"#timerLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontLight,
+	top: '30dp'
+}
+"#timeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+},
+"#smallView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top: '70dp',
+	layout: 'vertical'
+}
+".imageSelectionView": {
+	width: '130dp',
+	height: '130dp'
+}
+".imageSelectionView[formFactor=tablet]": {
+	width: '180dp',
+	height: '180dp'
+}
+// "#doneButton": {
+// width:Titanium.UI.SIZE,
+// height:Titanium.UI.SIZE,
+// top: '30dp',
+// image: '/images/simpleMemoryResult/yes_icon_disable.png'
+// }
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#messageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: "5dp",
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: "40dp",
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white'
+}
+"#nextButton":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	top: '30dp',
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+},

@@ -1,0 +1,278 @@
+"#contentView": {
+	top: '60dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "#ffffff"
+}
+"#healthScrollView":{
+	top: "0dp",
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	bottom: '20dp',
+	layout: "vertical"
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+}
+"#firstView[platform=ios]":{
+	height: "300dp",
+	width: Titanium.UI.FILL,
+	top: "0dp",
+	layout: "vertical"
+}
+"#firstView[platform=android]":{
+	height: "110dp",
+	width: Titanium.UI.FILL,
+	top: "0dp",
+	layout: "vertical"
+}
+".outerView":{
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '50dp',
+	right: '4dp',
+	left: '4dp',
+	top: "6dp"
+}
+"#dobouterView":{
+	index: "0"
+}
+".dataFieldView":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: '0dp',
+	touchEnabled: false
+}
+".valueView":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '10dp',
+	touchEnabled: false
+}
+".dataLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.MediumFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: '12dp',
+	touchEnabled: false
+}
+".dataLabel[platform=ios formFactor=tablet]":{
+	font: Alloy.Globals.MediumSemiBold,
+	color: '#90a4ae'
+}
+".averageLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font: Alloy.Globals.MediumFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "20dp",
+	touchEnabled: false
+}
+".dataValueLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font: Alloy.Globals.smallSemiBold,
+	opacity: 1,
+	top: "20dp",
+	right: 0,
+	touchEnabled: false
+}
+".dataValueLabel[platform=ios formFactor=tablet]":{
+	font: Alloy.Globals.MediumSemiBold
+}
+".dateLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font: Alloy.Globals.smallSemiBold,
+	opacity: 1,
+	right: 0,
+	top: "20dp",
+	touchEnabled: false
+}
+".seperator":{
+	width: Ti.UI.FILL,
+	height: '1dp',
+	right: '10dp',
+	left: '10dp',
+	bottom: "5dp",
+	backgroundColor: '#E7EAED',
+	touchEnabled: false
+}
+
+"#secondView":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: "20dp",
+	layout: "vertical"
+}
+"#androidView":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: "20dp",
+	layout: "vertical"
+}
+"#topView":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: "0dp"
+}
+"#middleView":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: "15dp"
+}
+"#thirdView":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: "15dp"
+}
+".leftView":{
+	//height: Titanium.UI.SIZE,
+	height:"180dp",
+	width: "40%",
+	top: "0dp",
+	left: "20dp",
+	borderColor: "#dddddd",
+	borderRadius: 10,
+	
+	borderWidth: "1dp"
+}
+".leftView[platform=ios]":{
+	layout: "vertical",
+}
+".rightView":{
+	//height: Titanium.UI.SIZE,
+	height:"180dp",
+	width: "40%",
+	top: "0dp",
+	right: "20dp",
+	borderColor: "#dddddd",
+	borderRadius: 10,
+	//layout: "vertical",
+	borderWidth: "1dp"
+}
+".rightView[platform=ios]":{
+	layout: "vertical",
+}
+".valueLbl": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.ExtraLargeFontLightTablet,
+	opacity: 1,
+	top: "10dp",
+	text: "NA",
+	textAlign: "center",
+	touchEnabled: false
+}
+".imgLbl": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	top: "10dp",
+	touchEnabled: false
+}
+// "#flightImg":{
+// top: "11dp"
+// }
+// "#flightDataLbl":{
+// top: "15dp"
+// }
+// "#flightDateLbl[formFactor=tablet]":{
+// bottom: "3dp"
+// }
+".dataLbl": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.SmallFontSemi,
+	opacity: 1,
+	top: "10dp",
+	textAlign: "center",
+	touchEnabled: false
+}
+
+".dataLbl[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+}
+".valueDateLbl": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#bobec5',
+	font:Alloy.Globals.ExtraSmallFontLight,
+	opacity: 1,
+	top: "10dp",
+	bottom: "10dp",
+	textAlign: "center",
+	touchEnabled: false
+}
+"#seperator":{
+	width: Ti.UI.FILL,
+	height: '1dp',
+	right: '10dp',
+	left: '10dp',
+	bottom: "5dp",
+	backgroundColor: '#E7EAED'
+}
+"#dataFieldView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+"#dataLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "5dp"
+}
+"#averageLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: "20dp"
+}
+"#dataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#averageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#valueView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp'
+}
+"#dataValueLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font:Alloy.Globals.smallSemiBold,
+	opacity: 1,
+	top: "5dp",
+	right: 0
+}
+
+

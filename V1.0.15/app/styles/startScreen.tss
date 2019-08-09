@@ -1,0 +1,77 @@
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '0dp',
+	backgroundImage: '/images/common/bg_welcome.png',
+}
+
+"#innerContentView":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	top: "20%",
+	layout:"vertical"
+}
+"#logoImage":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	image: '/images/common/logo_welcome.png',
+	top: "0dp"
+}
+"#titleLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	opacity: 1,
+	color: "#546e7a",
+	top: "50dp",
+	textAlign: "center",
+	text: "Welcome to mindLAMP."
+}
+"#titleLbl[platform=ios formFactor=tablet]":{
+	font:Alloy.Globals.ExtraLargeFontLightTablet
+}
+"#startContainer": {
+	width: '50%',
+	height:Ti.UI.SIZE,
+	bottom: "20dp"
+}
+
+"#nextContainer": {
+	right: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE
+}
+"#startButton":{
+	color: '#ffffff',
+	textAlign: 'center',
+	font:Alloy.Globals.LargeFontBold,
+	width: '128dp',
+	height: '44dp',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	backgroundColor: "#359FFE"
+},
+"#startButton[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet,
+	width: '180dp'
+},
+
+"#instButtonView":{
+	width: "200dp",
+	height:"40dp",
+	borderRadius:20,
+	backgroundColor: "#359FFE",
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	top: "40%"
+}
+
+"#instButton":{
+	color: '#ffffff',
+	textAlign: 'center',
+	font:Alloy.Globals.LargeFontBold,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.LargeFontBold
+}

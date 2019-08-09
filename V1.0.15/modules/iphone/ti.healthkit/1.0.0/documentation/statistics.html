@@ -1,0 +1,45 @@
+<h1>Ti.Healthkit.Statistics</h1>
+<h2>Description</h2>
+<p>The Ti.Healthkit.Statistics class represents the result of calculating the minimum, maximum, average, or sum over a set of samples in the HealthKit store. HealthKit creates statistic objects using either a <a href="statisticsQuery.html">Ti.Healthkit.StatisticsQuery</a> or a <a href="statisticsCollectionQuery.html">Ti.Healthkit.StatisticsCollectionQuery</a>. For the statistics query, it performs the specified calculations over all the samples that match the query. For the statistics collection query, it partitions the matching samples into a set of time intervals and performs the calculations over each interval separately.</p>
+<p>When requesting data from a statistics object, your request must match the options you used when creating the query. For example, if you create a query using the STATISTICS_OPTION_DISCRETE_AVERAGE option, you must access the results using the <code>getAverageQuantity</code> method.</p>
+<h2>Properties</h2>
+<h3>startDate : Date</h3>
+<p>The start of the time period included in these statistics. (read-only)</p>
+<p>This property contains the start date for the statistics. If you calculated these statistics using a statistics query, this is the earliest start date from all the samples that match the query. If you calculated these statistics using a statistics collection query, this is the start of the time interval for that particular collection of statistics.</p>
+<h3>endDate : Date</h3>
+<p>The end of the time period included in these statistics. (read-only)
+This property contains the end date for the statistics. If you calculated these statistics using a statistics query, this is the latest end date from all the samples that match the query. If you calculated these statistics using a statistics collection query, this is the end of the time interval for that particular collection of statistics.</p>
+<h3>quantityType : String</h3>
+<p>The quantity type of the samples used to calculate these statistics. (read-only)</p>
+<p>The quantity type from the statistics query used to generate these statistics.</p>
+<h3>sources : Array of <a href="source.html">Ti.Healthkit.Source</a> objects</h3>
+<p>An array containing all the sources contributing to these statistics. (read-only)</p>
+<h2>Functions</h2>
+<h3>&lt;Ti.Healthkit.Quantity&gt; getAverageQuantity(source)</h3>
+<p>Returns the average value from all the samples that match the query. If
+the <code>source</code> parameter is specified, only samples created by that source
+are used.</p>
+<ul>
+<li>source (<a href="source.html">Ti.Healthkit.Source</a>): A data source from the statistics object's sources array. Optional.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Quantity&gt; getMaximumQuantity(source)</h3>
+<p>Returns the maximum value from all the samples that match the query. If
+the <code>source</code> parameter is specified, only samples created by that source
+are used.</p>
+<ul>
+<li>source (<a href="source.html">Ti.Healthkit.Source</a>): A data source from the statistics object's sources array. Optional.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Quantity&gt; getMinimumQuantity(source)</h3>
+<p>Returns the minimum value from all the samples that match the query. If
+the <code>source</code> parameter is specified, only samples created by that source
+are used.</p>
+<ul>
+<li>source (<a href="source.html">Ti.Healthkit.Source</a>): A data source from the statistics object's sources array. Optional.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Quantity&gt; getSumQuantity(source)</h3>
+<p>Returns the sum all the samples that match the query. If
+the <code>source</code> parameter is specified, only samples created by that source
+are used.</p>
+<ul>
+<li>source (<a href="source.html">Ti.Healthkit.Source</a>): A data source from the statistics object's sources array. Optional.</li>
+</ul>

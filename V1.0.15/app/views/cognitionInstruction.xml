@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="cognitionInstruction" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src = "innerHeader" title="Instructions">
+			</Require>
+		</View>
+		<View id="MainView">
+			<WebView id="instructionWebView" ></WebView>
+			<View  id="submitView" visible="false" onClick="onExampleClick">
+				<Label id="submitLabel" text="Example"></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

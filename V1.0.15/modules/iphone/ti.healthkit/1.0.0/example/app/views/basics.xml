@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id='win' title='Basics'>
+		<TextArea id='textArea' editable='false' width='100%' height='100%'/>
+	</Window>
+</Alloy>

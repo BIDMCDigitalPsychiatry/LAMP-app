@@ -1,0 +1,136 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android,windows]': {
+color: '#000' // all platforms except Android and Windows default to black
+}
+
+'Window': {
+backgroundColor: '#fff' // white background instead of default transparent or black
+}
+
+'TextField[platform=android]': {
+height: Ti.UI.SIZE
+}
+
+*/
+
+"Window": {
+	backgroundColor: "#ffffff",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	orientationModes: [Titanium.UI.PORTRAIT]
+},
+".container": {
+	backgroundColor: "#ffffff",
+	navBarHidden: true,
+	fullscreen: false,
+	//flagSecure: false,
+	swipeToClose: false
+},
+".headerContainer": {
+	height: "60dp",
+	top: "0dp"
+},
+".bodyContainer": {
+	top: '25dp',
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+".bodyContainer[formFactor=tablet]": {
+	top: '25dp',
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+".bodyOuterContainer":{
+	top: "60dp",
+	//bottom:"50dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "#359ffe",
+	backgroundImage: "/images/signinStudy/bg.png",
+	scrollType: "vertical",
+	contentHeight: "auto"
+},
+".bodyOuterContainer[formFactor=tablet]":{
+	top: "60dp",
+	//bottom:"50dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "#359ffe",
+	backgroundImage: "/images/signinStudy/bg.png"
+}
+".scrollFillContainer":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL
+},
+".textBottomLine": {
+	backgroundColor: "#ffffff",
+	height: "1dp",
+	width: "90%",
+	opacity: "0.2"
+},
+".textBoxBroderLess": {
+	width: "90%",
+	height: "34dp",
+	top: "10dp",
+	color: "#ffffff",
+	//hintTextColor: '#D1E5FF',
+	font: Alloy.Globals.LargeFontLight,
+	bubbleParent: "false",
+	clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS,
+	
+},
+".textBoxBroderLess[platform=android]":{
+	height: "40dp",
+	backgroundColor: "transparent",
+}
+".textBoxBroderLess[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontLightTablet,
+	top: "21dp",
+	bubbleParent: "false"
+},
+
+".fullSizeSubmitButton":{
+	width: '90%',
+	height: '44dp',
+	top: '34dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	font: Alloy.Globals.LargeFontBold
+},
+".fullSizeSubmitButton[formFactor=tablet]": {
+	width: '256dp',
+	font: Alloy.Globals.LargeFontBoldTablet
+},
+".returnKey": {
+	returnKeyType: Ti.UI.RETURNKEY_NEXT
+},
+".returnKeyDone": {
+	returnKeyType: Titanium.UI.RETURNKEY_DONE
+},
+".masked": {
+	passwordMask: "true"
+},
+".userName": {
+	maxLength: '50'
+},
+".password": {
+	maxLength: '20'
+}
+

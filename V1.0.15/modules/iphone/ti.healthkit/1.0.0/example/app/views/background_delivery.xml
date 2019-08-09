@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id='win' title='Observer Queries' onClose='onWindowClose'>
+		<TableView id='tableView' bottom=80 onClick='onTableViewClick' />
+		<Button id='toggleDeliveryButton' bottom=0 height=40 width='100%'
+			onClick='onToggleDeliveryButtonClick'
+			/>
+		<Button id='toggleQueryButton' bottom=40 height=40 width='100%'
+			onClick='onToggleQueryButtonClick'
+			/>
+	</Window>
+</Alloy>

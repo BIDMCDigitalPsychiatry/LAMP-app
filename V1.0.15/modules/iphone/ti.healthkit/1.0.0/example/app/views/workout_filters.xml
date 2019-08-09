@@ -1,0 +1,34 @@
+<Alloy>
+	<Window id='win' title='Workout Filters'>
+		<ScrollView layout='vertical'>
+			<Label
+				top=10 left=10 right=10
+				text='Select operator and enter duration, distance, or energy:'
+			/>
+
+			<Picker id='operatorPicker' onChange='onPickerChange'/>
+
+			<View class='inputParent'>
+				<Label text='Duration:' class='inputLabel' />
+				<TextField id='durationInput' class='inputField' />
+				<Button id='durationButton' class='searchButton' onClick='onSearchButtonClick' />
+			</View>
+			<View class='inputParent'>
+				<Label text='Distance:' class='inputLabel' />
+				<TextField id='distanceInput' class='inputField' />
+				<Button id='distanceButton' class='searchButton' onClick='onSearchButtonClick' />
+			</View>
+			<View class='inputParent'>
+				<Label text='Energy:' class='inputLabel' />
+				<TextField id='energyInput' class='inputField' />
+				<Button id='energyButton' class='searchButton' onClick='onSearchButtonClick' />
+			</View>
+
+			<Label
+				top=10 left=10 right=10
+				text='Or select workout type:' />
+			<Picker id='typePicker' onChange='onPickerChange'/>
+			<Button id='typeButton' title='Search by Type' onClick='onSearchButtonClick' />
+		</ScrollView>
+	</Window>
+</Alloy>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	
+	<string name="appTitle">mindLAMP</string>
+	<string name="signIn">INICIO DE SESIÓN</string>
+	<string name="signInSmall">Inicio de sesion</string>
+	<string name="smallSign">Inicio de sesion</string>
+	<string name="next">SIGUIENTE</string>
+	<string name="notImplement">No implementado.</string>
+	<string name="activityValidating">Validar...</string>
+	<string name="activitySaving">Ahorro...</string>
+	<string name="activitySubmitting">Enviar...</string>
+	<string name="activityLoading">Cargando...</string> 
+	<string name="unexpectedError">Se produjo un error inesperado. Por favor inténtalo más tarde.</string>
+	<string name="noNetwork">Actualmente no hay ninguna conexión de Internet. Por favor vuelva a intentarlo cuando se restablece la conectividad.</string>
+	<string name="enableLocation">Por favor habilitar los servicios de localización de su dispositivo y continuar.</string>
+	<string name="sessionExpired">Su sesión ha terminado. Sesión para continuar.</string>
+	<string name="exitApp">¿Está seguro que desea salir de la aplicación?</string>
+	
+	<string name="signInStudent">Iniciar sesión con la identificación de estudios</string>
+	<string name="signInUserSignUp">Registro de usuario</string>
+	<string name="userName">Nombre de usuario</string>
+	<string name="userNameEmailOrStudyId">Nombre de usuario (E-mail/Identificación)</string>
+	<string name="specifyUsername">Especificar el nombre de usuario.</string>
+	<string name="loginErrorAlert">Credenciales no válidas.</string>
+	<string name="studyIdLbl">ID de estudios</string>
+	<string name="surveyTextArea">Escriba la respuesta aquí ...</string>
+	
+	<string name="signInStudentPageTitle">Registrarse</string>
+	<string name="studyCode">Ingrese su código de estudio</string>
+	<string name="studyId">Introduzca el ID de estudio</string>
+	<string name="createPassword">Crear su contraseña</string>
+	<string name="confirmPassword">Confirmar contraseña</string>
+	<string name="specifyStudyCode">Especificar el código de estudio.</string>
+	<string name="specifyStudyId">Especificar el ID de estudio.</string>
+	<string name="specifyPassword">Especificar la contraseña.</string>
+	<string name="specifyConfirmPassword">Especifique la contraseña para confirmarla.</string>
+	<string name="specifySameConfirmPassword">Los datos de la contraseña y confirmar contraseña debe ser idéntica.</string>
+	<string name="errorSignInWithSudyId">Los datos de la contraseña y confirmar contraseña debe ser idéntica.</string>
+	<string name="enterfirstNameLbl">Escriba su nombre.</string>
+	<string name="enterlastNameLbl">Ingrese su apellido.</string>
+
+	
+	<string name="quizHeading">Encuesta</string>
+	<string name="quizDescriptionLine1">Por favor, conteste a unas preguntas para</string>
+	<string name="quizDescriptionLine2">Asegúrese de que usted entienda la forma de consentimiento</string>
+	<string name="pleaseAnswerQuestion">Especifica una respuesta.</string>
+
+
+	<string name="consent">Consentimiento</string>
+	<string name="consentNote">Revisar el formulario a continuación y seleccione que estoy de acuerdo si usted está listo para continuar.</string>
+	<string name="consentDescription">Lorem Ipsum is simpvsentially unchanged.</string>
+	<string name="agree">De acuerdo</string>
+	<string name="disagree">No estoy de acuerdo</string>
+
+	
+	<string name="firstName">Nombre</string>
+	<string name="specifyfirstName">Especifique su nombre.</string>
+	<string name="lastName">Apellido</string>
+	<string name="specifyLastName">Especifica su apellido.</string>
+	<string name="specifyEmail">Introduzca su dirección de correo electrónico.</string>
+	<string name="emailId">ID de correo electrónico</string>
+	<string name="password">contraseña</string>
+	
+	<string name="createAndContinue">Crear y continuar</string>
+	<string name="specifyValidEmail">Escriba una dirección válida de correo electrónico.</string>
+
+	<string name="surveyMenu">Búsqueda de síntomas</string>
+	<string name="cognitionMenu">Prueba cognoscitiva</string>
+	<string name="environmentMenu">Medio ambiente</string>
+	<string name="environmentCapsMenu">MEDIO AMBIENTE</string>
+	<string name="locCapsMenu">UBICACION</string>
+	<string name="helpMenu">Ayuda</string>
+	<string name="dismissLabel">Descartar</string>
+	<string name="noDataLabel">Datos no están disponibles.</string>
+	
+	<string name="surveysLabel">ENCUESTAS</string>
+	<string name="completedLabel">COMPLETADO</string>
+	<string name="startlabel">INICIAR</string>
+	<string name="resultlabel">VER RESULTADO</string>
+	<string name="surveyListHeader">Encuestas</string>
+	
+	<string name="appColor">COLOR DE LA APLICACIÓN</string>
+	<string name="symptomSurveyHeader">ENCUESTA SOBRE LOS SÍNTOMAS</string>
+	<string name="cognitionTestHeader">PRUEBA COGNOSCITIVA</string>
+	<string name="emergencyContact">CONTACTOS DE EMERGENCIA</string>
+	<string name="selectSlot">SELECCIONE UNA SESIÓN</string>
+	<string name="selectRepeat">REPITA LOS INTERVALOS</string>
+	<string name="settingsHeader">Configuración</string>
+	<string name="sureSignout">¿Está seguro que desea salir?</string>
+	<string name="yes">Sí</string>
+	<string name="no">No</string>
+	<string name="validContactNumb">Introduzca un número válido de contacto.</string>
+	<string name="validPersonalNumb">Introduzca un número personal válido.</string>
+	<string name="selectTimeLbl">SELECCIONAR LA HORA</string>
+	<string name="repeatInterval">REPETIR A INTERVALOS</string>
+	<string name="selectsurveytitle">SELECCIONE LA BÚSQUEDA</string>
+	
+	<string name="surveyDescriptionLabel">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</string>
+	<string name="enterHere">Introduzca aquí...</string>
+	<string name="slectSurveyType">Seleccione al menos un tipo de cuestionario.</string>
+	<string name="validSymptomTime">Período de sesiones y horario de sesión deben coincidir.</string>
+	<string name="validCognitionTime">Período de sesiones y horario de sesión deben coincidir.</string>
+	<string name="symptomTimeReminder">Recordatorio para el cuestionario de síntomas.</string>
+	<string name="cognitionTimeReminder">Recordatorio para la prueba de cognición.</string>
+	<string name="languageCapsSelect">SELECCIONE EL IDIOMA</string>
+	
+	
+	<string name="surveyResultTitle">Resultados de la búsqueda</string>
+	
+	<string name="helpTitle">Ayuda</string>
+	<string name="emergencycontactTitle">contacto de emergencia 24 horas</string>
+	<string name="helpLineTitle">Línea de cuidado personal</string>
+	<string name="policyTitle">POLÍTICA DE PRIVACIDAD</string>
+	<string name="deleteAccountTitle">BORRAR MI CUENTA</string>
+	<string name="deleteConfirmation">¿Está seguro que desea eliminar su cuenta?</string>
+
+	
+	<string name="cognitionTestTitle">Prueba cognoscitiva</string>
+	<string name="startGameLabel">COMENZAR JUEGO</string>
+
+	
+	<string name="environmentTitle">Medio ambiente</string>
+	<string name="pictureLabel">¿Dónde estás?</string>
+	<string name="surveyTypeHeader">Encuesta de síntomas</string>
+	<string name="helpconfirmation">Sus respuestas indican que usted puede tener pensamientos inseguros. ¿Quieres estar conectado al equipo de apoyo?</string>
+	
+	<string name="slectAnswerType">Seleccione al menos una respuesta.</string>
+	<string name="enterComment">Especificar comentarios.</string>
+	<string name="whereLbl">¿Dónde estás?</string>
+	
+	<string name="enterAnswer">Especificar una respuesta.</string>
+	
+	<string name="enterAnswer">Seleccione una respuesta.</string>
+	
+	<string name="intructionLabel">Trace una línea para el alfabeto correspondiente.</string>
+	<string name="intructionLabel1">Terminado.</string>
+	<string name="intructionLabel2">Prensas "1" para iniciar la prueba.</string>
+	<string name="restartGame">REINICIAR</string>
+	<string name="intructionLabel3">Límite de tiempo agotado.</string>
+
+	<string name="forgotYourPasswordLabel">¿Olvidó su contraseña?</string>
+	<string name="forgotPasswordTitle">Olvidó su contraseña</string>
+	<string name="questionLabel">Introduzca su email para recuperar tu cuenta.</string>
+	<string name="sendLabel">ENVIAR</string>
+	<string name="emailLabel">Dirección de correo electrónico</string>
+	<string name="alertLabel">La contraseña fue enviada a su correo electrónico.</string>
+	
+	<string name="digitLabel">Dígito inicial</string>
+	<string name="serial7LabelMessage">Reste el número 7 y anote el resultado.</string>
+		
+	
+	<string name="SpatialSpanMessage1">Recuerde que las cajas en el orden que ves.</string>	
+	<string name="SpatialSpanMessage2">Ahora tocan las cajas en el orden en que fueron desplegados.</string>	
+	<string name="SpatialSpanMessage3">Ahora tocan las cajas en orden inverso en que fueron desplegados.</string>
+	<string name="SimpleMemoryMessage1">Recuerde que las imágenes que se muestra a usted.</string>
+	<string name="SimpleMemoryMessage2">Tocar las imágenes que se ven.</string>	
+	
+	<string name="CatandDogMessage1">Recuerde que las imágenes en el orden que ves.</string>
+	<string name="CatandDogMessage2">Ahora tocar los cuadros en el orden que usted vio.</string>
+	<string name="CatandDogInstruction1">Seleccione las imágenes de gatos.</string>
+	<string name="CatandDogInstruction2">Seleccione las imágenes de perros.</string>
+	
+	
+	<string name="jewelsTrail1">El objetivo del juego es recoger tantos diamantes como sea posible.</string>	
+	<string name="jewelsTrail2">Para recoger los diamantes, tocarlos, en orden cronológico.</string>
+	<string name="jewelsTrailB2">Para recoger los diamantes, tocarlos, alternando entre cada forma siguiendo el orden cronológico.</string>	
+	<string name="jewelsTrail3">Cada error te ralentizará, y cada segunda a la izquierda en el temporizador de cuenta atrás le dará un punto extra para pasar al siguiente nivel.</string>
+	
+	<string name="tempAlert1">Seleccione la imagen que falta</string>
+	<string name="tempAlert2">Recuerde de las imágenes que se muestra a usted</string>
+	<string name="tempAlert3">Recuerde de los dos elementos en cada imagen.</string>
+	<string name="tempAlert4">Seleccione las imágenes que usted vio</string>
+	<string name="tempAlert5">Recuerda del artículo, ubicación y orden.</string>
+	<string name="tempAlert6">Por favor espere y observa</string>
+	<string name="tempAlert7">Por favor, recuerde la secuencia.</string>
+	
+	
+<string name="nbackTest">Caza de número</string>	
+<string name="trailsBTest">Prueba caminos-b</string>	
+<string name="spatialFrwd">Juego de caja</string>	
+<string name="spatialBckwrd">Juego de caja-Pro</string>	
+<string name="spatialSpan">Rango espacial</string>	
+<string name="memoryTest">Partido de foto</string>	
+<string name="serial7">Juego de matematicas</string>	
+<string name="visualGame">Coincidencia de memoria</string>	
+<string name="temporalOrder">Coincidencia de memoria - Pro</string>
+<string name="digitFWrdGame">Span de dígitos</string>		
+<string name="digitFWrd">Dibujo el código</string>	
+<string name="digitBckWrd">Dibujo el código-Pro</string>	
+<string name="catdog">Gatos y Perros</string>	
+<string name="trailsBTestNew">Punto de Conexión</string>	
+<string name="nbackTestNew">Caza de fotos</string>	
+<string name="trailsBTouch">Punto de Toque</string>	
+<string name="jwelA">Joyas</string>	
+<string name="jwelB">Joyas-Pro</string>	
+<string name="figCopy">Dibujo</string>
+<string name="scratchCard">Tarjeta de rascar</string>
+<string name="memoryGame">juego de memoria</string>
+<string name="attentionGame">juego de atencion</string>	
+
+<string name="scratchLbl">Listo para tomar un descanso?</string>
+<string name="scratchLbl2">Scratch para revelar!</string>
+<string name="scoreBrainLbl">¡Acabas de encender estos músculos en tu cerebro!</string>
+<string name="checkinLbl">Registrarse</string>
+<string name="braingameLbl">Juegos mentales</string>
+
+	<string name="dogBox">Toque las casillas que tienen un perro detrás de ellos.</string>	
+	<string name="selectThe">Seleccione las</string>
+	<string name="imgCatBox">cajas donde has visto las fotos del gato.</string>	
+	<string name="imgDogBox">cajas donde has visto las fotos del perro.</string>
+	<string name="continueDogBox">Continúe para seleccionar las casillas que tienen un perro detrás de ellos. No toque las cajas con un gato detrás de ellos.</string>
+	<string name="continueCatBox">Ahora seleccione las casillas que tengan un gato detrás de ellos. No toque las cajas con un perro detrás de ellos.</string>	
+
+
+	<string name="soundalert">Asegúrese de que el volumen está activado en su dispositivo.</string>	
+	<string name="audioalert">Por favor escuche el audio con cuidado.</string>
+	<string name="digitalert">Por favor, introduzca los dígitos ahora.</string>
+	<string name="digitReversealert">Por favor, introduzca los dígitos en orden inverso.</string>
+
+
+	<string name="articleLbl">Artículos</string>	
+	<string name="tipLbl">Consejos</string>
+	<string name="profileLbl">Perfil</string>
+	<string name="appUse">Cómo utilizar la aplicación</string>
+	<string name="reprtLbl">Informe</string>
+	
+	<string name="tapfirstImg">Toque la primera imagen</string>
+	<string name="tapNxtImg">Toque la siguiente imagen</string>
+	<string name="tapREsBox">Toque la casilla de verificación adecuada</string>
+	<string name="pickMatchingalphabet">Seleccionar el alfabeto correspondiente</string>
+	
+	<string name="exmLbl">Ejemplo</string>
+	<string name="tapNxtNumber">Ahora, presione el 2 que es el número siguiente.</string>
+	<string name="continueTap">Continúe pulsando los números en este orden</string>
+	<string name="wrongTapLbl">Selección incorrecta</string>
+	
+	<string name="nbackLvl">Niveles de caza de números</string>
+	<string name="nbackNewLvl">Niveles de caza de fotos</string>
+	<string name="oneBackTest">1-back Test</string>
+	<string name="twoBackTest">2-back Test</string>
+	<string name="treeBackTest">3-back Test</string>
+	
+	<string name="pickdimnd">Elegir un diamante:</string>
+	<string name="exitLbl">SALIR</string>
+	
+	<string name="resultLbL">Resultados</string>
+	<string name="pointLbl">Puntos</string>
+	<string name="scoregrapgLbl">Tabla de puntuación</string>
+	<string name="envLbl">Datos del entorno</string>
+	<string name="cogscore">Puntuación de la cognición</string>
+	
+	<string name="pointnextLvl">Puntos para pasar al siguiente nivel</string>
+	<string name="maxLbl">Has alcanzado el nivel máximo</string>
+	<string name="gameNameLbl">Nombre del juego</string>
+	
+	<string name="learnLbl">Aprender</string>
+	<string name="accessLbl">Evaluar</string>
+	<string name="manageLbl">Manejar</string>
+	<string name="prevntLbl">Evitar</string>
+	<string name="instructionLbl">Instrucciones</string>
+	<string name="instructionsubmit">Vamos a empezar</string>
+	
+	<string name="preventcontent">Prevención de la enfermedad mental y la recaída es un objetivo importante de la plataforma 'mindLAMP'. Como profesionales en el campo de la salud mental y herramientas como 'mindLAMP' para generar importantes nuevos datos para investigación, esperamos que la prevención se convierta en el foco de la psiquiatría.  Actualmente 'mindLAMP' no es una herramienta que puede ayudar a prevenir enfermedades mentales, pero su participación en la investigación permite avanzar hacia la prevención.</string>
+
+	<string name="manageContent">Su gestión de la salud mental debe hacerse siempre en conjunto con un profesional. "mindLAMP" actualmente está diseñado para ayudar a recoger información que puede ser útil en el manejo de su salud mental, pero en ningún caso sustituye la atención profesional. En el futuro, "mindLAMP" ofrecerá ejercicios personalizados para el cerebro, las actividades de terapia, peer y objetivos personalizados para ayudarle a administrar su salud mental.</string>
+
+	<string name="copyrightLbl">Copyright © 2019, BIDMC. Todos los derechos reservados.</string>
+	
+	<string name="SchoolLbl">Escuela/Clase</string>
+	<string name="wrkLbl">Trabajo</string>
+	<string name="clicnicLbl">Clínica/Hospitall</string>
+	<string name="outsideLbl">Exterior</string>
+	<string name="shopingLbl">Haciendo compras/Comiendo</string>
+	<string name="trainLbl">Autobús/tren/coche</string>
+	<string name="aloneLbl">Solo</string>
+	<string name="friendsLbl">Con los amigos</string>
+	<string name="incrowdLbl">En la multitud</string>
+	<string name="withPeersLbl">Con los colegas</string>
+	<string name="whowithLbl">¿Quién está consigo?</string>
+	<string name="submitLbl">ENVIAR</string>
+	<string name="homeLbl">Página de inicio</string>
+	<string name="familyLbl">Con la familia</string>
+	
+	<string name="beginerLbl">Principiante</string>
+	<string name="expertLbl">Experto</string>
+	<string name="intermediateLbl">Intermedio</string>
+	<string name="advancedLbl">Avanzado</string>
+	<string name="difficultyLbl">Dificultad </string>
+
+	<string name="emailNotconfigred">Cliente de correo electrónico no está configurado en este dispositivo.</string>
+
+
+	<string name="cancelLbl">Cancelar</string>
+	<string name="deleteLbl">Eliminar</string>
+	<string name="selectcognitionLbl">SELECCIONE LA COGNICIÓN</string>
+	<string name="contactnumberLbl">TELÉFONO DE CONTACTO 24 HORAS</string>
+	<string name="personalHelpLine">TELÉFONO DE APOYO PERSONAL</string>
+	<string name="protocolLbl">PROTOCOLO</string>
+	<string name="signoutLbl">CERRAR SESIÓN</string>
+	<string name="notAvailableLbl">No disponible</string>
+	<string name="drawfigLbl">Dibujar la figura</string>
+	<string name="secLbl">Seg.</string>
+	<string name="hintLbl">Sugerencia</string>
+	<string name="levelLbl">Nivel</string>
+	<string name="lastnumberLbl">Último número</string>
+	<string name="finishLbl">Terminar</string>
+	<string name="nxtLbl">Siguiente</string>
+	<string name="answeredLbl">Respondió</string>
+	<string name="goLbl">Ir</string>
+	<string name="backLbl">VOLVER</string>
+	<string name="totalScoreLbl">Puntuación total</string>
+	<string name="totalScoreCapsLbl">PUNTUACION TOTAL</string>
+	<string name="jwelcollectedLbl">Joyas recogidas</string>
+	<string name="totalbonusLbl">Bono Total</string>
+	<string name="okLbl">OK</string>
+	
+	<string name="lastmnthLbl">Mes pasado</string>
+	<string name="lastweekLbl">La semana pasada</string>
+	<string name="languageSelect">Seleccione el idioma</string>
+	
+	
+	<string name="repeatLbl">REPETIR</string>
+	<string name="selectSurveyLbl">SELECCIONE LA BÚSQUEDA</string>
+	<string name="selectTimeLbl">SELECCIONAR LA HORA</string>
+	<string name="slottinmeLbl">HORA DEL SESIÓN</string>
+	<string name="repeatInterval">REPETIR A INTERVALOS</string>
+	<string name="avgScoreLbl">PUNTUACIÓN MEDIA</string>
+	<string name="scoreLbl">Puntuación</string>
+	<string name="bonusLbl">Bono</string>
+	<string name="continueLbl">Continuar</string>
+	<string name="healthDataTitle">Datos de salud</string>
+	
+	<string name="scoreCardLbl">TARJETA DE PUNTUACIÓN</string>
+	<string name="closeLbl">Cerca</string>
+	<string name="pointEarnedLbl">Puntos ganados</string>
+	<string name="timetakenLbl">Tiempo tomado</string>
+	
+	<string name="term1">Entiendo que la aplicación mindLAMP es una plataforma de investigación que busca o tiene la intención de tratar, manejar o prevenir cualquier enfermedad.  mindLAMP no pretende reemplazar la experiencia médica de un médico en el campo.</string>
+	<string name="term2">Entiendo que la aplicación mindLAMP no es que nadie controla  y aunque indican que necesito ayuda, la aplicación mindLAMP no es capaz de responder</string>
+	<string name="term3">Entiendo que la aplicación mindLAMP recogerá información sobre mi uso de la aplicación y respuestas en la aplicación para fines de investigación. Entiendo que mi información se utilizará para científicos y con fines de investigación</string>
+	<string name="term4">Entiendo que los tipos de datos la aplicación mindLAMP recoge son mi respuesta a la investigación y las pruebas cognitivas.  Si decido incluirme, mindLAMP también puede recopilar información acerca de mi ubicación, niveles de actividad y otros datos recogidos de los dispositivos compatibles de Apple Healthkit y Google Fit</string>
+
+	<string name="consentLbl">Consentimiento</string>
+	<string name="consentNote">Revisar el formulario a continuación y seleccione que estoy de acuerdo si usted está listo para continuar.</string>
+	
+	<string name="iamLbl">yo soy</string>
+	<string name="atLbl">A</string>
+	<string name="inLbl">En</string>
+	
+	<string name="morningLbl">Mañana</string>
+	<string name="noonLbl">Tarde</string>
+	<string name="eveningLbl">Noche</string>
+	
+	<string name="threeHrLbl">Cada 3 horas</string>
+	<string name="sixHrLbl">Cada 6 horas</string>
+	<string name="twelveLbl">Cada 12 horas</string>
+	
+	<string name="dailLbl">Diaria (Lun, Mar, Mié, Jue, Vie, Sáb, Dom)</string>
+	<string name="biweekLbl">Dos veces a la semana (Mar, Jue)</string>
+	<string name="triWeekLbl">Tres veces por semana (Lun, Mié, Jue)</string>
+	<string name="weeklyLbl">Semanal</string>
+	<string name="monthlyLbl">Dos veces al mes</string>
+	<string name="bimonthlyLbl">Mensual</string>
+	
+	<string name="heartLbl">FRECUENCIA CARDÍACA</string>
+	<string name="stepLbl">PASOS</string>
+	<string name="sleepLbl">SUEÑO</string>
+	<string name="BpLbl">PRESIÓN ARTERIAL</string>
+	<string name="respiratoryLbl">FRECUENCIA RESPIRATORIA</string>
+	<string name="flightLbl">ESCALONES ASCENDIDAS</string>
+	<string name="segmnetLbl">SEGMENTO</string>
+	<string name="heightLbl">ALTURA</string>
+	<string name="distanceLbl">DISTANCIA</string>
+	<string name="wieghtLbl">PESO</string>
+	
+	<string name="maleLbl">Masculino</string>
+	<string name="femaleLbl">Femenino</string>
+	<string name="otherLbl">Outro</string>
+	<string name="notSetLbl">No establecido</string>
+	<string name="dobLbl">DOB</string>
+	<string name="bloodtypeLbl">TIPO DE SANGRE</string>
+	<string name="sexLbl">SEXO</string>
+	
+	<string name="agreeTermLbl">Estar de acuerdo com los términos para proceder.</string>
+	<string name="surveyPointLbl">Puntos topográficos</string>
+	
+	<string name="nwLbl">ahora</string>
+	<string name="tapLbl">Grifo</string>
+	
+	
+	<string name="oneBiginLbl">Toque 1 para comenzar.</string>
+	
+	<string name="surveyPointLbl">Puntos topográficos</string>
+	
+	<string name="severaltimesLbl">Varias veces</string>
+	<string name="notatallLbl">Nunca</string>
+	<string name="moreHalfTimeLbl">Más de la mitad del tiempo</string>
+	<string name="nearlyalltimeLbl">Casi todo el tiempo</string>
+	
+	<string name="sundayLbl">domingo</string>
+	<string name="monLbl">lunes</string>
+	<string name="tueLbl">martes</string>
+	<string name="wedLbl">miércoles</string>
+	<string name="thuLbl">jueves</string>
+	<string name="friLbl">viernes</string>
+	<string name="satLbl">sábado</string>
+	
+	<string name="janLbl">enero</string>
+	<string name="febLbl">febrero</string>
+	<string name="marLbl">marzo</string>
+	<string name="aprLbl">abril</string>
+	<string name="mayLbl">mayo</string>
+	<string name="junLbl">junio</string>
+	<string name="julLbl">julio</string>
+	<string name="augLbl">agosto</string>
+	<string name="sepLbl">septiembre</string>
+	<string name="octLbl">octubre</string>
+	<string name="novLbl">noviembre</string>
+	<string name="decLbl">diciembre</string>
+	<string name="weekLbl">Semanas</string>
+	<string name="maybeLbl">Tal vez</string>
+	<string name="validLbl">válido</string>
+	<string name="yearLbl">Años</string>
+	<string name="mnthLbl">Meses</string>
+	<string name="dayLbl">Dias</string>
+	
+	<string name="highScoreLbl">Puntuación más alta</string>
+	<string name="lowscoreLbl">bajo Puntuación</string>
+	<string name="daystreakLbl">racha del día</string>
+	<string name="boostScoreLbl">aumentar mi </string>
+	<string name="boostLampScoreLbl">puntuación mindLAMP</string>
+	<string name="todayLbl">hoy</string>
+	<string name="streakspinLbl">racha de vueltas</string>
+	<string name="todaySpinLbl">de hoy  gira</string>
+	<string name="seemoreLbl">ver mas resultados</string>
+	<string name="spinwinLbl">GIRA PARA GANAR</string>
+	<string name="wonLbl">Ganaste</string>
+	<string name="starLbl">Estrellas !!</string>
+	<string name="continueCapsLbl">Continuar</string>
+	<string name="tryagainLbl">Inténtalo de nuevo</string>
+	<string name="badlickLbl">¡¡Mala suerte!!</badlickLbl>
+	
+	<string name="youravgLbl">Su promedio</string>
+	<string name="totalavgLbl">Promedio total</string>
+	
+	<string name="yourScoreLbl">Tu puntuación</string>
+	<string name="weeklyScoreLbl ">Partitura semanal de juegos</string>
+	
+	<string name="gameSuccess">Has completado este juego con éxito.</string>
+	<string name="spinWheelLabel">Rueda de giro</string>
+	<string name="surveyResponse">Sus respuestas han sido enviadas con éxito.</string>
+	
+	<string name="environmentCapsMenu">MEDIO AMBIENTE</string>
+	<string name="locCapsMenu">UBICACION</string>
+	<string name="series7inst">Por favor informe el siguiente número en la secuencia: siete restadas de su respuesta anterior.</string>
+	<string name="instVideo">VIDEO DE INSTRUCCION</string>
+	
+	<string name="nbackShortInst1">1-back test: select whether or not the letter is the same as the one before it.</string>
+	<string name="nbackShortInst2">2-back test: select whether or not the letter is the same as the one two before it.</string>
+	<string name="nbackShortInst3">3-back test: select whether or not the letter is the same as the one three before it.</string>
+	<string name="SPFShortInst">Watch the boxes light up on the screen. Then, copy the pattern by tapping the boxes in the same order.</string>
+	<string name="SPBShortInst">Watch the boxes light up on the screen. Then, copy the pattern backwards by tapping the boxes in the reverse order.</string>
+	<string name="SimpleMemShortInst">You will see 5 images appear one after another. Then, a pair of images will appear. One of them is new and the other is one of the original 5 images. Select which image is from the original 5 shown.</string>
+	<string name="serial7ShortInst">Subtract 7 from the number shown on the screen and enter that number. Then subtract 7 from the number you entered. Repeat until the game is over.</string>
+	<string name="visualShortInst">You will be shown several images. Then, you will be shown all of the images again but with an object missing from the image. Select the missing object from the choices.</string>
+	<string name="DSFShortInst">Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the same order.</string>
+	<string name="DSBShortInst">Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the reverse order they were read.</string>
+	<string name="catsnDogsShortInst">Several boxes will appear on the screen. They will briefly show whether or not they have a cat, dog, or nothing behind them. Follow the instructions for the round and select the boxes that are asked for.</string>
+	<string name="tempShortInst">A 3x3 grid will be shown. Three images will be shown one after another, each in different box in the grid. Remember the image, location, and order of the images. Then, select the first item and corresponding box, followed by the second, and third.</string>
+	<string name="nbackNewShortInst1">1-back test: select whether or not the picture is the same as the one before it.</string>
+	<string name="nbackNewShortInst2">2-back test: select whether or not the picture is the same as the one two before it.</string>
+	<string name="nbackNewShortInst3">3-back test: select whether or not the picture is the same as the one three before it.</string>
+	<string name="trialsbNewShortInst">Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</string>
+	<string name="trialsBTouchShortInst">Tap the dots in order, alternating numbers and letters, starting with the number 1. For example, tap 1, then A, then 2, then B, and so on.</string>
+	<string name="jewelsAShortInst">Tap the jewels in chronological order, starting with number 1.</string>
+	<string name="jewelsBShortInst">Look at the bottom of the screen to see which jewel to collect first. Collect number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected.</string>
+	<string name="trialsBTestShortInst">Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</string>
+	<string name="figCopyShortInst">An image will appear on the screen for 5 seconds. Remember the image. Then, copy the image onto the blank screen with your finger.</string>
+	
+</resources>

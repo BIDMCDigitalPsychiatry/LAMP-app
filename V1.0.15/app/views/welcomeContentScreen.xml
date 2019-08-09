@@ -1,0 +1,37 @@
+<Alloy>
+	<Window id="welcomeContentScreen">
+		<View id="contentView">
+			<ImageView id="logoImage"></ImageView>
+			<Label id="titleLbl"></Label>
+			<Label id="instructionLbl1" class="instructionLbl"></Label>
+			<Label id="instructionLbl2" class="instructionLbl"></Label>
+			<Label id="instructionLbl3" class="instructionLbl"></Label>
+			<ListView  id="gameList">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="gameListTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="imageView">
+								<ImageView id="iconImage" bindId="iconImage"></ImageView>
+							</View>
+							<View id="gameNameView" touchEnabled="false" >
+								<Label id="gameNameLabel" bindId="gameNameLabel"></Label>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection"></ListSection>
+			</ListView>
+			<View id="contentView1" visible="false">
+				<Label id="noDataLabel"></Label>
+			</View>
+		</View>
+		<View id="consentButtonContainer">
+			<View id="startContainer" onClick="onBackClick">
+				<Label id="backButton"  text="BACK"></Label>
+			</View>
+			<View id="nextContainer" onClick="onNextClick">
+				<Label id="nextButton" text="NEXT" ></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

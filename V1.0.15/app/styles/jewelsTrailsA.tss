@@ -1,0 +1,53 @@
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: '0dp',
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white'
+}
+"#instructionImage": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL
+}
+"#messageLabel1": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontBold
+}
+"#smallImageView": {
+	width: '23dp',
+	height: '22dp'
+}
+"#smallImageView[formFactor=tablet]": {
+	width: '33dp',
+	height: '32dp'
+}
+
+
+"#startWithHintContainerVw":{
+	width : Titanium.UI.SIZE,
+	height : Titanium.UI.SIZE
+}
+
+"#alphabetOuterView":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	top:"40dp"
+}

@@ -1,0 +1,40 @@
+<Alloy>
+	<Window id="signinStudy" swipeToClose="false">
+		<View id="signinStudyContainer" class="container">
+			<View id='headerContainer' class="headerContainer">
+				<Require id = 'headerView' src ="innerHeader" title="L('signInStudentPageTitle')"  ></Require>
+			</View>
+			<View class="bodyOuterContainer2" id="bodyOuterContainer2">
+				<ScrollView id="bodyOuterContainer" scrollType="vertical" layout="vertical">
+					<ImageView id="logo" ></ImageView>
+					<TextField class="textBoxBroderLess returnKey" editable="false" id="studyCode" top="35dp" hintText="L('studyCode')" autocapitalization="none"></TextField>
+					<View class="textBottomLine" ></View>
+					<TextField  class="textBoxBroderLess returnKey" editable="false" id="studyId" hintText="L('studyId')"></TextField>
+					<View class="textBottomLine" ></View>
+					<TextField  class="textBoxBroderLess masked returnKey password" editable="false" id="password"  hintText="L('createPassword')"></TextField>
+					<View class="textBottomLine"  ></View>
+					<TextField  class="textBoxBroderLess masked password returnKeyDone" editable="false" id="confirmPassword"   hintText="L('confirmPassword')"></TextField>
+					<View class="textBottomLine"></View>
+					<View id="languageView">
+						<View  id="languageSlot"  onClick="onGetLanguage">
+							<Label  id="langHeader" touchEnabled="false"  text="Select a Language"></Label>
+							<View class="controllerView" touchEnabled="false">
+								<Label touchEnabled="false" id="languageSlotLabel" text="English"></Label>
+								<ImageView touchEnabled="false" id="downButtonImage"></ImageView>
+							</View>
+							<View id="horizontalDivider"></View>
+						</View>
+					</View>
+				</ScrollView>
+				<View id="buttonContainerView">
+					<Label id="signInStudyButton" text="L('signIn')" onClick="onSignInClick"></Label>
+					<View top="5dp" width="98%" height="Ti.UI.SIZE">
+						<Label id="signInStudent" text="L('signInStudent')" onClick="onLoginClick"></Label>
+						<Label id="signInUserSignUp"  text="L('signInUserSignUp')" onClick="onSignInUserSignUpClick"></Label>
+					</View>
+				</View>
+				<!-- <Label id="supportLabel"text="Copyright BIDMC © 2019. All rights reserved."></Label> -->
+			</View>
+		</View>
+	</Window>
+</Alloy>

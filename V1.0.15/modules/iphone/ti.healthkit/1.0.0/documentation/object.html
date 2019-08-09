@@ -1,0 +1,28 @@
+<h1>Ti.Healthkit.Object</h1>
+<h2>Description</h2>
+<p>The HealthKit object is a piece of data that can be stored inside the HealthKit store.</p>
+<p>This is an abstract class; you always work with one of its concrete subclasses:</p>
+<ul>
+<li><a href="categorySample.html">Ti.Healthkit.CategorySample</a></li>
+<li><a href="correlation.html">Ti.Healthkit.Correlation</a></li>
+<li><a href="quantitySample.html">Ti.Healthkit.QuantitySample</a></li>
+<li><a href="workout.html">Ti.Healthkit.Workout</a></li>
+</ul>
+<h2>Properties</h2>
+<h3>UUID : String</h3>
+<p>The universally unique identifier (UUID) for this HealthKit object. (read-only)</p>
+<p>HealthKit assigns a UUID to the object when you create it. If you want to add your own unique ID, add it to the object's metadata using the METADATA_KEY_EXTERNAL_UUID key.</p>
+<h3>metadata : Object</h3>
+<p>A dictionary containing the metadata for this HealthKit object. (read-only)</p>
+<p>The metadata dictionary contains extra information describing this object. The values can be String, Number, or Date objects. For a complete list of predefined metadata keys, see the METADATA_KEY_* constants.</p>
+<p>Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit object's capabilities.</p>
+<p>You set an object's metadata when you create the object by calling one of these methods (or a related method):</p>
+<ul>
+<li><code>Ti.Healthkit.createQuantitySample</code></li>
+<li><code>Ti.Healthkit.createCategorySample</code></li>
+<li><code>Ti.Healthkit.createCorrelation</code></li>
+<li><code>Ti.Healthkit.createWorkout</code></li>
+</ul>
+<h3>source: <a href="source.html">Ti.Healthkit.Source</a></h3>
+<p>A HealthKit source, representing the app or device that created this object. (read-only)</p>
+<p>The source property is only available on objects you have retrieved from the HealthKit store. When you create a new object, the source is set to undefined. The system automatically sets the source property when you save the object to the HealthKit store. The source is then available the next time the object is retrieved from the store.</p>

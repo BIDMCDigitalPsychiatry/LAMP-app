@@ -1,0 +1,477 @@
+<resources>
+	
+	<appTitle>mindLAMP</appTitle>
+	<signIn>INICIO DE SESIÓN</signIn>
+	<signInSmall>Inicio de sesion</signInSmall>
+	<next>SIGUIENTE</next>
+	<notImplement>No implementado.</notImplement>
+	<activityValidating>Validar...</activityValidating>
+	<activitySaving>Ahorro...</activitySaving>
+	<activitySubmitting>Enviar...</activitySubmitting>
+	<activityLoading>Cargando...</activityLoading> 
+	<unexpectedError>Se produjo un error inesperado. Por favor inténtalo más tarde.</unexpectedError>
+	<noNetwork>Actualmente no hay ninguna conexión de Internet. Por favor vuelva a intentarlo cuando se restablece la conectividad.</noNetwork>
+	<enableLocation>Por favor habilitar los servicios de localización de su dispositivo y continuar.</enableLocation>
+	<sessionExpired>Su sesión ha terminado. Sesión para continuar.</sessionExpired>
+	<exitApp>¿Está seguro que desea salir de la aplicación?</exitApp>
+	
+	<signInStudent>Iniciar sesión con la identificación de estudios</signInStudent>
+	<signInUserSignUp>Registro de usuario</signInUserSignUp>
+	<userName>Nombre de usuario</userName>
+	<userNameEmailOrStudyId>Nombre de usuario (E-mail/Identificación)</userNameEmailOrStudyId>
+	<specifyUsername>Especificar el nombre de usuario.</specifyUsername>
+	<loginErrorAlert>Credenciales no válidas.</loginErrorAlert>
+	<studyIdLbl>ID de estudios</studyIdLbl>
+	<signInLbl>Registrarse</signInLbl>
+	
+	<signInStudentPageTitle>Registrarse</signInStudentPageTitle>
+	<studyCode>Ingrese su código de estudio</studyCode>
+	<studyId>Introduzca el ID de estudio</studyId>
+	<createPassword>Crear su contraseña</createPassword>
+	<confirmPassword>Confirmar contraseña</confirmPassword>
+	<specifyStudyCode>Especificar el código de estudio.</specifyStudyCode>
+	<specifyStudyId>Especificar el ID de estudio.</specifyStudyId>
+	<specifyPassword>Especificar la contraseña.</specifyPassword>
+	<specifyConfirmPassword>Especifique la contraseña para confirmarla.</specifyConfirmPassword>
+	<specifySameConfirmPassword>Los datos de la contraseña y confirmar contraseña debe ser idéntica.</specifySameConfirmPassword>
+	<errorSignInWithSudyId>Los datos de la contraseña y confirmar contraseña debe ser idéntica.</errorSignInWithSudyId>
+	<enterfirstNameLbl>Escriba su nombre.</enterfirstNameLbl>
+	<enterlastNameLbl>Ingrese su apellido.</enterlastNameLbl>
+
+	
+	<quizHeading>Encuesta</quizHeading>
+	<quizDescriptionLine1>Por favor, conteste a unas preguntas para</quizDescriptionLine1>
+	<quizDescriptionLine2>Asegúrese de que usted entienda la forma de consentimiento</quizDescriptionLine2>
+	<pleaseAnswerQuestion>Especifica una respuesta.</pleaseAnswerQuestion>
+
+
+	<consent>Consentimiento</consent>
+	<consentNote>Revisar el formulario a continuación y seleccione que estoy de acuerdo si usted está listo para continuar.</consentNote>
+	<consentDescription>Lorem Ipsum is simpvsentially unchanged.</consentDescription>
+	<agree>De acuerdo</agree>
+	<disagree>No estoy de acuerdo</disagree>
+
+	
+	<firstName>Nombre</firstName>
+	<specifyfirstName>Especifique su nombre.</specifyfirstName>
+	<lastName>Apellido</lastName>
+	<specifyLastName>Especifica su apellido.</specifyLastName>
+	<specifyEmail>Introduzca su dirección de correo electrónico.</specifyEmail>
+	<emailId>ID de correo electrónico</emailId>
+	<password>contraseña</password>
+	
+	<createAndContinue>Crear y continuar</createAndContinue>
+	<specifyValidEmail>Escriba una dirección válida de correo electrónico.</specifyValidEmail>
+
+	<surveyMenu>Búsqueda de síntomas</surveyMenu>
+	<cognitionMenu>Juego mental</cognitionMenu>
+	<environmentMenu>Medio ambiente</environmentMenu>
+	<environmentCapsMenu>MEDIO AMBIENTE</environmentCapsMenu>
+	<locCapsMenu>UBICACION</locCapsMenu>
+	<helpMenu>Ayuda</helpMenu>
+	<dismissLabel>Descartar</dismissLabel>
+	<noDataLabel>Datos no están disponibles.</noDataLabel>
+	
+	<surveysLabel>ENCUESTAS</surveysLabel>
+	<completedLabel>COMPLETADO</completedLabel>
+	<startlabel>INICIAR</startlabel>
+	<resultlabel>VER RESULTADO</resultlabel>
+	<surveyListHeader>Encuestas</surveyListHeader>
+	
+	<appColor>COLOR DE LA APLICACIÓN</appColor>
+	<symptomSurveyHeader>ENCUESTA SOBRE LOS SÍNTOMAS</symptomSurveyHeader>
+	<cognitionTestHeader>PRUEBA COGNOSCITIVA</cognitionTestHeader>
+	<emergencyContact>CONTACTOS DE EMERGENCIA</emergencyContact>
+	<selectSlot>SELECCIONE UNA SESIÓN</selectSlot>
+	<selectRepeat>REPITA LOS INTERVALOS</selectRepeat>
+	<settingsHeader>Configuración</settingsHeader>
+	<sureSignout>¿Está seguro que desea salir?</sureSignout>
+	<yes>Sí</yes>
+	<no>No</no>
+	<validContactNumb>Introduzca un número válido de contacto.</validContactNumb>
+	<validPersonalNumb>Introduzca un número personal válido.</validPersonalNumb>
+	<selectTimeLbl>SELECCIONAR LA HORA</selectTimeLbl>
+	<repeatInterval>REPETIR A INTERVALOS</repeatInterval>
+	<selectsurveytitle>SELECCIONE LA BÚSQUEDA</selectsurveytitle>
+	
+	<surveyDescriptionLabel>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</surveyDescriptionLabel>
+	<enterHere>Introduzca aquí...</enterHere>
+	<slectSurveyType>Seleccione al menos un tipo de cuestionario.</slectSurveyType>
+	<selectCognitionLblAlert>Selecciona al menos un juego de cerebro.</selectCognitionLblAlert>
+	<validSymptomTime>Período de sesiones y horario de sesión deben coincidir.</validSymptomTime>
+	<validCognitionTime>Período de sesiones y horario de sesión deben coincidir.</validCognitionTime>
+	<symptomTimeReminder>Recordatorio para el cuestionario de síntomas.</symptomTimeReminder>
+	<cognitionTimeReminder>Recordatorio para la prueba de cognición.</cognitionTimeReminder>
+	
+	
+	<surveyResultTitle>Resultados de la búsqueda</surveyResultTitle>
+	
+	<helpTitle>Ayuda</helpTitle>
+	<emergencycontactTitle>contacto de emergencia 24 horas</emergencycontactTitle>
+	<helpLineTitle>Línea de cuidado personal</helpLineTitle>
+	<policyTitle>POLÍTICA DE PRIVACIDAD</policyTitle>
+	<deleteAccountTitle>BORRAR MI CUENTA</deleteAccountTitle>
+	<deleteConfirmation>¿Está seguro que desea eliminar su cuenta?</deleteConfirmation>
+
+	
+	<cognitionTestTitle>Prueba cognoscitiva</cognitionTestTitle>
+	<startGameLabel>COMENZAR JUEGO</startGameLabel>
+
+	
+	<environmentTitle>Medio ambiente</environmentTitle>
+	<pictureLabel>¿Dónde estás?</pictureLabel>
+	<surveyTypeHeader>Encuesta de síntomas</surveyTypeHeader>
+	<helpconfirmation>Sus respuestas indican que usted puede tener pensamientos inseguros. ¿Quieres estar conectado al equipo de apoyo?</helpconfirmation>
+	
+	<slectAnswerType>Seleccione al menos una respuesta.</slectAnswerType>
+	<enterComment>Especificar comentarios.</enterComment>
+	<whereLbl>¿Dónde estás?</whereLbl>
+	
+	<enterAnswer>Especificar una respuesta.</enterAnswer>
+	
+	<enterAnswer>Seleccione una respuesta.</enterAnswer>
+	
+	<intructionLabel>Trace una línea para el alfabeto correspondiente.</intructionLabel>
+	<intructionLabel1>Terminado.</intructionLabel1>
+	<intructionLabel2>Prensas "1" para iniciar la prueba.</intructionLabel2>
+	<restartGame>REINICIAR</restartGame>
+	<intructionLabel3>Límite de tiempo agotado.</intructionLabel3>
+
+	<forgotYourPasswordLabel>¿Olvidó su contraseña?</forgotYourPasswordLabel>
+	<forgotPasswordTitle>Olvidó su contraseña</forgotPasswordTitle>
+	<questionLabel>Introduzca su email para recuperar tu cuenta.</questionLabel>
+	<sendLabel>ENVIAR</sendLabel>
+	<emailLabel>Dirección de correo electrónico</emailLabel>
+	<alertLabel>La contraseña fue enviada a su correo electrónico.</alertLabel>
+	
+	<digitLabel>Dígito inicial</digitLabel>
+	<serial7LabelMessage>Reste el número 7 y anote el resultado.</serial7LabelMessage>
+		
+	
+	<SpatialSpanMessage1>Recuerde que las cajas en el orden que ves.</SpatialSpanMessage1>	
+	<SpatialSpanMessage2>Ahora tocan las cajas en el orden en que fueron desplegados.</SpatialSpanMessage2>	
+	<SpatialSpanMessage3>Ahora tocan las cajas en orden inverso en que fueron desplegados.</SpatialSpanMessage3>
+	<SimpleMemoryMessage1>Recuerde que las imágenes que se muestra a usted.</SimpleMemoryMessage1>
+	<SimpleMemoryMessage2>Tocar las imágenes que se ven.</SimpleMemoryMessage2>	
+	
+	<CatandDogMessage1>Recuerde que las imágenes en el orden que ves.</CatandDogMessage1>
+	<CatandDogMessage2>Ahora tocar los cuadros en el orden que usted vio.</CatandDogMessage2>
+	<CatandDogInstruction1>Seleccione las imágenes de gatos.</CatandDogInstruction1>
+	<CatandDogInstruction2>Seleccione las imágenes de perros.</CatandDogInstruction2>
+	
+	
+	<jewelsTrail1>El objetivo del juego es recoger tantos diamantes como sea posible.</jewelsTrail1>	
+	<jewelsTrail2>Para recoger los diamantes, tocarlos, en orden cronológico.</jewelsTrail2>
+	<jewelsTrailB2>Para recoger los diamantes, tocarlos, alternando entre cada forma siguiendo el orden cronológico.</jewelsTrailB2>	
+	<jewelsTrail3>Cada error te ralentizará, y cada segunda a la izquierda en el temporizador de cuenta atrás le dará un punto extra para pasar al siguiente nivel.</jewelsTrail3>
+	
+	<tempAlert1>Seleccione la imagen que falta</tempAlert1>
+	<tempAlert2>Recuerde de las imágenes que se muestra a usted</tempAlert2>
+	<tempAlert3>Recuerde de los dos elementos en cada imagen.</tempAlert3>
+	<tempAlert4>Seleccione las imágenes que usted vio</tempAlert4>
+	<tempAlert5>Recuerda del artículo, ubicación y orden.</tempAlert5>
+	<tempAlert6>Por favor espere y observa</tempAlert6>
+	<tempAlert7>Por favor, recuerde la secuencia.</tempAlert7>
+	
+	
+	
+<nbackTest>Caza de número</nbackTest>	
+<trailsBTest>Prueba caminos-b</trailsBTest>	
+<spatialFrwd>Juego de caja</spatialFrwd>	
+<spatialBckwrd>Juego de caja-Pro</spatialBckwrd>	
+<spatialSpan>Rango espacial</spatialSpan>	
+<memoryTest>Partido de foto</memoryTest>	
+<serial7>Juego de matematicas</serial7>	
+<visualGame>Coincidencia de memoria</visualGame>	
+<temporalOrder>Coincidencia de memoria - Pro</temporalOrder>	
+<digitFWrdGame>Span de dígitos</digitFWrdGame>
+<digitFWrd>Dibujo el código</digitFWrd>	
+<digitBckWrd>Dibujo el código-Pro</digitBckWrd>	
+<catdog>Gatos y Perros</catdog>	
+<trailsBTestNew>Punto de Conexión</trailsBTestNew>	
+<nbackTestNew>Caza de fotos</nbackTestNew>	
+<trailsBTouch>Punto de Toque</trailsBTouch>	
+<jwelA>Joyas</jwelA>	
+<jwelB>Joyas-Pro</jwelB>	
+<figCopy>Dibujo</figCopy>
+<scratchCard>Tarjeta de rascar</scratchCard>
+<memoryGame>juego de memoria</memoryGame>
+<attentionGame>juego de atencion</attentionGame>
+	<scratchLbl>Listo para tomar un descanso?</scratchLbl>
+	<scratchLbl2>Scratch para revelar!</scratchLbl2>
+	<scoreBrainLbl>¡Acabas de encender estos músculos en tu cerebro!</scoreBrainLbl>
+	<checkinLbl>Registrarse</checkinLbl>
+	<braingameLbl>Juegos mentales</braingameLbl>
+
+	<dogBox>Toque las casillas que tienen un perro detrás de ellos.</dogBox>	
+	<selectThe>Seleccione las</selectThe>
+	<imgCatBox>cajas donde has visto las fotos del gato.</imgCatBox>	
+	<imgDogBox>cajas donde has visto las fotos del perro.</imgDogBox>
+	<continueDogBox>Continúe para seleccionar las casillas que tienen un perro detrás de ellos. No toque las cajas con un gato detrás de ellos.</continueDogBox>
+	<continueCatBox>Ahora seleccione las casillas que tengan un gato detrás de ellos. No toque las cajas con un perro detrás de ellos.</continueCatBox>	
+
+
+	<soundalert>Asegúrese de que el volumen está activado en su dispositivo.</soundalert>	
+	<audioalert>Por favor escuche el audio con cuidado.</audioalert>
+	<digitalert>Por favor, introduzca los dígitos ahora.</digitalert>
+	<digitReversealert>Por favor, introduzca los dígitos en orden inverso.</digitReversealert>
+
+
+	<articleLbl>Artículos</articleLbl>	
+	<tipLbl>Consejos</tipLbl>
+	<profileLbl>Perfil</profileLbl>
+	<appUse>Cómo utilizar la aplicación</appUse>
+	<reprtLbl>Informe</reprtLbl>
+	
+	<tapfirstImg>Toque la primera imagen</tapfirstImg>
+	<tapNxtImg>Toque la siguiente imagen</tapNxtImg>
+	<tapREsBox>Toque la casilla de verificación adecuada</tapREsBox>
+	<pickMatchingalphabet>Seleccionar el alfabeto correspondiente</pickMatchingalphabet>
+	
+	<exmLbl>Ejemplo</exmLbl>
+	<tapNxtNumber>Ahora, presione el 2 que es el número siguiente.</tapNxtNumber>
+	<continueTap>Continúe pulsando los números en este orden</continueTap>
+	<wrongTapLbl>Selección incorrecta</wrongTapLbl>
+	
+	<nbackLvl>Niveles de caza de números</nbackLvl>
+	<nbackNewLvl>Niveles de caza de fotos</nbackNewLvl>
+	<oneBackTest>1-back Test</oneBackTest>
+	<twoBackTest>2-back Test</twoBackTest>
+	<treeBackTest>3-back Test</treeBackTest>
+	
+	<pickdimnd>Elegir un diamante:</pickdimnd>
+	<exitLbl>SALIR</exitLbl>
+	
+	<resultLbL>Resultados</resultLbL>
+	<pointLbl>Puntos</pointLbl>
+	<scoregrapgLbl>Tabla de puntuación</scoregrapgLbl>
+	<envLbl>Datos del entorno</envLbl>
+	<cogscore>Puntaje cerebral</cogscore>
+	
+	<pointnextLvl>Puntos para pasar al siguiente nivel</pointnextLvl>
+	<maxLbl>Has alcanzado el nivel máximo</maxLbl>
+	<gameNameLbl>Nombre del juego</gameNameLbl>
+	
+	<learnLbl>Aprender</learnLbl>
+	<accessLbl>Evaluar</accessLbl>
+	<manageLbl>Manejar</manageLbl>
+	<prevntLbl>Evitar</prevntLbl>
+	<instructionLbl>Instrucciones</instructionLbl>
+	<instructionsubmit>Vamos a empezar</instructionsubmit>
+	
+	<preventcontent>Prevención de la enfermedad mental y la recaída es un objetivo importante de la plataforma 'mindLAMP'. Como profesionales en el campo de la salud mental y herramientas como 'mindLAMP' para generar importantes nuevos datos para investigación, esperamos que la prevención se convierta en el foco de la psiquiatría.  Actualmente 'mindLAMP' no es una herramienta que puede ayudar a prevenir enfermedades mentales, pero su participación en la investigación permite avanzar hacia la prevención.</preventcontent>
+
+	<manageContent>Su gestión de la salud mental debe hacerse siempre en conjunto con un profesional. "mindLAMP" actualmente está diseñado para ayudar a recoger información que puede ser útil en el manejo de su salud mental, pero en ningún caso sustituye la atención profesional. En el futuro, "mindLAMP" ofrecerá ejercicios personalizados para el cerebro, las actividades de terapia, peer y objetivos personalizados para ayudarle a administrar su salud mental.</manageContent>
+
+	<copyrightLbl>Copyright © 2019, BIDMC. Todos los derechos reservados.</copyrightLbl>
+	
+	<SchoolLbl>Escuela/Clase</SchoolLbl>
+	<wrkLbl>Trabajo</wrkLbl>
+	<clicnicLbl>Clínica/Hospital</clicnicLbl>
+	<outsideLbl>Exterior</outsideLbl>
+	<shopingLbl>Haciendo compras/Comiendo</shopingLbl>
+	<trainLbl>Autobús/tren/coche</trainLbl>
+	<aloneLbl>Solo</aloneLbl>
+	<friendsLbl>Con los amigos</friendsLbl>
+	<incrowdLbl>En la multitud</incrowdLbl>
+	<withPeersLbl>Con los colegas</withPeersLbl>
+	<whowithLbl>¿Quién está consigo?</whowithLbl>
+	<submitLbl>ENVIAR</submitLbl>
+	<homeLbl>Página de inicio</homeLbl>
+	<familyLbl>Con la familia</familyLbl>
+	
+	<beginerLbl>Principiante</beginerLbl>
+	<expertLbl>Experto</expertLbl>
+	<intermediateLbl>Intermedio</intermediateLbl>
+	<advancedLbl>Avanzado</advancedLbl>
+	<difficultyLbl>Dificultad</difficultyLbl>
+
+	<emailNotconfigred>Cliente de correo electrónico no está configurado en este dispositivo.</emailNotconfigred>
+
+
+	<cancelLbl>Cancelar</cancelLbl>
+	<deleteLbl>Eliminar</deleteLbl>
+	<selectcognitionLbl>SELECCIONE LA COGNICIÓN</selectcognitionLbl>
+	<contactnumberLbl>TELÉFONO DE CONTACTO 24 HORAS</contactnumberLbl>
+	<personalHelpLine>TELÉFONO DE APOYO PERSONAL</personalHelpLine>
+	<protocolLbl>PROTOCOLO</protocolLbl>
+	<signoutLbl>CERRAR SESIÓN</signoutLbl>
+	<notAvailableLbl>No disponible</notAvailableLbl>
+	<drawfigLbl>Dibujar la figura</drawfigLbl>
+	<secLbl>Seg</secLbl>
+	<hintLbl>Sugerencia</hintLbl>
+	<levelLbl>Nivel</levelLbl>
+	<lastnumberLbl>Último número</lastnumberLbl>
+	<finishLbl>Terminar</finishLbl>
+	<nxtLbl>Siguiente</nxtLbl>
+	<answeredLbl>Respondió</answeredLbl>
+	<goLbl>Ir</goLbl>
+	<backLbl>VOLVER</backLbl>
+	<totalScoreLbl>Puntuación total</totalScoreLbl>
+	<totalScoreCapsLbl>PUNTUACION TOTAL</totalScoreCapsLbl>
+	<jwelcollectedLbl>Joyas recogidas</jwelcollectedLbl>
+	<totalbonusLbl>Bono Total</totalbonusLbl>
+	<okLbl>OK</okLbl>
+	
+	<lastmnthLbl>Mes pasado</lastmnthLbl>
+	<lastweekLbl>La semana pasada</lastweekLbl>
+	<languageSelect>Seleccione el idioma</languageSelect>
+	<languageCapsSelect>SELECCIONE EL IDIOMA</languageCapsSelect>
+	
+	
+	<repeatLbl>REPETIR</repeatLbl>
+	<selectSurveyLbl>SELECCIONAR CHECK-IN</selectSurveyLbl>
+	<selectTimeLbl>SELECCIONAR LA HORA</selectTimeLbl>
+	<slottinmeLbl>HORA DEL SESIÓN</slottinmeLbl>
+	<repeatInterval>REPETIR A INTERVALOS</repeatInterval>
+	<avgScoreLbl>PUNTUACIÓN MEDIA</avgScoreLbl>
+	<scoreLbl>Puntuación</scoreLbl>
+	<bonusLbl>Bono</bonusLbl>
+	<continueLbl>Continuar</continueLbl>
+	<healthDataTitle>Datos de salud</healthDataTitle>
+	
+	<scoreCardLbl>TARJETA DE PUNTUACIÓN</scoreCardLbl>
+	<closeLbl>Cerca</closeLbl>
+	<pointEarnedLbl>Puntos ganados</pointEarnedLbl>
+	<timetakenLbl>Tiempo tomado</timetakenLbl>
+	
+	<term1>Entiendo que la aplicación mindLAMP es una plataforma de investigación que busca o tiene la intención de tratar, manejar o prevenir cualquier enfermedad.  mindLAMP no pretende reemplazar la experiencia médica de un médico en el campo.</term1>
+	<term2>Entiendo que la aplicación mindLAMP no es que nadie controla  y aunque indican que necesito ayuda, la aplicación mindLAMP no es capaz de responder</term2>
+	<term3>Entiendo que la aplicación mindLAMP recogerá información sobre mi uso de la aplicación y respuestas en la aplicación para fines de investigación. Entiendo que mi información se utilizará para científicos y con fines de investigación</term3>
+	<term4>Entiendo que los tipos de datos la aplicación mindLAMP recoge son mi respuesta a la investigación y las pruebas cognitivas.  Si decido incluirme, mindLAMP también puede recopilar información acerca de mi ubicación, niveles de actividad y otros datos recogidos de los dispositivos compatibles de Apple Healthkit y Google Fit</term4>
+
+	<consentLbl>Consentimiento</consentLbl>
+	<consentNote>Revisar el formulario a continuación y seleccione que estoy de acuerdo si usted está listo para continuar.</consentNote>
+	
+	<iamLbl>yo soy</iamLbl>
+	<atLbl>A</atLbl>
+	<inLbl>En</inLbl>
+	
+	<morningLbl>Mañana</morningLbl>
+	<noonLbl>Tarde</noonLbl>
+	<eveningLbl>Noche</eveningLbl>
+	
+	<threeHrLbl>Cada 3 horas</threeHrLbl>
+	<sixHrLbl>Cada 6 horas</sixHrLbl>
+	<twelveLbl>Cada 12 horas</twelveLbl>
+	
+	<dailLbl>Diaria (Lun, Mar, Mié, Jue, Vie, Sáb, Dom)</dailLbl>
+	<biweekLbl>Dos veces a la semana (Mar, Jue)</biweekLbl>
+	<triWeekLbl>Tres veces por semana (Lun, Mié, Jue)</triWeekLbl>
+	<weeklyLbl>Semanal</weeklyLbl>
+	<monthlyLbl>Dos veces al mes</monthlyLbl>
+	<bimonthlyLbl>Mensual</bimonthlyLbl>
+	
+	<heartLbl>FRECUENCIA CARDÍACA</heartLbl>
+	<stepLbl>PASOS</stepLbl>
+	<sleepLbl>SUEÑO</sleepLbl>
+	<BpLbl>PRESIÓN ARTERIAL</BpLbl>
+	<respiratoryLbl>FRECUENCIA RESPIRATORIA</respiratoryLbl>
+	<flightLbl>ESCALONES ASCENDIDAS</flightLbl>
+	<segmnetLbl>SEGMENTO</segmnetLbl>
+	<heightLbl>ALTURA</heightLbl>
+	<distanceLbl>DISTANCIA</distanceLbl>
+	<wieghtLbl>PESO</wieghtLbl>
+	
+	<maleLbl>Masculino</maleLbl>
+	<femaleLbl>Femenino</femaleLbl>
+	<otherLbl>Outro</otherLbl>
+	<notSetLbl>No establecido</notSetLbl>
+	<dobLbl>DOB</dobLbl>
+	<bloodtypeLbl>TIPO DE SANGRE</bloodtypeLbl>
+	<sexLbl>SEXO</sexLbl>
+	
+	<agreeTermLbl>Estar de acuerdo com los términos para proceder.</agreeTermLbl>
+	<surveyPointLbl>Pontos de check-in</surveyPointLbl>
+	<oneBiginLbl>Toque 1 para comenzar.</oneBiginLbl>
+	<reminderLbl>RECORDATORIO</reminderLbl>
+	<suggestionLbl>Sugerencias para el día</suggestionLbl>
+	
+	<nwLbl>ahora</nwLbl>
+	<tapLbl>Grifo</tapLbl>
+	
+	<severaltimesLbl>Varias veces</severaltimesLbl>
+	<notatallLbl>Nunca</notatallLbl>
+	<moreHalfTimeLbl>Más de la mitad del tiempo</moreHalfTimeLbl>
+	<nearlyalltimeLbl>Casi todo el tiempo</nearlyalltimeLbl>
+	
+	<sundayLbl>domingo</sundayLbl>
+	<monLbl>lunes</monLbl>
+	<tueLbl>martes</tueLbl>
+	<wedLbl>miércoles</wedLbl>
+	<thuLbl>jueves</thuLbl>
+	<friLbl>viernes</friLbl>
+	<satLbl>sábado</satLbl>
+	
+	<janLbl>enero</janLbl>
+	<febLbl>febrero</febLbl>
+	<marLbl>marzo</marLbl>
+	<aprLbl>abril</aprLbl>
+	<mayLbl>mayo</mayLbl>
+	<junLbl>junio</junLbl>
+	<julLbl>julio</julLbl>
+	<augLbl>agosto</augLbl>
+	<sepLbl>septiembre</sepLbl>
+	<octLbl>octubre</octLbl>
+	<novLbl>noviembre</novLbl>
+	<decLbl>diciembre</decLbl>
+	<weekLbl>Semanas</weekLbl>
+	<maybeLbl>Tal vez</maybeLbl>
+	<validLbl>válido</validLbl>
+	<yearLbl>Años</yearLbl>
+	<mnthLbl>Meses</mnthLbl>
+	<dayLbl>Dias</dayLbl>
+	
+	<highScoreLbl>Puntuación más alta</highScoreLbl>
+	<lowscoreLbl>bajo Puntuación</lowscoreLbl>
+	<daystreakLbl>racha del día</daystreakLbl>
+	<boostScoreLbl>aumentar mi</boostScoreLbl>
+	<boostLampScoreLbl>puntuación mindLAMP</boostLampScoreLbl>
+	<todayLbl>hoy</todayLbl>
+	<streakspinLbl>racha de vueltas</streakspinLbl>
+	<todaySpinLbl>de hoy  gira</todaySpinLbl>
+	<seemoreLbl>ver mas resultados</seemoreLbl>
+	<spinwinLbl>GIRA PARA GANAR</spinwinLbl>
+	<wonLbl>Ganaste</wonLbl>
+	<starLbl>Estrellas !!</starLbl>
+	<continueCapsLbl>CONTINUAR</continueCapsLbl>
+	<tryagainLbl>Inténtalo de nuevo</tryagainLbl>
+	<badlickLbl>¡¡Mala suerte!!</badlickLbl>
+	
+	<youravgLbl>Su promedio</youravgLbl>
+	<totalavgLbl>Promedio total</totalavgLbl>
+	
+	<yourScoreLbl>Tu puntuación</yourScoreLbl>
+	<weeklyScoreLbl>Partitura semanal de juegos</weeklyScoreLbl>
+	
+	<gameSuccess>Has completado este juego con éxito.</gameSuccess>
+	<spinWheelLabel>Rueda de giro</spinWheelLabel>
+	<surveyResponse>Sus respuestas han sido enviadas con éxito.</surveyResponse>
+	<series7inst>Por favor informe el siguiente número en la secuencia: siete restadas de su respuesta anterior.</series7inst>
+	<instVideo>VIDEO DE INSTRUCCION</instVideo>
+	<surveyTextArea>Escriba la respuesta aquí ...</surveyTextArea>
+	<textAreaValidation>Introduce la respuesta.</textAreaValidation>
+	
+	<nbackShortInst1>1-back test: select whether or not the letter is the same as the one before it.</nbackShortInst1>
+	<nbackShortInst2>2-back test: select whether or not the letter is the same as the one two before it.</nbackShortInst2>
+	<nbackShortInst3>3-back test: select whether or not the letter is the same as the one three before it.</nbackShortInst3>
+	<SPFShortInst>Watch the boxes light up on the screen. Then, copy the pattern by tapping the boxes in the same order.</SPFShortInst>
+	<SPBShortInst>Watch the boxes light up on the screen. Then, copy the pattern backwards by tapping the boxes in the reverse order.</SPBShortInst>
+	<SimpleMemShortInst>You will see 5 images appear one after another. Then, a pair of images will appear. One of them is new and the other is one of the original 5 images. Select which image is from the original 5 shown.</SimpleMemShortInst>
+	<serial7ShortInst>Subtract 7 from the number shown on the screen and enter that number. Then subtract 7 from the number you entered. Repeat until the game is over.</serial7ShortInst>
+	<visualShortInst>You will be shown several images. Then, you will be shown all of the images again but with an object missing from the image. Select the missing object from the choices.</visualShortInst>
+	<DSFShortInst>Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the same order.</DSFShortInst>
+	<DSBShortInst>Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the reverse order they were read.</DSBShortInst>
+	<catsnDogsShortInst>Several boxes will appear on the screen. They will briefly show whether or not they have a cat, dog, or nothing behind them. Follow the instructions for the round and select the boxes that are asked for.</catsnDogsShortInst>
+	<tempShortInst>A 3x3 grid will be shown. Three images will be shown one after another, each in different box in the grid. Remember the image, location, and order of the images. Then, select the first item and corresponding box, followed by the second, and third.</tempShortInst>
+	<nbackNewShortInst1>1-back test: select whether or not the picture is the same as the one before it.</nbackNewShortInst1>
+	<nbackNewShortInst2>2-back test: select whether or not the picture is the same as the one two before it.</nbackNewShortInst2>
+	<nbackNewShortInst3>3-back test: select whether or not the picture is the same as the one three before it.</nbackNewShortInst3>
+	<trialsbNewShortInst>Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</trialsbNewShortInst>
+	<trialsBTouchShortInst>Tap the dots in order, alternating numbers and letters, starting with the number 1. For example, tap 1, then A, then 2, then B, and so on.</trialsBTouchShortInst>
+	<jewelsAShortInst>Tap the jewels in chronological order, starting with number 1.</jewelsAShortInst>
+	<jewelsBShortInst>Look at the bottom of the screen to see which jewel to collect first. Collect number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected.</jewelsBShortInst>
+	<trialsBTestShortInst>Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</trialsBTestShortInst>
+	<figCopyShortInst>An image will appear on the screen for 5 seconds. Remember the image. Then, copy the image onto the blank screen with your finger.</figCopyShortInst>
+	
+</resources>

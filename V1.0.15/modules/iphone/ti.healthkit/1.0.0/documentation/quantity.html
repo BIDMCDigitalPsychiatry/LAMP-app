@@ -1,0 +1,26 @@
+<h1>Ti.Healthkit.Quantity</h1>
+<h2>Description</h2>
+<p>HealthKit uses quantity objects to store numerical data. Quantities store a value for a given unit. You can request the value in any compatible units. For example, if you can create a length property in feet, you can then request the value in meters. The quantity object automatically converts its value to the requested units, as needed.</p>
+<h2>Properties</h2>
+<h2>Functions</h2>
+<h3>&lt;Boolean&gt; isCompatibleWithUnit(unit)</h3>
+<p>Returns a boolean value indicating whether the quantity is compatible with the provided unit.
+Individual units are compatible if they measure the same feature. For example, all length units are compatible. All mass units are also compatible. However, a length unit is not compatible with a mass unit.
+Complex units are compatible if the equation defining the units are compatible. Specifically, it must use the same operators, and the operands must be compatible. For example, meters per second and miles per hour are compatible. The left operands are both length units, the right operands are both time units and they all use a division operator.</p>
+<ul>
+<li>unit (<a href="unit.html">Ti.Healthkit.Unit</a>): The target unit.</li>
+</ul>
+<h3>&lt;Number&gt; valueForUnit(unit)</h3>
+<p>Returns the quantity's value in the provided unit.</p>
+<p>This function converts the quantity's value to the desired units. You do not need to know the quantity's original units. You can request the value in whatever units you want, as long as they are compatible with the quantity. This lets each application (or each locale) work with its preferred units.</p>
+<p>In most cases, you know which units are compatible with a given quantity from context. If you need to programatically check wether a particular unit is compatible with a particular quantity, call the <code>isCompatibleWithUnit</code> function.</p>
+<ul>
+<li>unit (<a href="unit.html">Ti.Healthkit.Unit</a>): The target unit. Note: if the quantity is not compatible with the unit, this function throws an exception.</li>
+</ul>
+<h3>&lt;Number&gt; compare(quantity)</h3>
+<p>Compares two values after converting them to the same units.</p>
+<p><strong>Note</strong>: Converting a value to a different unit can introduce floating point errors. Values that should be equal may appear inequal due to these floating point errors.</p>
+<p>Returns whether the current quantity is less than (-1), equal to (0), or greater than (1) the parameter quantity. This function automatically converts the quantities into the same units before comparing the values. You just need to ensure that the quantities have compatible units.</p>
+<ul>
+<li>quantity (Ti.Healthkit.Quantity): The quantity to compare. This function throws an exception if the quantities do not have compatible units.</li>
+</ul>

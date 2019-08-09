@@ -1,0 +1,848 @@
+"#preventIntroScreen":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '60dp'
+}
+
+"#homeView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#homeView[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#homeImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home/home.png',
+	left: '10dp'
+}
+
+"#homeImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home.png'
+}
+
+"#homeImage[formFactor=tablet]": {
+	left: '15dp'
+}
+
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	top: "10dp"
+}
+
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#reportView[formFactor=tablet]": {
+	right: '20dp',
+	top: '15dp'
+}
+
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png"
+}
+
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	//top: "15dp",
+	bottom: "3dp"
+}
+
+"#contentView":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	bottom: '62dp',
+	top: "70dp"
+}
+
+"#innerView":{
+	top: 0,
+	layout: "vertical",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL
+}
+
+"#starRateView":{
+	width:Titanium.UI.FILL,
+	height: "60dp",
+	// borderColor: "#ffffff",
+	// borderRadius: 5,
+	// borderWidth: 2,
+	//backgroundColor: "#2d7ac2",
+	//backgroundColor: "transparent",
+	backgroundImage : "/images/prevent/black_bg.png",
+	top: 0,
+	left: "10dp",
+	right: "10dp"
+}
+
+"#starRateView[formFactor=handheld platform=android]":{
+	width:Titanium.UI.FILL,
+	height: "60dp",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2,
+	backgroundColor: "transparent",
+	//backgroundColor: "#2d7ac2",
+	top: 0,
+	left: "10dp",
+	right: "10dp"
+}
+
+"#starView1":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal",
+	top: "8dp"
+}
+
+"#starView2":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal",
+	bottom: "8dp"
+}
+
+"#starView1[formFactor=handheld platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal",
+	top: "8dp"
+}
+
+"#starView2[formFactor=handheld platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal",
+	bottom: "8dp"
+}
+
+".starClass":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/star.png",
+	left: "5dp"
+}
+
+".starClass[formFactor=handheld platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/star.png",
+	left: "7dp"
+}
+
+"#starImage1":{
+	left: 0
+}
+
+"#star1":{
+	left: 0
+}
+
+"#blueStarView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "4%"
+}
+
+"#blueStarView[formFactor=handheld platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "3%"
+}
+
+"#blueStar":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/Spinwheel/blue_star.png"
+}
+
+"#blueStarCount":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.MediumMenuFontBold,
+	color: "#ffffff",
+	textAlign: "center"
+}
+
+"#scoreView":{
+	width:Titanium.UI.FILL,
+	height: "85dp",
+	top: "4%",
+	left: "10dp",
+	right: "10dp"
+}
+
+"#scoreView[formFactor=handheld platform=android]":{
+	width:Titanium.UI.FILL,
+	height: "85dp",
+	top: "3%",
+	left: "10dp",
+	right: "10dp"
+}
+
+".scoreClass":{
+	height:Titanium.UI.FILL,
+	width: "85dp",
+	//backgroundColor: "#5babf4",
+	backgroundColor: "transparent",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+"#scoreView1":{
+	left: 0
+}
+
+"#scoreView3":{
+	right: 0
+}
+
+".valueClass":{
+	font:Alloy.Globals.AileronRegular25,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "15dp",
+	textAlign: "center"
+}
+
+".labelClass":{
+	font:Alloy.Globals.MediumLargeFontLight,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	bottom: "15dp",
+	textAlign: "center"
+}
+
+"#boostLabel1":{
+	font:Alloy.Globals.MediumLargeFontLight,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "25dp",
+	textAlign: "center"
+}
+
+"#boostLabel2":{
+	font:Alloy.Globals.MediumLargeFontLight,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	//bottom: "25dp",
+	top:"40dp",
+	textAlign: "center"
+}
+
+"#spinView[formFactor=handheld]":{
+	height: "180dp",
+	width: "180dp",
+	backgroundImage: "/images/prevent/transparent_bg_blk.png",
+	top: "4%",
+	//top: "17%",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+
+"#spinView[formFactor=handheld platform=android]":{
+	height: "180dp",
+	width: "180dp",
+	backgroundImage: "/images/prevent/transparent_bg_blk.png",
+	top: "3%",
+	//top: "17%",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+"#spinAndroid[platform=android]":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	backgroundColor: "transparent",
+	zIndex: 10
+}
+
+"#spinInnerView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "vertical",
+	zIndex: 0
+}
+
+"#spinImage":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	//image: "/images/prevent/spin_wheel.png",
+	//top: "15dp"
+	zIndex: 0
+}
+
+".spinClass":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	textAlign: "center",
+	font:Alloy.Globals.MediumLargeFontLight,
+	color: "#ffffff"
+}
+
+"#spinLabelView[formFactor=handheld]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10dp",
+	//backgroundColor:"Red",
+	layout: "vertical",
+	zIndex: 0
+}
+
+"#streakSpin":{
+	//top:"10dp"
+}
+
+"#todaySpin":{
+	top: "10dp"
+}
+
+"#bottomView":{
+	//top:"5%",
+	height: "100dp",
+	width:Titanium.UI.FILL,
+	bottom: 0,
+	layout: "vertical"
+}
+
+"#startButton":{
+	width: '180dp',
+	height: '40dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '20dp',
+	textAlign: 'center',
+	top: "6%",
+	font: Alloy.Globals.LargeFontBold
+}
+
+"#startButton[formFactor=handheld platform=android]":{
+	width: '180dp',
+	height: '40dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '20dp',
+	textAlign: 'center',
+	top: "5%",
+	font: Alloy.Globals.LargeFontBold
+}
+
+// ********** iPad ***********
+
+"#contentView[formFactor=tablet]":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	bottom: '62dp',
+	top: "70dp"
+}
+
+"#starRateView[formFactor=tablet]":{
+	width:Titanium.UI.FILL,
+	height: "120dp",
+	// borderColor: "#ffffff",
+	// borderRadius: 5,
+	// borderWidth: 2,
+	// backgroundColor: "#2d7ac2",
+	backgroundImage : "/images/prevent/black_bg.png",
+	top: 0,
+	left: "25dp",
+	right: "25dp"
+}
+
+"#starRateView[formFactor=tablet platform=android]":{
+	width:Titanium.UI.FILL,
+	height: "100dp",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2,
+	backgroundColor: "#2d7ac2",
+	top: 0,
+	left: "25dp",
+	right: "25dp"
+}
+
+"#starView1[formFactor=tablet]":{
+	top: "15dp",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal"
+}
+
+"#starView2[formFactor=tablet]":{
+	bottom: "15dp",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal"
+}
+
+".starClass[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/star.png",
+	left: "10dp"
+}
+
+".starClass[formFactor=tablet platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	//image: "/images/tablet/prevent/star.png",
+	left: "20dp"
+}
+
+"#starImage1[formFactor=tablet]":{
+	//left: 0
+}
+
+"#star1[formFactor=tablet]":{
+	//left: 0
+}
+
+"#blueStarView[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "2%"
+}
+
+"#scoreView[formFactor=tablet]":{
+	width:Titanium.UI.FILL,
+	height: "160dp",
+	top: "3%",
+	left: "25dp",
+	right: "25dp"
+}
+
+".scoreClass[formFactor=tablet]":{
+	height:Titanium.UI.FILL,
+	width: "160dp",
+	//backgroundColor: "#5babf4",
+	backgroundColor: "transparent",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+"#scoreView1[formFactor=tablet]":{
+	left: 0
+}
+
+"#scoreView3[formFactor=tablet]":{
+	right: 0
+}
+
+".valueClass[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontExtraLarge,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "40dp",
+	textAlign: "center"
+}
+
+".labelClass[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	bottom: "40dp",
+	textAlign: "center"
+}
+
+"#boostLabel1[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "55dp",
+	textAlign: "center"
+}
+
+"#boostLabel2[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "70dp",
+	textAlign: "center"
+}
+
+"#spinView[formFactor=tablet]":{
+	height: "300dp",
+	width: "300dp",
+	backgroundImage: "/images/prevent/transparent_bg_blk.png",
+	top: "4%",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+"#spinView[formFactor=tablet platform=android]":{
+	height: "260dp",
+	width: "260dp",
+	backgroundImage: "/images/prevent/transparent_bg_blk.png",
+	top: "4%",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+"#spinImage[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/spin_wheel.png",
+	//top: "5%"
+	zIndex: 0
+}
+
+".spinClass[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	textAlign: "center",
+	font:Alloy.Globals.LargeFontLightTablet,
+	color: "#ffffff"
+}
+
+"#spinLabelView[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10dp",
+	//backgroundColor:"Red",
+	layout: "vertical",
+	zIndex: 0
+}
+
+"#streakSpin[formFactor=tablet]":{
+	//top:"20dp"
+}
+
+"#todaySpin[formFactor=tablet]":{
+	top: "10dp"
+}
+
+"#bottomView[formFactor=tablet]":{
+	height: "160dp",
+	width:Titanium.UI.FILL,
+	bottom: "3dp",
+	//top: "7%",
+	//backgroundColor:"Red",
+	layout: "vertical"
+}
+
+"#startButton[formFactor=tablet]":{
+	width: '300dp',
+	height: '45dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	top: "5%",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+"#supportLabel[formFactor=tablet]":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: "3dp"
+}
+
+"#startButton":{
+	width: '180dp',
+	height: '40dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '20dp',
+	textAlign: 'center',
+	top: "6%",
+	font: Alloy.Globals.LargeFontBold
+}
+
+"#startButton[formFactor=handheld platform=android]":{
+	width: '180dp',
+	height: '40dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '20dp',
+	textAlign: 'center',
+	top: "5%",
+	font: Alloy.Globals.LargeFontBold
+}
+
+// ********** iPad ***********
+
+"#contentView[formFactor=tablet]":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	bottom: '62dp',
+	top: "70dp"
+}
+
+"#starRateView[formFactor=tablet]":{
+	width:Titanium.UI.FILL,
+	height: "120dp",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2,
+	backgroundColor: "#2d7ac2",
+	top: 0,
+	left: "25dp",
+	right: "25dp"
+}
+
+"#starRateView[formFactor=tablet platform=android]":{
+	width:Titanium.UI.FILL,
+	height: "100dp",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2,
+	backgroundColor: "#2d7ac2",
+	top: 0,
+	left: "25dp",
+	right: "25dp"
+}
+
+"#starView1[formFactor=tablet]":{
+	top: "15dp",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal"
+}
+
+"#starView2[formFactor=tablet]":{
+	bottom: "15dp",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	layout: "horizontal"
+}
+
+".starClass[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/star.png",
+	left: "10dp"
+}
+
+".starClass[formFactor=tablet platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	//image: "/images/tablet/prevent/star.png",
+	left: "20dp"
+}
+
+"#starImage1[formFactor=tablet]":{
+	//left: 0
+}
+
+"#star1[formFactor=tablet]":{
+	//left: 0
+}
+
+"#blueStarView[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "2%"
+}
+
+"#scoreView[formFactor=tablet]":{
+	width:Titanium.UI.FILL,
+	height: "160dp",
+	top: "3%",
+	left: "25dp",
+	right: "25dp"
+}
+
+".scoreClass[formFactor=tablet]":{
+	height:Titanium.UI.FILL,
+	width: "160dp",
+	backgroundColor: "#5babf4",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2
+}
+
+"#scoreView1[formFactor=tablet]":{
+	left: 0
+}
+
+"#scoreView3[formFactor=tablet]":{
+	right: 0
+}
+
+".valueClass[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontExtraLarge,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "40dp",
+	textAlign: "center"
+}
+
+".labelClass[formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: "#ffffff",
+	bottom: "40dp",
+	textAlign: "center"
+}
+
+// "#boostLabel1[formFactor=tablet]":{
+	// font:Alloy.Globals.LargeFontLightTablet,
+	// height:Titanium.UI.SIZE,
+	// width:Titanium.UI.SIZE,
+	// color: "#ffffff",
+	// top: "55dp",
+	// textAlign: "center"
+// }
+// 
+// "#boostLabel2[formFactor=tablet]":{
+	// font:Alloy.Globals.LargeFontLightTablet,
+	// height:Titanium.UI.SIZE,
+	// width:Titanium.UI.SIZE,
+	// color: "#ffffff",
+	// bottom: "55dp",
+	// textAlign: "center"
+// }
+
+"#spinView[formFactor=tablet]":{
+	height: "300dp",
+	width: "300dp",
+	backgroundImage: "/images/prevent/transparent_bg_blk.png",
+	top: "4%",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2,
+	//layout: "vertical"
+}
+
+"#spinView[formFactor=tablet platform=android]":{
+	height: "260dp",
+	width: "260dp",
+	backgroundImage: "/images/prevent/transparent_bg_blk.png",
+	top: "4%",
+	borderColor: "#ffffff",
+	borderRadius: 5,
+	borderWidth: 2,
+	//layout: "vertical"
+}
+
+"#spinImage[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/spin_wheel.png",
+	//top: "5%"
+	zIndex:0
+}
+
+".spinClass[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	textAlign: "center",
+	font:Alloy.Globals.LargeFontLightTablet,
+	color: "#ffffff"
+}
+
+"#spinLabelView[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10dp",
+	//backgroundColor:"Red",
+	layout: "vertical",
+	zIndex:0
+}
+
+"#streakSpin[formFactor=tablet]":{
+	//top:"20dp"
+}
+
+"#todaySpin[formFactor=tablet]":{
+	top: "10dp"
+}
+
+"#bottomView[formFactor=tablet]":{
+	height:"160dp",
+	width:Titanium.UI.FILL,
+	bottom:"3dp",
+	//top: "7%",
+	//backgroundColor:"Red",
+	layout:"vertical"
+}
+
+"#startButton[formFactor=tablet]":{
+	width: '300dp',
+	height: '45dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	top: "5%",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+"#supportLabel[formFactor=tablet]":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: "3dp"
+}

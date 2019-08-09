@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	
+	<string name="appTitle">mindLAMP</string>
+	<string name="signIn">wura mu</string>
+	<string name="next">nea edi so</string>
+	<string name="notImplement">Wɔannyɛ.</string>
+	<string name="activityValidating">Wɔrohwɛ (Da odzi mu)...</string>
+	<string name="activitySaving">Wɔdze resie ...</string>
+	<string name="activitySubmitting">Ede rek)...</string>
+	<string name="activityLoading">Erehyr hy3...</string> 
+	
+	<string name="unexpectedError">Mfomdo aba. Yɛ no bio .</string>
+	<string name="noNetwork">Internet no mmba. Yɛ no bio .</string>
+	<string name="enableLocation">Bue Location Services na sɔw dza reyɛ no do .</string>
+	<string name="sessionExpired">Dza ereyɛ no esi. Sɔw do.</string>
+	<string name="exitApp">Egye dzi dɛ epɛ dɛ igyae??</string>
+	<string name="surveyTextArea">Type answer here...</string>
+
+	
+	<string name="signInStudent">Fa study ID no yɛ edwuma</string>
+	<string name="signInUserSignUp">Fa Guest user no yɛ edwuma</string>
+	<string name="userName">Wo dzin</string>
+	<string name="userNameEmailOrStudyId">Ahyɛnsew (Email/ Study ID)</string>
+	<string name="specifyUsername">Si wo dzin pi</string>
+	<string name="loginErrorAlert">Dza wɔka fa woho no nndzi mu.</string>
+	<string name="studyIdLbl">Study Id</string>
+
+	
+	<string name="signInStudentPageTitle">Hyɛ ase</string>
+	<string name="signInSmall">Sign In</string>
+	<string name="studyCode">Fa wo study code hyɛ mu</string>
+	<string name="studyId">Fa wo study ID hyɛ mu</string>
+	<string name="createPassword">Fa biribi hyɛ woho nsew (password)</string>
+	<string name="confirmPassword">Si dzi afa no pi</string>
+	<string name="specifyStudyCode">Kyerɛ study code no.</string>
+	<string name="specifyStudyId">kyerɛ study ID no.</string>
+	<string name="specifyPassword">Kyerɛ password.</string>
+	<string name="specifyConfirmPassword">Kyerɛ dza efae no (password) na si no pi.</string>
+	<string name="specifySameConfirmPassword">Password and Confirm Password entries must be the same.</string>
+	<string name="errorSignInWithSudyId">Mfomdo aba. Yɛ no bio .</string>
+	<string name="enterfirstNameLbl">Enter your First Name.</string>
+	<string name="enterlastNameLbl">Enter your Last Name.</string>
+
+	
+	<string name="quizHeading">Nsɔhwɛ</string>
+	<string name="quizDescriptionLine1">Yiyi nsɛmbisa kakra yi ano. Yɛdze rosɔ wo</string>
+	<string name="quizDescriptionLine2">Ahwɛ</string>
+	<string name="pleaseAnswerQuestion">Kyerɛ nyiano a efae .</string>
+
+	
+	<string name="consent">Consent</string>
+	<string name="consentNote">Review the form below, and tap Agree if you're ready to continue.</string>
+	<string name="consentDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+	<string name="agree">Agree</string>
+	<string name="disagree">Disagree</string>
+
+	
+	<string name="firstName">Wo dzin a odzi kan</string>
+	<string name="specifyfirstName">Si dzin a odzin kan no pi .</string>
+	<string name="lastName">Wo dzin a odzi ewiei</string>
+	<string name="specifyLastName">Si dzin a odzi ewiei no pi .</string>
+	<string name="specifyEmail">Specify Email address.</string>
+	<string name="emailId">Email ID</string>
+	<string name="password">Password</string>
+	<string name="createAndContinue">Create &#038; Continue</string>
+	<string name="specifyValidEmail">Specify a valid Email address.</string>
+	<string name="forgotPasswordTitle">Forgot Password</string>
+
+	
+	<string name="surveyMenu">ahɛn mu</string>
+	<string name="cognitionMenu">adwen agor</string>
+	<string name="environmentMenu">Dze a etwa hɛn ho ehyia</string>
+	<string name="helpMenu">Mboa</string>
+	<string name="dismissLabel">Twa mu</string>
+	<string name="noDataLabel">Akwama (Data) Nnyi Hɔ.</string>
+	
+	<string name="surveysLabel">ahɛn mu</string>
+	<string name="completedLabel">Woewie</string>
+	<string name="startlabel">Hyɛ Ase</string>
+	<string name="resultlabel">Hwɛ dze a ennya no.</string>
+	<string name="surveyListHeader">ahɛn mu</string>
+
+	
+	<string name="appColor">Dwumadze ho color</string>
+	<string name="symptomSurveyHeader">ahɛn mu</string>
+	<string name="cognitionTestHeader">Sɛntsir nsohwɛ</string>
+	<string name="emergencyContact">Ahokyer ba frɛ number ye</string>
+	<string name="selectSlot">Yie adakaba mu kor</string>
+	<string name="selectRepeat">kwan a damu si do</string>
+	<string name="settingsHeader">Ehyehyɛ</string>
+	<string name="sureSignout">Egye dɛ epɛ dɛ ifi mu a?</string>
+	<string name="yes">Nyew</string>
+	<string name="no">Oho</string>
+	<string name="validContactNumb">Ma "number" a wobotum dze afrɛ wo</string>
+	<string name="validPersonalNumb">Ma oara no "number"</string>
+	
+	<string name="surveyDescriptionLabel">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</string>
+	<string name="enterHere">woara ha</string>
+	<string name="slectSurveyType">Fa dze a ebuei enyiwa ahwɛ no kor</string>
+	<string name="selectCognitionLblAlert">fa adwen agor kor</string>
+	<string name="validSymptomTime">Adze a afa na ber a edze fae no wɔ dɛ ɔyɛ kor</string>
+	<string name="validCognitionTime">Adze a afa na ber a edze fae no wɔ dɛ ɔyɛ kor</string>
+	<string name="symptomTimeReminder">dza okae wo</string>
+	<string name="cognitionTimeReminder">adwen agor a okae wo</string>
+
+	
+	<string name="surveyResultTitle">nsunsuando nkakae</string>
+	
+	<string name="helpTitle">Mboa</string>
+	<string name="emergencycontactTitle">Number a wo ho kyer wo ber biara a ibotum afrɛ</string>
+	<string name="helpLineTitle">Number a ilhua mboa ibotum afrɛ</string>
+	<string name="policyTitle">wɔ hɔn nsem ho nhwehwɛ</string>
+	<string name="deleteAccountTitle">Yi me dzin fi mu</string>
+	<string name="deleteConfirmation">Egye dzi dɛ epɛ dɛ woyi wo fir mu?</string>
+
+	
+	<string name="cognitionTestTitle">adwen agor</string>
+	<string name="cognitionCapsTestTitle">adwen agor a okae wo</string>
+	<string name="startGameLabel">Agor a wɔdze hyɛ ase</string>
+
+	
+	<string name="environmentTitle">Dze a etwa hɛn ho ehyi a</string>
+	<string name="pictureLabel">Ewɔ hen?</string>
+	<string name="surveyTypeHeader">ahɛn mu</string>
+	<string name="helpconfirmation">Wo nyiano no kyerɛ dɛ bi a biribi haw wo.</string>
+	
+	<string name="slectAnswerType">Wɔmma wo mboa a?</string>
+	<string name="enterComment">Fa nyiano kor</string>
+	
+	<string name="enterAnswer">Kyerɛ dze a aka no.</string>
+	
+	<string name="slectLikertAnswerType">Kyerɛ wo nyiano no</string>
+	
+	<string name="intructionLabel">Fa bi</string>
+	<string name="intructionLabel1">Woewie</string>
+	<string name="intructionLabel2">1. Bɔ kor (1) no do na hyɛ nsɔhwɛ ase</string>
+	<string name="restartGame">Hyɛ ase bio</string>
+	<string name="intructionLabel3">Gyae</string>
+
+	
+	<string name="forgotYourPasswordLabel">Wo werɛ efir wo password?</string>
+	<string name="forgotPasswordTitle">Wo werɛ efir wo ahyɛnsew (password)</string>
+	<string name="questionLabel">Fa wo Email Address hyɛ ase na fa wo 'number'</string>
+	<string name="sendLabel">'Send' (Ma ɔnkɔ)</string>
+	<string name="emailLabel">Wo Email Address</string>
+	<string name="alertLabel">Wo password no kɔ wo Email do</string>
+	
+	<string name="digitLabel">Hyɛ 'Digit' ase</string>
+	<string name="serial7LabelMessage">Yi 7 fi dza enya no mu na ma nsa nka dza aka no.</string>
+		
+	
+	<string name="SpatialSpanMessage1">Hyɛ ndakaba no nsew nkorkor.</string>	
+	<string name="SpatialSpanMessage2">Fa wo ns aka ndakaba</string>	
+	<string name="SpatialSpanMessage3">Fa wo nsa ka ndakaba no fi ekyir bra enyim</string>
+	<string name="SimpleMemoryMessage1">Kae ahyɛnsew a wɔdze akyerɛ wo no</string>
+	<string name="SimpleMemoryMessage2">Fa wo nsa ka ahyɛnsew no</string>	
+	
+	<string name="CatandDogMessage1">Fa mbrɛ woesi ahyehyɛ asɛnsew no to wo tsir mu.</string>
+	<string name="CatandDogMessage2">Fa wo ns aka no dɛ mbrɛ woahyehyɛ no no.</string>
+	<string name="CatandDogInstruction1">Fa ufuyin yɛ ngyinambowa hɔn mfonyin</string>
+	<string name="CatandDogInstruction2">Fa mbɔdɔ hɔn mfonyin</string>
+	
+	
+	<string name="jewelsTrail1">Agor no no bokae nye dɛ ibenya ndɛnkyɛmbo (diamond) pii</string>	
+	<string name="jewelsTrail2">Epɛ ndɛnkyɛmbo no pii a fa wo nsa sisi do fir kor kɔ</string>
+	<string name="jewelsTrailB2">Epɛ ndɛnkyɛmbo no a edze wo nsa si</string>	
+	<string name="jewelsTrail3">Itsi a, ɔbɔtwe wo ekyir, itwa a ebɔkɔ oenyim.</string>	
+
+
+	
+<string name="nbackTest">amba nhwehwɛe</string>	
+<string name="trailsBTest">fa sosɔw do</string>	
+<string name="spatialFrwd">agor adaka</string>	
+<string name="spatialBckwrd">agor adaka tsenenee</string>	
+<string name="spatialSpan">Pia Spatial Span</string>	
+<string name="memoryTest">mfonyin nhwehwɛe</string>	
+<string name="serial7">nkontaa agor</string>	
+<string name="visualGame">nkae wosi enyim</string>	
+<string name="temporalOrder">nkae wosi enyim tsenenee</string>
+<string name="digitFWrdGame">Pia 'Digit' Span</string>		
+<string name="digitFWrd">afir saafee mbuei</string>	
+<string name="digitBckWrd">afir saafee mbui tsenenee</string>	
+<string name="catdog">ngyinambowa na mbodom</string>	
+<string name="trailsBTestNew">fa sosɔw do (New)</string>	
+<string name="nbackTestNew">mfonyin nhwehwɛe</string>	
+<string name="trailsBTouch">fa nsa ka</string>	
+<string name="jwelA">egudzi</string>	
+<string name="jwelB">egudzi-tsenenee</string>	
+<string name="figCopy">adrɔw</string>
+<string name="scratchCard">card da wo kyerew do</string>
+<string name="memoryGame">nkae agor</string>
+<string name="attentionGame">agor ɔtwe ohia hɛn adwen</string>	
+
+<string name="scratchLbl">ayɛkrado dɛ ebɛgye wo ahom?</string>
+<string name="scratchLbl2">Twr3 do ma ompuei!</string>
+<string name="scoreBrainLbl">enyan wo adwen mu ntsin</string>
+<string name="checkinLbl">ahɛn mu</string>
+<string name="braingameLbl">adwen agor</string>
+
+
+	<string name="dogBox">Tap the boxes that have a dog behind them.</string>	
+	<string name="selectThe">Fa ndakaba</string>
+	<string name="imgCatBox">a wɔwɔ ngyinambowa hɔn mfonyin no</string>	
+	<string name="imgDogBox">a wɔwɔ mbɔdɔm hɔn mfonyin no.</string>
+	<string name="continueDogBox">Kɔ do fa wo nsa bɔ ndakaba a mbɔdɔm wɔ ekyir no do, mma mmfa wo nsa nnka dze a ɔwɔ ngyinambowa mfonyin wɔ ekyir no.</string>
+	<string name="continueCatBox">Afei fa wo nsa bɔ ndakaba a ngyinambowa wɔ ekyir no do, mma mmfa wo nsa nnka ndakakba a mbɔdɔm wɔ ekyir no.</string>	
+
+
+	<string name="soundalert">Buei dze a osi oenyim no ma kasa mbra</string>	
+	<string name="audioalert">Dzie dze a ɔrobɔ no yie</string>
+	<string name="digitalert">Fa 'digits' no gu mu</string>
+	<string name="digitReversealert">'Digits' no hyɛ ase wɔ ewiei kɔ ahyɛse</string>	
+	
+	
+	<string name="articleLbl">Adzesua Ahorow Ho Nsɛm a wɔakyerɛw</string>	
+	<string name="tipLbl">Afoto</string>
+	<string name="profileLbl">Wo ho nsɛm</string>	
+	
+	<string name="tempAlert1">bɔ bea mfonyi nnyi yi</string>
+	<string name="tempAlert2">Kae ahyɛnsew a wɔdze akyerɛ wo no</string>
+	<string name="tempAlert3">kae adze ebien wɔ mfonyin no nyinara mu</string>
+	<string name="tempAlert4">bɔ mfonyin a ehu no do</string>
+	<string name="tempAlert5">Kae adze a ereyɛ, beebi a ɔwɔ na ne nhyehyɛe</string>
+	<string name="tempAlert6">me pa wo kyew twɛn na hw3</string>
+	<string name="tempAlert7">me wo kyew kae dza odzidzi do yi</string>
+	
+	<string name="appUse">Adze a edze dze a esua no bɛyɛ</string>
+	<string name="reprtLbl">Dwuma a edzi no ho pɔwbɔ</string>
+	
+	
+	<string name="tapfirstImg">Fa wo ns aka asɛnkyerɛdze a odzi kan</string>
+	<string name="tapNxtImg">Fa wo ns aka asɛnkyerɛdze a ɔtoa do</string>
+	<string name="tapREsBox">Fa wo ns aka adakaba prɛko no</string>
+	<string name="pickMatchingalphabet">Fa wo ns aka akyerɛwha a ɔnye adakaba no nam no.</string>
+	
+	<string name="exmLbl">pɔw a Abɔ</string>
+	<string name="tapNxtNumber">Fa wo nsa si 2 do</string>
+	<string name="continueTap">sɔw do wo nsa sisi ‘numbers’ no do</string>
+	<string name="wrongTapLbl">Etsi</string>
+	
+	<string name="nbackLvl">amba nhwehwɛe nsɔhwɛ</string>
+	<string name="nbackNewLvl">mfonyin nhwehwɛe nsɔhwɛ</string>
+	<string name="oneBackTest">1-back nsɔhwɛ (1-back test)</string>
+	<string name="twoBackTest">2-back nsɔhwɛ</string>
+	<string name="treeBackTest">3-back nsɔhwɛ</string>
+	
+	<string name="pickdimnd">Fa 'Diamond' </string>
+	<string name="continueLbl">toado</string>
+	<string name="exitLbl">fir ha</string>
+	
+	<string name="resultLbL">Dze a ebɔ no pɔw</string>
+	<string name="pointLbl">Apɔw a abɔ</string>
+	<string name="scoregrapgLbl">Krakaa a ɔkyerɛ dze a enya (score Graph)</string>
+	<string name="envLbl">Adze a etwa hɛn ho ehyia no ho adze a yesua</string>
+	<string name="cogscore">adwen agor, dza ennya</string>
+	
+	<string name="pointnextLvl">Kwan a ebɛfa do etu wo anan</string>
+	<string name="maxLbl">Woana apem koraa</string>
+	<string name="gameNameLbl">agor ne dzin</string>
+	
+	<string name="learnLbl">sua</string>
+	<string name="accessLbl">bubu</string>
+	<string name="manageLbl">susu</string>
+	<string name="prevntLbl">bɔ ho ban</string>
+	
+	<string name="instructionLbl">Dze a yɛ</string>
+	<string name="instructionsubmit">yɛ nnhyɛ as</string>
+	
+	<string name="preventcontent">mindLAMP kwan no botae nye dɛ ɔnnkɛma obi enya adwen yarba, anaaso obi a wɔasa no yar, ne yarba no nnkɛsan aba. Adwen mu yarba nhweɛ no botae nye dɛ mindLAMP na dza okeka ho bɛna yarba no ho nyimdzee ayɛ kɛse. Hɛn enyidado nye dɛ adwen yarba no, wɔbɔbɔ ho ban no woesiw ano kwan.</string>
+
+	<string name="manageContent">ber biara ma  nyia a onyim nhwɛ wo adwen ne yie yɛ do LAMP no wɔdze boaboa nsɛm a obotum aboa ma waahyɛ ma wo adwen atse ap)w. )yɛ adze a w)dze botum ahyɛ adwen ho ɔyarsanyi ne edwuama anan mu ɔnnkɛkyɛ pii na LAMP akyerɛ kwan a obiara boyum afa do ayɛ adwen ap)wmudzen ho edwuma akwan a wɔfa do boa adwen ma ɔtse apɔw, etsipɛn fo ekuw ne ntsetse wee kwan a wobotum aboa ankorrankor ma hɔn ara etum ahwɛ hɔn adwen mu yarba do</string>
+	
+	
+	<string name="copyrightLbl">Copyright BIDMC © 2019. All rights reserved.</string>
+	
+	
+	<string name="SchoolLbl">skuul / gyinapɛn</string>
+	<string name="wrkLbl">edwuma</string>
+	<string name="clicnicLbl">asopitsi</string>
+	<string name="outsideLbl">abow ano</string>
+	<string name="shopingLbl">eguadzi / edzidzi bea</string>
+	<string name="trainLbl">bɔɔs / keteke / lorry</string>
+	<string name="aloneLbl">ankotsee</string>
+	<string name="friendsLbl">nnye anyɛnkofo</string>
+	<string name="incrowdLbl">wɔ dɔ mu</string>
+	<string name="withPeersLbl">nnye mfɛfo</string>
+	<string name="whowithLbl">nnye wana woho</string>
+	<string name="submitLbl">ma nko</string>
+	<string name="homeLbl">efie</string>
+	<string name="familyLbl">nnye ebusua</string>
+	
+	<string name="beginerLbl">ahyɛse nnyi</string>
+	<string name="expertLbl">nyim paa</string>
+	<string name="intermediateLbl">nyim kakra</string>
+	<string name="advancedLbl">akɔ ekyir</string>
+	<string name="difficultyLbl">ɔyɛ dzen</string>
+	
+	<string name="emailNotconfigred">email na device nntom nnye adwuma mbom</string>
+	
+	<string name="cancelLbl">twa mu</string>
+	<string name="deleteLbl">pepa</string>
+	<string name="selectcognitionLbl">fa adwen agor</string>
+	<string name="contactnumberLbl">24/7 CONTACT NUMBER</string>
+	<string name="personalHelpLine">nyimpa obotum aboa wo</string>
+	<string name="twentyfr">tetefon number</string>
+	<string name="protocolLbl">nhyehywɛ ohia</string>
+	<string name="signoutLbl">fir edze</string>
+	<string name="notAvailableLbl">Innyim</string>
+	<string name="selectTimeLbl">fa mbir</string>
+	<string name="repeatInterval">Rkwan a damu si do</string>
+	<string name="selectsurveytitle">fa check-in</string>
+	
+	<string name="totalScoreLbl">dza ennya</string>
+	<string name="totalScoreCapsLbl">wodzi ne nyinara bomu a</string>
+	<string name="drawfigLbl">drɔw adze</string>
+	<string name="secLbl">ka</string>
+	<string name="hintLbl">dza ɔboa</string>
+	<string name="levelLbl">bea edu</string>
+	<string name="lastnumberLbl">number odzi ekyir</string>
+	<string name="finishLbl">Woewie</string>
+	<string name="nxtLbl">dza odzi do</string>
+	<string name="answeredLbl">nnyiano</string>
+	<string name="goLbl">kɔ</string>
+	<string name="backLbl">Ekyir (Back)</string>
+	<string name="jwelcollectedLbl">Jjewels ennya</string>
+	<string name="totalbonusLbl">bonus dodow</string>
+	<string name="okLbl">oyie</string>
+	
+	<string name="lastmnthLbl">bosom otwa tow</string>
+	<string name="lastweekLbl">ndɛ dapɛn</string>
+	<string name="languageSelect">fa kasa</string>
+	
+	<string name="repeatLbl">yɛ biom</string>
+	<string name="selectSurveyLbl">FA CHECK-IN</string>
+	<string name="selectTimeLbl">fa mbir</string>
+	<string name="slottinmeLbl">ber a wodzi be hye mu</string>
+	<string name="repeatInterval">kwan a damu si do</string>
+	<string name="avgScoreLbl">Average score</string>
+	<string name="scoreLbl">amba enya</string>
+	<string name="bonusLbl">dza wodzi akyɛ wo</string>
+	<string name="healthDataTitle">nsɛm a ɔfa wo apɔumudzen ho</string>
+	
+	<string name="scoreCardLbl">amba krataa</string>
+	<string name="closeLbl">tow mu</string>
+	<string name="pointEarnedLbl">amba dodow enya</string>
+	<string name="timetakenLbl">mber edzi</string>
+	
+	
+	
+	<string name="term1">Me ntseasee wɔ mindLAMP ho nye dɛ, ɔnnka dɛ ɔbɛsa me yare, ɔbɔhwɛ me yar no do, anaa dɛ obesiw yar no ano.</string>
+	<string name="term2">Me ntseasee nye dɛ obiara nnyi hɔ a, ɔdze n’enyiwa dzi dɛm mindLAMP dwumadzi yi ekyir, dɛm ntsi sɛ mɛka dɛ mihia mboa mpo a…………</string>
+	<string name="term3">mindLAMP bɔboa wo ho nsɛm anon a wɔahwɛ mbrɛ misii dze no yɛɛ edwuma</string>
+	<string name="term4">mindLAMP bɔboa wo ho nsɛm anon a wɔahwɛ mbrɛ misii dze no yɛɛ edwuma Biribiara a mindLAMP bɛka afa mo ho no befir me nyiyiano a memae wɔ nsɛm a wobisaa me n adze a wohunii wɔrohwɛ me no. Sɛ migyae mindLAMP dwumadzi a, mindLAMP bɔkɔ do ara etsietse mo ho nsɛm, ahwehwɛ m’ekyir kwan na ɔahwehɛ m’abrabɔ mu.</string>
+
+	<string name="consentLbl">Pen do</string>
+	<string name="consentNote">Kenkan dze a ɔsɔw do yi, epen a fa wo ns aka 'Agree'</string>
+	<string name="agree">Mepen</string>
+	<string name="disagree">Memmpen</string>
+	
+	<string name="iamLbl">emi</string>
+	<string name="atLbl">bea mo wɔ</string>
+	<string name="inLbl">mowo</string>
+	
+	<string name="morningLbl">Anapa</string>
+	<string name="noonLbl">Ewiabir</string>
+	<string name="eveningLbl">Ewimbir</string>
+	
+	<string name="threeHrLbl">Dɔnhwer Ebiasa Biara</string>
+	<string name="sixHrLbl">Dɔnhwer Esia Biara</string>
+	<string name="twelveLbl">Dɔnhwer Duebien Biara</string>
+	
+	<string name="dailLbl">Da biara (Dwowoda, Wukuda, Fida, etc)</string>
+	<string name="biweekLbl">Nda ebien, ebien, (Dwowda, Wukuda, Fida, etc)</string>
+	<string name="triWeekLbl">Mpɛn ebien dabɛn biara.</string>
+	<string name="weeklyLbl">Dapɛn, dapɛn.</string>
+	<string name="monthlyLbl">Mbɛn ebien bosom biara</string>
+	<string name="bimonthlyLbl">Bosom, bosom.</string>
+	
+	<string name="heartLbl">Mbrɛ wo akoma si tow</string>
+	<string name="stepLbl">Wo anan ntutui</string>
+	<string name="sleepLbl">Wo nda</string>
+	<string name="BpLbl">Wo 'Blood Pressure'</string>
+	<string name="respiratoryLbl">Mbrɛ wo ahomgye tse</string>
+	<string name="flightLbl">Atwer a efowee</string>
+	<string name="segmnetLbl">Nkyɛm</string>
+	<string name="heightLbl">Wo tsentsen</string>
+	<string name="distanceLbl">Akwantsen a itwae</string>
+	<string name="wieghtLbl">Wo mu dur</string>
+	
+	<string name="maleLbl">Banyin</string>
+	<string name="femaleLbl">Ɔbaa</string>
+	<string name="otherLbl">Obi bio</string>
+	<string name="notSetLbl">Wobesi no pi</string>
+	<string name="dobLbl">DOB</string>
+	<string name="bloodtypeLbl">bogya ahorow</string>
+	<string name="sexLbl">obaa anee bayin</string>
+	
+	<string name="agreeTermLbl">Me mpendo.</string>
+	<string name="languageCapsSelect">fa kasa</string>
+	
+	
+	<string name="nwLbl">seiseiara</string>
+	<string name="tapLbl">fa wo nsa si do</string>
+	
+	<string name="oneBiginLbl">fa wo nsa si kor do hya ase</string>
+	
+	<string name="surveyPointLbl">be a nhwehywe mu pemee</string>
+	<string name="reminderLbl">nkae</string>
+	<string name="suggestionLbl">nso</string>
+	
+	<string name="severaltimesLbl">Mpɛn Pii</string>
+	<string name="notatallLbl">Dabi, me mmpen</string>
+	<string name="moreHalfTimeLbl">Mber ne fa no mboree.</string>
+	<string name="nearlyalltimeLbl">Aber Biara</string>
+	
+	<string name="sundayLbl">Kwesida</string>
+	<string name="monLbl">Dwowda</string>
+	<string name="tueLbl">Benada</string>
+	<string name="wedLbl">Wukuda</string>
+	<string name="thuLbl">Yawda</string>
+	<string name="friLbl">Fida</string>
+	<string name="satLbl">Memenda</string>
+	
+	<string name="janLbl">Sanda</string>
+	<string name="febLbl">Kwakwa</string>
+	<string name="marLbl">Ebɔw</string>
+	<string name="aprLbl">Ebɔbira</string>
+	<string name="mayLbl">Esusowaketseaba</string>
+	<string name="junLbl">Ɔberɛdzi</string>
+	<string name="julLbl">Ayɛhowo</string>
+	<string name="augLbl">Dzifuu</string>
+	<string name="sepLbl">Dzifuu</string>
+	<string name="octLbl">Ob3s3</string>
+	<string name="novLbl">Obraf3w</string>
+	<string name="decLbl">Mumu</string>
+	<string name="weekLbl">Adap3n</string>
+	<string name="maybeLbl">Bi a na</string>
+	<string name="validLbl">Odzi mu</string>
+	<string name="yearLbl">Mfe</string>
+	<string name="mnthLbl">Abosom</string>
+	<string name="dayLbl">Nda</string>
+	
+	<string name="highScoreLbl">amba kese enya</string>
+	<string name="lowscoreLbl">amba kakraba enya</string>
+	<string name="daystreakLbl">nda twamu</string>
+	<string name="boostScoreLbl">boa me</string>
+	<string name="boostLampScoreLbl">amba mindLAMP enya</string>
+	<string name="todayLbl">ndae</string>
+	<string name="streakspinLbl">tow twamu</string>
+	<string name="todaySpinLbl">ndae tow</string>
+	<string name="seemoreLbl">hwe amba inya eka ho</string>
+	<string name="spinwinLbl">tow dzi kunyim</string>
+	<string name="wonLbl">edzi nkoyim</string>
+	<string name="starLbl">nworaba</string>
+	<string name="continueCapsLbl">toa do</string>
+	<string name="tryagainLbl">yɛ biom</string>
+	<string name="badlickLbl">tsir a annye yie</string>
+	
+	<string name="youravgLbl">wo average</string>
+	<string name="totalavgLbl">eka ne yenara bom a ne average</string>
+	
+	<string name="yourScoreLbl">amba enya</string>
+	<string name="weeklyScoreLbl ">amba a inya wo dapem mu</string>
+	<string name="studyIdLbl">adzesua ahyɛnsew</string>
+	
+	<string name="gameSuccess">awie akor ye</string>
+	<string name="spinWheelLabel">aba a wo tow</string>
+	<string name="surveyResponse">wodzi wo nyiano no kor</string>
+	
+	<string name="environmentCapsMenu">Dze a etwa hɛn ho ehyia</string>
+	<string name="locCapsMenu">bea etse</string>
+	<string name="whereLbl">Ewɔ hen?</string>
+	<string name="series7inst">ye essoun fir dzea nyea no mu na fa kor</string>
+	<string name="instVideo">INSTRUCTION VIDEO</string>
+	<string name="surveyTextArea">Type answer here...</string>
+	<string name="textAreaValidation">Enter answer.</string>
+	
+	<string name="nbackShortInst1">1-back test: select whether or not the letter is the same as the one before it.</string>
+	<string name="nbackShortInst2">2-back test: select whether or not the letter is the same as the one two before it.</string>
+	<string name="nbackShortInst3">3-back test: select whether or not the letter is the same as the one three before it.</string>
+	<string name="SPFShortInst">Watch the boxes light up on the screen. Then, copy the pattern by tapping the boxes in the same order.</string>
+	<string name="SPBShortInst">Watch the boxes light up on the screen. Then, copy the pattern backwards by tapping the boxes in the reverse order.</string>
+	<string name="SimpleMemShortInst">You will see 5 images appear one after another. Then, a pair of images will appear. One of them is new and the other is one of the original 5 images. Select which image is from the original 5 shown.</string>
+	<string name="serial7ShortInst">Subtract 7 from the number shown on the screen and enter that number. Then subtract 7 from the number you entered. Repeat until the game is over.</string>
+	<string name="visualShortInst">You will be shown several images. Then, you will be shown all of the images again but with an object missing from the image. Select the missing object from the choices.</string>
+	<string name="DSFShortInst">Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the same order.</string>
+	<string name="DSBShortInst">Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the reverse order they were read.</string>
+	<string name="catsnDogsShortInst">Several boxes will appear on the screen. They will briefly show whether or not they have a cat, dog, or nothing behind them. Follow the instructions for the round and select the boxes that are asked for.</string>
+	<string name="tempShortInst">A 3x3 grid will be shown. Three images will be shown one after another, each in different box in the grid. Remember the image, location, and order of the images. Then, select the first item and corresponding box, followed by the second, and third.</string>
+	<string name="nbackNewShortInst1">1-back test: select whether or not the picture is the same as the one before it.</string>
+	<string name="nbackNewShortInst2">2-back test: select whether or not the picture is the same as the one two before it.</string>
+	<string name="nbackNewShortInst3">3-back test: select whether or not the picture is the same as the one three before it.</string>
+	<string name="trialsbNewShortInst">Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</string>
+	<string name="trialsBTouchShortInst">Tap the dots in order, alternating numbers and letters, starting with the number 1. For example, tap 1, then A, then 2, then B, and so on.</string>
+	<string name="jewelsAShortInst">Tap the jewels in chronological order, starting with number 1.</string>
+	<string name="jewelsBShortInst">Look at the bottom of the screen to see which jewel to collect first. Collect number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected.</string>
+	<string name="trialsBTestShortInst">Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</string>
+	<string name="figCopyShortInst">An image will appear on the screen for 5 seconds. Remember the image. Then, copy the image onto the blank screen with your finger.</string>
+</resources>

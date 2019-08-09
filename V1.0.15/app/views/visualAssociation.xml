@@ -1,0 +1,46 @@
+<Alloy>
+	<Window id="visualAssociation" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Visual Association" homeButtonImage="/images/home/home.png"></Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="01:00"></Label>
+			<!-- <Label id="levelLabel" text="Version 1"></Label> -->
+			<View id="largeView" visible="true">
+				<ImageView id="displayImage"></ImageView>
+			</View>
+			<View id="resultView" visible="false">
+				<View id="singleView" visible="true">
+					<ImageView id="singleImage"></ImageView>
+				</View>
+				<Label id="instructionLabel" text="Tap the missing image"></Label>
+				<View id="TopThumbOuter" class="thumbNailOuterView"  >
+					<View  id="imgV1" class="thumbNailInnerView"  index="1" >
+						<ImageView id="img1" index="1"  class="thumbImageStyle"  onClick="resultOnclick" ></ImageView>
+					</View>
+					<View id="imgV2" class="thumbNailInnerView" index="2" >
+						<ImageView id="img2" index="2"  class="thumbImageStyle"  onClick="resultOnclick" ></ImageView>
+					</View>
+					<View id="imgV3" class="thumbNailInnerView" width="33%" index="3" >
+						<ImageView id="img3" index="3" class="thumbImageStyle"  onClick="resultOnclick" ></ImageView>
+					</View>
+				</View>
+				<View id="BottomThumbOuter" class="thumbNailOuterView" >
+					<View id="imgV4" class="thumbNailInnerView" index="4" >
+						<ImageView id="img4" index="4"   class="thumbImageStyle"  onClick="resultOnclick" ></ImageView>
+					</View>
+					<View id="imgV5" class="thumbNailInnerView" index="5" >
+						<ImageView id="img5" index="5" class="thumbImageStyle"  onClick="resultOnclick" ></ImageView>
+					</View>
+					<View id="imgV6" class="thumbNailInnerView" width="33%" index="6" >
+						<ImageView id="img6" index="6" class="thumbImageStyle"  onClick="resultOnclick" ></ImageView>
+					</View>
+				</View>
+			</View>
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" bottom="30dp" visible="true" backgroundColor="#ffffff">
+				<Label id="messageLabel" text="Remember the two items in each image." ></Label>
+			</View>
+			<!-- </View> -->
+		</View>
+	</Window>
+</Alloy>

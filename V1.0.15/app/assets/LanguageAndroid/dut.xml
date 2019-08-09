@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	
+	<string name="appTitle">mindLAMP</string>
+	<string name="signIn">AANMELDEN</string>
+	<string name="signInSmall">Aanmelden</string>
+	<string name="next">VOLGENDE</string>
+	<string name="notImplement">Niet geïmplementeerd.</string>
+	<string name="activityValidating">Valideren...</string>
+	<string name="activitySaving">Opslaan...</string>
+	<string name="activitySubmitting">Verzenden...</string>
+	<string name="activityLoading">Laden...</string> 
+	
+	<string name="unexpectedError">Er is een onverwachte fout opgetreden. Probeer het later opnieuw.</string>
+	<string name="noNetwork">Er is op dit moment geen internetverbinding. Probeer het opnieuw wanneer de verbinding is hersteld.</string>
+	<string name="enableLocation">Schakel Locatieservices op uw apparaat in en ga verder.</string>
+	<string name="sessionExpired">Uw gebruikerssessie is afgelopen. Meld u aan om verder te gaan.</string>
+	<string name="exitApp">Weet u zeker dat u de app wilt verlaten?</string>
+
+	
+	<string name="signInStudent">Aanmelden met studie-ID</string>
+	<string name="signInUserSignUp">Aanmelden met studie-ID</string>
+	<string name="userName">Gebruikersnaam</string>
+	<string name="userNameEmailOrStudyId">Gebruikersnaam (E-mail/studie-ID)</string>
+	<string name="specifyUsername">Geef een gebruikersnaam op.</string>
+	<string name="loginErrorAlert">Ongeldige referenties.</string>
+	<string name="studyIdLbl">Studie-ID</string>
+	<string name="surveyTextArea">Type answer here...</string>
+
+	
+	<string name="signInStudentPageTitle">Registreren</string>
+	<string name="signInLbl">Aanmelden</string>
+	<string name="studyCode">Voer uw studiecode in.</string>
+	<string name="studyId">Voer uw studie-ID in.</string>
+	<string name="createPassword">Uw wachtwoord aanmaken</string>
+	<string name="confirmPassword">Wachtwoord bevestigen</string>
+	<string name="specifyStudyCode">Geef een studiecode op.</string>
+	<string name="specifyStudyId">Geef een studie-ID op.</string>
+	<string name="specifyPassword">Geef een wachtwoord op.</string>
+	<string name="specifyConfirmPassword">Geef een Wachtwoord bevestigen op.</string>
+	<string name="specifySameConfirmPassword">De invoer Wachtwoord en Wachtwoord bevestigen moet gelijk zijn</string>
+	<string name="errorSignInWithSudyId">Tijdens het aanmelden is een fout opgetreden. Probeer het later opnieuw.</string>
+	<string name="enterfirstNameLbl">Vul uw voornaam in.</string>
+	<string name="enterlastNameLbl">Voer je achternaam in.</string>
+
+	
+	<string name="quizHeading">Quiz</string>
+	<string name="quizDescriptionLine1">Beantwoord svp een aantal toetsvragen zodat</string>
+	<string name="quizDescriptionLine2">we zeker weten dat u het toestemmingsformulier hebt begrepen</string>
+	<string name="pleaseAnswerQuestion">Geef een antwoord op.</string>
+
+	
+	<string name="consent">Toestemming</string>
+	<string name="consentNote">Bekijk onderstaand formulier en tik op Akkoord als u klaar bent om verder te gaan.</string>
+	<string name="consentDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+	<string name="agree">Akkoord</string>
+	<string name="disagree">Niet akkoord</string>
+
+	
+	<string name="firstName">Voornaam</string>
+	<string name="specifyfirstName">Geef een voornaam op.</string>
+	<string name="lastName">Achternaam</string>
+	<string name="specifyLastName">Geef een achternaam op.</string>
+	<string name="specifyEmail">Geef een e-mailadres op.</string>
+	<string name="emailId">E-mail-ID</string>
+	<string name="password">Wachtwoord</string>
+	<string name="createAndContinue">Creëren en doorgaan</string>
+	<string name="specifyValidEmail">Geef een geldig e-mailadres op.</string>
+	
+	<string name="createAndContinue">Creëren en doorgaan</string>
+	<string name="specifyValidEmail">SGeef een geldig e-mailadres op.</string>
+	<string name="forgotPasswordTitle">Wachtwoord vergeten</string>
+
+	
+	<string name="surveyMenu">Inchecken</string>
+	<string name="cognitionMenu">Hersentraining</string>
+	<string name="environmentMenu">Omgeving</string>
+	<string name="helpMenu">Help</string>
+	<string name="dismissLabel">Negeren</string>
+	<string name="noDataLabel">Geen gegevens beschikbaar.</string>
+	
+	<string name="surveysLabel">CHECK-IN</string>
+	<string name="completedLabel">AFGEROND</string>
+	<string name="startlabel">START</string>
+	<string name="resultlabel">RESULTAAT BEKIJKEN</string>
+	<string name="surveyListHeader">Inchecken</string>
+
+	
+	<string name="appColor">APP-KLEUR</string>
+	<string name="symptomSurveyHeader">CHECK-IN</string>
+	<string name="cognitionTestHeader">BRAIN GAME</string>
+	<string name="emergencyContact">CONTACTPERSONEN BIJ NOOD</string>
+	<string name="selectSlot">SELECTEER EEN PERIODE</string>
+	<string name="selectRepeat">HERHALINGSINTERVALLEN</string>
+	<string name="settingsHeader">Instellingen</string>
+	<string name="sureSignout">Weet u zeker dat u zich wilt afmelden?</string>
+	<string name="yes">Ja</string>
+	<string name="no">Nee</string>
+	<string name="validContactNumb">Voer een geldig contactnummer in.</string>
+	<string name="validPersonalNumb">Voer een geldig persoonlijk nummer in.</string>
+	
+	<string name="surveyDescriptionLabel">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</string>
+	<string name="enterHere">Hier invoeren...</string>
+	<string name="selectCognitionLblAlert">Selecteer ten minste één hersenspel.</string>
+	<string name="slectSurveyType">Selecteer minimaal één inchecktype.</string>
+	<string name="validSymptomTime">Tijd en periode moeten overeenkomen.</string>
+	<string name="validCognitionTime">Tijd en periode moeten overeenkomen.</string>
+	<string name="symptomTimeReminder">Check-inherinnering.</string>
+	<string name="cognitionTimeReminder">Brain Game Herinnering.</string>
+
+	
+	<string name="surveyResultTitle">Resultaten voor inchecken</string>
+	
+	<string name="helpTitle">Help</string>
+	<string name="emergencycontactTitle">24x7 contactpersoon noodgevallen</string>
+	<string name="helpLineTitle">Persoonlijke hulplijn</string>
+	<string name="policyTitle">PRIVACYBELEID</string>
+	<string name="deleteAccountTitle">MIJN ACCOUNT VERWIJDEREN</string>
+	<string name="deleteConfirmation">Weet u zeker dat u uw account wilt verwijderen?</string>
+
+	
+	<string name="cognitionTestTitle">Hersen training</string>
+	<string name="cognitionCapsTestTitle">HERSEN SPELLETJES</string>
+	<string name="startGameLabel">START HET SPEL</string>
+
+	
+	<string name="environmentTitle">Omgeving</string>
+	<string name="pictureLabel">Waar bevindt u zich?</string>
+	<string name="surveyTypeHeader">Inchecken</string>
+	<string name="helpconfirmation">Uw antwoorden wijzen uit dat u onveilige gedachten zou kunnen hebben. Wilt u hulp?</string>
+	
+	<string name="slectAnswerType">Selecteer ten minste één antwoord.</string>
+	<string name="enterComment">Geef opmerkingen op.</string>
+	
+	<string name="enterAnswer">Geef een antwoord op.</string>
+	
+	<string name="slectLikertAnswerType">Selecteer een antwoord.</string>
+	
+	<string name="intructionLabel">Trek een lijn naar de  volgende letter van het alfabet.</string>
+	<string name="intructionLabel1">Klaar.</string>
+	<string name="intructionLabel2">Tik op "1" om de test te starten.</string>
+	<string name="restartGame">HERSTART</string>
+	<string name="intructionLabel3">Time-out.</string>
+
+	
+	<string name="forgotYourPasswordLabel">Wachtwoord vergeten?</string>
+	<string name="questionLabel">Voer uw e-mailadres in om uw account te herstellen.</string>
+	<string name="sendLabel">VERZENDEN</string>
+	<string name="emailLabel">E-mailadres</string>
+	<string name="alertLabel">Wachtwoord is naar uw e-mailadres verzonden.</string>
+	
+		<string name="digitLabel">Start DIGIT</string>
+		<string name="serial7LabelMessage">Trek 7 van het getal af en voer het resultaat in.</string>
+		
+	
+	<string name="SpatialSpanMessage1">Onthoud de gemarkeerde velden in de volgorde waarop u ze te zien krijgt.</string>	
+	<string name="SpatialSpanMessage2">Tik nu op de velden in de volgorde waarop ze waren gemarkeerd.</string>	
+	<string name="SpatialSpanMessage3">Tik nu op de velden in de omgekeerde volgorde waarop ze waren gemarkeerd.</string>
+	<string name="SimpleMemoryMessage1">Onthoud de afbeeldingen die u te zien krijgt.</string>
+	<string name="SimpleMemoryMessage2">Tik op de afbeeldingen die u gezien hebt.</string>	
+	
+	<string name="CatandDogMessage1">Onthoud de afbeeldingen in de volgorde waarop u ze te zien krijgt.</string>
+	<string name="CatandDogMessage2">Tik nu op de afbeeldingen in de volgorde waarop ze gezien hebt.</string>
+	<string name="CatandDogInstruction1">Selecteer de afbeeldingen van katten.</string>
+	<string name="CatandDogInstruction2">Selecteer de afbeeldingen van honden.</string>
+	
+	
+	<string name="jewelsTrail1">Het doel van het spel is om zoveel mogelijk diamanten te verzamelen.</string>	
+	<string name="jewelsTrail2">Tik in chronologische volgorde op de diamanten om ze te verzamelen.</string>
+	<string name="jewelsTrailB2">Om de diamanten te verzamelen, tikt u erop door tussen elke vorm af te wisselen op chronologische volgorde.</string>	
+	<string name="jewelsTrail3">Als u een fout maakt, gaat u langzamer en elke seconde die nog op de teller staat geeft levert extra punten op om het volgende niveau te bereiken.</string>	
+
+
+	
+<string name="nbackTest">Number Hunt</string>	
+<string name="trailsBTest">Dot connect</string>	
+<string name="spatialFrwd">Box Game</string>	
+<string name="spatialBckwrd">Box Game - Pro</string>	
+<string name="spatialSpan">Spatial Span</string>	
+<string name="memoryTest">Photo Match</string>	
+<string name="serial7">Math Game</string>	
+<string name="visualGame">Memory Match</string>	
+<string name="temporalOrder">Memory Match - Pro</string>
+<string name="digitFWrdGame">Digit Span</string>		
+<string name="digitFWrd">De code kraken</string>	
+<string name="digitBckWrd">Crack the Code-Pro</string>	
+<string name="catdog">Cats and Dogs</string>	
+<string name="trailsBTestNew">Dot connect(New)</string>	
+<string name="nbackTestNew">Photo Hunt</string>	
+<string name="trailsBTouch">Dot touch</string>	
+<string name="jwelA">Jewels</string>	
+<string name="jwelB">Jewels-Pro</string>	
+<string name="figCopy">Tekenen</string>
+<string name="scratchCard">Kras kaart</string>
+<string name="memoryGame">Geheugen spel</string>
+<string name="attentionGame">Aandachtsspel</string>	
+
+<string name="scratchLbl">Klaar voor een pauze?</string>
+<string name="scratchLbl2">Kras en ontdek!</string>
+<string name="scoreBrainLbl">U hebt zojuist deze delen van uw hersenen aan het werk gezet!</string>
+<string name="checkinLbl">Inchecken</string>
+<string name="braingameLbl">Hersentraining</string>
+
+
+
+	<string name="dogBox">Tik op de vakken met een hond erachter.</string>	
+	<string name="selectThe">Selecteer de</string>
+	<string name="imgCatBox">velden waar u de afbeeldingen met katten hebt gezien.</string>	
+	<string name="imgDogBox">velden waar u de afbeeldingen met honden hebt gezien.</string>
+	<string name="continueDogBox">Ga verder door met op de velden met een hond erachter te tikken. Tik niet op de velden met een kat erachter.</string>
+	<string name="continueCatBox">NTik nu op de velden met een kat erachter. Tik niet op de velden met een hond erachter.</string>	
+
+
+	<string name="soundalert">Zorg ervoor dat het geluid op uw apparaat aan staat.</string>	
+	<string name="audioalert">Luister zorgvuldig naar het geluid svp.</string>
+	<string name="digitalert">Voer nu de getallen in.</string>
+	<string name="digitReversealert">Voer nu de getallen in omgekeerde volgorde in.</string>	
+	
+	
+	<string name="articleLbl">Artikelen</string>	
+	<string name="tipLbl">Tips</string>
+	<string name="profileLbl">Profiel</string>	
+	
+	<string name="tempAlert1">Tik op de ontbrekende afbeelding</string>
+	<string name="tempAlert2">Onthoud de afbeeldingen die u te zien krijgt.</string>
+	<string name="tempAlert3">Onthoud de twee items in elke afbeelding.</string>
+	<string name="tempAlert4">Tik op de afbeeldingen die je hebt gezien</string>
+	<string name="tempAlert5">Onthoud het item, de plaats en de volgorde.</string>
+	<string name="tempAlert6">Even geduld en kijk</string>
+	<string name="tempAlert7">Onthoud alsjeblieft de volgorde.</string>
+	
+	
+	<string name="articleLbl">Artikelen</string>	
+	<string name="tipLbl">Tips</string>
+	<string name="profileLbl">Profiel</string>
+	<string name="appUse">De applicatie gebruiken</string>
+	<string name="reprtLbl">Rapport</string>
+	
+	
+	<string name="tapfirstImg">Tik op de eerste afbeelding</string>
+	<string name="tapNxtImg">Tik op de volgende afbeelding</string>
+	<string name="tapREsBox">Tik op het bijbehorende veld</string>
+	<string name="pickMatchingalphabet">Kies de overeenkomende letter van het alfabet</string>
+	
+	<string name="exmLbl">Voorbeeld</string>
+	<string name="tapNxtNumber">Tik nu op 2 wat het volgende cijfer is.</string>
+	<string name="continueTap">Blijf op deze volgorde op de cijfers tikken</string>
+	<string name="wrongTapLbl">Verkeerd getikt</string>
+	
+	<string name="nbackLvl">Number Hunt Levels</string>
+	<string name="nbackNewLvl">Photo Hunt Levels</string>
+	<string name="oneBackTest">1-back Test</string>
+	<string name="twoBackTest">2-back Test</string>
+	<string name="treeBackTest">3-back Test</string>
+	
+	<string name="pickdimnd">Kies een diamant: </string>
+	<string name="continueLbl">Doorgaan met</string>
+	<string name="exitLbl">UITGANG</string>
+	
+	<string name="resultLbL">Resultaten</string>
+	<string name="pointLbl">Punten</string>
+	<string name="scoregrapgLbl">Scoregrafiek</string>
+	<string name="envLbl">Omgevingsgegevens</string>
+	<string name="cogscore">Score breinspel</string>
+	
+	<string name="pointnextLvl">Punten om het volgende niveau te bereiken.</string>
+	<string name="maxLbl">U hebt het maximale niveau bereikt.</string>
+	<string name="gameNameLbl">Spel naam</string>
+	
+	<string name="learnLbl">Leer</string>
+	<string name="accessLbl">Bekijk</string>
+	<string name="manageLbl">Beheer</string>
+	<string name="prevntLbl">Voorkom</string>
+	
+	<string name="instructionLbl">Aanwijzingen</string>
+	<string name="instructionsubmit">Laten we beginnen</string>
+	
+	<string name="preventcontent">Preventie van psychische ziekten en terugval hierin is een belangrijk doel van het mindLAMP platform. Zodra we als GGZ meer leren en tools als deze mindLAMP helpen met het genereren van belangrijke nieuwe onderzoeksgegevens, hopen we dat preventie meer het focus van de psychiatrie kan worden. Tot nu toe is mindLAMP nog niet zo ver dat het psychische ziekten kan voorkomen, maar uw deelname aan het onderzoek kan vooruitgang hierin mogelijk maken.</string>
+
+	<string name="manageContent">Het beheren van uw geestelijke gezondheid moet altijd gebeuren met een professional. mindLAMP is momenteel ontworpen om informatie te verzamelen die nuttig kan zijn bij het beheren van uw geestelijke gezondheid. Maar het is op geen enkele manier een vervanging voor professionele zorg. In de toekomst zal mindLAMP aangepaste hersenoefeningen, therapeutische activiteiten, peernetwerken en persoonlijke doelen aanbieden om u te helpen uw geestelijke gezondheid te beheren.</string>
+	
+	
+	<string name="copyrightLbl">Copyright BIDMC © 2019. All rights reserved.</string>
+	
+	
+	<string name="SchoolLbl">Schoolklas</string>
+	<string name="wrkLbl">Werk</string>
+	<string name="clicnicLbl">Kliniek / Ziekenhuis</string>
+	<string name="outsideLbl">Buiten</string>
+	<string name="shopingLbl">Shopping / Dining</string>
+	<string name="trainLbl">Bus / trein / auto</string>
+	<string name="aloneLbl">Alleen</string>
+	<string name="friendsLbl">Met vrienden</string>
+	<string name="incrowdLbl">In de menigte</string>
+	<string name="withPeersLbl">Met Peers</string>
+	<string name="whowithLbl">Met wie ben je?</string>
+	<string name="submitLbl">SUBMIT</string>
+	<string name="homeLbl">Huis</string>
+	<string name="familyLbl">Met gezin</string>
+	
+	<string name="beginerLbl">Beginner</string>
+	<string name="expertLbl">Deskundige</string>
+	<string name="intermediateLbl">tussen-</string>
+	<string name="advancedLbl">Gevorderd</string>
+	<string name="difficultyLbl">Moeilijkheid</string>
+	
+	<string name="emailNotconfigred">E-mailclient is niet geconfigureerd op dit apparaat.</string>
+	
+	<string name="cancelLbl">Annuleren</string>
+	<string name="deleteLbl">Verwijder</string>
+	<string name="selectcognitionLbl">SELECTEER HET HERSENTAL</string>
+	<string name="contactnumberLbl">24/7 CONTACTNUMMER</string>
+	<string name="personalHelpLine">PERSOONLIJKE HULPLIJN</string>
+	<string name="protocolLbl">PROTOCOL</string>
+	<string name="signoutLbl">AFMELDEN</string>
+	<string name="notAvailableLbl">Niet Aeschikbaar</string>
+	<string name="selectTimeLbl">SELECTEER TIJD</string>
+	<string name="repeatInterval">HERHAAL INTERVALLEN</string>
+	<string name="selectsurveytitle">SELECTEER CHECK-IN</string>
+	
+	<string name="totalScoreLbl">Totale Score</string>
+	<string name="totalScoreCapsLbl">TOTALE SCORE</string>
+	<string name="drawfigLbl">Teken het figuur</string>
+	<string name="secLbl">Sec</string>
+	<string name="hintLbl">wenk</string>
+	<string name="levelLbl">Niveau</string>
+	<string name="lastnumberLbl">Laatste nummer</string>
+	<string name="finishLbl">Af hebben</string>
+	<string name="nxtLbl">Volgende</string>
+	<string name="answeredLbl">Beantwoord</string>
+	<string name="goLbl">Gaan</string>
+	<string name="backLbl">TERUG</string>
+	<string name="jwelcollectedLbl">Juwelen verzameld</string>
+	<string name="totalbonusLbl">Totale bonus</string>
+	<string name="okLbl">OK</string>
+	
+	<string name="lastmnthLbl">Vorige maand</string>
+	<string name="lastweekLbl">Vorige week</string>
+	<string name="languageSelect">Selecteer een taal</string>
+	<string name="languageCapsSelect">SELECTEER EEN TAAL</string>
+	<string name="repeatLbl">HERHALING</string>
+	<string name="selectSurveyLbl">SELECTEER CHECK-IN</string>
+	<string name="selectTimeLbl">SELECTEER TIJD</string>
+	<string name="slottinmeLbl">SLOT TIJD</string>
+	<string name="repeatInterval">HERHAAL INTERVALLEN</string>
+	<string name="avgScoreLbl">GEMIDDELDE SCORE</string>
+	<string name="scoreLbl">Partituur</string>
+	<string name="bonusLbl">Bonus</string>
+	<string name="healthDataTitle">Gezondheidsgegevens</string>
+	
+	<string name="scoreCardLbl">SCORE KAART</string>
+	<string name="closeLbl">Dichtbij</string>
+	<string name="pointEarnedLbl">Punten verdiend</string>
+	<string name="timetakenLbl">Genomen tijd</string>
+	
+	
+	
+	<string name="term1">Ik begrijp dat de mindLAMP-app een onderzoeksplatform is dat niet is bedoeld voor de behandeling, het management of de preventie van ziektes. mindLAMP is niet bedoeld om de medische expertise van een arts ter plaatse te vervangen.</string>
+	<string name="term2">Ik begrijp dat er door niemand toezicht wordt gehouden op de mindLAMP-app en dat deze niet kan reageren als ik aangeef dat ik hulp nodig heb.</string>
+	<string name="term3">Ik begrijp dat de mindLAMP-app voor onderzoeksdoeleinden informatie verzamelt over mijn gebruik van de app en mijn antwoorden in de app. Ik begrijp dat mijn gegevens voor onderzoek en wetenschappelijke doeleinden zullen worden gebruikt.</string>
+	<string name="term4">Ik begrijp dat mijn antwoorden op vragenlijsten en tests deel uitmaken van de gegevens uit de mindLAMP-appverzameling. Wanneer ik me aanmeld, kan mindLAMP ook informatie verzamelen over mijn locatie, activiteitenniveau en andere gegevens die compatibel worden met Apple Health Kit van Google Fit.</string>
+
+	<string name="consentLbl">Toestemming</string>
+	<string name="consentNote">Bekijk onderstaand formulier en tik op Akkoord als u klaar bent om verder te gaan.</string>
+	<string name="agree">Akkoord</string>
+	<string name="disagree">Niet akkoord</string>
+	
+	<string name="iamLbl">ik ben</string>
+	<string name="atLbl">Op</string>
+	<string name="inLbl">In</string>
+	
+	<string name="morningLbl">Ochtend</string>
+	<string name="noonLbl">Middag</string>
+	<string name="eveningLbl">Avond</string>
+	
+	<string name="threeHrLbl">Elke 3 uur</string>
+	<string name="sixHrLbl">Elke 6 uur</string>
+	<string name="twelveLbl">Elke 12 uur</string>
+	
+	<string name="dailLbl">Dagelijks (Ma Di Wo Do Vr Za Zo)</string>
+	<string name="biweekLbl">Twee keer per week (Di Do)</string>
+	<string name="triWeekLbl">Drie keer per week (Ma Wo Vr)</string>
+	<string name="weeklyLbl">Wekelijks</string>
+	<string name="monthlyLbl">Twee keer per maand</string>
+	<string name="bimonthlyLbl">Maandelijks</string>
+	
+	<string name="heartLbl">HARTSLAG</string>
+	<string name="stepLbl">AANTAL STAPPEN</string>
+	<string name="sleepLbl">SLAAP</string>
+	<string name="BpLbl">BLOEDDRUK</string>
+	<string name="respiratoryLbl">ADEMHALINGSFREQUENTIE</string>
+	<string name="flightLbl">AANTAL BEKLOMMEN TRAPPEN</string>
+	<string name="segmnetLbl">SEGMENT</string>
+	<string name="heightLbl">LENGTE</string>
+	<string name="distanceLbl">AFSTAND</string>
+	<string name="wieghtLbl">GEWICHT</string>
+	
+	<string name="maleLbl">Man</string>
+	<string name="femaleLbl">Vrouw</string>
+	<string name="otherLbl">Anders</string>
+	<string name="notSetLbl">Niet ingesteld</string>
+	<string name="dobLbl">DOB</string>
+	<string name="bloodtypeLbl">BLOEDTYPE</string>
+	<string name="sexLbl">SEKS</string>
+	
+	<string name="agreeTermLbl">Ga akkoord met de voorwaarden om verder te gaan.</string>
+	<string name="languageCapsSelect">SELECTEER EEN TAAL</string>
+	
+	
+	<string name="nwLbl">nu</string>
+	<string name="tapLbl">Tik</string>
+	<string name="reminderLbl">HERINNERING</string>
+	<string name="suggestionLbl">Suggesties voor de dag</string>
+	<string name="oneBiginLbl">Tik op 1 om te beginnen.</string>
+	
+	<string name="surveyPointLbl">Check-in punten</string>
+	
+	<string name="severaltimesLbl">Regelmatig</string>
+	<string name="notatallLbl">Nooit</string>
+	<string name="moreHalfTimeLbl">Meer dan de helft van de tijd</string>
+	<string name="nearlyalltimeLbl">Vrijwel altijd</string>
+	
+	<string name="sundayLbl">Zondag</string>
+	<string name="monLbl">Maandag</string>
+	<string name="tueLbl">Dinsdag</string>
+	<string name="wedLbl">Woensdag</string>
+	<string name="thuLbl">Donderdag</string>
+	<string name="friLbl">Vrijdag</string>
+	<string name="satLbl">Zaterdag</string>
+	
+	<string name="janLbl">Januari</string>
+	<string name="febLbl">Februari</string>
+	<string name="marLbl">Maart</string>
+	<string name="aprLbl">April</string>
+	<string name="mayLbl">Mei</string>
+	<string name="junLbl">Juni</string>
+	<string name="julLbl">Juli</string>
+	<string name="augLbl">Augustus</string>
+	<string name="sepLbl">September</string>
+	<string name="octLbl">Oktober</string>
+	<string name="novLbl">November</string>
+	<string name="decLbl">December</string>
+	<string name="weekLbl">Weken</string>
+	<string name="maybeLbl">Misschien</string>
+	<string name="validLbl">Geldig</string>
+	<string name="yearLbl">Jaren</string>
+	<string name="mnthLbl">Maanden</string>
+	<string name="dayLbl">Dagen</string>
+	
+	<string name="highScoreLbl">Hoogste score</string>
+	<string name="lowscoreLbl">Lage score</string>
+	<string name="daystreakLbl">Day Streak</string>
+	<string name="boostScoreLbl">Boost Mijn</string>
+	<string name="boostLampScoreLbl">mindLAMP-score</string>
+	<string name="todayLbl">Vandaag</string>
+	<string name="streakspinLbl">Streak Spins</string>
+	<string name="todaySpinLbl">De spins van vandaag</string>
+	<string name="seemoreLbl">Zie meer resultaten</string>
+	<string name="spinwinLbl">DRAAI OM TE WINNEN</string>
+	<string name="wonLbl">Jij hebt gewonnen</string>
+	<string name="starLbl">Sterren !!</string>
+	<string name="continueCapsLbl">DOORGAAN MET</string>
+	<string name="tryagainLbl">Probeer het opnieuw</string>
+	<string name="badlickLbl">Pech !!</string>
+	
+	<string name="youravgLbl">Jouw gemiddelde</string>
+	<string name="totalavgLbl">Totaal gemiddelde</string>
+	
+	<string name="yourScoreLbl">Jouw score</string>
+	<string name="weeklyScoreLbl">Games Weekly Score</string>
+	<string name="studyIdLbl">Studie-ID</string>
+	
+	<string name="gameSuccess">Je hebt deze game met succes voltooid.</string>
+	<string name="spinWheelLabel">Draai wiel</string>
+	<string name="surveyResponse">Uw antwoorden zijn succesvol ingediend.</string>
+	
+	<string name="environmentCapsMenu">MILIEU</string>
+	<string name="locCapsMenu">PLAATS</string>
+	<string name="series7inst">Meld het volgende nummer in de reeks: Zeven afgetrokken van uw vorige antwoord.</string>
+	<string name="instVideo">INSTRUCTIE VIDEO</string>
+	<string name="surveyTextArea">Typ hier het antwoord ...</string>
+	<string name="textAreaValidation">Voer antwoord in.</string>
+	
+	<string name="nbackShortInst1">1-back test: select whether or not the letter is the same as the one before it.</string>
+	<string name="nbackShortInst2">2-back test: select whether or not the letter is the same as the one two before it.</string>
+	<string name="nbackShortInst3">3-back test: select whether or not the letter is the same as the one three before it.</string>
+	<string name="SPFShortInst">Watch the boxes light up on the screen. Then, copy the pattern by tapping the boxes in the same order.</string>
+	<string name="SPBShortInst">Watch the boxes light up on the screen. Then, copy the pattern backwards by tapping the boxes in the reverse order.</string>
+	<string name="SimpleMemShortInst">You will see 5 images appear one after another. Then, a pair of images will appear. One of them is new and the other is one of the original 5 images. Select which image is from the original 5 shown.</string>
+	<string name="serial7ShortInst">Subtract 7 from the number shown on the screen and enter that number. Then subtract 7 from the number you entered. Repeat until the game is over.</string>
+	<string name="visualShortInst">You will be shown several images. Then, you will be shown all of the images again but with an object missing from the image. Select the missing object from the choices.</string>
+	<string name="DSFShortInst">Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the same order.</string>
+	<string name="DSBShortInst">Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the reverse order they were read.</string>
+	<string name="catsnDogsShortInst">Several boxes will appear on the screen. They will briefly show whether or not they have a cat, dog, or nothing behind them. Follow the instructions for the round and select the boxes that are asked for.</string>
+	<string name="tempShortInst">A 3x3 grid will be shown. Three images will be shown one after another, each in different box in the grid. Remember the image, location, and order of the images. Then, select the first item and corresponding box, followed by the second, and third.</string>
+	<string name="nbackNewShortInst1">1-back test: select whether or not the picture is the same as the one before it.</string>
+	<string name="nbackNewShortInst2">2-back test: select whether or not the picture is the same as the one two before it.</string>
+	<string name="nbackNewShortInst3">3-back test: select whether or not the picture is the same as the one three before it.</string>
+	<string name="trialsbNewShortInst">Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</string>
+	<string name="trialsBTouchShortInst">Tap the dots in order, alternating numbers and letters, starting with the number 1. For example, tap 1, then A, then 2, then B, and so on.</string>
+	<string name="jewelsAShortInst">Tap the jewels in chronological order, starting with number 1.</string>
+	<string name="jewelsBShortInst">Look at the bottom of the screen to see which jewel to collect first. Collect number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected.</string>
+	<string name="trialsBTestShortInst">Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</string>
+	<string name="figCopyShortInst">An image will appear on the screen for 5 seconds. Remember the image. Then, copy the image onto the blank screen with your finger.</string>
+</resources>

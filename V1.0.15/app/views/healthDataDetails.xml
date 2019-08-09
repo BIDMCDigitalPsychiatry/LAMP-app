@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="healthDataDetails">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title=""></Require>
+		</View>
+		<View id="contentView">
+			<ListView id="HealthListView">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="healthDataTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<Label id="valueLabel" bindId="valueLabel"></Label>
+							<Label id="dateLabel" bindId="dateLabel"></Label>
+							<View id="seperator" ></View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection"></ListSection>
+			</ListView>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,18 @@
+<h1>Ti.Healthkit.Workout</h1>
+<h2>Description</h2>
+<p>The Ti.Healthkit.Workout class a subclass of <a href="sample.html">Ti.Healthkit.Sample</a>.</p>
+<p>HealthKit uses workouts to track a wide range of activities. The workout object not only stores summary information about the activity (for example, duration, total distance, and total energy burned), it also acts as a container for other samples. You can associate any number of samples with a workout. In this way, you can add detailed information relevant to the workout.</p>
+<p>Workouts are mostly immutable. Their properties are set when the workouts are instantiated, and they cannot change. However, you can continue to add samples to the workouts.</p>
+<h2>Properties</h2>
+<h3>duration : Number</h3>
+<p>The workout's duration in seconds. (read-only)</p>
+<h3>totalDistance : <a href="quantity.html">Ti.Healthkit.Quantity</a></h3>
+<p>The total distance traveled during the workout. (read-only)</p>
+<h3>totalEnergyBurned : <a href="quantity.html">Ti.Healthkit.Quantity</a></h3>
+<p>The total energy burned during the workout. (read-only)</p>
+<h3>activityType : Number</h3>
+<p>The type of activity performed during the workout. (read-only)</p>
+<p>See the WORKOUT_ACTIVITY_TYPE_* constants for possible values.</p>
+<h3>workoutEvents : Array of <a href="workoutEvent.html">Ti.Healthkit.WorkoutEvent</a> objects</h3>
+<p>An array of workout event objects. (read-only)</p>
+<p>This array specifies when the user has paused and resumed the workout activity.</p>

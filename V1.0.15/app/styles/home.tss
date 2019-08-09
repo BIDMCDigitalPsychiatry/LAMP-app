@@ -1,0 +1,458 @@
+
+"#newHomeScreen": {
+	backgroundColor: '#359FFE'
+}
+"#menuSectionview": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: 'vertical',
+	top: '0dp'
+}
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '60dp'
+}
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff"
+}
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#titleview[formFactor=tablet]": {
+	top: '15dp'
+}
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff"
+}
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '50dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#reportView[formFactor=tablet]": {
+	right: '70dp',
+	top: '15dp'
+}
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png",
+	touchEnabled: false
+}
+"#reportImage[platform=ios formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/home/report_icn.png",
+	touchEnabled: false
+}
+"#settingsView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#settingsImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '10dp',
+	image: '/images/home/settings.png'
+}
+"#settingsImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '15dp',
+	top: '15dp',
+	image: '/images/settings.png'
+}
+"#notificationSectionview": {
+	backgroundColor: 'transparent',
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	top: "0dp",
+	bottom: "68dp"
+}
+".verticalDividerTop": {
+	backgroundColor: '#ffffff',
+	width: '1dp',
+	height: Ti.UI.FILL,
+	right: "0dp"
+}
+"#footerView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: '62dp',
+	bottom: '0dp',
+	layout: 'horizontal'
+}
+"#menuView": {
+	backgroundColor: 'transparent',
+	top: '0dp',
+	width: Ti.UI.FILL,
+	//height: "51%",
+	height: "57%",
+	layout: 'vertical'
+}
+"#menuView[platform=ios formFactor=tablet]": {
+	height: "63%"
+}
+"#menuTopView": {
+	backgroundColor: 'transparent',
+	top: '0dp',
+	width: Ti.UI.FILL,
+	height: "48%"
+}
+"#menuBottomView": {
+	width: Ti.UI.FILL,
+	//height: "53%",
+	height: "60%",
+	backgroundColor: 'transparent',
+	top: "0dp"
+}
+"#menuBottomView[platform=ios formFactor=tablet]": {
+	height: "63%"
+}
+"#transparentView":{
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: '#ffffff',
+	opacity: 0.5,
+	top: "0dp"
+}
+".menuIcon": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+".menuLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBold,
+	opacity: 1,
+	top: '10dp'
+}
+".menuLabel[platform=ios formFactor=tablet]": {
+	font:Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+".menuNotificationLabel":{
+	width: "60dp",
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontBold,
+	//font:Alloy.Globals.ExtraSmallFontBold,
+	opacity: 1,
+	top: '10dp',
+	textAlign: "center"
+}
+".menuNotificationLabel[platform=ios formFactor=tablet]":{
+	font:Alloy.Globals.PointLargeFontBold
+}
+"#mainNotificationLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontBold,
+	opacity: 1,
+	top: '10dp'
+}
+".leftMenu": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: '35dp',
+	layout: "vertical"
+}
+".leftMenu[formFactor=tablet]": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: '70dp',
+	layout: "vertical"
+}
+".rightMenu": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '35dp',
+	layout: "vertical"
+}
+".rightMenu[formFactor=tablet]": {
+	right: '70dp'
+}
+".notificationLeftMenu": {
+	backgroundColor: 'transparent',
+	width: "50%",
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	left: "0dp",
+	//top: "20dp",
+	visible: false
+}
+".notificationRightMenu": {
+	backgroundColor: 'transparent',
+	width: "49.5%",
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	left: "50%",
+	//top: "20dp",
+	visible: false
+}
+"#notificationMainMenu":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	//top: "20dp",
+	visible: true
+}
+"#notificationTapDisable":{
+	backgroundColor: 'transparent',
+	width: '150dp',
+	height: '150dp',
+	visible: true
+}
+"#notifcationView":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	left: '5dp',
+	right: "150dp"
+}
+"#notifcationView[platform=android formFactor=tablet]":{
+	right: "300dp"
+}
+"#healthView":{
+	backgroundColor: 'transparent',
+	width: '150dp',
+	height: Ti.UI.SIZE,
+	right: '5dp',
+	layout: "vertical"
+}
+"#healthView[platform=android formFactor=tablet]":{
+	backgroundColor: 'transparent',
+	width: '150dp',
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	right:"75dp"
+}
+"#firstFavouriteView":{
+	//top: '30dp',
+	index: 0,
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: '35dp',
+	layout: "vertical"
+}
+
+"#firstFavouriteView[formFactor=tablet]":{
+	left: '70dp'
+}
+"#secondFavouriteView":{
+	//top: '30dp',
+	index: 0,
+	backgroundColor: 'transparent',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '35dp',
+	layout: "vertical"
+}
+"#secondFavouriteView[platform=android]":{
+	//top: "20dp"
+}
+"#secondFavouriteView[formFactor=tablet]":{
+	right: '70dp'
+}
+".innerMenuView": {
+	backgroundColor: '#ffffff',
+	width: "120dp",
+	height: "120dp",
+	borderRadius: 60
+}
+".innerMenuView[formFactor=tablet]": {
+	backgroundColor: '#ffffff',
+	width: "220dp",
+	height: "220dp",
+	borderRadius: 110
+}
+".innerMenuView[platform=android formFactor=tablet]": {
+	backgroundColor: '#ffffff',
+	width: "190dp",
+	height: "190dp",
+	borderRadius: 95
+}
+".innerFavoriteView":{
+	backgroundColor: '#ffffff',
+	width: "120dp",
+	height: "120dp",
+	borderRadius: 60
+}
+".innerFavoriteView[platform=android]":{
+	backgroundColor: '#ffffff',
+	width: "108dp",
+	height: "108dp",
+	borderRadius: 54
+}
+".innerFavoriteView[formFactor=tablet]":{
+	width: "220dp",
+	height: "220dp",
+	borderRadius: 110
+}
+".innerFavoriteView[platform=android formFactor=tablet]":{
+	width: "190dp",
+	height: "190dp",
+	borderRadius: 95
+}
+"#favouriteLabel":{
+	text: "Favorites",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	color: '#ffffff',
+	top: "5dp",
+	textAlign: "center"
+}
+"#notificationTitleLabel":{
+	text: "Up Next",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeFontBold,
+	color: '#ffffff',
+	top: "20dp",
+	textAlign: "center"
+}
+"#notificationTitleLabel[platform=android]":{
+	top: "10dp"
+}
+"#notificationTitleLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeMenuFontBoldTablet
+}
+".startView":{
+	height: '20dp',
+	//width: Ti.UI.FILL,
+	//left: "40dp",
+	//right: "40dp",
+	width: "50dp",
+	borderColor: '#E7EAED',
+	borderRadius: '10dp',
+	borderWidth: '1dp',
+	//bottom: "5dp",
+	backgroundColor: "transparent",
+	visible: false,
+	top: "5dp"
+}
+".startView[formFactor=tablet]":{
+	width: "70dp"
+}
+"#startFirstView":{
+	index: 0,
+	visible: false
+}
+"#startSecondView":{
+	index: 1,
+	visible: false
+}
+"#StartLbl":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: 1,
+	color: "#ffffff",
+	font:Alloy.Globals.MediumFontBold,
+	touchEnabled: false
+}
+".valueLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.homehealthUltraFontLarge,
+	color: '#ffffff',
+	top: "10dp",
+	textAlign: "center"
+}
+".titleLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.ExtraSmallSemiBoldTablet,
+	color: '#ffffff',
+	top: "5dp",
+	textAlign: "center"
+}
+"#sleepLabel[platform=ios]":{
+	text: "SLEEP"
+}
+"#sleepLabel[platform=android]":{
+	text: "HEART RATE"
+}
+"#firstNotificationView":{
+	backgroundColor: 'white',
+	width: '65dp',
+	height: '65dp',
+	//left: '0dp',
+	borderRadius: 33,
+	top: "30dp",
+	index: 0
+}
+"#firstNotificationView[formFactor=tablet]":{
+	width: '130dp',
+	height: '130dp',
+	borderRadius: 65,
+	top: "20dp"
+}
+"#secondNotificationView":{
+	backgroundColor: 'white',
+	width: '65dp',
+	height: '65dp',
+	//right: '0dp',
+	borderRadius: 33,
+	top: "30dp",
+	index: 1
+}
+"#secondNotificationView[formFactor=tablet]":{
+	width: '130dp',
+	height: '130dp',
+	borderRadius: 65,
+	top: "20dp"
+}
+"#mainNotificationView":{
+	backgroundColor: 'white',
+	width: '65dp',
+	height: '65dp',
+	//right: '0dp',
+	borderRadius: 33,
+	index: 0,
+	top: "20dp"
+}
+"#mainNotificationView[formFactor=tablet]":{
+	width: '130dp',
+	height: '130dp',
+	borderRadius: 65
+}
+"#favOneLbl":{
+	index: 0,
+	top: "3dp"
+}
+"#favTwoLbl":{
+	index: 0,
+	top: "3dp"
+}

@@ -1,0 +1,87 @@
+<Alloy>
+	<Window id="home" class="container">
+		<View id="menuSectionview">
+			<View id="headerView">
+				<View id="titleview">
+					<Label id="headerLabel" text="Assess" ></Label>
+				</View>
+				<!-- <View id="reportView"  onClick="onReportClick">
+				<ImageView id="reportImage"></ImageView>
+				</View> -->
+				<View id="settingsView" onClick="settingsClick">
+					<ImageView id="settingsImage" onClick="settingsClick"></ImageView>
+				</View>
+			</View>
+			<View id="menuView">
+				<View id="menuTopView">
+					<View id="checkinView" class="leftMenu" onClick="surveyClick">
+						<View class="innerMenuView" id="surveyImage">
+							<ImageView  class="menuIcon" image="/images/newHome/checkin.png"></ImageView>
+						</View>
+						<Label class="menuLabel" text="Check-In" id="menuLbl"></Label>
+					</View>
+					<View id="brainGameView" class="rightMenu" onClick="cognitionClick">
+						<View class="innerMenuView" id="cognitionImage">
+							<ImageView  class="menuIcon" image="/images/newHome/brain_game.png"></ImageView>
+						</View>
+						<Label class="menuLabel" text="Brain Game" id="cognitionLbl"></Label>
+					</View>
+				</View>
+				<View id="menuBottomView">
+					<View id="transparentView"></View>
+					<Label id="favouriteLabel"></Label>
+					<View id="firstFavouriteView">
+						<View class="innerFavoriteView" id="firstFavouriteViewImage">
+							<ImageView  class="menuIcon" id="firstFavIcn" image="/images/newHome/add.png" onClick="onFavouriteClick"></ImageView>
+						</View>
+						<View class="startView" id="startFirstView" onClick="onGameChange">
+							<Label text="Change" id="StartLbl"></Label>
+						</View>
+						<Label class="menuLabel" id="favOneLbl" touchEnabled="false" text="Add Favorite"></Label>
+					</View>
+					<View id="secondFavouriteView">
+						<View class="innerFavoriteView" id="secondFavouriteViewImage">
+							<ImageView  class="menuIcon" id="secondFavIcn" image="/images/newHome/add.png" onClick="onFavouriteClick"></ImageView>
+						</View>
+						<View class="startView" id="startSecondView" onClick="onGameChange">
+							<Label text="Change" id="StartLbl"></Label>
+						</View>
+						<Label class="menuLabel" text="Add Favorite" id="favTwoLbl" touchEnabled="false"></Label>
+					</View>
+				</View>
+			</View>
+			<View id="notificationSectionview">
+				<View id="notifcationView">
+					<Label id="notificationTitleLabel"></Label>
+					<View class="notificationLeftMenu" id="notificationLeftMenu">
+						<View id="firstNotificationView" onClick="onNotificationClick">
+							<ImageView  class="menuIcon" id="firstNotIcon" touchEnabled="false"></ImageView>
+						</View>
+						<Label class="menuNotificationLabel" id="firstNotificationLbl"></Label>
+					</View>
+					<View class="notificationRightMenu" id="notificationRightMenu">
+						<View id="secondNotificationView" onClick="onNotificationClick">
+							<ImageView  class="menuIcon" id="secondNotIcon" touchEnabled="false"></ImageView>
+						</View>
+						<Label class="menuNotificationLabel" id="secondNotificationLbl"></Label>
+					</View>
+					<View id="notificationMainMenu">
+						<View id="mainNotificationView" onClick="onNotificationClick">
+							<ImageView  class="menuIcon"  id="mainNotIcon" image="/images/newHome/complete.png" touchEnabled="false"></ImageView>
+						</View>
+						<Label text="Complete!" id="mainNotificationLbl"></Label>
+					</View>
+					<View id="notificationTapDisable"></View>
+					<View class="verticalDividerTop" ></View>
+				</View>
+				<View id="healthView" onClick="onHealthDataClick">
+					<Label id="stepValueLabel" class="valueLbl"></Label>
+					<Label id="stepLabel" class="titleLbl" text="STEPS"></Label>
+					<Label id="sleepValueLabel" class="valueLbl" top="15dp"></Label>
+					<Label id="sleepLabel" class="titleLbl" ></Label>
+				</View>
+			</View>
+		</View>
+		<Require id = 'footerView' src ="footerView"></Require>
+	</Window>
+</Alloy>

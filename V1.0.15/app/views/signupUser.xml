@@ -1,0 +1,36 @@
+<Alloy>
+	<Window id="signupUser" swipeToClose="false">
+		<View id="signupContainer" class="container" >
+			<View id='headerContainer' class="headerContainer">
+				<Require id = 'headerView' src ="innerHeader" title="L('signInUserSignUp')" ></Require>
+			</View>
+			<ScrollView id="bodyOuterContainer" scrollType="vertical" class="bodyOuterContainer">
+				<View id="scrollFillContainer" class="scrollFillContainer">
+					<View id='bodyContainer' class="bodyContainer">
+						<Label id="quizHeadLabel" ></Label>
+						<Label id="quizDescriptionLabel1"  ></Label>
+						<Label id="quizDescriptionLabel2"  ></Label>
+						<View id="progressBarContainer"  >
+							<View id="progressBarLineContainer"  >
+								<View id="progressBarBgLine" ></View>
+								<View id="progressBarLine"></View>
+							</View>
+							<View id="progressBarBgImageContainer">
+								<ImageView id="progressBarBgImage" ></ImageView>
+							</View>
+						</View>
+						<View id="questionContainer">
+							<Label id="quizQuestion" text="Available fonts vary by platform and device. On iOS, font support depends on the OS version." ></Label>
+							<View id="quizOptionContainer"  >
+								<ImageView id="optionYes" class="optionYes" onClick="optionYesClick" ></ImageView>
+								<ImageView id="optionNo" class="optionNo" onClick="optionNoClick" ></ImageView>
+							</View>
+						</View>
+						<Label id="signUpNextButton"  class="fullSizeSubmitButton" text="L('next')" onClick="signUpNextClick"  ></Label>
+					</View>
+				</View>
+				<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+			</ScrollView>
+		</View>
+	</Window>
+</Alloy>

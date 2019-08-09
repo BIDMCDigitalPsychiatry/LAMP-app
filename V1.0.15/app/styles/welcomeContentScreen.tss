@@ -1,0 +1,188 @@
+
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '0dp',
+	bottom: '80dp',
+	backgroundImage: '/images/common/bg_welcome.png',
+	layout: "vertical"
+}
+"#contentView1": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '50dp',
+	backgroundColor: '#ffffff'
+}
+"#noDataLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: "#546e7a",
+	font:Alloy.Globals.HeaderFontLight,
+	text: "No notifications are scheduled right now."
+}
+
+"#logoImage":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	image: '/images/common/logo_welcome.png',
+	top: "60dp"
+}
+"#titleLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	opacity: 1,
+	color: "#546e7a",
+	top: "20dp",
+	textAlign: "center",
+	text: "Welcome to mindLAMP"
+}
+"#titleLbl[platform=ios formFactor=tablet]":{
+	font:Alloy.Globals.ExtraLargeFontLightTablet
+}
+".instructionLbl":{
+	width: Ti.UI.Fill,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.HeaderFontLight,
+	opacity: 1,
+	color: "#546e7a",
+	top: "20dp",
+	left: "30dp",
+	right: "30dp" ,
+	textAlign: "center"
+}
+"#instructionLbl1":{
+	text: "As part of the study you're enrolling in,"
+}
+"#instructionLbl2":{
+	top: "3dp",
+	text: "you'll recieve notifications"
+}
+"#instructionLbl3":{
+	top: "3dp",
+	text: "for the following activities."
+}
+"#consentButtonContainer": {
+	width: '98%',
+	height: "80dp",
+	backgroundColor: "transparent",
+	bottom: '0dp'
+}
+"#startContainer": {
+	left: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent"
+},
+
+"#nextContainer": {
+	right: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE
+}
+"#backButton":{
+	color: '#359FFE',
+	textAlign: 'center',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold,
+	width: '128dp',
+	height: '44dp',
+	borderWidth: '1dp',
+	borderColor: '#359FFE',
+	borderRadius: '22dp',
+	backgroundColor: "#ffffff"
+},
+
+"#nextButton":{
+	color: '#ffffff',
+	textAlign: 'center',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold,
+	width: '128dp',
+	height: '44dp',
+	borderWidth: '1dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	backgroundColor: "#359FFE"
+},
+// "#nextButton[formFactor=tablet]": {
+	// font: Alloy.Globals.LargeFontBoldTablet,
+	// width: '180dp'
+// },
+"#gameList": {
+	top: '20dp',
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent'
+}
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '80dp',
+	right: '20dp',
+	left: '20dp',
+	top: '20dp',
+	borderColor: "#E7EAED",
+	borderRadius: 15,
+	borderWidth: "2dp"
+}
+"#listOuterView[formFactor=tablet]": {
+	//height: '120dp',
+	right: '100dp',
+	left: '100dp',
+}
+"#imageView":{
+	width:"80dp",
+	height:Titanium.UI.SIZE,
+	backgroundColor: 'transparent',
+	left:0
+}
+
+"#imageView[formFactor=tablet]":{
+	//width:"120dp",
+}
+"#iconImage":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+"#seperatorView":{
+	width: "1dp",
+	height: Titanium.UI.FILL,
+	backgroundColor: "#E7EAED",
+	right: 0
+}
+"#gameNameView": {
+	backgroundColor: 'transparent',
+	width: Titanium.UI.FILL,
+	height: Ti.UI.SIZE,
+	//right: 0,
+	left: '80dp'
+}
+
+"#gameNameView[formFactor=tablet]": {
+	//left: '120dp'
+}
+"#gameNameLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.LargeFontBold,
+	//textAlign:"right"
+	left: "30dp"
+}
+
+"#gameNameLabel[formFactor=tablet]": {
+	left: "50dp",
+	font:Alloy.Globals.HeaderFontBoldTablet
+}

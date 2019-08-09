@@ -1,0 +1,216 @@
+<Alloy>
+	<Window id="settings" class="container" onClick="windowClick">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="L('settingsHeader')" rightButtonImage="/images/common/done.png"></Require>
+		</View>
+		<View id="MainView">
+			<View id="outerView" width= "Titanium.UI.FILL" height="Titanium.UI.FILL" backgroundColor="#eceff1" top="0dp">
+				<ScrollView class="contentView">
+					<View class="subHeaderView">
+						<Label class="subHeaderLabel" id="appColorHeader" text="L('appColor')" ></Label>
+					</View>
+					<View id="appColorView">
+						<View class="singleView">
+							<View id="colorView1" class="colorView" onClick="appColorClick" borderColor='#359FFE'>
+								<ImageView class="selectImage"  id="colorImage1" visible="true"></ImageView>
+							</View>
+						</View>
+						<View class="singleView">
+							<View id="colorView2" class="colorView" onClick="appColorClick" borderColor='#FF9500'>
+								<ImageView class="selectImage" id="colorImage2"></ImageView>
+							</View>
+						</View>
+						<View class="singleView">
+							<View id="colorView3" class="colorView" onClick="appColorClick" borderColor='#4CD964'>
+								<ImageView class="selectImage" id="colorImage3"></ImageView>
+							</View>
+						</View>
+						<View class="singleView" >
+							<View id="colorView4" class="colorView"  onClick="appColorClick" borderColor='#5756D6'>
+								<ImageView class="selectImage" id="colorImage4"></ImageView>
+							</View>
+						</View>
+						<View class="singleView">
+							<View id="colorView5" class="colorView" onClick="appColorClick" borderColor='#02C1AC'>
+								<ImageView class="selectImage" id="colorImage5"></ImageView>
+							</View>
+						</View>
+						<View class="singleView" >
+							<View id="colorView6" class="colorView" onClick="appColorClick" borderColor='#313C4A'>
+								<ImageView class="selectImage" id="colorImage6"></ImageView>
+							</View>
+						</View>
+					</View>
+					<View class="subHeaderView">
+						<Label class="subHeaderLabel"  id="surveyHeader" text="L('symptomSurveyHeader')" ></Label>
+					</View>
+					<View id="symptomSurveyView">
+						<View class="innerView">
+							<View class="ineerHorizonatal" id="symptomSlotviewOuter" onClick="slotClick">
+								<Label class="headerControlLabel"  id="symptomSlotLbl" touchEnabled="false" text="SELECT A SLOT"></Label>
+								<View class="controllerView" id="symptomSlotview" touchEnabled="false" >
+									<Label class="slotLabel" touchEnabled="false" id="symptomSlotLabel" text="Morning"></Label>
+									<ImageView touchEnabled="false" class="downButtonImage"></ImageView>
+								</View>
+								<View class="horizontalDivider" id="slotDivider"></View>
+							</View>
+							<View class="ineerHorizonatalTime" id="symptomTimeClickOuter" onClick="timeSlotClick">
+								<Label class="headerControlLabel" touchEnabled="false" text="SLOT TIME" id="slotSurveytimeLbl"></Label>
+								<View class="controllerView" id="symptomTimeClick" touchEnabled="false" >
+									<Label class="slotLabel" id="symptomTimeLabel" touchEnabled="false" text="10:00 AM"></Label>
+									<ImageView class="timeButtonImage" touchEnabled="false"></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+						</View>
+						<View class="innerView">
+							<View class="ineerFullView" id="symptomRepeateViewOuter" onClick="repeatClick">
+								<Label class="headerControlLabel" touchEnabled="false" text="REPEAT" id="surveyRepeatLbl"></Label>
+								<View class="controllerView" id="symptomRepeateView" touchEnabled="false" >
+									<Label class="slotLabel" id="symptomRepeatLabel" touchEnabled="false"  text="Daily(Mo Tu We Th Fr Sa Su)"></Label>
+									<ImageView class="downButtonImage" touchEnabled="false"></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+						</View>
+						<View class="innerView">
+							<View class="ineerFullView" onClick="surveyClick">
+								<Label class="headerControlLabel" touchEnabled="false"  id="selectSurveyLbl" text="SELECT CHECK-IN"></Label>
+								<View class="controllerView" id="surveyView" touchEnabled="false" >
+									<Label class="slotLabel" id="surveyLabel" touchEnabled="false"  text=""></Label>
+									<ImageView class="downButtonImage" touchEnabled="false"></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+						</View>
+					</View>
+					<View class="subHeaderView">
+						<Label class="subHeaderLabel" text="L('cognitionTestHeader')"  id="cogLbl"></Label>
+					</View>
+					<View id="cognitionTestView">
+						<View class="innerView">
+							<View class="ineerHorizonatal" id="cognitionSlotviewOuter" onClick="slotClick">
+								<Label class="headerControlLabel" touchEnabled="false" text="SELECT A SLOT" id="slotLbl"></Label>
+								<View class="controllerView" id="cognitionSlotview" touchEnabled="false" >
+									<Label class="slotLabel" touchEnabled="false" id="cognitionSlotLabel" text="Morning"></Label>
+									<ImageView touchEnabled="false" class="downButtonImage"></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+							<View class="ineerHorizonatalTime"  id="coginitionTimeClickOuter" onClick="timeSlotClick">
+								<Label class="headerControlLabel" touchEnabled="false" text="SLOT TIME" id="slotTimeLbl"></Label>
+								<View class="controllerView" id="coginitionTimeClick" touchEnabled="false" >
+									<Label class="slotLabel" id="coginitionTimeLabel" touchEnabled="false"  text="10:00 AM"></Label>
+									<ImageView class="timeButtonImage" touchEnabled="false" ></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+						</View>
+						<View class="innerView">
+							<View class="ineerFullView" id="coginitionRepeateViewOuter" onClick="repeatClick">
+								<Label class="headerControlLabel" touchEnabled="false" text="REPEAT" id="repeatLbl"></Label>
+								<View class="controllerView" id="coginitionRepeateView" touchEnabled="false" >
+									<Label class="slotLabel" id="cognitionRepeatLabel" touchEnabled="false" text="Daily(Mo Tu We Th Fr Sa Su)"></Label>
+									<ImageView touchEnabled="false" class="downButtonImage"></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+						</View>
+						<View class="innerView">
+							<View class="ineerFullView" onClick="cognitionClick">
+								<Label class="headerControlLabel" touchEnabled="false"  text="SELECT COGNITION" id="selectCogLbl"></Label>
+								<View class="controllerView" id="coginitionTestView" touchEnabled="false">
+									<Label class="slotLabel" id="cognitionTestLabel" touchEnabled="false" text=""></Label>
+									<ImageView touchEnabled="false" class="downButtonImage"></ImageView>
+								</View>
+								<View class="horizontalDivider"></View>
+							</View>
+						</View>
+					</View>
+					<View class="subHeaderView">
+						<Label class="subHeaderLabel" text="L('emergencyContact')"  id="emergencyHeader"></Label>
+					</View>
+					<View id="contactView">
+						<View class="innerView">
+							<View class="ineerFullView">
+								<Label class="headerControlLabel"  text="24/7 CONTACT NUMBER" id="emergencyLbl"></Label>
+								<View class="controllerView">
+									<TextField id="contactNumber" value="" maxLength="20"></TextField>
+								</View>
+							</View>
+						</View>
+						<View  class="horizontalDivider"  ></View>
+						<View class="innerView">
+							<View class="ineerFullView">
+								<Label class="headerControlLabel" text="PERSONAL HELPLINE" id="personalHelpineLbl"></Label>
+								<View class="controllerView">
+									<TextField id="emergencyNumber" value="" maxLength="20"></TextField>
+								</View>
+							</View>
+						</View>
+						<View class="horizontalDivider"></View>
+					</View>
+					<View width="Titanium.UI.FILL" left="10dp" height="Titanium.UI.SIZE" >
+						<Label class="headerControlLabel" text="PROTOCOL" id="protocolTextLbl"></Label>
+						<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" right="0dp" onClick="switchChange">
+							<ImageView id="protoSwitch" left="10dp"  top="10dp" bottom="10dp" right="10dp" touchEnabled="false" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" image="/images/settings/switch_deactive.png"></ImageView>
+						</View>
+					</View>
+					<View class="subHeaderView">
+						<Label class="subHeaderLabel"  text="Select a Language" id="langTitle"></Label>
+					</View>
+					<View id="languageView">
+						<View  id="languageSlot" onClick="onGetLanguage">
+							<Label touchEnabled="false" text="Select a Language" id="langLbl"></Label>
+							<View  touchEnabled="false" id="ControlView">
+								<Label  touchEnabled="false" id="languageSlotLabel" text="English"></Label>
+								<ImageView touchEnabled="false" class="downButtonImage"></ImageView>
+							</View>
+							<View id="seperator"></View>
+						</View>
+					</View>
+
+				</ScrollView>
+			</View>
+			<View id="logOutAccountView" onClick="onLogoutClick">
+				<Label id="logoutAccountLabel"></Label>
+			</View>
+		</View>
+		<View id="PopupView">
+			<View id="overlay"></View>
+			<View id="containerView">
+				<View id="buttonBar">
+					<View id="cancelView" onClick="popUpCancel">
+						<ImageView id="cancelImage"></ImageView>
+					</View>
+					<View id="popupTitleView">
+						<Label id="popupTitle"></Label>
+					</View>
+					<View id="doneView" onClick="popUpDone">
+						<ImageView id="doneImage"></ImageView>
+					</View>
+				</View>
+				<View height="Titanium.UI.FILL" width="Titanium.UI.FILL" backgroundColor="white">
+					<ListView id="testListView" onItemclick="selectTest">
+						<Templates>
+							<ItemTemplate id="listItemTemplate" name="listItemTemplate">
+								<View  class="outerView"   >
+									<View class="rowContainer">
+										<View class="rowView">
+											<Label id="rowLabel" bindId="rowLabel" ></Label>
+										</View>
+										<View id="checkBoxView" bindId="checkBoxView">
+											<ImageView id="checkBoxImageView"  bindId="checkBoxImageView" ></ImageView>
+										</View>
+									</View>
+									<View  class="sepratorView1"></View>
+								</View>
+							</ItemTemplate>
+						</Templates>
+						<ListSection id="listSection"></ListSection>
+					</ListView>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

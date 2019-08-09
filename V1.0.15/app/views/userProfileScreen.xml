@@ -1,0 +1,42 @@
+<Alloy>
+	<Window id="userProfileScreen"  class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Profile" rightButtonImage="/images/common/done.png">
+			</Require>
+		</View>
+		<ScrollView id="contentView">
+			<View class="listOuterViewStyle">
+				<View class="dataFieldView">
+					<Label id="firstNamelabel" class="dataLabel" text="FIRST NAME" >
+					</Label>
+					<TextField id="firstNameText" autocapitalization = "Titanium.UI.TEXT_AUTOCAPITALIZATION_WORDS" class="valueLabel" hintText="Enter your First Name." >
+					</TextField>
+				</View>
+				<View class="seperator">
+				</View>
+			</View>
+			<View class="listOuterViewStyle">
+				<View class="dataFieldView">
+					<Label id="lastNamelabel" class="dataLabel" text="LAST NAME" >
+					</Label>
+					<TextField id="lastNameText" autocapitalization = "Titanium.UI.TEXT_AUTOCAPITALIZATION_WORDS" class="valueLabel" hintText="Enter your Last Name." >
+					</TextField>
+				</View>
+				<View class="seperator">
+				</View>
+			</View>
+			<View class="listOuterViewStyle">
+				<View class="dataFieldView">
+					<Label id="studyIdlabel" class="dataLabel" text="STUDY ID" >
+					</Label>
+					<TextField id="studyIdText" class="valueLabel" editable="false" hintText="None." >
+					</TextField>
+				</View>
+				<View class="seperator">
+				</View>
+			</View>
+		</ScrollView>
+		<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved.">
+		</Label>
+	</Window>
+</Alloy>

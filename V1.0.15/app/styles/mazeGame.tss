@@ -1,0 +1,13 @@
+"#contentView": {
+	top: '60dp',
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE
+}
+
+"#mainView": {
+	width:Alloy.Globals.BOX_WIDTH,
+	height: Alloy.Globals.BOX_WIDTH,
+	layout: 'vertical',
+	backgroundColor: "transparent"
+}

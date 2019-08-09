@@ -1,0 +1,67 @@
+"#contentView": {
+	top: '60dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: "#ffffff"
+}
+"#HealthListView":{
+	top: "0dp",
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	bottom: '20dp'
+}
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '50dp',
+	right: '4dp',
+	left: '4dp',
+	top: "6dp"
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '70dp'
+}
+"#seperator":{
+	width: Ti.UI.FILL,
+	height: '1dp',
+	right: '10dp',
+	left: '10dp',
+	bottom: "5dp",
+	backgroundColor: '#E7EAED'
+}
+"#valueLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumLargeFontLight,
+	left: '10dp',
+	opacity: 1
+}
+"#dateLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumLargeFontLight,
+	right: '10dp',
+	opacity: 1
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

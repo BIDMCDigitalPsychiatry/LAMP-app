@@ -1,0 +1,249 @@
+"#logo":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	image: '/images/signinStudy/logo.png'
+},
+
+"#signInStudyButton":{
+	width: '90%',
+	height: '55dp',
+	//top: "10dp",
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '27dp',
+	textAlign: 'center',
+	font: Alloy.Globals.LargeFontBold
+}
+// top: '50dp'
+// }
+// width: '80%',
+// height: '44dp',
+// top: '15dp',
+// color: '#ffffff',
+// borderWidth: '2dp',
+// borderColor: '#ffffff',
+// borderRadius: '22dp',
+// textAlign: 'center',
+// opacity: 1,
+// font:Alloy.Globals.LargeFontBold
+// },
+// "#signInStudyButton[formFactor=tablet]": {
+// font: Alloy.Globals.LargeFontBoldTablet
+// },
+"#logoView": {
+	height: '30%',
+	width:Titanium.UI.FILL,
+	top: '0dp'
+}
+"#logoInnerView": {
+	height: Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	top: '0dp',
+	bottom: '140dp'
+}
+"#logoInnerView[formFactor=tablet]": {
+	bottom: '200dp'
+}
+// ".bodyOuterContainer1":{
+// top: "0dp",
+// //bottom:"50dp",
+// width: Ti.UI.FILL,
+// height: Ti.UI.FILL,
+// backgroundColor: "transparent",
+// scrollType: "vertical",
+// contentHeight: "auto"
+// },
+// ".bodyOuterContainer1[formFactor=tablet]":{
+// top: "0dp",
+// //bottom:"50dp",
+// width: Ti.UI.FILL,
+// height: Ti.UI.FILL,
+// backgroundColor: "transparent"
+// }
+".bodyOuterContainer2":{
+	top: "60dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	//layout: "vertical",
+	backgroundImage: "/images/signinStudy/bg.png"
+}
+"#signinStudyContainer":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL
+},
+"#bodyContainer": {
+	height: Titanium.UI.SIZE,
+	top: "10dp",
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+"#bodyContainer[formFactor=tablet]": {
+	height: Titanium.UI.SIZE
+}
+"#bodyOuterContainer[platform=ios]":{
+	layout: "vertical",
+	//top: "60dp",
+	top: "0dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "#359ffe",
+	backgroundImage: "/images/signinStudy/bg.png",
+	scrollType: "vertical",
+	contentHeight: "auto"
+}
+"#bodyOuterContainer[platform=android]":{
+	layout: "vertical",
+	top: "0dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	//backgroundColor: "#359ffe",
+	//backgroundImage: "/images/signinStudy/bg.png",
+	scrollType: "vertical",
+	contentHeight: "auto",
+	//bottom: "30dp",
+	bottom: "120dp"
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	//top:"2dp"
+	bottom: '3dp'
+},
+
+"#languageView": {
+	top: '10dp',
+	height: '70dp',
+	//left:"8dp",
+	width: "90%",
+	backgroundColor: 'transparent'
+}
+"#languageView[formFactor=tablet]": {
+	height: '80dp'
+}
+"#languageSlot": {
+	//left: '10dp',
+	top: "0dp",
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	layout: 'vertical'
+}
+"#langHeader": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	left: '0dp',
+	top: '10dp',
+	color: "#ffffff",
+	opacity: 1,
+	font:Alloy.Globals.LargeFontLight
+}
+"#langHeader[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontLightTablet
+}
+".controllerView": {
+	//left: '0dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: '5dp'
+}
+"#languageSlotLabel": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	left: '0dp',
+	top: '10dp',
+	color: "#ffffff",
+	font:Alloy.Globals.LargeFontLight,
+	touchEnabled: true
+}
+"#languageSlotLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#downButtonImage": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	right: '0dp',
+	image: '/images/settings/icn-arrow-down.png'
+}
+"#horizontalDivider": {
+	//left: '0dp',
+	height: '1dp',
+	width:Titanium.UI.FILL,
+	backgroundColor: '#ffffff',
+	opacity: "0.2",
+	top: '3dp'
+}
+"#buttonContainerView":{
+	width: '98%',
+	height:Ti.UI.SIZE,
+	//top: "10dp",
+	//backgroundColor: 'yellow',
+	layout:"vertical",
+	bottom:"3dp"
+},
+// "#buttonContainerView[platform=android]": {
+// width: '98%',
+// height:Ti.UI.SIZE,
+// top: '5%'
+// }
+"#signInStudent":{
+	//left: '0dp',
+	// width: "49%",
+	// height: '44dp',
+	// color: 'white',
+	// textAlign: 'center',
+	// font: Alloy.Globals.LargeFontBold,
+	// top:"10dp"
+	//width: '90%',
+	width: '40%',
+	height: '40dp',
+	top: '10dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '20dp',
+	textAlign: 'center',
+	left: "10dp",
+	font: Alloy.Globals.LargeFontBold
+},
+"#signInStudent[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet
+},
+"#buttonSeperator": {
+	height: '22dp',
+	width: '1dp',
+	backgroundColor: "#ffffff",
+	opacity: "0.6"
+},
+"#buttonSeperator[formFactor=tablet]": {
+	height: '36dp',
+	width: '1dp',
+	backgroundColor: "#ffffff",
+	opacity: "0.6"
+}
+"#signInUserSignUp":{
+	// top: "10dp",
+	// width: "49%",
+	// height: '44dp',
+	// color: 'white',
+	// textAlign: 'center',
+	// font: Alloy.Globals.LargeFontBold
+	//width: '90%',
+	width: '40%',
+	height: '40dp',
+	top: '10dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '20dp',
+	textAlign: 'center',
+	right: "10dp",
+	font: Alloy.Globals.LargeFontBold
+},
+"#signInUserSignUp[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet
+},

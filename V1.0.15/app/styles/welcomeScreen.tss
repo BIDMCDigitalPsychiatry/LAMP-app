@@ -1,0 +1,119 @@
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '10dp',
+	backgroundImage: '/images/common/bg_welcome.png',
+	layout: "vertical",
+	bottom:"82dp"
+}
+"#contentWebView":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	willHandleTouches:false,
+	enableZoomControls:false,
+	backgroundColor: "#ffffff",
+	left:"20dp",
+	right:"20dp",
+	top:"20dp"
+}
+"#logoImage":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	image: '/images/common/logo_welcome.png',
+	top: "60dp"
+}
+"#titleLbl":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	opacity: 1,
+	color: "#546e7a",
+	top: "20dp",
+	textAlign: "center",
+	text: "Welcome to mindLAMP"
+}
+"#titleLbl[platform=ios formFactor=tablet]":{
+	font:Alloy.Globals.ExtraLargeFontLightTablet
+}
+".instructionLbl":{
+	width: Ti.UI.Fill,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.HeaderFontLight,
+	opacity: 1,
+	color: "#546e7a",
+	top: "20dp",
+	left: "30dp",
+	right: "30dp" ,
+	textAlign: "center"
+}
+".instructionLbl[platform=ios formFactor=tablet]":{
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#instructionLbl1":{
+	text: "Before you begin,"
+}
+"#instructionLbl2":{
+	top: "3dp",
+	text: "please make sure you agree"
+}
+"#instructionLbl3":{
+	top: "3dp",
+	text: "to the following content."
+}
+"#consentButtonContainer": {
+	width: '98%',
+	height: "80dp",
+	backgroundColor: "transparent",
+	bottom: '0dp'
+}
+"#startContainer": {
+	left: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE,
+	backgroundColor: "transparent"
+},
+
+"#nextContainer": {
+	//right: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE
+}
+"#contentView1": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	backgroundColor: '#ffffff',
+	bottom: '20dp'
+}
+"#noDataLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: "#546e7a",
+	font:Alloy.Globals.HeaderFontLight,
+	text: "No Data Available."
+}
+"#backButton":{
+	color: '#359FFE',
+	textAlign: 'center',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold,
+	width: '128dp',
+	height: '44dp',
+	borderWidth: '1dp',
+	borderColor: '#359FFE',
+	borderRadius: '22dp',
+	backgroundColor: "#ffffff"
+},
+
+"#nextButton":{
+	color: '#ffffff',
+	textAlign: 'center',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold,
+	width: '128dp',
+	height: '44dp',
+	borderWidth: '1dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	backgroundColor: "#359FFE"
+},

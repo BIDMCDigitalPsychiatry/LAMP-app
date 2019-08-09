@@ -1,0 +1,282 @@
+"#spinWheelScreen":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '60dp'
+}
+
+"#homeView": {
+	width: "50dp",
+	height: Ti.UI.FILL,
+	left: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#homeView[formFactor=tablet]": {
+	width: '100dp',
+	height : Titanium.UI.FILL,
+	//backgroundColor : "red"
+}
+
+"#homeView[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#homeImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/common/arrows-left.png',
+	left: '10dp'
+}
+
+"#homeImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/common/arrows-left.png'
+}
+
+"#homeImage[formFactor=tablet]": {
+	left: '15dp'
+}
+
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	top: "10dp"
+}
+
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#reportView[formFactor=tablet]": {
+	right: '20dp',
+	top: '15dp'
+}
+
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png"
+}
+
+"#contentView":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	layout: "vertical",
+	top: "80dp"
+}
+
+"#spinnerView":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10%"
+}
+
+"#spinWheel":{
+	height:Titanium.UI.SIZE,
+	width: "90%",
+	image: "/images/prevent/Spinwheel/spin_wheel.png"
+}
+
+"#spinWheel[formFactor=tablet platform=android]":{
+	height:Titanium.UI.SIZE,
+	width: "80%",
+	image: "/images/tablet/prevent/spinWheel/spin_wheel.png"
+}
+
+"#spinner[formFactor=tablet platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/tablet/prevent/spinWheel/spin_arrow.png"
+}
+
+"#spinner":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image: "/images/prevent/Spinwheel/spin_arrow.png"
+}
+
+"#spinOuterView":{
+	width: "250dp",
+	height: "45dp",
+	top: "8%"
+}
+
+"#androidView":{
+	width: 0,
+	height: 0,
+	backgroundColor:"transparent"
+}
+
+"#spinTapView":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundImage: "/images/prevent/Spinwheel/btn_spintowin.png",
+	//top: "8%"
+}
+
+"#spinLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	textAlign: "center",
+	font:Alloy.Globals.LargeFontLight,
+	color: "#ffffff"
+}
+
+"#bgview":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	backgroundColor: "#000000",
+	opacity: 0.7,
+	zIndex: 0,
+	visible: false
+}
+
+"#popupView":{
+	height: "70%",
+	width:Titanium.UI.FILL,
+	zIndex: 10,
+	backgroundColor: 'transparent',
+	layout: "vertical",
+	visible: false
+}
+
+"#bonusImage":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE
+}
+
+"#commentLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.LargestLightFont35,
+	color: "#ffffff",
+	top: "10dp"
+}
+
+"#bonusLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.SemiBold50,
+	color: "#ffb200",
+	top: "10dp"
+}
+
+
+
+"#continueView":{
+	width: "250dp",
+	height: "45dp",
+	backgroundImage: "/images/prevent/Spinwheel/btn_continue.png",
+	top: "15%"
+}
+
+"#continueLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.LargeSemiBold,
+	color: "#ffffff"
+}
+
+//  ************* ipad ************
+"#spinnerView[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "10%"
+}
+
+"#spinnerView[formFactor=tablet platform=android]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top: "5%"
+}
+
+"#spinOuterView[formFactor=tablet]":{
+	width: "500dp",
+	height: "60dp",
+	top: "8%"
+}
+
+"#spinTapView[formFactor=tablet]":{
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundImage: "/images/prevent/Spinwheel/btn_spintowin.png",
+	//top: "8%"
+}
+
+"#spinLabel[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	textAlign: "center",
+	font:Alloy.Globals.LargestLightFont,
+	color: "#ffffff"
+}
+
+"#commentLabel[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.LargestLightFont35,
+	color: "#ffffff",
+	top: "30dp"
+}
+
+"#popupView[formFactor=tablet]":{
+	height: "70%",
+	width:Titanium.UI.FILL,
+	zIndex: 10,
+	backgroundColor: 'transparent',
+	//backgroundColor:"Red",
+	layout: "vertical",
+	visible: false
+}
+
+"#bonusLabel[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.SemiBold50,
+	color: "#ffb200",
+	top: "30dp"
+}
+
+"#continueView[formFactor=tablet]":{
+	width: "500dp",
+	height: "60dp",
+	backgroundImage: "/images/prevent/Spinwheel/btn_continue.png",
+	top: "15%"
+}
+
+"#continueLabel[formFactor=tablet]":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.SemiBold40,
+	color: "#ffffff"
+}

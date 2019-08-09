@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="homeStaticPages">
+		<View id="headerView">
+			<View id="homeView" visible="false"  onClick="onHomeClick">
+				<ImageView id="homeImage"></ImageView>
+			</View>
+			<View id="titleview">
+				<Label id="headerLabel" text="Learn"></Label>
+			</View>
+			<!-- <View id="reportView"  onClick="onReportClick">
+					<ImageView id="reportImage"></ImageView>
+				</View> -->
+		</View>
+		<View id="contentView">
+			<ListView  id="surveyList">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="surveyListTemplate">
+						<View id="listOuterView" bindId="listOuterView" onClick="onMenuClick">
+							<View id="gameNameView" touchEnabled="false" >
+								<Label id="gameNameLabel" bindId="gameNameLabel"></Label>
+							</View>
+							<ImageView id="notificationImage" bindId="notificationImage"  touchEnabled="false"></ImageView>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection"></ListSection>
+			</ListView>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+		</View>
+		<Require id = 'footerView' src = "footerView"></Require>
+	</Window>
+</Alloy>

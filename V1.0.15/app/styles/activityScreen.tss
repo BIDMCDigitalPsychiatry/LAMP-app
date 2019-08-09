@@ -1,0 +1,209 @@
+
+"#tabView": {
+	top: '0dp',
+	height: '40dp',
+	width: Titanium.UI.FILL,
+	backgroundColor: Alloy.Globals.HEADER_COLOR
+}
+"#contentView": {
+	top: '100dp',
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	backgroundColor: '#E7EAED'
+}
+"#contentView[formFactor=tablet]": {
+	//bottom: '80dp'
+}
+"#noDataLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#50545d',
+	font:Alloy.Globals.LargeMenuFontBold,
+	visible: false
+}
+"#noDataLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeMenuFontBoldTablet
+}
+"#locationTab": {
+	left : "0dp",
+	height: Titanium.UI.FILL,
+	width: '50%',
+	backgroundColor: 'transparent'
+}
+"#environmentTab": {
+	right : "0dp",
+	height:Titanium.UI.FILL,
+	width: '50%',
+	backgroundColor: 'transparent'
+}
+".tabDivider": {
+	height: '2dp',
+	width: Titanium.UI.FILL,
+	backgroundColor: 'white',
+	bottom: '0dp'
+}
+"#locationLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumSemiBold,
+	opacity: 1
+}
+"#locationLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+
+"#environmentLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumSemiBold,
+	opacity: 0.5
+}
+"#environmentLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBoldTablet
+}
+
+"#locationList": {
+	top: '0dp',
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	bottom: '20dp'
+}
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '80dp',
+	right: '4dp',
+	left: '4dp',
+	top: "6dp"
+}
+"#listOuterView[formFactor=tablet]": {
+	height: '90dp'
+}
+
+"#adressView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	right: '155dp',
+	left: '0dp'
+}
+"#adressView[formFactor=tablet]": {
+	right: '200dp'
+}
+"#envAdressView": {
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	right: '155dp',
+	left: '0dp',
+	layout: 'vertical'
+}
+"#envAdressView[formFactor=tablet]": {
+	right: '200dp'
+}
+"#timeview": {
+	backgroundColor: 'transparent',
+	width: '155dp',
+	height: Ti.UI.SIZE,
+	right: '0dp'
+}
+"#timeview[formFactor=tablet]": {
+	width: '200dp'
+}
+"#envtimeview": {
+	backgroundColor: 'transparent',
+	width: '155dp',
+	height: Ti.UI.SIZE,
+	right: '0dp',
+	layout: 'horizontal'
+}
+"#envtimeview[formFactor=tablet]": {
+	width: '200dp'
+}
+"#addressLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumMenuFontLight,
+	left: '10dp',
+	opacity: 1
+}
+"#addressLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+
+"#envAddressLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumMenuFontLight,
+	left: '10dp',
+	opacity: 1,
+	top: '5dp'
+}
+"#envAddressLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+
+"#envPickLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.LargeFontLight,
+	left: '10dp',
+	opacity: 1
+}
+"#envPickLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+
+"#timeLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumTimeLargeFontLight,
+	left: '7dp',
+	opacity: 1
+}
+"#timeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLight
+}
+"#envTimeLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.MediumTimeLargeFontLight,
+	left: '7dp',
+	opacity: 1
+}
+"#envTimeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLight
+}
+"#timerImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: '0dp',
+	image: '/images/settings/icn-time.png'
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},

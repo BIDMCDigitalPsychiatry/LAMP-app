@@ -1,0 +1,6 @@
+<h1>Ti.Healthkit.StatisticsQuery</h1>
+<h2>Description</h2>
+<p>Statistics queries perform statistical calculations over the set of matching quantity samples. Statistics queries can calculate the minimum, maximum, and average value for discrete quantities. They can also calculate the sum for cumulative quantities.</p>
+<p>You can create a StatisticsQuery object using the <code>createStatisticsQuery</code> function.</p>
+<p>By default, these queries automatically merge the data from all of your data sources before performing the calculations. If you want to merge the data yourself, you can set the STATISTICS_OPTION_SEPARATE_BY_SOURCE option when you create the query. You can then request the statistical data for each source separately.</p>
+<p>To calculate the statistics over a series of time intervals, use a <a href="statisticsCollectionQuery.html">Ti.Healthkit.StatisticsCollectionQuery</a>.</p>

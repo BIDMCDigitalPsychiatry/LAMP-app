@@ -1,0 +1,153 @@
+
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	layout: 'vertical'
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	top: "10dp",
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white'
+}
+"#timerLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontLight,
+	top: '30dp'
+}
+"#timeLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLight
+},
+"#outerBox": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '0dp',
+	backgroundColor: 'transparent',
+	layout: 'vertical'
+}
+"#boxOuter": {
+	width:Alloy.Globals.BOX_WIDTH_TEMP,
+	height:Alloy.Globals.BOX_WIDTH_TEMP ,
+	top: '20dp',
+	backgroundColor: '#ffffff'
+}
+"#boxOuter[platform=android]": {
+
+	height:Alloy.Globals.BOX_HEIGHT_TEMP
+}
+"#boxOuter[formFactor=tablet]": {
+	width:Alloy.Globals.GAME_WIDTH,
+	height:Alloy.Globals.GAME_WIDTH
+}
+"#boxOuter[platform=android formFactor=tablet]": {
+	width:Alloy.Globals.GAME_WIDTH,
+	height:Alloy.Globals.GAME_WIDTH
+}
+"#nextButton": {
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	bottom: '30dp',
+	image: '/images/spatialSpan/next_icon_disable.png'
+}
+".rowView": {
+	width:Titanium.UI.FILL,
+	height: '33.3%',
+	top: '0dp',
+	layout: 'horizontal'
+}
+".horizontalBorder": {
+	width:Titanium.UI.FILL,
+	height: '1dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: false
+}
+".childView": {
+	width: '33.3%',
+	height:Titanium.UI.FILL,
+	left: '0dp',
+	backgroundColor: '#ffffff'
+}
+".verticalBorder": {
+	width: '1dp',
+	height:Titanium.UI.FILL,
+	right: '0dp',
+	backgroundColor: '#dddddd',
+	touchEnabled: true
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+"#messageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	top: "0dp"
+}
+"#imageThumbOuter": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '20dp',
+	left: '40dp',
+	right: '40dp',
+	bottom: '20dp',
+	layout: 'vertical'
+}
+"#imageThumbOuter[platform=android]":{
+	top: '0dp'
+}
+".thumbImageView": {
+	width:Titanium.UI.FILL,
+	height: '30%',
+	top: "5%",
+	layout: 'horizontal'
+}
+"#thumbImageView[platform=android]":{
+	top: "0dp"
+}
+
+".innerThumbView": {
+	width: '33.3%',
+	height:Titanium.UI.FILL
+}
+".thumbnailImage": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	left: '10%',
+	right: '10%'
+}
+"#messageViewWatch":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	left: '10dp',
+	right: '10dp',
+	opacity: "0.8" ,
+	backgroundColor: "#3394CB"
+}
+"#messageLabelWatch": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	// right: '10dp',
+	// left: '10dp',
+	top: '10dp',
+	bottom: '10dp',
+	textAlign: 'centre'
+}

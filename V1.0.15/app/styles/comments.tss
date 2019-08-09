@@ -1,0 +1,78 @@
+
+"#comments": {
+	backgroundColor: "#eceff1"
+}
+"#footerView": {
+	width:Titanium.UI.FILL,
+	bottom: '0dp',
+	height: '80dp'
+}
+"#submitButton": {
+	height: '42dp',
+	width: '200dp',
+	color: "#546e7a",
+	borderColor: '#546e7a',
+	borderRadius: '21dp',
+	borderWidth: '1dp'
+}
+"#submitLabel": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color: '#456e7a',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold
+}
+"#submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}
+"#contentView": {
+	width:Titanium.UI.FILL,
+	top: '60dp',
+	height: '200dp',
+	backgroundColor: '#ffffff',
+	layout: 'vertical'
+}
+
+"#enterCommentLabel": {
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	left: '10dp',
+	color: '#456e7a',
+	font: Alloy.Globals.LargeFontBold,
+	opacity: 1,
+	top: '60dp'
+}
+"#enterCommentLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}
+".textBoxBroderLess": {
+	width:Titanium.UI.FILL,
+	height: "80dp",
+	top: "10dp",
+	right: '10dp',
+	left: "7dp",
+	//left: '10dp',
+	color: "#90a4ae" ,
+	returnKeyType:Titanium.UI.RETURNKEY_DEFAULT,
+	maxLength: '500',
+	autocorrect: true,
+	autocapitalization:Titanium.UI.TEXT_AUTOCAPITALIZATION_SENTENCES,
+	verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+	textAlign: 'left',
+	horizontalWrap: true,
+	suppressReturn: false,
+	font:Alloy.Globals.HeaderFontLight,
+	opacity: 1,
+	scrollable: true
+}
+".textBoxBroderLess[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontLightTablet
+}
+".textBottomLine": {
+	backgroundColor: "#456e7a",
+	height: "1dp",
+	width:Titanium.UI.FILL,
+	left: '10dp',
+	right: '10dp',
+	top: '0dp'
+},

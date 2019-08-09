@@ -1,0 +1,112 @@
+// "#bodyContainer" : {
+// layout:"composite",
+// width: Ti.UI.FILL,
+// height: Ti.UI.FILL,
+// top:"50dp",
+// backgroundColor:"#359ffe",
+// backgroundImage:"/images/signinStudy/bg.png"
+// },
+"#bodyOuterContainer": {
+	layout: "vertical",
+	bottom: "80dp",
+	top: "60dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "#359ffe",
+	backgroundImage: "/images/signinStudy/bg.png",
+}
+"#consentMatterContainer": {
+	top: '0dp',
+	layout: "vertical",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#consentHeadLabel":{
+	top: '20dp',
+	color: "#ffffff",
+	text: L( 'consent'),
+	font:Alloy.Globals.HeaderFontLight
+},
+"#consentHeadLabel[formFactor=tablet]": {
+	font: Alloy.Globals.HeaderFontLightTablet
+},
+
+"#consentNoteLabel":{
+	top: '20dp',
+	width: '80%',
+	color: "#ffffff",
+	text: L( 'consentNote'),
+	font:Alloy.Globals.MediumMenuFontBold ,
+	opacity: 1
+},
+"#consentNoteLabel[formFactor=tablet]": {
+	font: Alloy.Globals.HeaderFontBold
+},
+"#consentDescriptionLabel":{
+	width: '90%',
+	height:Ti.UI.FILL,
+	top: '10dp',
+	willHandleTouches: false,
+	enableZoomControls: false,
+	bottom: "0dp",
+	backgroundColor: "transparent",
+}
+"#signUpDisagreeButton":{
+	width: '128dp',
+	height: '44dp',
+	color: '#ffffff',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold
+},
+"#signUpDisagreeButton[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet,
+	width: '180dp'
+},
+"#signUpAgreeButton":{
+	width: '128dp',
+	height: '44dp',
+	color: '#ffffff',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	opacity: 1,
+	font:Alloy.Globals.LargeFontBold
+},
+"#signUpAgreeButton[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet,
+	width: '180dp'
+},
+
+"#consentButtonContainer": {
+	//width: '98%',
+	width:Titanium.UI.FILL,
+	height: "80dp",
+	//top:"10dp",
+	backgroundColor: "#359ffe",
+	bottom: '0dp'
+}
+"#disagreeContainer": {
+	left: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE
+},
+
+"#agreeContainer": {
+	right: '0dp',
+	width: '50%',
+	height:Ti.UI.SIZE
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '1dp'
+},
+

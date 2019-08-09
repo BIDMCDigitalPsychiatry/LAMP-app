@@ -1,0 +1,113 @@
+"#logo":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	image: '/images/signinStudy/logo.png'
+},
+
+// "#signInCreateAndContinueButton":{
+// width: '80%',
+// height: '44dp',
+// top: '15dp',
+// color: 'white',
+// borderWidth: '2dp',
+// borderColor: '#ffffff',
+// borderRadius: '22dp',
+// textAlign: 'center',
+// font:Alloy.Globals.LargeFontBold
+// },
+// "#signInCreateAndContinueButton[formFactor=tablet]": {
+// font: Alloy.Globals.LargeFontBoldTablet
+// },
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '3dp'
+},
+".bodyOuterContainer1":{
+	top: "0dp",
+	//bottom:"50dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "transparent",
+	scrollType: "vertical",
+	contentHeight: "auto"
+},
+".bodyOuterContainer1[formFactor=tablet]":{
+	top: "0dp",
+	//bottom:"50dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "transparent"
+}
+".bodyOuterContainer2":{
+	top: "60dp",
+	//bottom:"50dp",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundImage: "/images/signinStudy/bg.png"
+}
+"#languageView": {
+	top: '10dp',
+	height: '70dp',
+	//left:"8dp",
+	width:"90%",
+	backgroundColor: 'transparent'
+}
+"#languageView[formFactor=tablet]": {
+	height: '80dp'
+}
+"#languageSlot": {
+	//left: '10dp',
+	top:"0dp",
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	layout: 'vertical'
+}
+"#langHeader": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	left: '0dp',
+	top: '10dp',
+	color: "#ffffff",
+	opacity: 1,
+	font:Alloy.Globals.LargeFontLight
+}
+"#langHeader[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontLightTablet
+}
+".controllerView": {
+	//left: '0dp',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.FILL,
+	top: '5dp'
+}
+"#languageSlotLabel": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	left: '0dp',
+	top: '10dp',
+	color: "#ffffff",
+	font:Alloy.Globals.LargeFontLight,
+	touchEnabled: true
+}
+"#languageSlotLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#downButtonImage": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	right: '0dp',
+	image: '/images/settings/icn-arrow-down.png'
+}
+"#horizontalDivider": {
+	//left: '0dp',
+	height: '1dp',
+	width:Titanium.UI.FILL,
+	backgroundColor: '#ffffff',
+	opacity: "0.2",
+	top: '3dp'
+}

@@ -1,0 +1,477 @@
+<resources>
+	
+	<appTitle>mindLAMP</appTitle>
+	<signIn>AANMELDEN</signIn>
+	<signInSmall>Aanmelden</signInSmall>
+	<next>VOLGENDE</next>
+	<notImplement>Niet geïmplementeerd.</notImplement>
+	<activityValidating>Valideren...</activityValidating>
+	<activitySaving>Opslaan...</activitySaving>
+	<activitySubmitting>Verzenden...</activitySubmitting>
+	<activityLoading>Laden...</activityLoading>
+	
+	<unexpectedError>Er is een onverwachte fout opgetreden. Probeer het later opnieuw.</unexpectedError>
+	<noNetwork>Er is op dit moment geen internetverbinding. Probeer het opnieuw wanneer de verbinding is hersteld.</noNetwork>
+	<enableLocation>Schakel Locatieservices op uw apparaat in en ga verder.</enableLocation>
+	<sessionExpired>Uw gebruikerssessie is afgelopen. Meld u aan om verder te gaan.</sessionExpired>
+	<exitApp>Weet u zeker dat u de app wilt verlaten?</exitApp>
+	
+	<signInStudent>Aanmelden met studie-ID</signInStudent>
+	<signInUserSignUp>Aanmelden als gast</signInUserSignUp>
+	<userName>Gebruikersnaam</userName>
+	<userNameEmailOrStudyId>Gebruikersnaam (E-mail/studie-ID)</userNameEmailOrStudyId>
+	<specifyUsername>Geef een gebruikersnaam op.</specifyUsername>
+	<loginErrorAlert>Ongeldige referenties.</loginErrorAlert>
+	<studyIdLbl>Studie-ID</studyIdLbl>
+	
+	<signInStudentPageTitle>Registreren</signInStudentPageTitle>
+	<signInLbl>Aanmelden</signInLbl>
+	<studyCode>Voer uw studiecode in.</studyCode>
+	<studyId>Voer uw studie-ID in.</studyId>
+	<createPassword>Uw wachtwoord aanmaken</createPassword>
+	<confirmPassword>Wachtwoord bevestigen</confirmPassword>
+	<specifyStudyCode>Geef een studiecode op.</specifyStudyCode>
+	<specifyStudyId>Geef een studie-ID op.</specifyStudyId>
+	<specifyPassword>Geef een wachtwoord op.</specifyPassword>
+	<specifyConfirmPassword>Geef een Wachtwoord bevestigen op.</specifyConfirmPassword>
+	<specifySameConfirmPassword>De invoer Wachtwoord en Wachtwoord bevestigen moet gelijk zijn</specifySameConfirmPassword>
+	<errorSignInWithSudyId>Tijdens het aanmelden is een fout opgetreden. Probeer het later opnieuw.</errorSignInWithSudyId>
+	<enterfirstNameLbl>Vul uw voornaam in.</enterfirstNameLbl>
+	<enterlastNameLbl>Voer je achternaam in.</enterlastNameLbl>
+	
+	<quizHeading>Quiz</quizHeading>
+	<quizDescriptionLine1>Beantwoord svp een aantal toetsvragen zodat</quizDescriptionLine1>
+	<quizDescriptionLine2>we zeker weten dat u het toestemmingsformulier hebt begrepen</quizDescriptionLine2>
+	<pleaseAnswerQuestion>Geef een antwoord op.</pleaseAnswerQuestion>
+	
+	<firstName>Voornaam</firstName>
+	<specifyfirstName>Geef een voornaam op.</specifyfirstName>
+	<lastName>Achternaam</lastName>
+	<specifyLastName>Geef een achternaam op.</specifyLastName>
+	<specifyEmail>Email adres</specifyEmail>
+	<emailId>E-mail-ID</emailId>
+	<password>Wachtwoord</password>
+	<createAndContinue>Creëren en doorgaan</createAndContinue>
+	<specifyValidEmail>Geef een geldig e-mailadres op.</specifyValidEmail>
+	
+	<surveyMenu>Inchecken</surveyMenu>
+	<cognitionMenu>Hersentraining</cognitionMenu>
+	<environmentMenu>Omgeving</environmentMenu>
+	<helpMenu>Help</helpMenu>
+	<dismissLabel>Negeren</dismissLabel>
+	<noDataLabel>Geen gegevens beschikbaar.</noDataLabel>
+	<environmentCapsMenu>MILIEU</environmentCapsMenu>
+	<locCapsMenu>PLAATS</locCapsMenu>
+	<whereLbl>Waar bevindt u zich?</whereLbl>
+	
+	
+	<surveysLabel>CHECK IN</surveysLabel>
+	<completedLabel>AFGEROND</completedLabel>
+	<startlabel>START</startlabel>
+	<resultlabel>RESULTAAT BEKIJKEN</resultlabel>
+	<surveyListHeader>Inchecken</surveyListHeader>
+	
+	<appColor>APP-KLEUR</appColor>
+	<symptomSurveyHeader>CHECK IN</symptomSurveyHeader>
+	<cognitionTestHeader>BRAIN GAME</cognitionTestHeader>
+	<emergencyContact>CONTACTPERSONEN BIJ NOOD</emergencyContact>
+	<selectSlot>SELECTEER EEN PERIODE</selectSlot>
+	<selectRepeat>HERHALINGSINTERVALLEN</selectRepeat>
+	<settingsHeader>Instellingen</settingsHeader>
+	<sureSignout>Weet u zeker dat u zich wilt afmelden?</sureSignout>
+	<yes>Ja</yes>
+	<no>Nee</no>
+	<validContactNumb>Voer een geldig contactnummer in.</validContactNumb>
+	<validPersonalNumb>Voer een geldig persoonlijk nummer in.</validPersonalNumb>
+	<personalHelpLine>Persoonlijke hulplijn</personalHelpLine>
+	<twentyfr>24/7 CONTACTNUMMER</twentyfr>
+	
+	
+	<surveyDescriptionLabel>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</surveyDescriptionLabel>
+	<enterHere>Hier invoeren...</enterHere>
+	<slectSurveyType>Selecteer minimaal één inchecktype.</slectSurveyType>
+	<selectCognitionLblAlert>Selecteer ten minste één hersenspel.</selectCognitionLblAlert>
+	<validSymptomTime>Tijd en periode moeten overeenkomen.</validSymptomTime>
+	<validCognitionTime>Tijd en periode moeten overeenkomen.</validCognitionTime>
+	<symptomTimeReminder>Check-inherinnering.</symptomTimeReminder>
+	<cognitionTimeReminder>Brain Game Herinnering.</cognitionTimeReminder>
+	
+	<surveyResultTitle>Resultaten voor inchecken</surveyResultTitle>
+	<helpTitle>Help</helpTitle>
+	<emergencycontactTitle>24x7 contactpersoon noodgevallen</emergencycontactTitle>
+	<helpLineTitle>Persoonlijke hulplijn</helpLineTitle>
+	<policyTitle>PRIVACYBELEID</policyTitle>
+	<deleteAccountTitle>MIJN ACCOUNT VERWIJDEREN</deleteAccountTitle>
+	<deleteConfirmation>Weet u zeker dat u uw account wilt verwijderen?</deleteConfirmation>
+
+	<cognitionTestTitle>Hersen training</cognitionTestTitle>
+	<cognitionCapsTestTitle>HERSEN SPELLETJES</cognitionCapsTestTitle>
+	<startGameLabel>START HET SPEL</startGameLabel>
+	
+	<environmentTitle>Omgeving</environmentTitle>
+	<pictureLabel>Waar bevindt u zich?</pictureLabel>
+	<surveyTypeHeader>Inchecken</surveyTypeHeader>
+	<helpconfirmation>Uw antwoorden wijzen uit dat u onveilige gedachten zou kunnen hebben. Wilt u hulp?</helpconfirmation>
+	
+	<slectAnswerType>Selecteer ten minste één antwoord.</slectAnswerType>
+	<enterComment>Geef opmerkingen op.</enterComment>
+
+	<enterAnswer>Geef een antwoord op.</enterAnswer>
+	
+	<slectLikertAnswerType>Selecteer een antwoord.</slectLikertAnswerType>
+	
+	<intructionLabel>Trek een lijn naar de  volgende letter van het alfabet.</intructionLabel>
+	<intructionLabel1>Klaar.</intructionLabel1>
+	<intructionLabel2>Tik op "1" om de test te starten.</intructionLabel2>
+	<restartGame>HERSTART</restartGame>
+	<intructionLabel3>Time-out.</intructionLabel3>
+
+	
+	<forgotYourPasswordLabel>Wachtwoord vergeten?</forgotYourPasswordLabel>
+	<forgotPasswordTitle>Wachtwoord vergeten</forgotPasswordTitle>
+	<questionLabel>Voer uw e-mailadres in om uw account te herstellen.</questionLabel>
+	<sendLabel>VERZENDEN</sendLabel>
+	<emailLabel>E-mailadres</emailLabel>
+	<alertLabel>Wachtwoord is naar uw e-mailadres verzonden.</alertLabel>
+	
+	<digitLabel>Start DIGIT</digitLabel>
+	<serial7LabelMessage>Trek 7 van het getal af en voer het resultaat in.</serial7LabelMessage>
+	
+	<SpatialSpanMessage1>Onthoud de gemarkeerde velden in de volgorde waarop u ze te zien krijgt.</SpatialSpanMessage1>	
+	<SpatialSpanMessage2>Tik nu op de velden in de volgorde waarop ze waren gemarkeerd.</SpatialSpanMessage2>	
+	<SpatialSpanMessage3>Tik nu op de velden in de omgekeerde volgorde waarop ze waren gemarkeerd.</SpatialSpanMessage3>
+	<SimpleMemoryMessage1>Onthoud de afbeeldingen die u te zien krijgt.</SimpleMemoryMessage1>
+	<SimpleMemoryMessage2>Tik op de afbeeldingen die u gezien hebt.</SimpleMemoryMessage2>	
+	
+	<CatandDogMessage1>Onthoud de afbeeldingen in de volgorde waarop u ze te zien krijgt.</CatandDogMessage1>
+	<CatandDogMessage2>Tik nu op de afbeeldingen in de volgorde waarop ze gezien hebt.</CatandDogMessage2>
+	<CatandDogInstruction1>Selecteer de afbeeldingen van katten.</CatandDogInstruction1>
+	<CatandDogInstruction2>Selecteer de afbeeldingen van honden.</CatandDogInstruction2>
+
+	<jewelsTrail1>Het doel van het spel is om zoveel mogelijk diamanten te verzamelen.</jewelsTrail1>	
+	<jewelsTrail2>Tik in chronologische volgorde op de diamanten om ze te verzamelen.</jewelsTrail2>
+	<jewelsTrailB2>Om de diamanten te verzamelen, tikt u erop door tussen elke vorm af te wisselen op chronologische volgorde.</jewelsTrailB2>	
+	<jewelsTrail3>Als u een fout maakt, gaat u langzamer en elke seconde die nog op de teller staat geeft levert extra punten op om het volgende niveau te bereiken.</jewelsTrail3>
+
+	<nbackTest>Number Hunt</nbackTest>	
+	<trailsBTest>Dot connect</trailsBTest>	
+	<spatialFrwd>Box Game</spatialFrwd>	
+	<spatialBckwrd>Box Game - Pro</spatialBckwrd>
+	<spatialSpan>Spatial Span</spatialSpan>	
+	<memoryTest>Photo Match</memoryTest>	
+	<digitFWrdGame>Digit Span</digitFWrdGame>
+	<serial7>Math Game</serial7>	
+	<visualGame>Memory Match</visualGame>	
+	<temporalOrder>Memory Match - Pro</temporalOrder>	
+	<digitFWrd>De code kraken</digitFWrd>	
+	<digitBckWrd>Crack the Code - Pro</digitBckWrd>	
+	<catdog>Cats and Dogs</catdog>	
+	<trailsBTestNew>Dot connect (New)</trailsBTestNew>	
+	<nbackTestNew>Photo Hunt</nbackTestNew>	
+	<trailsBTouch>Dot touch</trailsBTouch>	
+	<jwelA>Jewels</jwelA>	
+	<jwelB>Jewels - Pro</jwelB>
+	<figCopy>Tekenen</figCopy>
+	<scratchCard>Kras kaart</scratchCard>
+	<memoryGame>Geheugen spel</memoryGame>
+	<attentionGame>Aandachtsspel</attentionGame>
+	
+	<scratchLbl>Klaar voor een pauze?</scratchLbl> 
+	<scratchLbl2>Kras en ontdek!</scratchLbl2>
+	<scoreBrainLbl>U hebt zojuist deze delen van uw hersenen aan het werk gezet!</scoreBrainLbl>
+	<checkinLbl>Inchecken</checkinLbl>
+	<braingameLbl>Hersentraining</braingameLbl>
+	
+	<dogBox>Tik op de vakken met een hond erachter.</dogBox>	
+	<selectThe>Selecteer de</selectThe>
+	<imgCatBox>velden waar u de afbeeldingen met katten hebt gezien.</imgCatBox>	
+	<imgDogBox>velden waar u de afbeeldingen met honden hebt gezien.</imgDogBox>
+	<continueDogBox>Ga verder door met op de velden met een hond erachter te tikken. Tik niet op de velden met een kat erachter.</continueDogBox>
+	<continueCatBox>NTik nu op de velden met een kat erachter. Tik niet op de velden met een hond erachter.</continueCatBox>	
+	
+	
+	<soundalert>Zorg ervoor dat het geluid op uw apparaat aan staat.</soundalert>	
+	<audioalert>Luister zorgvuldig naar het geluid svp.</audioalert>
+	<digitalert>Voer nu de getallen in.</digitalert>
+	<digitReversealert>Voer nu de getallen in omgekeerde volgorde in.</digitReversealert>	
+	
+	<tempAlert1>Tik op de ontbrekende afbeelding</tempAlert1>
+	<tempAlert2>Onthoud de afbeeldingen die u te zien krijgt.</tempAlert2>
+	<tempAlert3>Onthoud de twee items in elke afbeelding.</tempAlert3>
+	<tempAlert4>Tik op de afbeeldingen die je hebt gezien</tempAlert4>
+	<tempAlert5>Onthoud het item, de plaats en de volgorde.</tempAlert5>
+	<tempAlert6>Even geduld en kijk</tempAlert6>
+	<tempAlert7>Onthoud alsjeblieft de volgorde.</tempAlert7>
+	
+	
+	
+	<articleLbl>Artikelen</articleLbl>	
+	<tipLbl>Tips</tipLbl>
+	<profileLbl>Profiel</profileLbl>
+	<appUse>De applicatie gebruiken</appUse>
+	<reprtLbl>Rapport</reprtLbl>
+	
+	
+	<tapfirstImg>Tik op de eerste afbeelding</tapfirstImg>
+	<tapNxtImg>Tik op de volgende afbeelding</tapNxtImg>
+	<tapREsBox>Tik op het bijbehorende veld</tapREsBox>
+	<pickMatchingalphabet>Kies de overeenkomende letter van het alfabet</pickMatchingalphabet>
+	
+	<exmLbl>Voorbeeld</exmLbl>
+	<tapNxtNumber>Tik nu op 2 wat het volgende cijfer is.</tapNxtNumber>
+	<continueTap>Blijf op deze volgorde op de cijfers tikken</continueTap>
+	<wrongTapLbl>Verkeerd getikt</wrongTapLbl>
+	
+	<nbackLvl>Number Hunt Levels</nbackLvl>
+	<nbackNewLvl>Photo Hunt Levels</nbackNewLvl>
+	<oneBackTest>1-back Test</oneBackTest>
+	<twoBackTest>2-back Test</twoBackTest>
+	<treeBackTest>3-back Test</treeBackTest>
+	
+	<pickdimnd>Kies een diamant: </pickdimnd>
+	<continueLbl>Doorgaan met</continueLbl>
+	<exitLbl>UITGANG</exitLbl>
+	
+	<resultLbL>Resultaten</resultLbL>
+	<pointLbl>Punten</pointLbl>
+	<scoregrapgLbl>Scoregrafiek</scoregrapgLbl>
+	<envLbl>Omgevingsgegevens</envLbl>
+	<cogscore>Score breinspel</cogscore>
+	
+	<pointnextLvl>Punten om het volgende niveau te bereiken.</pointnextLvl>
+	<maxLbl>U hebt het maximale niveau bereikt.</maxLbl>
+	<gameNameLbl>Spel naam</gameNameLbl>
+	
+	<learnLbl>Leer</learnLbl>
+	<accessLbl>Bekijk</accessLbl>
+	<manageLbl>Beheer</manageLbl>
+	<prevntLbl>Voorkom</prevntLbl>
+	
+	<instructionLbl>Aanwijzingen</instructionLbl>
+	<instructionsubmit>Laten we beginnen</instructionsubmit>
+	
+	<preventcontent>Preventie van psychische ziekten en terugval hierin is een belangrijk doel van het mindLAMP platform. Zodra we als GGZ meer leren en tools als deze mindLAMP helpen met het genereren van belangrijke nieuwe onderzoeksgegevens, hopen we dat preventie meer het focus van de psychiatrie kan worden. Tot nu toe is mindLAMP nog niet zo ver dat het psychische ziekten kan voorkomen, maar uw deelname aan het onderzoek kan vooruitgang hierin mogelijk maken.</preventcontent>
+
+	<manageContent>Het beheren van uw geestelijke gezondheid moet altijd gebeuren met een professional. mindLAMP is momenteel ontworpen om informatie te verzamelen die nuttig kan zijn bij het beheren van uw geestelijke gezondheid. Maar het is op geen enkele manier een vervanging voor professionele zorg. In de toekomst zal mindLAMP aangepaste hersenoefeningen, therapeutische activiteiten, peernetwerken en persoonlijke doelen aanbieden om u te helpen uw geestelijke gezondheid te beheren.</manageContent>
+	
+	
+	<copyrightLbl>Copyright BIDMC © 2019. All rights reserved.</copyrightLbl>
+	
+	
+	<SchoolLbl>Schoolklas</SchoolLbl>
+	<wrkLbl>Werk</wrkLbl>
+	<clicnicLbl>Kliniek / Ziekenhuis</clicnicLbl>
+	<outsideLbl>Buiten</outsideLbl>
+	<shopingLbl>Winkelen / uit eten</shopingLbl>
+	<trainLbl>Bus / trein / auto</trainLbl>
+	<aloneLbl>Alleen</aloneLbl>
+	<friendsLbl>Met vrienden</friendsLbl>
+	<incrowdLbl>In de menigte</incrowdLbl>
+	<withPeersLbl>Met Peers</withPeersLbl>
+	<whowithLbl>Met wie ben je?</whowithLbl>
+	<submitLbl>submit</submitLbl>
+	<homeLbl>Huis</homeLbl>
+	<familyLbl>Met gezin</familyLbl>
+	
+	<beginerLbl>Beginner</beginerLbl>
+	<expertLbl>Deskundige</expertLbl>
+	<intermediateLbl>tussen-</intermediateLbl>
+	<advancedLbl>Gevorderd</advancedLbl>
+	<difficultyLbl>Moeilijkheid</difficultyLbl>
+	
+	<emailNotconfigred>E-mailclient is niet geconfigureerd op dit apparaat.</emailNotconfigred>
+	
+	<cancelLbl>Annuleren</cancelLbl>
+	<deleteLbl>Verwijder</deleteLbl>
+	<selectcognitionLbl>SELECTEER HET HERSENTAL</selectcognitionLbl>
+	<contactnumberLbl>24/7 CONTACTNUMMER</contactnumberLbl>
+	<personalHelpLine>PERSOONLIJKE HULPLIJN</personalHelpLine>
+	<protocolLbl>PROTOCOL</protocolLbl>
+	<signoutLbl>AFMELDEN</signoutLbl>
+	<notAvailableLbl>Niet Aeschikbaar</notAvailableLbl>
+	<selectTimeLbl>SELECTEER TIJD</selectTimeLbl>
+	<repeatInterval>HERHAAL INTERVALLEN</repeatInterval>
+	<selectsurveytitle>SELECTEER CHECK-IN</selectsurveytitle>
+	
+	<totalScoreLbl>Totale Score</totalScoreLbl>
+	<totalScoreCapsLbl>TOTALE SCORE</totalScoreCapsLbl>
+	<drawfigLbl>Teken het figuur</drawfigLbl>
+	<secLbl>Sec</secLbl>
+	<hintLbl>wenk</hintLbl>
+	<levelLbl>Niveau</levelLbl>
+	<lastnumberLbl>Laatste nummer</lastnumberLbl>
+	<finishLbl>Af hebben</finishLbl>
+	<nxtLbl>Volgende</nxtLbl>
+	<answeredLbl>Beantwoord</answeredLbl>
+	<goLbl>Gaan</goLbl>
+	<backLbl>TERUG</backLbl>
+	<jwelcollectedLbl>Juwelen verzameld</jwelcollectedLbl>
+	<totalbonusLbl>Totale bonus</totalbonusLbl>
+	<okLbl>OK</okLbl>
+	
+	<lastmnthLbl>Vorige maand</lastmnthLbl>
+	<lastweekLbl>Vorige week</lastweekLbl>
+	<languageSelect>Selecteer een taal</languageSelect>
+	<languageCapsSelect>SELECTEER EEN TAAL</languageCapsSelect>
+	
+	<repeatLbl>HERHALING</repeatLbl>
+	<selectSurveyLbl>SELECTEER CHECK-IN</selectSurveyLbl>
+	<selectTimeLbl>SELECTEER TIJD</selectTimeLbl>
+	<slottinmeLbl>SLOT TIJD</slottinmeLbl>
+	<repeatInterval>HERHAAL INTERVALLEN</repeatInterval>
+	<avgScoreLbl>GEMIDDELDE SCORE</avgScoreLbl>
+	<scoreLbl>Partituur</scoreLbl>
+	<bonusLbl>Bonus</bonusLbl>
+	<healthDataTitle>Gezondheidsgegevens</healthDataTitle>
+	
+	<scoreCardLbl>SCORE KAART</scoreCardLbl>
+	<closeLbl>Dichtbij</closeLbl>
+	<pointEarnedLbl>Punten verdiend</pointEarnedLbl>
+	<timetakenLbl>Genomen tijd</timetakenLbl>
+	
+	
+	
+	<term1>Ik begrijp dat de mindLAMP-app een onderzoeksplatform is dat niet is bedoeld voor de behandeling, het management of de preventie van ziektes. mindLAMP is niet bedoeld om de medische expertise van een arts ter plaatse te vervangen.</term1>
+	<term2>Ik begrijp dat er door niemand toezicht wordt gehouden op de mindLAMP-app en dat deze niet kan reageren als ik aangeef dat ik hulp nodig heb.</term2>
+	<term3>Ik begrijp dat de mindLAMP-app voor onderzoeksdoeleinden informatie verzamelt over mijn gebruik van de app en mijn antwoorden in de app. Ik begrijp dat mijn gegevens voor onderzoek en wetenschappelijke doeleinden zullen worden gebruikt.</term3>
+	<term4>Ik begrijp dat mijn antwoorden op vragenlijsten en tests deel uitmaken van de gegevens uit de mindLAMP-appverzameling. Wanneer ik me aanmeld, kan mindLAMP ook informatie verzamelen over mijn locatie, activiteitenniveau en andere gegevens die compatibel worden met Apple Health Kit van Google Fit.</term4>
+
+	<consentLbl>Toestemming</consentLbl>
+	<consentNote>Bekijk onderstaand formulier en tik op Akkoord als u klaar bent om verder te gaan.</consentNote>
+	<agree>Akkoord</agree>
+	<disagree>Niet akkoord</disagree>
+	
+	<iamLbl>ik ben</iamLbl>
+	<atLbl>Op</atLbl>
+	<inLbl>In</inLbl>
+	
+	<morningLbl>Ochtend</morningLbl>
+	<noonLbl>Middag</noonLbl>
+	<eveningLbl>Avond</eveningLbl>
+	
+	<threeHrLbl>Elke 3 uur</threeHrLbl>
+	<sixHrLbl>Elke 6 uur</sixHrLbl>
+	<twelveLbl>Elke 12 uur</twelveLbl>
+	
+	<dailLbl>Dagelijks (Ma Di Wo Do Vr Za Zo)</dailLbl>
+	<biweekLbl>Twee keer per week (Di Do)</biweekLbl>
+	<triWeekLbl>Drie keer per week (Ma Wo Vr)</triWeekLbl>
+	<weeklyLbl>Wekelijks</weeklyLbl>
+	<monthlyLbl>Twee keer per maand</monthlyLbl>
+	<bimonthlyLbl>Maandelijks</bimonthlyLbl>
+	
+	<heartLbl>HARTSLAG</heartLbl>
+	<stepLbl>AANTAL STAPPEN</stepLbl>
+	<sleepLbl>SLAAP</sleepLbl>
+	<BpLbl>BLOEDDRUK</BpLbl>
+	<respiratoryLbl>ADEMHALINGSFREQUENTIE</respiratoryLbl>
+	<flightLbl>AANTAL BEKLOMMEN TRAPPEN</flightLbl>
+	<segmnetLbl>SEGMENT</segmnetLbl>
+	<heightLbl>LENGTE</heightLbl>
+	<distanceLbl>AFSTAND</distanceLbl>
+	<wieghtLbl>GEWICHT</wieghtLbl>
+	
+	<maleLbl>Man</maleLbl>
+	<femaleLbl>Vrouw</femaleLbl>
+	<otherLbl>Anders</otherLbl>
+	<notSetLbl>Niet ingesteld</notSetLbl>
+	<dobLbl>DOB</dobLbl>
+	<bloodtypeLbl>BLOEDTYPE</bloodtypeLbl>
+	<sexLbl>SEKS</sexLbl>
+	
+	
+	
+	<agreeTermLbl>Ga akkoord met de voorwaarden om verder te gaan.</agreeTermLbl>
+	<surveyPointLbl>Check-in punten</surveyPointLbl>
+	<oneBiginLbl>Tik op 1 om te beginnen.</oneBiginLbl>
+	<reminderLbl>HERINNERING</reminderLbl>
+	<suggestionLbl>Suggesties voor de dag</suggestionLbl>
+	
+	<nwLbl>nu</nwLbl>
+	<tapLbl>Tik</tapLbl>
+	
+	<severaltimesLbl>Regelmatig</severaltimesLbl>
+	<notatallLbl>Nooit</notatallLbl>
+	<moreHalfTimeLbl>Meer dan de helft van de tijd</moreHalfTimeLbl>
+	<nearlyalltimeLbl>Vrijwel altijd</nearlyalltimeLbl>
+	
+	<sundayLbl>Zondag</sundayLbl>
+	<monLbl>Maandag</monLbl>
+	<tueLbl>Dinsdag</tueLbl>
+	<wedLbl>Woensdag</wedLbl>
+	<thuLbl>Donderdag</thuLbl>
+	<friLbl>Vrijdag</friLbl>
+	<satLbl>Zaterdag</satLbl>
+	
+	<janLbl>Januari</janLbl>
+	<febLbl>Februari</febLbl>
+	<marLbl>Maart</marLbl>
+	<aprLbl>April</aprLbl>
+	<mayLbl>Mei</mayLbl>
+	<junLbl>Juni</junLbl>
+	<julLbl>Juli</julLbl>
+	<augLbl>Augustus</augLbl>
+	<sepLbl>September</sepLbl>
+	<octLbl>Oktober</octLbl>
+	<novLbl>November</novLbl>
+	<decLbl>December</decLbl>
+	<weekLbl>Weken</weekLbl>
+	<maybeLbl>Misschien</maybeLbl>
+	<validLbl>Geldig</validLbl>
+	<yearLbl>Jaren</yearLbl>
+	<mnthLbl>Maanden</mnthLbl>
+	<dayLbl>Dagen</dayLbl>
+	
+	
+	<highScoreLbl>Hoogste score</highScoreLbl>
+	<lowscoreLbl>Lage score</lowscoreLbl>
+	<daystreakLbl>Dag reeks</daystreakLbl>
+	<boostScoreLbl>Boost Mijn</boostScoreLbl>
+	<boostLampScoreLbl>mindLAMP-score</boostLampScoreLbl>
+	<todayLbl>Vandaag</todayLbl>
+	<streakspinLbl>Reeks draaibeurten</streakspinLbl>
+	<todaySpinLbl>De spins van vandaag</todaySpinLbl>
+	<seemoreLbl>Zie meer resultaten</seemoreLbl>
+	<spinwinLbl>DRAAI OM TE WINNEN</spinwinLbl>
+	<wonLbl>Jij hebt gewonnen</wonLbl>
+	<starLbl>Sterren !!</starLbl>
+	<continueCapsLbl>DOORGAAN MET</continueCapsLbl>
+	<tryagainLbl>Probeer het opnieuw</tryagainLbl>
+	<badlickLbl>Pech !!</badlickLbl>
+	
+	<youravgLbl>Jouw gemiddelde</youravgLbl>
+	<totalavgLbl>Totaal gemiddelde</totalavgLbl>
+	
+	<yourScoreLbl>Jouw score</yourScoreLbl>
+	<weeklyScoreLbl>Weekscore van de spellen</weeklyScoreLbl>
+	
+	<gameSuccess>Je hebt deze game met succes voltooid.</gameSuccess>
+	<spinWheelLabel>Draai wiel</spinWheelLabel>
+	<surveyResponse>Uw antwoorden zijn succesvol ingediend.</surveyResponse>
+	<series7inst>Meld het volgende nummer in de reeks: Zeven afgetrokken van uw vorige antwoord.</series7inst>
+	<instVideo>INSTRUCTIE VIDEO</instVideo>
+	<surveyTextArea>Typ hier het antwoord ...</surveyTextArea>
+	<textAreaValidation>Voer antwoord in.</textAreaValidation>
+	
+	<nbackShortInst1>1-back test: select whether or not the letter is the same as the one before it.</nbackShortInst1>
+	<nbackShortInst2>2-back test: select whether or not the letter is the same as the one two before it.</nbackShortInst2>
+	<nbackShortInst3>3-back test: select whether or not the letter is the same as the one three before it.</nbackShortInst3>
+	<SPFShortInst>Watch the boxes light up on the screen. Then, copy the pattern by tapping the boxes in the same order.</SPFShortInst>
+	<SPBShortInst>Watch the boxes light up on the screen. Then, copy the pattern backwards by tapping the boxes in the reverse order.</SPBShortInst>
+	<SimpleMemShortInst>You will see 5 images appear one after another. Then, a pair of images will appear. One of them is new and the other is one of the original 5 images. Select which image is from the original 5 shown.</SimpleMemShortInst>
+	<serial7ShortInst>Subtract 7 from the number shown on the screen and enter that number. Then subtract 7 from the number you entered. Repeat until the game is over.</serial7ShortInst>
+	<visualShortInst>You will be shown several images. Then, you will be shown all of the images again but with an object missing from the image. Select the missing object from the choices.</visualShortInst>
+	<DSFShortInst>Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the same order.</DSFShortInst>
+	<DSBShortInst>Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the reverse order they were read.</DSBShortInst>
+	<catsnDogsShortInst>Several boxes will appear on the screen. They will briefly show whether or not they have a cat, dog, or nothing behind them. Follow the instructions for the round and select the boxes that are asked for.</catsnDogsShortInst>
+	<tempShortInst>A 3x3 grid will be shown. Three images will be shown one after another, each in different box in the grid. Remember the image, location, and order of the images. Then, select the first item and corresponding box, followed by the second, and third.</tempShortInst>
+	<nbackNewShortInst1>1-back test: select whether or not the picture is the same as the one before it.</nbackNewShortInst1>
+	<nbackNewShortInst2>2-back test: select whether or not the picture is the same as the one two before it.</nbackNewShortInst2>
+	<nbackNewShortInst3>3-back test: select whether or not the picture is the same as the one three before it.</nbackNewShortInst3>
+	<trialsbNewShortInst>Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</trialsbNewShortInst>
+	<trialsBTouchShortInst>Tap the dots in order, alternating numbers and letters, starting with the number 1. For example, tap 1, then A, then 2, then B, and so on.</trialsBTouchShortInst>
+	<jewelsAShortInst>Tap the jewels in chronological order, starting with number 1.</jewelsAShortInst>
+	<jewelsBShortInst>Look at the bottom of the screen to see which jewel to collect first. Collect number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected.</jewelsBShortInst>
+	<trialsBTestShortInst>Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</trialsBTestShortInst>
+	<figCopyShortInst>An image will appear on the screen for 5 seconds. Remember the image. Then, copy the image onto the blank screen with your finger.</figCopyShortInst>
+</resources>

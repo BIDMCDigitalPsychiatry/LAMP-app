@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="tips" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Tips">
+			</Require>
+		</View>
+		<ScrollView id="contentView" contentWidth="100%" >
+			<Label id="noDataLabel" text="L('noDataLabel')">
+			</Label>
+			<Label id="tipsLabel">
+			</Label>
+		</ScrollView>
+		<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved.">
+		</Label>
+	</Window>
+</Alloy>

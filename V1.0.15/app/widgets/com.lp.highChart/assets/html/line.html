@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title></title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+		Ti.App.addEventListener('graphCareer', function(data) {
+				var s1 = data.s1;
+				var s2 = data.s2;
+				var s3 = data.s3;
+				var reg = data.reg;
+				var s4 = data.s4;
+				var s5 = data.s5;
+				var s6 = data.s6;
+				var s7 = data.s7;
+				var s8 = data.s8;
+				var s9 = data.s9;
+				plotChart(s1, s2, s3, reg, s4, s5, s6, s7, s8, s9);
+			});
+			function plotChart(atd, btd, ctd, reg, s4, s5, s6, s7, s8, s9) {
+
+				new Highcharts.chart('container', {
+					title : {
+						//text : 'Jewel Score',
+						text : s5,
+
+					},
+					yAxis : {
+						title : {
+							//text : 'Total',
+							text : s4,
+							margin : 0
+						},
+					},
+					xAxis : {
+						title : {
+							text : s9,
+							margin : 0
+						},
+						categories : reg,
+						crosshair : true
+					},
+					legend : {
+						enabled : true
+					},
+					credits : {
+						enabled : false
+					},
+					exporting : {
+						enabled : false
+					},
+					tooltip : {
+						headerFormat : '<span style="font-size:10px">{point.key}</span><table>',
+						pointFormat : '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+						footerFormat : '</table>',
+						shared : true,
+						useHTML : true
+					},
+					plotOptions : {
+						series : {
+							label : {
+								connectorAllowed : false
+							},
+							pointStart : 0,
+							marker : {
+								enabled : false
+							}
+						}
+					},
+					series : [{
+						//name : 'Score',
+						name : s8,
+						data : atd,
+						color : 'green'
+
+					}, {
+						//name : 'Jewels Collected',
+						name : s6,
+						data : btd,
+						color : 'blue'
+
+					}, {
+						//name : 'Bonus',
+						name : s7,
+						data : ctd,
+						color : 'black'
+
+					}],
+					responsive : {
+						rules : [{
+							condition : {
+								maxWidth : 500
+							},
+							chartOptions : {
+								legend : {
+									layout : 'horizontal',
+									align : 'center',
+									verticalAlign : 'bottom'
+								}
+							}
+						}]
+					}
+				});
+			}
+
+		</script>
+	</head>
+
+	<body >
+		<div id="container"  style="min-width: 310px; height: 440px; margin: 0 auto">
+
+		</div>
+	</body>
+</html>

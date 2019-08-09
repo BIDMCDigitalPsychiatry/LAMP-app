@@ -1,0 +1,17 @@
+"#videoScreen":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL
+}
+
+"#videoUrl":{
+	enableZoomControls: false,
+	//scalesPageToFit: false,
+	scrollsToTop: false,
+	showScrollbars: false,
+	//top: '60dp',
+	movieControlMode: Titanium.Media.VIDEO_CONTROL_DEFAULT,
+	movieControlStyle: Titanium.Media.VIDEO_CONTROL_FULLSCREEN,
+	scalingMode: Titanium.Media.VIDEO_SCALING_MODE_FILL,
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.FILL
+}

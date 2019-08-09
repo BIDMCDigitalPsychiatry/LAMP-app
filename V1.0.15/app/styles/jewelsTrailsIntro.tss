@@ -1,0 +1,55 @@
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#outerView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout: 'vertical'
+}
+".labelStyle": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	textAlign: 'center',
+	color: '#ffffff',
+	font: Alloy.Globals.LargeFontLight,
+	top: '20dp'
+}
+".buttonMainView": {
+	width:Titanium.UI.FILL,
+	height:'80dp',
+	
+}
+".buttonInnerView": {
+	width:'50%',
+	height:Titanium.UI.FILL,
+	
+}
+".submitView":{
+	height: '42dp',
+	width: '140dp',
+	color: "#ffffff",
+	borderColor: '#ffffff',
+	borderRadius: '21dp',
+	borderWidth: '1dp',
+	backgroundColor: "transparent"
+}
+".submitView[formFactor=tablet]": {
+	width: '160dp',
+	height: '52dp',
+	borderRadius: '26dp'
+}
+".submitLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: 1,
+	color: "#ffffff",
+	touchEnabled: false,
+	font: Alloy.Globals.LargeFontBold,
+}
+".submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}

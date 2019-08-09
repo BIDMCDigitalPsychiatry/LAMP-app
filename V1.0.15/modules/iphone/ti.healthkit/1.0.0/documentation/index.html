@@ -1,0 +1,1044 @@
+<h1>Ti.Healthkit Module</h1>
+<h2>Description</h2>
+<p>Provides access to the iOS HealthKit framework.</p>
+<h2>Dependencies</h2>
+<p>This iOS module requires iOS 8.0 or later.</p>
+<h2>Usage</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var TiHealthkit = require('ti.healthkit');
+</code></pre>
+<p>The <code>TiHealthkit</code> variable is now a reference to the Ti.Healthkit Module object.</p>
+<p>You will also need to add HealthKit to the app's list of entitlements. See the
+<code>Entitlements.plist</code> file in the <code>example</code> folder.</p>
+<p>For more information on how to use the module please see the <a href="use_case_examples.html">Use Case Examples</a>
+document and the example app in the <code>example</code> folder.</p>
+<h2>Known Issues</h2>
+<ul>
+<li>Only division with the exact same unit cancels out. This seems like a bug in
+the native API.</li>
+</ul>
+<h2>Properties</h2>
+<h3>&lt;Number&gt; userBiologicalSex</h3>
+<p>Returns the user's biological sex from the HealthKit store. See the SEX_* constants for possible return values. Note that the return value will be <code>undefined</code> if an error occurs.</p>
+<h3>defaultSource : Ti.Healthkit.Source (read-only)</h3>
+<p>The <a href="source.html">Ti.Healthkit.Source</a> object representing the current app.</p>
+<h3>isHealthDataAvailable : Boolean (read-only)</h3>
+<p>Returns a <code>Boolean</code> value that indicates whether HealthKit is available on this device.</p>
+<p>HealthKit is not available on iPad.</p>
+<h2>Functions</h2>
+<h3>&lt;Ti.Healthkit.Filter&gt; createFilterForObjects(params)</h3>
+<p>Creates a <a href="filter.html">Ti.Healthkit.Filter</a> object that matches certain HealthKit
+objects.</p>
+<p>This function can create several different types of filters, depending
+on which parameter is provided. This means that exactly one of the parameters
+should be provided. If you don't provide any of the parameters, the function
+will return <code>undefined</code>. If you provide more than one, behavior is undefined.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>uuids (Array of String objects): The function
+  will return a filter that matches objects based on their UUIDs. 
+  Each of the strings in the array must
+  be in the standard format for UUIDs, i.e. a string punctuated by hyphens,
+  for example 68753A44-4D6F-1226-9C60-0050E4C00067.</li>
+<li>sources (Array of <a href="source.html">Ti.Healthkit.Source</a> objects): The function will
+  return filter that matches all the objects created by any of the
+  provided sources. </li>
+<li>metadata (Object): The function will return a filter that matches
+  objects with the specificed metadata characteristics. The <code>metadata</code>
+  parameter is a dictionary with the following properties:<ul>
+<li>key (String): The metadata key to match.</li>
+<li>allowedValues (Array of Number, String, or Date objects): An array
+  of valid values. Optional; if not specified, all objects with the
+  given key in their metadata will be matched.</li>
+<li>operator (Number): Use one of the FILTER_OPERATOR_* constants.
+  Optional, but must be used with the <code>value</code> parameter. The object's
+  value for the given key will be compared to the <code>value</code> parameter
+  using this operator.</li>
+<li>value (Number, String, or Date): The value to be used with the
+  operator specified in the <code>operator</code> parameter. Optional, but must
+  be used with the <code>operator</code> parameter.</li>
+</ul>
+</li>
+<li>workout (<a href="workout.html">Ti.Healthkit.Workout</a>): The function will return a filter
+  that matches any objects that have been associated with the provided
+  workout.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Filter&gt; createFilterForObjectsWithNoCorrelation()</h3>
+<p>Creates a <a href="filter.html">Ti.Healthkit.Filter</a> object that matches all objects that are
+not associated with any HealthKit correlations. </p>
+<h3>&lt;Ti.Healthkit.Filter&gt; createFilterForSamples(params)</h3>
+<p>Creates a filter for samples whose start and end dates fall within the
+specified time interval.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>startDate (Date): The start date for the target time interval.</li>
+<li>endDate (Date): The end date for the target time interval.</li>
+<li>options (Number): A constant that specifies how the sample's start and
+  end date are compared with the target time interval. See the
+  QUERY_OPTION_* constants for possible values. Optional; defaults
+  to QUERY_OPTION_NONE.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Filter&gt; createFilterForQuantitySamples(params)</h3>
+<p>Creates a <a href="filter.html">Ti.Healthkit.Filter</a> object that matches samples based on the
+target quantity.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>operator (Number): Use one of the FILTER_OPERATOR_* constants.
+  The sample's quantity will be compared to the <code>quantity</code> parameter
+  using this operator.</li>
+<li>quantity (<a href="quantity.html">Ti.Healthkit.Quantity</a>): The quantity to be used with the
+  operator specified in the <code>operator</code> parameter.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Filter&gt; createFilterForCategorySamples(params)</h3>
+<p>Creates a <a href="filter.html">Ti.Healthkit.Filter</a> object that matches <a href="categorySample.html">category samples</a>
+based on the provided expression.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>operator (Number): Use one of the FILTER_OPERATOR_* constants.
+  The sample's quantity will be compared to the <code>value</code> parameter
+  using this operator.</li>
+<li>value (Number): The value to be used with the operator specified in
+  the <code>operator</code> parameter.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Filter&gt; createFilterForWorkouts(params)</h3>
+<p>Creates a <a href="filter.html">Ti.Healthkit.Filter</a> object that matches <a href="workout.html">workouts</a>
+based on the provided expression.</p>
+<p>This function can create several different types of filters, depending
+on which parameter is provided. You should either provide a <code>type</code>, or
+an <code>operator</code> along with one of <code>duration</code>, <code>distance</code> or <code>energy</code>. If you don't
+provide appropriate parameters, the function will return <code>undefined</code>.
+If you provide more parameters than needed, behavior is undefined.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>operator (Number): Use one of the FILTER_OPERATOR_* constants.</li>
+<li>duration (Number): The duration value to be used with the operator
+  specified in the <code>operator</code> parameter.</li>
+<li>distance (<a href="quantity.html">Ti.Healthkit.Quantity</a>): The distance quantity to be used
+  with the operator specified in the <code>operator</code> parameter.</li>
+<li>energy (<a href="quantity.html">Ti.Healthkit.Quantity</a>): The energy quantity to be used
+  with the operator specified in the <code>operator</code> parameter.</li>
+<li>type (Number): The activity type; use one of the WORKOUT_ACTIVITY_TYPE_*
+  contstants.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.ObjectQuery&gt; createAnchoredObjectQuery(params)</h3>
+<p>Creates a new <a href="objectQuery.html">Ti.Healthkit.ObjectQuery</a> object.</p>
+<p>After instantiating the query, call the <code>executeQuery</code> function to run it. As soon as the query is complete, the completion callback function is executed.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the samples returned by the query.
+  Optional. By default the query returns all the new samples of the specified type.</li>
+<li>anchor (Number): The anchor returned by the previous object query. The anchor value corresponds to the last sample that was returned by the previous object query. The new query returns only objects newer than that sample. Optional. By default, the query starts at the beginning.</li>
+<li>limit (Number): The maximum number of samples received by the query. Optional. By default, the query returns all of the new samples.</li>
+<li>onCompletion (Function): Called when the query is completed. It receives the following parameters:<ul>
+<li>results (Array of <a href="object.html">Ti.Healthkit.Object</a> objects): An array containing the samples returned by this query, or undefined if an error occurred.</li>
+<li>anchor (Number): A value corresponding to the last sample in the results array. Subsequent queries can use this value to receive only the samples that have been saved to the HealthKit store since this query has completed.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.CorrelationQuery&gt; createCorrelationQuery(params)</h3>
+<p>Creates a new <a href="correlationQuery.html">Ti.Healthkit.CorrelationQuery</a> object.</p>
+<p>After instantiating the query, call the <code>executeQuery</code> function to run it. As soon as the query is complete, the completion callback function is executed.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the correlations returned by the query. Optional. By default the query returns all the correlations of the specified type.</li>
+<li>sampleFilters (Object): A dictionary whose keys are OBJECT_TYPE_* constants, and whose values are <a href="filter.html">Ti.Healthkit.Filter</a> instances. The query iterates over all the samples in the correlation. For each sample, it looks up the corresponding filter based on the sample's type and then evaluates that filter against the sample. If the dictionary does not contain a matching sample type, the query accepts the sample. Three things must be true if this query is going to match a correlation:<ul>
+<li>The correlation object must match the provided filter parameter.</li>
+<li>For each key in the sample filter dictionary, the correlation must contain a sample whose type matches the key. In other words, the keys from the sample filter dictionary define the set of required samples for the correlation.</li>
+<li>For each sample in the correlation, use the sample's type to look up its filter in the sample filter dictionary. If the dictionary contains a matching filter, the sample must match that filter. If the dictionary does not contain a matching filter, the sample is ignored (it can have any value).</li>
+</ul>
+</li>
+<li>onCompletion (Function): Called when the query is completed. It receives the following parameters:<ul>
+<li>results (Array of <a href="correlation.html">Ti.Healthkit.Correlation</a> objects): An array containing the correlations returned by this query, or undefined if an error occurred.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.ObserverQuery&gt; createObserverQuery(params)</h3>
+<p>Creates a new <a href="observerQuery.html">Ti.Healthkit.ObserverQuery</a> object.</p>
+<p>After instantiating the query, call the <code>executeQuery</code> function to run it. Observer queries are long-running tasks. They continue to run on a background thread and call their update handler whenever they detect relevant changes to the HealthKit store. To stop a query, call the <code>stopQuery</code> function.</p>
+<p>The provided update callback is called every time samples matching this query are saved to or deleted from the HealthKit store. You often need to launch other queries from inside this function to get the updated data. In particular, you can use anchored object queries to retrieve the list of new samples that have been added to the store.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the samples matched by the query. Optional. By default the query will match all samples of the specified type.</li>
+<li>onUpdate (Function): Called when a matching sample is saved to or deleted from the HealthKit store. It receives the following parameters:<ul>
+<li>completionToken (Number): The token to pass on to <code>callObserverQueryCompletionHandler</code> when you are done processing the incoming data.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;void&gt; callObserverQueryCompletionHandler(completionToken)</h3>
+<p>If you have registered for background updates, you must call this function as soon as you are done processing the incoming data. This tells HealthKit that you have successfully received the background update. </p>
+<ul>
+<li>completionToken (Number): The token received by the <code>onUpdate</code> callback of the observer query.</li>
+</ul>
+<h3>&lt;Ti.Healthkit.SampleQuery&gt; createSampleQuery(params)</h3>
+<p>Creates a new <a href="sampleQuery.html">Ti.Healthkit.SampleQuery</a> object.</p>
+<p>After instantiating the query, call the <code>executeQuery</code> function to run it. As soon as the query is complete, the completion callback function is executed.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the samples returned by the query. Optional. By default the query returns all the samples of the specified type.</li>
+<li>limit (Number): The maximum number of samples received by the query. Optional. By default, the query returns all of the new samples.</li>
+<li>onCompletion (Function): Called when the query is completed. It receives the following parameters:<ul>
+<li>results (Array of <a href="sample.html">Ti.Healthkit.Sample</a> objects): An array containing the samples returned by this query, or undefined if an error occurred.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.StatisticsCollectionQuery&gt; createStatisticsCollectionQuery(params)</h3>
+<p>Creates a new <a href="statisticsCollectionQuery.html">Ti.Healthkit.StatisticsCollectionQuery</a> object to perform the specified calculations over a set of time intervals.</p>
+<p>After you instantiate the query, call the <code>executeQuery</code> function to run it. As soon as the query is complete, the initial results handler is executed.</p>
+<p>If you provide an <code>onStatisticsUpdate</code> callback, the statistics collection query will continue to monitor the HealthKit store after gathering the initial results. The statistics update handler is called every time a matching sample is saved to the HealthKit Store.</p>
+<p><strong>Note</strong>: If you do provide an <code>onStatisticsUpdate</code> callback, you must cancel the query by calling the <code>stopQuery</code> function.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the samples returned by the query. Optional. By default the statistical calculation is performed over all the samples of the specified type.</li>
+<li>options (Number): The options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see the STATISTICS_OPTION_* constants.</li>
+<li>anchorDate (Date): The date used to anchor the collection's time intervals. Use this parameter to set the start time for your time intervals. For example, if you are using a day interval, you might create a date object with a time of 2:00 a.m. This value sets the start of the day for each of your time intervals.
+    Technically, the anchor sets the start time for a single time interval. All other time intervals must align with this interval. The time intervals can extend before or after the anchor date. Each time interval has the same length, and there is no gap between adjacent intervals. Think of time as a number line: The anchor date represents its origin, with the intervals creating tick marks that extend away from the origin in both directions.</li>
+<li>interval (Number): The time interval for each statistics object in the collection, measured in seconds.</li>
+<li>onInitialResults (Function): The results handler callback function for this query's initial results. The function will receive the following parameters:<ul>
+<li>statisticsCollection ([Ti.Healthkit.StatisticsCollection][]): The initial statistics collection.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+<li>onStatisticsUpdate (Function): The results handler callback function for monitoring updates to the HealthKit store. Optional. The function will receive the following parameters:<ul>
+<li>statistics (<a href="statistics.html">Ti.Healthkit.Statistics</a>): The updated statistics.</li>
+<li>statisticsCollection ([Ti.Healthkit.StatisticsCollection][]): The updated statistics collection.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.StatisticsQuery&gt; createStatisticsQuery(params)</h3>
+<p>Initializes a new <a href="statisticsQuery.html">Ti.Healthkit.StatisticsQuery</a> object that performs the specified calculations over the matching samples in the HeathKit store.</p>
+<p>After instantiating the query, call the <code>executeQuery</code> function to run it. As soon as the query is complete, the completion callback function is executed.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the samples returned by the query. Optional. By default the query returns all the samples of the specified type.</li>
+<li>options (Number): Options that define the type of statistical calculations performed and the way in which data from multiple sources are merged. For a list of valid options, see the STATISTICS_OPTION_* constants. Use the binary OR operator to combine multiple options.</li>
+<li>onCompletion (Function): Called when the query is completed. It receives the following parameters:<ul>
+<li>result (<a href="statistics.html">Ti.Healthkit.Statistics</a>): The statistics returned by this query. May be undefined if an error occurred.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.SourceQuery&gt; createSourceQuery(params)</h3>
+<p>Creates a new <a href="sourceQuery.html">Ti.Healthkit.SourceQuery</a> object.</p>
+<p>After instantiating the query, call the <code>executeQuery</code> function to run it. As soon as the query is complete, the completion callback function is executed.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of sample to search for. Use one of the OBJECT_TYPE_* constants.</li>
+<li>filter (<a href="filter.html">Ti.Healthkit.Filter</a>): Filters the samples returned by the query.
+    Optional. By default the query returns all the new samples of the specified type.</li>
+<li>onCompletion (Function): Called when the query is completed. It receives the following parameters:<ul>
+<li>results (Array of <a href="source.html">Ti.Healthkit.Source</a> objects): An array containing the sources returned by this query, or undefined if an error occurred.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Unit&gt; createUnit(unitString)</h3>
+<p>Creates a <a href="unit.html">Ti.Healthkit.Unit</a> object from the provided string. If the string
+does not represent a valid unit, this function throws an exception. See the
+<a href="https://developer.apple.com/library/prerelease/ios/documentation/HealthKit/Reference/HKUnit\_Class/index.html#//apple\_ref/occ/clm/HKUnit/unitFromString:">native documentation</a> for the rules of creating a valid
+unit string.</p>
+<ul>
+<li>unitString (String): A string representing a unit.</li>
+</ul>
+<h3>&lt;Number&gt; getAuthorizationStatusForType(typeString)</h3>
+<p>Returns the authorization status of the app for saving the specified data type.
+See AUTH_STATUS_* constants for possible values.</p>
+<p>To help prevent possible leaks of sensitive health information, your app cannot determine whether or not a user has granted permission to read data. If you are not given permission, it simply appears as if there is no data of the requested type in the HealthKit store. If your app is given share permission but not read permission, you see only the data that your app has written to the store. Data from other sources remains hidden.</p>
+<ul>
+<li>typeString (String): A string representing an object type. See the OBJECT_TYPE_* constants for possible values.</li>
+</ul>
+<h3>&lt;Void&gt; requestAuthorization(params)</h3>
+<p>Request permission to save and read the specified data types.</p>
+<p>This is an async function. If you call this function with a new data type (a type of data that the user has not previously granted or denied permission for in this app), the system automatically displays the permission form, listing all the requested permissions. After the user has finished responding, the callback function provided in the <code>onCompletion</code> parameter is called. If the user has already chosen to grant or prohibit access to all of the types specified, the callback is called without prompting the user.</p>
+<p>Each data type has two separate permissions, one to read the data and one to share the data. Typically, you want to request permission for all the data your app needs at one time.</p>
+<p>You can customize the messages displayed on the permissions sheet by setting the following keys in your app's info.plist file. Set the NSHealthShareUsageDescription key to customize the message for reading data. Set the NSHealthUpdateUsageDescription key to customize the message for writing data.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>typesToShare (Array of Strings): String(s) representing the object type(s) this you want to share. See the OBJECT_TYPE_* constants for possible values.</li>
+<li>typesToRead (Array of Strings): String(s) representing the object type(s) this you wantsto read. See the OBJECT_TYPE_* constants for possible values.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. The function will receive a single object as parameter, with the following properties:<ul>
+<li>success (Boolean): A Boolean value that indicates whether the user responded to the prompt (if any). This value does not indicate whether permission was actually granted. This parameter is <code>False</code> if the user canceled the prompt without selecting permissions; otherwise, <code>True</code>.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Number&gt; getBloodType()</h3>
+<p>Reads the user's blood type from the HealthKit store. See the BLOODTYPE_* constants for possible return values. Note that the return value will be <code>undefined</code> if an error occurs.</p>
+<h3>&lt;Date&gt; getDateOfBirth()</h3>
+<p>Reads the user's date of birth from the HealthKit store. Note that the return value will be <code>undefined</code> if an error occurs.</p>
+<h3>&lt;void&gt; deleteObject(params)</h3>
+<p>Deletes the specified object from the HealthKit store. Your app can delete only those objects that it has previously saved to the HealthKit database. If the user revokes sharing permission, you can no longer delete objects, either. This function operates asynchronously. As soon as the delete operation is finished, the specified callback function will be called.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>object (<a href="object.html">Ti.Healthkit.Object</a>): The object to be deleted.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. The function will receive a single object as parameter, with the following properties:<ul>
+<li>success (Boolean): This parameter contains if <code>True</code> the object was successfully deleted; otherwise, <code>False</code>.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;void&gt; saveObjects(params)</h3>
+<p>Saves an array of objects to the HealthKit store. This function operates asynchronously. As soon as the save operation is finished, the specified callback function will be called.</p>
+<p>If your app has not requested permission to share the object's data type, the method fails with an ERROR_CODE_AUTHORIZATION_NOT_DETERMINED error. If your app has been denied permission to save the object's data type, it fails with an ERROR_CODE_AUTHORIZATION_DENIED error. Saving an object with the same unique identifier as an object already in the HealthKit store fails with an ERROR_CODE_INVALID_ARGUMENT error. When saving multiple objects, if any object cannot be saved, none of them are saved.</p>
+<p>Saving an object to the HealthKit store sets the source property for the stored object to an HKSource instance for the saving app. This value is available only after the object is retrieved from the HealthKit store. The original object is not changed.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>objects (Array of <a href="object.html">Ti.Healthkit.Object</a> objects): The objects to be saved.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. The function will receive a single object as parameter, with the following properties:<ul>
+<li>success (Boolean): This parameter contains <code>True</code> if the object was successfully saved to the HealthKit store; otherwise, <code>False</code>.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;void&gt; addSamplesToWorkout(params)</h3>
+<p>Associates the provided samples with the workout.</p>
+<p>This is an asynchronous function. As soon as the add-samples operation is finished, the provided callback function is called.</p>
+<p>You must save the workout to the HealthKit store before you can add any samples to it. You can save the samples before calling this function, but doing so is not required. This function automatically saves any unsaved samples when it successfully adds them to the workout.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>samples (Array of <a href="categorySample.html">Ti.Healthkit.CategorySample</a> or <a href="quantitySample.html">Ti.Healthkit.QuantitySample</a> objects): The samples to be added to the workout.</li>
+<li>workout (<a href="workout.html">Ti.Healthkit.Workout</a>): The workout you are adding samples to.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. The function will receive a single object as parameter, with the following properties:<ul>
+<li>success (Boolean): This parameter contains <code>True</code> if the samples were successfully added to workout; otherwise, <code>False</code>.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;void&gt; executeQuery(query)</h3>
+<p>Executes a queries asynchronously on a background queue. Most queries automatically stop after they have finished executing. However, long-running queries-such as observer queries and some statistics collection queries-continue to execute in the background. To stop long-running queries, call the <code>stopQuery</code> function.</p>
+<ul>
+<li>query (<a href="query.html">Ti.Healthkit.Query</a>): The query to be executed.</li>
+</ul>
+<h3>&lt;void&gt; stopQuery(query)</h3>
+<p>Use this function on long-running queries only. Most queries automatically stop after they have gathered the requested data. Long-running queries continue to operate on a background thread, watching the HealthKit store for updates. You can cancel these queries by using this function.</p>
+<ul>
+<li>query (<a href="query.html">Ti.Healthkit.Query</a>): The query to be stopped.</li>
+</ul>
+<h3>&lt;void&gt; preferredUnitsForQuantityTypes(params)</h3>
+<p>Calls the provided callback function with the preferred units for the given quantity types. This is an asynchronous function.</p>
+<p>By default, the preferred units are based on the device's current locale; however, the user can change the preferred units in the Health app. In general, your app should present HealthKit data using the current preferred units.</p>
+<p>The results returned by this function are based on your app's permissions:</p>
+<p>If you have never requested access for a type, this function returns an authorization not determined error.</p>
+<p>If the user denied access to a type, this function returns the default units for the device's current locale for that type.</p>
+<p>If the user granted either read or share access, this function returns the current preferred units for that type (which may or may not be the default units).</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>types (Array of Strings): An array of quantity type identifier strings; use the OBJECT_TYPE_* constant values.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. The function will receive a single object as parameter, with the following properties:<ul>
+<li>preferredUnits (Object): A dictionary with the quantity type identifiers as keys and unit strings as values.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Correlation&gt; createCorrelation(params)</h3>
+<p>Instantiates and returns a new correlation instance.</p>
+<p>HealthKit uses correlations to represent composite data samples - that is, samples that require more than a single value. To create a correlation sample, you specify the corresponding correlation type, its start and end dates, and all the quantity and category samples you intend to combine into this correlation. Optionally, you may specifiy metadata associated with this correlation. In this way, you produce a new quantity sample.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): A correlation type identifier string; use the use the OBJECT_TYPE_* constant values.</li>
+<li>startDate (Date): The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this function throws an exception.</li>
+<li>endDate (Date): The end date for the sample. This date must be equal to or later than the start date; otherwise, this function throws an exception.</li>
+<li>objects (Array of Ti.Healthkit.Correlation objects): The quantity and category samples that are grouped into this correlation.</li>
+<li>metadata (Object): A dictionary with string, number, or date values. See the METADATA_* constants for predefined keys. Optional.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Correlation&gt; createCategorySample(params)</h3>
+<p>Instantiates and returns a new category sample instance.</p>
+<p>HealthKit uses category samples to represent data that can be classified into a finite set of categories. To create a category sample, you must first create the corresponding category type, and then set its start and end dates.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The category type for this sample. HealthKit currently supports only the OBJECT_TYPE_SLEEP_ANALYSIS type.</li>
+<li>value (Number): The value for this sample. This value must be one of the constants appropriate or the category type. For sleep analysis, use one of the CATEGORY_VALUE_SLEEP_ANALYSIS_* constants.</li>
+<li>startDate (Date): The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this function throws an exception.</li>
+<li>endDate (Date): The end date for the sample. This date must be equal to or later than the start date; otherwise, this function throws an exception.</li>
+<li>metadata (Object): A dictionary with string, number, or date values. See the METADATA_* constants for predefined keys. Optional.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.QuantitySample&gt; createQuantitySample(params)</h3>
+<p>Instantiates and returns a new quantity sample instance.</p>
+<p>HealthKit uses quantity samples to represent sample data using a single numeric value. To create a quantity sample, first create the corresponding quantity type and quantity, and then set its start date, end date, and metadata.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of quantity used for this sample.</li>
+<li>quantity (Ti.Healthkit.Quantity): The quantity for this sample. The quantity must use units that are compatible with the provided quantity type. If the units are not compatible, this function throws an exception.</li>
+<li>startDate (Date): The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this function throws an exception.</li>
+<li>endDate (Date): The end date for the sample. This date must be equal to or later than the start date; otherwise, this function throws an exception.</li>
+<li>metadata (Object): A dictionary with string, number, or date values. See the METADATA_* constants for predefined keys. Optional.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Quantity&gt; createQuantity(value, unit)</h3>
+<p>Instantiates and returns a new quantity object.
+HealthKit uses quantity objects to store data for quantity samples.</p>
+<ul>
+<li>
+<p>value (Number): The value of this quantity, measured using the unit parameter.</p>
+</li>
+<li>
+<p>unit (<a href="unit.html">Ti.Healthkit.Unit</a>): The unit for the given value. This defines the set of compatible units. For example, if you create a quantity with a meter unit, it is compatible with any other length units.</p>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.Workout&gt; createWorkout(params)</h3>
+<p>Instantiates and returns a new workout activity instance.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (Number): The type of activity performed during the workout; use one of the WORKOUT_ACTIVITY_TYPE_* constants.</li>
+<li>startDate (Date): The date and time when the activity started.</li>
+<li>endDate (Date): The date and time when the activity ended. This date must be equal to or later than the start date.</li>
+<li>workoutEvents (Array of <a href="workoutEvent.html">Ti.Healthkit.WorkoutEvent</a> objects): This array specifies when the user has paused and resumed the workout activity. If you provide this parameter, the function calculates the workout's duration based on the total amount of active time between the provided start and end dates. Optional. <strong>Note</strong>: This parameter is ignored if the <code>duration</code> parameter is provided.</li>
+<li>duration (Number): A time interval in seconds representing the workout's actual duration. Passing a nonzero value sets the workout's <code>duration</code> property. If you pass 0, this method calculates the duration property based on the workout's start and end dates. Optional. <strong>Note</strong>: This parameter overrides the <code>workoutEvents</code> parameter.</li>
+<li>totalEnergyBurned (<a href="quantity.html">Ti.Healthkit.Quantity</a>): A quantity using energy units. This property sets the workout's <code>totalEnergyBurned</code> property. Optional.</li>
+<li>totalDistance (<a href="quantity.html">Ti.Healthkit.Quantity</a>): A quantity using length units. This property sets the workout's totalDistance property. Optional.</li>
+<li>metadata (Object): A dictionary with string, number, or date values. See the METADATA_* constants for predefined keys. Optional.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Ti.Healthkit.WorkoutEvent&gt; createWorkoutEvent(params)</h3>
+<p>Instantiates and returns a new workout event instance.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (Number): The type of workout event. For a description of possible event types, see the WORKOUT_EVENT_TYPE_XXX constants.</li>
+<li>date (Date): The time when the transition occurred. For a pause event, this date indicates the start of the break. For a resume event, this date indicates the end of the break. You must use a date between the starting and ending dates of the workout that you intend to modify.</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;void&gt; enableBackgroundDelivery(params)</h3>
+<p>Enables the background delivery of updates.</p>
+<p>Call this method to register your app for background updates. HealthKit wakes your app whenever new samples of the specified type are saved to the store. Your app is called at most once per time period defined by the specified frequency.</p>
+<p><strong>Note</strong>: The frequency you set is a request, not a guarantee. UPDATE_FREQUENCY_IMMEDIATE only means that you <em>might</em> get an update immediately.</p>
+<p>As soon as your app launches, HealthKit calls the update handler for any observer queries that match the newly saved data.</p>
+<p><strong>Note</strong>: Some data types, such as step counts, have a minimum frequency of UPDATE_FREQUENCY_HOURLY. This frequency is enforced transparently. As of this writing, the native SDK documentation doesn't provide a complete list of which data types are impacted by this minimum frequency limit.</p>
+<p><strong>Note</strong>: According to our testing, background delivery does not work reliably prior to iOS 8.4 even in native apps.</p>
+<p><strong>Note</strong>: Titanium apps may receive updates for a while (10-20 seconds) after they were put into the background even if background delivery is <em>not</em> enabled.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of data to observe. Use one of the OBJECT_TYPE_* constants.</li>
+<li>frequency (Number): The maximum frequency of the updates. The system wakes your app from the background at most once per time period specified. Use one of the UPDATE_FREQUENCY_* constants.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. Optional. The function will receive a single object as parameter, with the following properties:<ul>
+<li>success (Boolean): <code>True</code> if background delivery was successfully enabled, otherwise <code>False</code>.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;void&gt; disableBackgroundDelivery(params)</h3>
+<p>Disables background deliveries of update notifications for the specified data type, or for all data types if none is specified.</p>
+<p>Call this method to prevent your app from receiving any additional update notifications about the specified data type while in the background. This method operates asynchronously. As soon as the background delivery is disabled, this method calls its completion handler.</p>
+<ul>
+<li>params (Object): A dictionary with the following parameters:<ul>
+<li>type (String): The type of data to observe. Use one of the OBJECT_TYPE_* constants. Optional. If you do not specify a data type, background delivery for all data types will be disabled.</li>
+<li>onCompletion (Function): Function to be called when the operation completes. Optional. The function will receive a single object as parameter, with the following properties:<ul>
+<li>success (Boolean): <code>True</code> if background delivery was successfully enabled, otherwise <code>False</code>.</li>
+<li>errorDomain (String): The error domain; only exists if there was an error.</li>
+<li>errorCode (Number): The error code; only exists if there was an error.</li>
+<li>errorMessage (String): The error message; only exists if there was an error.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>&lt;Boolean&gt; isAppInBackground()</h3>
+<p>Returns <code>True</code> if the app is in the background, <code>False</code> otherwise. Use this function to determine whether the app was restarted into the background due to background data delivery.</p>
+<h2>Constants</h2>
+<h3>WORKOUT_ACTIVITY_TYPE_XXX constants</h3>
+<p>Represent the type of activity performed during a workout.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_AMERICAN_FOOTBALL</h4>
+<p>The constant for playing American football.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_ARCHERY</h4>
+<p>The constant for shooting archery.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_AUSTRALIAN_FOOTBALL</h4>
+<p>The constant for playing Australian football.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_BADMINTON</h4>
+<p>The constant for playing badminton.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_BASEBALL</h4>
+<p>The constant for playing baseball.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_BASKETBALL</h4>
+<p>The constant for playing basketball.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_BOWLING</h4>
+<p>The constant for bowling</p>
+<h4>WORKOUT_ACTIVITY_TYPE_BOXING</h4>
+<p>The constant for boxing, including kickboxing and related activities.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_CLIMBING</h4>
+<p>The constant for climbing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_CRICKET</h4>
+<p>The constant for playing cricket.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_CROSS_TRAINING</h4>
+<p>The constant for exercise that includes any mixture of cardio, strength, and/or flexibility training.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_CURLING</h4>
+<p>The constant for curling.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_CYCLING</h4>
+<p>The constant for cycling.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_DANCE</h4>
+<p>The constant for dancing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_DANCE_INSPIRED_TRAINING</h4>
+<p>The constant for workouts inspired by dance, including Pilates, Barre, and Feldenkrais.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_ELLIPTICAL</h4>
+<p>The constant for workouts on an elliptical machine.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_EQUESTRIAN_SPORTS</h4>
+<p>The constant for activities that involve riding a horse, including polo, horse racing, and horse riding.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_FENCING</h4>
+<p>The constant for fencing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_FISHING</h4>
+<p>The constant for fishing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_FUNCTIONAL_STRENGTH_TRAINING</h4>
+<p>The constant for strength training, primarily with free weights and body weight.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_GOLF</h4>
+<p>The constant for playing golf.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_GYMNASTICS</h4>
+<p>Performing gymnastics.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_HANDBALL</h4>
+<p>Playing handball.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_HIKING</h4>
+<p>The constant for hiking.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_HOCKEY</h4>
+<p>The constant for playing hockey, including ice hockey, field hockey, and related sports.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_HUNTING</h4>
+<p>The constant for hunting.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_LACROSSE</h4>
+<p>The constant for playing lacrosse.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_MARTIAL_ARTS</h4>
+<p>The constant for practicing martial arts.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_MIND_AND_BODY</h4>
+<p>The constant for performing activities like tai chi or meditation.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_MIXED_METABOLIC_CARDIO_TRAINING</h4>
+<p>The constant for performing any mix of cardio-focused exercises.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_PADDLE_SPORTS</h4>
+<p>The constant for canoeing, kayaking, paddling an outrigger, paddling a stand-up paddle board, and related sports.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_PLAY</h4>
+<p>The constant for play-based activities like tag, dodge ball, hopscotch, tetherball, and playing on a jungle gym.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_PREPARATION_AND_RECOVERY</h4>
+<p>The constant for warm-up, cooldown, and therapeutic activities like foam rolling and stretching.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_RACQUETBALL</h4>
+<p>The constant for playing racquetball.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_ROWING</h4>
+<p>The constant for rowing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_RUGBY</h4>
+<p>The constant for playing rugby.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_RUNNING</h4>
+<p>The constant for running and jogging.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SAILING</h4>
+<p>The constant for sailing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SKATING_SPORTS</h4>
+<p>The constant for skating activities, including ice skating, speed skating, inline skating, and skateboarding.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SNOW_SPORTS</h4>
+<p>The constant for a variety of snow sports, including skiing, snowboarding, and cross-country skiing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SOCCER</h4>
+<p>The constant for playing soccer.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SOFTBALL</h4>
+<p>The constant for playing softball.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SQUASH</h4>
+<p>The constant for playing squash.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_STAIRCLIMBING</h4>
+<p>The constant for climbing stairs.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SURFING_SPORTS</h4>
+<p>The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_SWIMMING</h4>
+<p>The constant for swimming.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_TABLETENNIS</h4>
+<p>The constant for playing table tennis.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_TENNIS</h4>
+<p>The constant for playing tennis.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_TRACK_AND_FIELD</h4>
+<p>Participating in track and field events, including shot put, javelin, pole vaulting, and related sports.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_TRADITIONAL_STRENGTH_TRAINING</h4>
+<p>The constant for strength training exercises primarily using machines or free weights.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_VOLLEYBALL</h4>
+<p>The constant for playing volleyball.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_WALKING</h4>
+<p>The constant for walking.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_WATERFITNESS</h4>
+<p>The constant for aerobic exercise performed in shallow water.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_WATERPOLO</h4>
+<p>The constant for playing water polo.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_WATERSPORTS</h4>
+<p>The constant for a variety of water sports, including water skiing, wake boarding, and related activities.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_WRESTLING</h4>
+<p>The constant for wrestling.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_YOGA</h4>
+<p>The constant for practicing yoga.</p>
+<h4>WORKOUT_ACTIVITY_TYPE_OTHER</h4>
+<p>The constant for a workout that does not match any of the other workout activity types.</p>
+<h3>OBJECT_TYPE_XXX constants</h3>
+<h4>OBJECT_TYPE_BODY_MASS_INDEX</h4>
+<p>A quantity sample type that measures the user's body mass index.</p>
+<h4>OBJECT_TYPE_BODY_FAT_PERCENTAGE</h4>
+<p>A quantity sample type that measures the user's body fat percentage.</p>
+<h4>OBJECT_TYPE_HEIGHT</h4>
+<p>A quantity sample type that measures the user's height.</p>
+<h4>OBJECT_TYPE_BODY_MASS</h4>
+<p>A quantity sample type that measures the user's weight.</p>
+<h4>OBJECT_TYPE_LEAN_BODY_MASS</h4>
+<p>A quantity sample type that measures the user's lean body mass.</p>
+<h4>OBJECT_TYPE_STEP_COUNT</h4>
+<p>A quantity sample type that measures the number of steps the user has taken.</p>
+<p>These samples use count units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_DISTANCE_WALKING_RUNNING</h4>
+<p>A quantity sample type that measures the distance the user has moved by walking or running.</p>
+<p>These samples use length units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_DISTANCE_CYCLING</h4>
+<p>A quantity sample type that measures the distance the user has moved by cycling.</p>
+<p>These samples use length units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_BASAL_ENERGY_BURNED</h4>
+<p>A quantity sample type that measures the amount of basal energy the user has burned.</p>
+<p>Basal energy is the energy that the user's body burns while at rest. The body uses this energy to perform basic functions like breathing, circulating blood, and managing the growth and maintenance of cells. These samples use energy units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_ACTIVE_ENERGY_BURNED</h4>
+<p>A quantity sample type that measures the amount of active energy the user has burned.</p>
+<p>Active energy is the energy that the user has burned due to physical activity and exercise. These samples use energy units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_FLIGHTS_CLIMBED</h4>
+<p>A quantity sample type that measures the number flights of stairs that the user has climbed.</p>
+<p>These samples use count units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_NIKE_FUEL</h4>
+<p>A quantity sample type that measures the number of NikeFuel points the user has earned.</p>
+<p>These samples use count units and measure cumulative values.</p>
+<h4>OBJECT_TYPE_HEART_RATE</h4>
+<p>A quantity sample type that measures the user's heart rate.</p>
+<h4>OBJECT_TYPE_BODY_TEMPERATURE</h4>
+<p>A quantity sample type that measures the user's body temperature.</p>
+<h4>OBJECT_TYPE_BLOOD_PRESSURE_SYSTOLIC</h4>
+<p>A quantity sample type that measures the user's systolic blood pressure.</p>
+<h4>OBJECT_TYPE_BLOOD_PRESSURE_DIASTOLIC</h4>
+<p>A quantity sample type that measures the user's diastolic blood pressure.</p>
+<h4>OBJECT_TYPE_RESPIRATORY_RATE</h4>
+<p>A quantity sample type that measures the user's respiratory rate.</p>
+<h4>OBJECT_TYPE_OXYGEN_SATURATION</h4>
+<p>A quantity sample type that measures the user's oxygen saturation.</p>
+<p>Oxygen saturation samples measure the percentage of oxygen in the bloodstream.</p>
+<h4>OBJECT_TYPE_PERIPHERAL_PERFUSION_INDEX</h4>
+<p>A quantity sample type that measures the user's peripheral perfusion index.</p>
+<p>The peripheral perfusion index measures the pulse strength at the monitoring site. These samples use percent units (described in HKUnit Class Reference) and measure discrete values (described in HKStatisticsQuery Class Reference).</p>
+<h4>OBJECT_TYPE_BLOOD_GLUCOSE</h4>
+<p>A quantity sample type that measures the user's blood glucose level.</p>
+<h4>OBJECT_TYPE_NUMBER_OF_TIMES_FALLEN</h4>
+<p>A quantity sample type that measures the number of times the user has fallen.</p>
+<h4>OBJECT_TYPE_ELECTRODERMAL_ACTIVITY</h4>
+<p>A quantity sample type that measures electrodermal activity.</p>
+<h4>OBJECT_TYPE_INHALER_USAGE</h4>
+<p>A quantity sample type that measures the number of puffs the user takes from their inhaler.</p>
+<h4>OBJECT_TYPE_BLOOD_ALCOHOL_CONTENT</h4>
+<p>A quantity sample type that measures the user's blood alcohol content.</p>
+<h4>OBJECT_TYPE_FORCED_VITAL_CAPACITY</h4>
+<p>A quantity sample type that measures the amount of air that can be forcibly exhaled from the lungs after taking the deepest breath possible.</p>
+<h4>OBJECT_TYPE_FORCED_EXPIRATORY_VOLUME1</h4>
+<p>A quantity sample type that measures the amount of air that can be forcibly exhaled from the lungs during the first second of a forced exhalation.</p>
+<h4>OBJECT_TYPE_PEAK_EXPIRATORY_FLOW_RATE</h4>
+<p>A quantity sample type that measures the user's maximum flow rate generated during a forceful exhalation.</p>
+<h4>OBJECT_TYPE_DIETARY_BIOTIN</h4>
+<p>A quantity sample type that measures the amount of biotin consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_CAFFEINE</h4>
+<p>A quantity sample type that measures the amount of caffeine consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_CALCIUM</h4>
+<p>A quantity sample type that measures the amount of calcium consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_CARBOHYDRATES</h4>
+<p>A quantity sample type that measures the amount of carbohydrates consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_CHLORIDE</h4>
+<p>A quantity sample type that measures the amount of chloride consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_CHOLESTEROL</h4>
+<p>A quantity sample type that measures the amount of cholesterol consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_CHROMIUM</h4>
+<p>A quantity sample type that measures the amount of chromium consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_COPPER</h4>
+<p>A quantity sample type that measures the amount of copper consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_ENERGY_CONSUMED</h4>
+<p>A quantity sample type that measures the amount of energy consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_FAT_MONOUNSATURATED</h4>
+<p>A quantity sample type that measures the amount of monounsaturated fat consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_FAT_POLYUNSATURATED</h4>
+<p>A quantity sample type that measures the amount of polyunsaturated fat consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_FAT_SATURATED</h4>
+<p>A quantity sample type that measures the amount of saturated fat consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_FAT_TOTAL</h4>
+<p>A quantity sample type that measures the total amount of fat consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_FIBER</h4>
+<p>A quantity sample type that measures the amount of fiber consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_FOLATE</h4>
+<p>A quantity sample type that measures the amount of Folate consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_IODINE</h4>
+<p>A quantity sample type that measures the amount of iodine consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_IRON</h4>
+<p>A quantity sample type that measures the amount of iron consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_MAGNESIUM</h4>
+<p>A quantity sample type that measures the amount of magnesium consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_MANGANESE</h4>
+<p>A quantity sample type that measures the amount of manganese consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_MOLYBDENUM</h4>
+<p>A quantity sample type that measures the amount of molybdenum consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_NIACIN</h4>
+<p>A quantity sample type that measures the amount of niacin consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_PANTOTHENIC_ACID</h4>
+<p>A quantity sample type that measures the amount of pantothenic acid consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_PHOSPHORUS</h4>
+<p>A quantity sample type that measures the amount of phosphorus consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_POTASSIUM</h4>
+<p>A quantity sample type that measures the amount of potassium consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_PROTEIN</h4>
+<p>A quantity sample type that measures the amount of protein consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_RIBOFLAVIN</h4>
+<p>A quantity sample type that measures the amount of riboflavin consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_SELENIUM</h4>
+<p>A quantity sample type that measures the amount of selenium consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_SODIUM</h4>
+<p>A quantity sample type that measures the amount of sodium consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_SUGAR</h4>
+<p>A quantity sample type that measures the amount of sugar consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_THIAMIN</h4>
+<p>A quantity sample type that measures the amount of thiamin consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_A</h4>
+<p>A quantity sample type that measures the amount of vitamin A consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_B12</h4>
+<p>A quantity sample type that measures the amount of vitamin B12 consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_B6</h4>
+<p>A quantity sample type that measures the amount of vitamin B6 consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_C</h4>
+<p>A quantity sample type that measures the amount of vitamin C consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_D</h4>
+<p>A quantity sample type that measures the amount of vitamin D consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_E</h4>
+<p>A quantity sample type that measures the amount of vitamin E consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_VITAMIN_K</h4>
+<p>A quantity sample type that measures the amount of vitamin K consumed.</p>
+<h4>OBJECT_TYPE_DIETARY_ZINC</h4>
+<p>A quantity sample type that measures the amount of zinc consumed.</p>
+<h4>OBJECT_TYPE_SLEEP_ANALYSIS</h4>
+<p>A category sample type for samples that contain sleep analysis information.</p>
+<h4>OBJECT_TYPE_BIOLOGICAL_SEX</h4>
+<p>A characteristic type identifier for the user's sex.</p>
+<h4>OBJECT_TYPE_BLOOD_TYPE</h4>
+<p>A characteristic type identifier for the user's blood type.</p>
+<h4>OBJECT_TYPE_DATE_OF_BIRTH</h4>
+<p>A characteristic type identifier for the user's date of birth.</p>
+<h4>OBJECT_TYPE_CORRELATION_BLOOD_PRESSURE</h4>
+<p>Blood pressure correlation types combine a systolic sample and a diastolic sample into a single blood pressure reading.</p>
+<h4>OBJECT_TYPE_CORRELATION_FOOD</h4>
+<p>Food correlation types combine any number of nutritional samples into a single food object. Ideally, the food object should also specify the type of food it represents using the METADATA_KEY_FOOD_TYPE metadata key.</p>
+<h4>OBJECT_TYPE_WORKOUT</h4>
+<p>The workout type identifier. Use this type identifier when requesting permission to read or share workout data.</p>
+<h3>QUERY_OPTION_XXX constants</h3>
+<h4>QUERY_OPTION_NONE</h4>
+<p>The sample's time period must completely overlap the target time period.</p>
+<h4>QUERY_OPTION_STRICT_START_DATE</h4>
+<p>The sample's start time must fall within the target time period.</p>
+<h4>QUERY_OPTION_STRICT_END_DATE</h4>
+<p>The sample's end time must fall within the target time period.</p>
+<h3>METADATA_KEY_XXX constants</h3>
+<h4>METADATA_KEY_DEVICE_SERIAL_NUMBER</h4>
+<p>The key for the serial number of the device that generated the data.</p>
+<h4>METADATA_KEY_BODY_TEMPERATURE_SENSOR_LOCATION</h4>
+<p>The location where a particular body temperature reading was taken.</p>
+<h4>METADATA_KEY_HEART_RATE_SENSOR_LOCATION</h4>
+<p>The location where a particular heart rate reading was taken.</p>
+<h4>METADATA_KEY_FOOD_TYPE</h4>
+<p>The type of food that the HealthKit object represents.</p>
+<h4>METADATA_KEY_UDI_DEVICE_IDENTIFIER</h4>
+<p>The device identifier portion of a device's UDI (unique device identifier).</p>
+<h4>METADATA_KEY_UDI_PRODUCTION_IDENTIFIER</h4>
+<p>The production identifier portion of a device's UDI (unique device identifier).</p>
+<h4>METADATA_KEY_DIGITAL_SIGNATURE</h4>
+<p>A digital signature that can be used to validate the origin of the HealthKit object.</p>
+<h4>METADATA_KEY_EXTERNAL_UUID</h4>
+<p>A unique identifier for an HKObject that is set by its source.</p>
+<h4>METADATA_KEY_TIME_ZONE</h4>
+<p>The user's time zone when the HealthKit object was created.</p>
+<h4>METADATA_KEY_DEVICE_NAME</h4>
+<p>The name of the device that took this reading.</p>
+<h4>METADATA_KEY_DEVICE_MANUFACTURER_NAME</h4>
+<p>The name of the manufacturer of the device that took this reading.</p>
+<h4>METADATA_KEY_WAS_TAKEN_IN_LAB</h4>
+<p>A key that indicates whether or not the sample was taken in a lab.</p>
+<h4>METADATA_KEY_REFERENCE_RANGE_LOWER_LIMIT</h4>
+<p>A key that indicates the lower limit of the reference range for a lab result.</p>
+<h4>METADATA_KEY_REFERENCE_RANGE_UPPER_LIMIT</h4>
+<p>A key that indicates the upper limit of the reference range for a lab result.</p>
+<h4>METADATA_KEY_WAS_USER_ENTERED</h4>
+<p>A key that indicates whether or not the sample was entered by the user.</p>
+<h4>METADATA_KEY_WORKOUT_BRAND_NAME</h4>
+<p>The brand name of a particular workout.</p>
+<h4>METADATA_KEY_GROUP_FITNESS</h4>
+<p>A key that indicates whether or not the workout was performed as part of a group fitness class.</p>
+<h4>METADATA_KEY_INDOOR_WORKOUT</h4>
+<p>A key that indicates whether or not the workout was performed indoors.</p>
+<h4>METADATA_KEY_COACHED_WORKOUT</h4>
+<p>A key that indicates whether or not the workout was performed with a coach or personal trainer.</p>
+<h3>BODY_TEMPERATURE_SENSOR_LOCATION_XXX constants</h3>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_OTHER</h4>
+<p>The temperature was taken at a location that is not otherwise in this list.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_ARMPIT</h4>
+<p>The temperature was taken in the armpit.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_BODY</h4>
+<p>The temperature was taken on the body.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_EAR</h4>
+<p>The temperature was taken in the ear.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_FINGER</h4>
+<p>The temperature was taken at the finger.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_GASTRO_INTESTINAL</h4>
+<p>The temperature was taken inside the gastrointestinal tract.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_MOUTH</h4>
+<p>The temperature was taken in the mouth.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_RECTUM</h4>
+<p>The temperature was taken in the rectum.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_TOE</h4>
+<p>The temperature was taken at the toe.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_EAR_DRUM</h4>
+<p>The temperature was taken on the eardrum.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_TEMPORAL_ARTERY</h4>
+<p>The temperature was taken at the temporal artery.</p>
+<h4>BODY_TEMPERATURE_SENSOR_LOCATION_FOREHEAD</h4>
+<p>The temperature was taken on the forehead.</p>
+<h3>HEART_RATE_SENSOR_LOCATION_XXX constants</h3>
+<h4>HEART_RATE_SENSOR_LOCATION_OTHER</h4>
+<p>The heart rate sensor's location is not otherwise on this list.</p>
+<h4>HEART_RATE_SENSOR_LOCATION_CHEST</h4>
+<p>The heart rate sensor is located on the user's chest.</p>
+<h4>HEART_RATE_SENSOR_LOCATION_WRIST</h4>
+<p>The heart rate sensor is located on the user's wrist.</p>
+<h4>HEART_RATE_SENSOR_LOCATION_FINGER</h4>
+<p>The heart rate sensor is located on the user's finger.</p>
+<h4>HEART_RATE_SENSOR_LOCATION_HAND</h4>
+<p>The heart rate sensor is located on the user's hand.</p>
+<h4>HEART_RATE_SENSOR_LOCATION_EAR_LOBE</h4>
+<p>The heart rate sensor is located on the user's earlobe.</p>
+<h4>HEART_RATE_SENSOR_LOCATION_FOOT</h4>
+<p>The heart rate sensor is located on the user's foot.</p>
+<h3>ERROR_CODE_XXX constants</h3>
+<h4>ERROR_CODE_NO_ERROR</h4>
+<p>No error occurred.</p>
+<h4>ERROR_CODE_HEALTH_DATA_UNAVAILABLE</h4>
+<p>HealthKit is not available on this device. HealthKit is not available on iPad.</p>
+<h4>ERROR_CODE_HEALTH_DATA_RESTRICTED</h4>
+<p>HealthKit is restricted on this device.</p>
+<h4>ERROR_CODE_INVALID_ARGUMENT</h4>
+<p>An invalid argument was provided to the HealthKit API.</p>
+<h4>ERROR_CODE_AUTHORIZATION_DENIED</h4>
+<p>The user has not given the app permission to perform the requested operation.</p>
+<h4>ERROR_CODE_AUTHORIZATION_NOT_DETERMINED</h4>
+<p>Your app has not yet asked the user for the authorization required to complete this task.</p>
+<h4>ERROR_CODE_DATABASE_INACCESSIBLE</h4>
+<p>The HealthKit data is unavailable because the HealthKit data is protected and the device is locked.</p>
+<h4>ERROR_CODE_USER_CANCELED</h4>
+<p>The user canceled the operation.</p>
+<h3>UPDATE_FREQUENCY_XXX constants</h3>
+<h4>UPDATE_FREQUENCY_IMMEDIATE</h4>
+<p>The system launches your app every time it detects a change.</p>
+<h4>UPDATE_FREQUENCY_HOURLY</h4>
+<p>The system launches your app at most once an hour in response to changes.</p>
+<h4>UPDATE_FREQUENCY_DAILY</h4>
+<p>The system launches your app at most once a day in response to changes.</p>
+<h4>UPDATE_FREQUENCY_WEEKLY</h4>
+<p>The system launches your app at most once per week in response to changes.</p>
+<h3>AUTH_STATUS_XXX constants</h3>
+<h4>AUTH_STATUS_NOT_DETERMINED</h4>
+<p>The user has not yet chosen to authorize access to the specified data type.</p>
+<h4>AUTH_STATUS_SHARING_DENIED</h4>
+<p>The user has explicitly denied your app permission to save data of the specified type.</p>
+<h4>AUTH_STATUS_SHARING_AUTHORIZED</h4>
+<p>The user has explicitly authorized your app to save data of the specified type.</p>
+<h3>SEX_XXX constants</h3>
+<h4>SEX_NOT_SET</h4>
+<p>A constant indicating that either the user's biological sex characteristic type is not set, or the user has not granted your app permission to read that characteristic type.</p>
+<h4>SEX_FEMALE</h4>
+<p>A constant indicating that the user is female.</p>
+<h4>SEX_MALE</h4>
+<p>A constant indicating that the user is male.</p>
+<h4>SEX_OTHER</h4>
+<p>A constant indicating that the user is otherwise not categorized as either male or female.</p>
+<h3>BLOODTYPE_XXX constants</h3>
+<h4>BLOODTYPE_NOT_SET</h4>
+<p>Either the user's blood type is not set, or the user has not granted your app permission to read the blood type.</p>
+<h4>BLOODTYPE_APOSITIVE</h4>
+<p>The user has an A+ blood type.</p>
+<h4>BLOODTYPE_ANEGATIVE</h4>
+<p>The user has an A- blood type.</p>
+<h4>BLOODTYPE_BPOSITIVE</h4>
+<p>The user has an B+ blood type.</p>
+<h4>BLOODTYPE_BNEGATIVE</h4>
+<p>The user has an B- blood type.</p>
+<h4>BLOODTYPE_ABPOSITIVE</h4>
+<p>The user has an AB+ blood type.</p>
+<h4>BLOODTYPE_ABNEGATIVE</h4>
+<p>The user has an AB- blood type.</p>
+<h4>BLOODTYPE_OPOSITIVE</h4>
+<p>The user has an O+ blood type.</p>
+<h4>BLOODTYPE_ONEGATIVE</h4>
+<p>The user has an O- blood type.</p>
+<h3>STATISTIC_OPTION_XXX constants</h3>
+<h4>STATISTICS_OPTION_NONE</h4>
+<p>An option indicating that the system will not calculate any statistics values.</p>
+<h4>STATISTICS_OPTION_SEPARATE_BY_SOURCE</h4>
+<p>An option indicating that the specified statistics will be calculated separately for each source.</p>
+<h4>STATISTICS_OPTION_DISCRETE_AVERAGE</h4>
+<p>An option indicating that the system will calculate the average quantity for the samples.</p>
+<h4>STATISTICS_OPTION_DISCRETE_MIN</h4>
+<p>An option indicating that the system will calculate the minimum quantity for the samples.</p>
+<h4>STATISTICS_OPTION_DISCRETE_MAX</h4>
+<p>An option indicating that the system will calculate the maximum quantity for the samples.</p>
+<h4>STATISTICS_OPTION_CUMULATIVE_SUM</h4>
+<p>An option indicating that the system will calculate the sum of all the quantities for the samples.</p>
+<h3>WORKOUT_EVENT_TYPE_XXX constants</h3>
+<h4>WORKOUT_EVENT_TYPE_PAUSE</h4>
+<p>A constant indicating that the workout has paused.</p>
+<h4>WORKOUT_EVENT_TYPE_RESUME</h4>
+<p>A constant indicating that the workout has resumed.</p>
+<h3>MOLAR_MASS_XXX constants</h3>
+<h4>MOLAR_MASS_BLOOD_GLUCOSE</h4>
+<p>The molecular mass of blood glucose, typically used to create mole units for blood glucose.</p>
+<h3>CATEGORY_VALUE_XXX constants</h3>
+<h4>CATEGORY_VALUE_SLEEP_ANALYSIS_IN_BED</h4>
+<p>The user is in bed.</p>
+<h4>CATEGORY_VALUE_SLEEP_ANALYSIS_ASLEEP</h4>
+<p>The user is sleeping.</p>
+<h3>SORT_ID_XXX constants</h3>
+<h4>SORT_ID_SAMPLE_START_DATE</h4>
+<p>A constant for sorting samples based on their start date.</p>
+<h4>SORT_ID_SAMPLE_END_DATE</h4>
+<p>A constant for sorting samples based on their end date.</p>
+<h4>SORT_ID_WORKOUT_DURATION</h4>
+<p>A constant for sorting workouts based on their duration.</p>
+<h4>SORT_ID_WORKOUT_TOTAL_DISTANCE</h4>
+<p>A constant for sorting workouts based on their total distance.</p>
+<h4>SORT_ID_WORKOUT_TOTAL_ENERGY_BURNED</h4>
+<p>A constant for sorting workouts based on the total energy burned.</p>
+<h3>FILTER_KEY_XXX constants</h3>
+<h4>FILTER_KEY_UUID</h4>
+<p>The key path for accessing the object's UUID inside a filter format string.</p>
+<h4>FILTER_KEY_SOURCE</h4>
+<p>The key path for accessing the object's source inside a filter format string.</p>
+<h4>FILTER_KEY_METADATA</h4>
+<p>The key path for accessing the object's metadata dictionary inside a filter format string.</p>
+<h4>FILTER_KEY_CORRELATION</h4>
+<p>The key path for accessing the object's correlation inside a filter format string.</p>
+<h4>FILTER_KEY_WORKOUT</h4>
+<p>The key path for accessing the object's workout inside a filter format string.</p>
+<h4>FILTER_KEY_CATEGORY_VALUE</h4>
+<p>The key path for the category sample's value.</p>
+<h4>FILTER_KEY_QUANTITY</h4>
+<p>The key path to the sample's quantity.</p>
+<h4>FILTER_KEY_WORKOUT_DURATION</h4>
+<p>The key path for the workout's duration.</p>
+<h4>FILTER_KEY_WORKOUT_TOTAL_DISTANCE</h4>
+<p>The key path for the workout's total distance.</p>
+<h4>FILTER_KEY_WORKOUT_TOTAL_ENERGY_BURNED</h4>
+<p>The key path for the workout's total energy burned.</p>
+<h4>FILTER_KEY_WORKOUT_TYPE</h4>
+<p>The key path for the workout's type.</p>
+<h4>FILTER_KEY_START_DATE</h4>
+<p>The key path for the sample's start date.</p>
+<h4>FILTER_KEY_END_DATE</h4>
+<p>The key path for the sample's end date.</p>
+<h3>FILTER_OPERATOR_XXX constants</h3>
+<h4>FILTER_OPERATOR_LESS_THAN</h4>
+<p>A less-than filter operator.</p>
+<h4>FILTER_OPERATOR_LESS_THAN_OR_EQUAL_TO</h4>
+<p>A less-than-or-equal filter operator.</p>
+<h4>FILTER_OPERATOR_GREATER_THAN</h4>
+<p>A greater-than filter operator.</p>
+<h4>FILTER_OPERATOR_GREATER_THAN_OR_EQUAL_TO</h4>
+<p>A greater-than-or-equal filter operator.</p>
+<h4>FILTER_OPERATOR_EQUAL_TO</h4>
+<p>An equal filter operator.</p>
+<h4>FILTER_OPERATOR_NOT_EQUAL_TO</h4>
+<p>A not-equal filter operator.</p>
+<h4>FILTER_OPERATOR_MATCHES</h4>
+<p>A full regular expression matching filter operator.</p>
+<h4>FILTER_OPERATOR_LIKE</h4>
+<p>A simple subset of the FILTER_OPERATOR_MATCHES operator, similar in behavior to SQL LIKE.</p>
+<h4>FILTER_OPERATOR_BEGINS_WITH</h4>
+<p>A begins-with filter operator.</p>
+<h4>FILTER_OPERATOR_ENDS_WITH</h4>
+<p>An ends-with filter operator.</p>
+<h4>FILTER_OPERATOR_IN</h4>
+<p>A filter operator to determine if the left hand side is in the right hand side.</p>
+<h4>FILTER_OPERATOR_CONTAINS</h4>
+<p>A filter operator to determine if the left hand side contains the right hand side.</p>
+<h4>FILTER_OPERATOR_BETWEEN</h4>
+<p>A filter operator to determine if the right hand side lies at or between bounds specified by the left hand side.</p>
+<h3>QUANTITY_AGGREGATION_STYLE_XXX constants</h3>
+<h4>QUANTITY_AGGREGATION_STYLE_CUMULATIVE</h4>
+<p>Cumulative samples may be summed over time.</p>
+<p>You typically use cumulative types to measure the total value over some time period. For example, step count, distance, inhaler usage, nutritional information, and energy burned are all cumulative quantity types.</p>
+<h4>QUANTITY_AGGREGATION_STYLE_DISCRETE</h4>
+<p>Discrete samples may be averaged over time. You can also query for the minimum or maximum value in a given time period.</p>
+<p>You typically use discrete types to monitor the change in the value over time. For example, body mass, heart rate, temperature, and respiratory rate are all discrete quantity types.</p>
+<h2>Events</h2>
+<h3>userPreferencesChanged</h3>
+<p>Notifies observers whenever the user changes his or her preferred units.</p>
+<p>Available in iOS 8.2 and later.</p>
+<p><strong>Note</strong>: This currently doesn't work.</p>
+<h2>Author</h2>
+<p>Zsombor Papp</p>
+<h2>License</h2>
+<p>Copyright(c) 2015 by Appcelerator, Inc. All Rights Reserved. Please see
+the LICENSE file included in the distribution for further details.</p>

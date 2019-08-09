@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="comments" class="container" onClick="windowClick">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Comments"></Require>
+		</View>
+		<View id="contentView">
+			<Label id="enterCommentLabel" text="ENTER YOUR COMMENTS"></Label>
+			<TextArea class="textBoxBroderLess" id="commentText"  value="Enter your comments..."></TextArea>
+			<View class="textBottomLine" ></View>
+		</View>
+		
+		<View id="footerView">
+			<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE">
+				<View id="submitButton" onClick="submitButtonClick">
+					<Label id="submitLabel" touchEnabled="false" text="SUBMIT SURVEY"></Label>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

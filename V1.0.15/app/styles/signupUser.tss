@@ -1,0 +1,208 @@
+"#signupContainer": {
+	backgroundImage: "/images/signupUser/bg.png"
+},
+
+"#bodyContainer": {
+	top: '15dp',
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#bodyContainer[formFactor=tablet]": {
+	top: '25dp',
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+
+"#quizHeadLabel": {
+	top: '25dp',
+	color: "#ffffff",
+	text: L( 'quizHeading'),
+	font:Alloy.Globals.HeaderUltraFontExtraLarge,
+	opacity: 1
+},
+"#quizHeadLabel[formFactor=tablet]": {
+	font: Alloy.Globals.HeaderUltraFontExtraLargeTablet
+},
+"#quizDescriptionLabel1": {
+	top: "10dp",
+	color: "#ffffff",
+	text: L( 'quizDescriptionLine1'),
+	font:Alloy.Globals.MediumMenuFontLight ,
+	opacity: 1
+},
+"#quizDescriptionLabel1[formFactor=tablet]": {
+	font: Alloy.Globals.HeaderFontLight
+},
+"#quizDescriptionLabel2": {
+	color: "#ffffff",
+	text: L( 'quizDescriptionLine2'),
+	font:Alloy.Globals.MediumMenuFontLight ,
+	opacity: 1
+},
+"#quizDescriptionLabel2[formFactor=tablet]": {
+	font: Alloy.Globals.HeaderFontLight
+},
+
+"#quizQuestion": {
+	with: '80%',
+	fontSize: 24,
+	color: "#ffffff",
+	left: "15dp",
+	right: "15dp",
+	font:Alloy.Globals.LargeFontLight,
+	opacity: 1
+},
+"#quizQuestion[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontLightTablet
+},
+
+"#progressBarContainer": {
+	top: '25dp',
+	width: '276dp',
+	//left: "10dp",
+	//right: "10dp",
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+},
+"#progressBarContainer[formFactor=tablet]": {
+	top: '25dp',
+	width: '510dp',
+	//left: "10dp",
+	//right: "10dp",
+	height: Ti.UI.SIZE,
+	layout: "vertical"
+},
+
+"#progressBarLineContainer": {
+	top: '3dp',
+	//width: '256dp',
+	left: "10dp",
+	right: "10dp",
+	height: Ti.UI.SIZE
+},
+"#progressBarLineContainer[formFactor=tablet]": {
+	top: '3dp',
+	//width: '256dp',
+	left: "15dp",
+	right: "15dp",
+	height: Ti.UI.SIZE
+},
+
+"#progressBarBgLine": {
+	backgroundColor: "#ffffff",
+	height: "2dp",
+	width: "100%",
+	opacity: "0.2",
+	top: '3dp'
+},
+
+"#progressBarBgLine[formFactor=tablet]": {
+	backgroundColor: "#ffffff",
+	height: "4dp",
+	width: "100%",
+	opacity: "0.2",
+	top: '6dp',
+	borderRadius: '4dp'
+},
+
+"#progressBarLine": {
+	backgroundColor: "#00ff00",
+	height: "2dp",
+	width: "0dp",
+	left: '0dp',
+	top: '3dp'
+},
+
+"#progressBarLine[formFactor=tablet]": {
+	backgroundColor: "#00ff00",
+	height: "4dp",
+	width: "0dp",
+	left: '0dp',
+	top: '6dp',
+	borderRadius: '4dp'
+},
+
+"#progressBarBgImageContainer": {
+	height:Ti.UI.SIZE,
+	//width: "100%",
+	left: '5dp',
+	right: '5dp'
+},
+
+"#progressBarBgImage": {
+	image: "/images/signupUser/progress-bg.png",
+	height:Ti.UI.SIZE,
+	//width: "100%",
+	left: '0dp',
+	right: '0dp',
+	top: '0dp'
+},
+
+"#progressBarBgImage[formFactor=tablet]": {
+	image: "/images/signupUser/progress-bg.png",
+	height:Ti.UI.SIZE,
+	//width: "100%",
+	left: '3dp',
+	right: '3dp',
+	top: '0dp'
+},
+
+"#questionContainer": {
+	top: '25dp',
+	width: Ti.UI.FILL,
+	layout: 'vertical',
+	height: Ti.UI.SIZE
+},
+
+"#quizOptionContainer": {
+	top: '25dp',
+	//layout: 'horizontal',
+	height: Ti.UI.SIZE,
+	//width: Ti.UI.SIZE
+	width: '160dp'
+},
+"#optionYes": {
+	image: "/images/signupUser/yes.png",
+	left: '0dp'
+},
+"#optionNo": {
+	image: "/images/signupUser/no.png",
+	right: '0dp'
+	//left: '26dp'
+},
+".optionYesSelected": {
+	image: "/images/signupUser/yes-selected.png"
+},
+".optionNoSelected": {
+	image: "/images/signupUser/no-selected.png",
+	left: '26dp'
+},
+
+"#signUpNextButton":{
+	width: '256dp',
+	height: '44dp',
+	top: '25dp',
+	color: '#ffffff',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	text:L( 'next'),
+	font:Alloy.Globals.LargeFontBold,
+	opacity: 1
+},
+
+"#signUpNextButton[formFactor=tablet]": {
+	font: Alloy.Globals.LargeFontBoldTablet
+},
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '3dp'
+},
+

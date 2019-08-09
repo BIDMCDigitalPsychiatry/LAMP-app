@@ -1,0 +1,49 @@
+<Alloy>
+	<Window swipeToClose="false" id="signin">
+		<View id="signincontainer">
+			<View id='headerContainer' class="headerContainer">
+				<Require id = 'headerView' src ="innerHeader" title="L('')" ></Require>
+			</View>
+			<ScrollView id="bodyOuterContainer" class="bodyOuterContainer">
+					<View id="logoView">
+						<View id="logoInnerView">
+						</View>
+					</View> 
+					<View id='bodyContainer'  class="bodyContainer">
+						<ImageView id="logo" ></ImageView>
+						<TextField   autocorrect="false" class="textBoxBroderLess returnKey userName" top="44dp" id="userName" hintText="L('userNameEmailOrStudyId')"></TextField>
+						<View class="textBottomLine" ></View>
+						<TextField   autocorrect="false" class="textBoxBroderLess masked password" id="password" hintText="L('password')"></TextField>
+						<View class="textBottomLine" ></View>
+						
+						<View id="languageView">
+							<View  id="languageSlot" onClick="onGetLanguage">
+								<Label  touchEnabled="false" id="langHeader" text="Select a Language">
+								</Label>
+								<View class="controllerView" touchEnabled="false">
+									<Label  touchEnabled="false" id="languageSlotLabel" text="English">
+									</Label>
+									<ImageView touchEnabled="false" id="downButtonImage">
+									</ImageView>
+								</View>
+								<View id="horizontalDivider">
+								</View>
+							</View>
+						</View>
+						<Label id="signInButton" class="fullSizeSubmitButton" text="L('signIn')" onClick="onSignInClick"  ></Label>
+						<Label id="forgetPassword" text="Forgot Password?" onClick="onForgetPasswordClick"  ></Label>
+						<!-- <View id="autologinRecoveryCotainer" >
+						<Switch id="autoLoginSwitch" value="true" left="0dp"  onChange="onAutoLoginSwitchChange"/>
+						<Label id="forgotPassword"  text="L('forgotPassword')" right="0dp" onClick="onForgotPasswordClick"  ></Label>
+						</View> -->
+					</View>
+					<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved."></Label>
+					<View id="buttonContainerView">
+						<Label id="signInStudent" text="L('signInStudent')" onClick="onSignInStudentClick"  ></Label>
+						<View id="buttonSeperator"></View>
+						<Label id="signInUserSignUp"  text="L('signInUserSignUp')" onClick="onSignInUserSignUpClick"  ></Label>
+					</View>
+				</ScrollView>
+		</View>
+	</Window>
+</Alloy>

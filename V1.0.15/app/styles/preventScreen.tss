@@ -1,0 +1,101 @@
+"#preventScreen":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+"#contentText":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	left: "20dp",
+	right: "20dp",
+	top: "0dp",
+	backgroundColor: 'transparent',
+	font:Alloy.Globals.LargeFontBold,
+	color: "#ffffff",
+	touchEnabled: false
+}
+"#contentText[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#contentView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	bottom: '62dp',
+	top: "80dp"
+}
+"#homeView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#homeView[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+"#homeImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home/home.png',
+	left: '10dp',
+	bottom: '10dp'
+}
+"#homeImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home.png'
+}
+
+"#homeImage[formFactor=tablet]": {
+	left: '15dp'
+}
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '60dp'
+}
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	bottom: '10dp'
+}
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '3dp'
+}
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '10dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+"#reportView[formFactor=tablet]": {
+	right: '20dp',
+	top: '15dp'
+}
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png",
+	bottom: '10dp'
+}

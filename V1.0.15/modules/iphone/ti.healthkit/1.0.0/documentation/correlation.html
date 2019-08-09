@@ -1,0 +1,14 @@
+<h1>Ti.Healthkit.Correlation</h1>
+<h2>Description</h2>
+<p>The Ti.Healthkit.Correlation class is a subclass of <a href="sample.html">Ti.Healthkit.Sample</a>.</p>
+<p>HealthKit uses correlations to group multiple samples into a single data entry. iOS 8.0 provides support for using correlation types to represent both blood pressure and food. Blood pressure correlations always include two quantity samples that represent the systolic and diastolic values. In contrast, food correlations can contain a wide range of dietary information about the food, including information about the fat, protein, carbohydrates, energy, and vitamins consumed.</p>
+<p>Correlations are immutable: The correlation's properties are set when the object is first created, and they cannot change.</p>
+<h2>Properties</h2>
+<h3>objects : Array</h3>
+<p>The <a href="sample.html">Ti.Healthkit.Sample</a> objects that make up the correlation. (read-only)</p>
+<h2>Functions</h2>
+<h3>&lt;Array&gt; objectsForType(type)</h3>
+<p>Returns all the objects of the specified type in the correlation.</p>
+<ul>
+<li>type (String): The quantity or category type for the data stored inside the correlation. Use the OBJECT_TYPE_* constant values.</li>
+</ul>

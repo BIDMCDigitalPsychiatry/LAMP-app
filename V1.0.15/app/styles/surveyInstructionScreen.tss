@@ -1,0 +1,54 @@
+"#cognitionInstruction":{
+	backgroundColor: '#E7EAED'
+}
+
+"#MainView":{
+	height:Ti.UI.FILL,
+	width:Ti.UI.FILL,
+	top: "60dp",
+	bottom: '60dp',
+	left:"15dp",
+	right:"15dp"
+}
+
+"#MainView[formFactor=tablet]":{
+	bottom: '80dp'
+}
+
+"#instructionText":{
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	font: Alloy.Globals.MediumMenuFontBold,
+	color: "#546e7a",
+	top:"20dp",
+	//textAlign:"center",
+	left:0,
+	right:0
+}
+
+"#submitView":{
+	height: '42dp',
+	width: '200dp',
+	color: "#546e7a",
+	borderColor: '#546e7a',
+	borderRadius: '21dp',
+	borderWidth: '1dp',
+	bottom: "10dp",
+	backgroundColor: "transparent"
+}
+"#submitView[formFactor=tablet]": {
+	width: '240dp',
+	height: '52dp',
+	borderRadius: '26dp'
+}
+"#submitLabel":{
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	opacity: 1,
+	color: "#546e7a",
+	touchEnabled: false,
+	font: Alloy.Globals.LargeFontBold,
+}
+"#submitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontBoldTablet
+}

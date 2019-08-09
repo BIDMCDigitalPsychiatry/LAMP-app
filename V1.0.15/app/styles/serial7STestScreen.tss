@@ -1,0 +1,178 @@
+
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	//contentHeight: 'auto',
+	top: '60dp',
+	layout: "vertical"
+}
+
+".textBottomLine": {
+	backgroundColor: "#ffffff",
+	height: "1dp",
+	width:Titanium.UI.FILL,
+	left: '10dp',
+	right: '10dp',
+	top: '5dp'
+},
+"#selectedDigitLabel":{
+	//width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.ExtraLargeFontLight,
+	opacity: 1,
+	top: "20dp",
+	text:L( "digitLabel"),
+	textAlign:"center"
+}
+"#selectedDigitLabel[formFactor=tablet]": {
+	top: "30dp",
+	font:Alloy.Globals.ExtraLargeFontLightTablet
+},
+"#digitLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.ExtraLargeFontLight,
+	opacity: 1,
+	text: "",
+	left:"5dp",
+	right:"5dp"
+}
+"#digitLabel[formFactor=tablet]": {
+	font:Alloy.Globals.ExtraLargeFontLightTablet
+},
+"#hintView":{
+	width:Titanium.UI.SIZE,
+	//width: '60dp',
+	height: '60dp',
+	borderColor: '#ffffff',
+	borderWidth:1,
+	top: "30dp"
+}
+"#hintView[formFactor=tablet]":{
+	width: '80dp',
+	height: '80dp'
+}
+// "#nextButton":{
+// width: Titanium.UI.SIZE,
+// height:Titanium.UI.SIZE,
+// image: "/images/figureCopyTest/next_icon_disable.png",
+// top: "30dp"
+// }
+"#selectionView":{
+	width:Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	left: "20dp",
+	right: "20dp",
+	top: "20dp",
+	layout: "vertical",
+	backgroundColor: "transparent"
+}
+"#answerTextArea":{
+	width: '120dp',
+	height: "45dp",
+	top: "0dp",
+	backgroundColor: "transparent",
+	color: '#ffffff',
+	font: Alloy.Globals.ExtraLargeFontLight,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	maxLength: '2',
+	horizontalWrap: true,
+	suppressReturn: false,
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font:Alloy.Globals.LargeSemiBoldQuest,
+	keyboardType: Titanium.UI.KEYBOARD_TYPE_NUMBER_PAD
+}
+"#textBorder":{
+	width: '120dp',
+	height: "1dp",
+	backgroundColor: "#ffffff",
+	top: "0dp"
+}
+"#firstRowView":{
+	width:Titanium.UI.FILL,
+	height: "60dp",
+	layout: 'horizontal',
+	top: "0dp",
+	backgroundColor: "transparent"
+}
+"#secondRowView":{
+	width:Titanium.UI.FILL,
+	height: "60dp",
+	layout: 'horizontal',
+	top: "20dp",
+	backgroundColor: "transparent"
+}
+".childView": {
+	height:Titanium.UI.FILL,
+	width: '90%',
+	//left: '10dp',
+	backgroundColor: "transparent"
+}
+".childTop": {
+	height:Titanium.UI.FILL,
+	width: '25%',
+	left: '0dp',
+	backgroundColor: "transparent"
+}
+".labelClass":{
+	width: Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	//text:"05",
+	color: "#ffffff",
+	touchEnabled: false
+}
+".innerView":{
+	height:Titanium.UI.FILL,
+	width: Titanium.UI.FILL,
+	borderColor: '#ffffff',
+	borderRadius: 5,
+	backgroundColor: "transparent",
+	opacity: 0.2,
+	touchEnabled: false
+}
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	top: "0dp"
+}
+"#levelLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.HeaderFontLight,
+	color: 'white',
+	top: "10dp"
+}
+"#messageView[formFactor=tablet]": {
+	top: "30dp"
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp',
+	text:L( 'serial7LabelMessage')
+}
+"#messageLabel[formFactor=tablet]":{
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#nextButton":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	top: "20dp",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+},

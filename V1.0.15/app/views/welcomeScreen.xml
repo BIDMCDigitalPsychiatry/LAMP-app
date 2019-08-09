@@ -1,0 +1,23 @@
+<Alloy>
+	<Window id="welcomeScreen">
+		<View id="contentView">
+			<ImageView id="logoImage"></ImageView>
+			<Label id="titleLbl"></Label>
+			<Label id="instructionLbl1" class="instructionLbl"></Label>
+			<Label id="instructionLbl2" class="instructionLbl"></Label>
+			<Label id="instructionLbl3" class="instructionLbl"></Label>
+			<WebView  id="contentWebView"></WebView>
+			<View id="contentView1" visible="false">
+			<Label id="noDataLabel"></Label>
+		</View>
+		</View>
+		<View id="consentButtonContainer">
+			<!-- <View id="startContainer" onClick="onBackClick">
+				<Label id="backButton"  text="BACK"></Label>
+			</View> -->
+			<View id="nextContainer" onClick="onNextClick">
+				<Label id="nextButton" text="AGREE"></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title></title>
+		<script src="jquery.min.js"></script>
+		<script src="highcharts.js"></script>
+		<script src="exporting.js"></script>
+		<script type="text/javascript">
+		Ti.App.addEventListener('graphCareer', function(data) {
+				var region = data.region;
+				var s1 = data.s1;
+				var s2 = data.s2;
+				var s4 = data.titleY;
+				var s5 = data.titleX;
+				var s6 = data.titleTop;
+				plotChart(region, s1, s2, data.largest, s4, s5, s6);
+			});
+			function plotChart(cat, mtd, ytd, largest, title1, title2, title3) {
+				if (largest == null || largest < 100) {
+					largest = 100;
+				}
+
+				new Highcharts.chart('container', {
+					chart : {
+						type : 'column',
+						spacingLeft : 0,
+						marginLeft : 50,
+					},
+					title : {
+						text : title3
+
+					},
+
+					xAxis : {
+						categories : cat,
+						crosshair : true
+					},
+					yAxis : {
+						min : 0,
+						max : largest,
+						title : {
+							text : title1,
+							margin : 0
+						},
+					},
+					legend : {
+						enabled : true
+					},
+					credits : {
+						enabled : false
+					},
+					exporting : {
+						enabled : false
+					},
+					tooltip : {
+						headerFormat : '<span style="font-size:10px">{point.key}</span><table>',
+						pointFormat : '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+						footerFormat : '</table>',
+						shared : true,
+						useHTML : true
+					},
+					plotOptions : {
+						column : {
+							pointPadding : 0.2,
+							borderWidth : 0
+						}
+					},
+					series : [{
+						name : title2,
+						data : mtd
+
+					}]
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+	</body>
+</html>

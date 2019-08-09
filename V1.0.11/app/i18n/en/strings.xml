@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- Common -->
+	<string name="appTitle">LAMP</string>
+	<string name="signIn">SIGN IN</string>
+	<string name="next">NEXT</string>
+	<string name="notImplement">Not implemented.</string>
+	<string name="activityValidating">Validating...</string>
+	<string name="activitySaving">Saving...</string>
+	<string name="activitySubmitting">Submitting...</string>
+	<string name="activityLoading">Loading...</string> 
+	<!-- Common Errors -->
+	<string name="unexpectedError">An unexpected error has occurred. Please try again later.</string>
+	<string name="noNetwork">Currently, there is no Internet connection. Please retry when connectivity is restored.</string>
+	<string name="enableLocation">Enable Location Services on your device and continue.</string>
+	<string name="sessionExpired">Your user session has ended. Please login to continue.</string>
+	<string name="exitApp">Are you sure you want to exit from app?</string>
+
+	<!-- Login Screen -->
+	<string name="signInStudent">Sign Up With Study ID</string>
+	<string name="signInUserSignUp">Guest User Sign Up</string>
+	<string name="userName">Username</string>
+	<string name="userNameEmailOrStudyId">Username (Email/StudyId)</string>
+	<string name="specifyUsername">Specify Username.</string>
+	<string name="loginErrorAlert">Invalid Credentials.</string>
+
+	<!-- Sign up with study ID Screen -->
+	<string name="signInStudentPageTitle">Sign Up</string>
+	<string name="studyCode">Enter your Study Code</string>
+	<string name="studyId">Enter your Study ID</string>
+	<string name="createPassword">Create your Password</string>
+	<string name="confirmPassword">Confirm Password</string>
+	<string name="specifyStudyCode">Specify Study Code.</string>
+	<string name="specifyStudyId">Specify Study ID.</string>
+	<string name="specifyPassword">Specify Password.</string>
+	<string name="specifyConfirmPassword">Specify Confirm Password.</string>
+	<string name="specifySameConfirmPassword">Password and Confirm Password entries must be the same.</string>
+	<string name="errorSignInWithSudyId">An error occurred during sign in. Please try again later.</string>
+
+	<!-- Guest user sign up Screen -->
+	<string name="quizHeading">Quiz</string>
+	<string name="quizDescriptionLine1">Please answer a few review questions to</string>
+	<string name="quizDescriptionLine2">ensure that you understand the consent form</string>
+	<string name="pleaseAnswerQuestion">Specify an answer.</string>
+
+	<!-- Guest user sign up Consent Screen -->
+	<string name="consent">Consent</string>
+	<string name="consentNote">Review the form below, and tap Agree if you're ready to continue.</string>
+	<string name="consentDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+	<string name="agree">Agree</string>
+	<string name="disagree">Disagree</string>
+
+	<!-- Guest user sign up Register Screen -->
+	<string name="firstName">First Name</string>
+	<string name="specifyfirstName">Specify First Name.</string>
+	<string name="lastName">Last Name</string>
+	<string name="specifyLastName">Specify Last Name.</string>
+	<string name="specifyEmail">Specify Email address.</string>
+	<string name="emailId">Email ID</string>
+	<string name="password">Password</string>
+	<!-- <string name="confirmPassword">Confirm Password</string> -->
+	<string name="createAndContinue">Create &#038; Continue</string>
+	<string name="specifyValidEmail">Specify a valid Email address.</string>
+
+	<!-- Home Screen -->
+	<string name="surveyMenu">Symptom Survey</string>
+	<string name="cognitionMenu">Cognition Test</string>
+	<string name="environmentMenu">Environment</string>
+	<string name="helpMenu">Help</string>
+	<string name="dismissLabel">Dismiss</string>
+	<string name="noDataLabel">No data available.</string>
+	<!-- Surveys Screen -->
+	<string name="surveysLabel">SURVEYS</string>
+	<string name="completedLabel">COMPLETED</string>
+	<string name="startlabel">START</string>
+	<string name="resultlabel">VIEW RESULT</string>
+	<string name="surveyListHeader">Surveys</string>
+
+	<!-- Settings Screen -->
+	<string name="appColor">APP COLOR</string>
+	<string name="symptomSurveyHeader">SYMPTOM SURVEY</string>
+	<string name="cognitionTestHeader">COGNITION TEST</string>
+	<string name="emergencyContact">EMERGENCY CONTACTS</string>
+	<string name="selectSlot">SELECT A SLOT</string>
+	<string name="selectRepeat">REPEAT INTERVALS</string>
+	<string name="settingsHeader">Settings</string>
+	<string name="sureSignout">Are you sure you want to sign out?</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="validContactNumb">Enter a valid contact number.</string>
+	<string name="validPersonalNumb">Enter a valid personal number.</string>
+	<!-- Survey Types -->
+	<string name="surveyDescriptionLabel">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</string>
+	<string name="enterHere">Enter here...</string>
+	<string name="slectSurveyType">Select at least one survey type.</string>
+	<string name="validSymptomTime"> Slot and Slot Time should match.</string>
+	<string name="validCognitionTime"> Slot and Slot Time should match.</string>
+	<string name="symptomTimeReminder">Symptom Survey Reminder.</string>
+	<string name="cognitionTimeReminder">Cognition Test Reminder.</string>
+
+	<!----survey Result---->
+	<string name="surveyResultTitle">Results for Survey</string>
+	<!----help Screen---->
+	<string name="helpTitle">Help</string>
+	<string name="emergencycontactTitle">24x7 Emergency Contact</string>
+	<string name="helpLineTitle">Personal Help Line</string>
+	<string name="policyTitle">PRIVACY POLICY</string>
+	<string name="deleteAccountTitle">DELETE MY ACCOUNT</string>
+	<string name="deleteConfirmation">Are you sure you want to delete your account?</string>
+
+	<!-- Cognition Test -->
+	<string name="cognitionTestTitle">Cognition Test</string>
+	<string name="startGameLabel">START GAME</string>
+
+	<!----environment screen----->
+	<string name="environmentTitle">Environment</string>
+	<string name="pictureLabel">Where are you?</string>
+	<string name="surveyTypeHeader">Symptom Survey</string>
+	<string name="helpconfirmation">Your responses indicate you may be having unsafe thoughts. Do you want to be connected to help.</string>
+	<!-- Symptom Survey Types -->
+	<string name="slectAnswerType">Select at least one answer.</string>
+	<string name="enterComment">Specify Comments.</string>
+	<!-- Symptom Survey Types -->
+	<string name="enterAnswer">Specify an answer.</string>
+	<!-- linkert Survey -->
+	<string name="slectLikertAnswerType">Select an answer.</string>
+	<!-- TrailsB -->
+	<string name="intructionLabel">Draw a line to the matching alphabet.</string>
+	<string name="intructionLabel1">Finished.</string>
+	<string name="intructionLabel2">Tap "1" to start the test.</string>
+	<string name="restartGame">RESTART</string>
+	<string name="intructionLabel3">Time Out.</string>
+
+	<!-----Forgot Password screen------>
+	<string name="forgotYourPasswordLabel">Forgot Your Password?</string>
+	<string name="questionLabel">Enter your email below to retrieve your account.</string>
+	<string name="sendLabel">SEND</string>
+	<string name="emailLabel">Email Address</string>
+	<string name="alertLabel">Password has been sent to your email.</string>
+	<!-------Serial7sTest--------->
+		<string name="digitLabel">Start Digit</string>
+		<string name="serial7LabelMessage">Subtract 7 from the number and enter the result.</string>
+		
+	<!-------Pending Review--------->
+	<!-------CoginitionTestIntructions--------->
+	<string name="SpatialSpanMessage1">Remember the highlighted boxes in the order you see them.</string>	
+	<string name="SpatialSpanMessage2">Now tap on the boxes in the order they were highlighted.</string>	
+	<string name="SpatialSpanMessage3">Now tap on the boxes in the reverse order they were highlighted.</string>
+	<string name="SimpleMemoryMessage1">Remember the images shown to you.</string>
+	<string name="SimpleMemoryMessage2">Tap on the images you have seen.</string>	
+	
+	<string name="CatandDogMessage1">Remember the images in the order you see them.</string>
+	<string name="CatandDogMessage2">Now tap on the images in the order you saw them.</string>
+	<string name="CatandDogInstruction1">Select the images of cats.</string>
+	<string name="CatandDogInstruction2">Select the images of dogs.</string>
+	
+	<!-------JewelsTestIntructions--------->
+	<string name="jewelsTrail1">The goal of the game is to collect as many diamonds as possible.</string>	
+	<string name="jewelsTrail2">To collect the diamonds, tap on them in chronological order.</string>
+	<string name="jewelsTrailB2">To collect the diamonds, tap on them by alternating between each shape following the chronological order.</string>	
+	<string name="jewelsTrail3">Each mistake will slow you down, and each second left on the count down timer gives you extra point to reach the next level.</string>	
+
+
+	<!-------Game names--------->
+<string name="nbackTest">n-back Test</string>	
+<string name="trailsBTest">trails-b Test</string>	
+<string name="spatialFrwd">Spatial Span Forward</string>	
+<string name="spatialBckwrd">Spatial Span Backward</string>	
+<string name="memoryTest">Simple Memory</string>	
+<string name="serial7">Serial 7s</string>	
+<string name="visualGame">Visual Association</string>	
+<string name="temporalOrder">Temporal Order</string>	
+<string name="digitFWrd">Digit Span Forward</string>	
+<string name="digitBckWrd">Digit Span Backward</string>	
+<string name="catdog">Cats and Dogs(New)</string>	
+<string name="trailsBTestNew">trails-b Test(New)</string>	
+<string name="nbackTestNew">n-back Test(New)</string>	
+<string name="trailsBTouch">trails-b(Touch)</string>	
+<string name="jwelA">Jewels Trail - A</string>	
+<string name="jwelB">Jewels Trail - B</string>	
+<string name="scratchCard">Scratch Card</string>
+
+<!-------CatDogGame--------->
+	<string name="dogBox">Tap the boxes that have a dog behind them.</string>	
+	<string name="selectThe">Select the</string>
+	<string name="imgCatBox">boxes where you had seen the images of cat.</string>	
+	<string name="imgDogBox">boxes where you had seen the images of dog.</string>
+	<string name="continueDogBox">Continue to tap the boxes that have a dog behind them. Don’t tap the  Boxes with a cat behind them.</string>
+	<string name="continueCatBox">Now tap the boxes that have a cat behind them. Don’t tap the boxes with a dog behind them.</string>	
+
+<!-------DigitSpan--------->
+	<string name="soundalert">Please make sure sound is turned up on your device.</string>	
+	<string name="audioalert">Please listen to audio carefully.</string>
+	<string name="digitalert">Please enter the digits now.</string>
+	<string name="digitReversealert">Please enter the digits in Reverse Order.</string>	
+	
+	<!-------Titles--------->
+	<string name="articleLbl">Articles.</string>	
+	<string name="tipLbl">Tips</string>
+	<string name="profileLbl">Profile</string>	
+	
+	<!-------jwelGame--------->
+	<string name="articleLbl">Articles.</string>	
+	<string name="tipLbl">Tips</string>
+	<string name="profileLbl">Profile</string>	
+
+</resources>

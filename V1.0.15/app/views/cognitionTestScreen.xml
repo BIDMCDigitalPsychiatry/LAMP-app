@@ -1,0 +1,47 @@
+<Alloy>
+	<Window  id="cognitionTestScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader"></Require>
+		</View>
+		<View id="contentView">
+			<ListView  id="surveyList" onItemclick="onStartMemoryGame">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="surveyListTemplate" >
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="imageView">
+								<ImageView id="iconImage" bindId="iconImage"></ImageView>
+							</View>
+							<View id="gameNameView" touchEnabled="false" >
+								<Label id="gameNameLabel" bindId="gameNameLabel"></Label>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection"></ListSection>
+			</ListView>
+		</View>
+		<View id="overLayer" onClick="overLayerClick"></View>
+		<View id="popupView">
+			 <View id="iconView">
+			 	<ImageView id="gameIcon"></ImageView>
+			 </View>
+			 <Label id="gameName"></Label>
+			 <Label id="contentLabel"></Label>
+			 <Label id="contentLabel2"></Label>
+			  <Label id="contentLabel3"></Label>
+			 <View id="instructionButton" onClick="openGameInstruction">
+			 	<Label id="instLabel" class="labelClass" onClick="openGameInstruction">Instructions</Label>
+			 </View>
+			 <View id="scoreButton" onClick="onScoreClick" visible="false">
+			 	<Label id="jewelScoreLabel" class="labelClass" onClick="onScoreClick">Total Score</Label>
+			 </View>
+			 <View id="difficultyButton" onClick="onDifficultyClick" visible="false">
+			 	<Label id="difficultyLabel" class="labelClass" onClick="onDifficultyClick">Difficulty</Label>
+			 </View>
+			 <View id="startButtonView" onClick="startGameClick">
+			 	<Label id="popupstartLabel" class="labelClass" onClick="startGameClick">Start</Label>
+			 </View>
+		</View>
+		<Label id="supportLabel"></Label>
+	</Window>
+</Alloy>

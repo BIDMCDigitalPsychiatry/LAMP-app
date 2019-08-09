@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lamp</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <style type="text/css">
+        body{
+            background: "transparent";
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        header{
+            background: #359ffe;
+            color: #fff;
+            font-weight: 700;
+            padding: 15px 20px;
+        }
+        header h2{
+            margin: 0;
+            font-size: 22px;
+        }
+        section{
+            padding: 25px 20px 10px;
+        }
+        section h4{
+            margin: 0 0 8px;
+        }
+        section p{
+            margin: 0 0 8px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        .content{
+            margin-bottom: 20px;
+        }
+        section ul{
+            margin: 0 0 20px;
+            padding-left: 20px;
+        }
+        section ul li{
+            font-size: 12px;
+            margin-bottom: 10px;
+            line-height: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <p>欢迎来到LAMP的学习部分。LAMP代表学习（Learn）、评估（Access）、管理（Manage）、与预防（Prevent）。</p>
+          <p>你可以通过这个链接了解更多关于LAMP的信息，以及如何更好的使用它。 &raquo; 
+            <a href="#" onclick=" Titanium.App.fireEvent('htmlOpenURL', {url:'http://www.psych.digital/lamp.html'}); return false;">www.psych.digital/lamp.html</a></p>
+            <p>在未来的几个月里，我们将在这里提供更多的自定义内容，但同时您也可以通过访问国家精神疾病联盟(NAMI)的网站了解更多关于精神疾病的信息 &raquo; <a href="#" onclick=" Titanium.App.fireEvent('htmlOpenURL', {url:'http://www.nami.org/'}); return false;">www.nami.org/</a>,美国国家精神卫生研究所(NIMH) &raquo; 
+            <a href="#" onclick=" Titanium.App.fireEvent('htmlOpenURL', {url:'https://www.nimh.nih.gov/index.shtml'}); return false;">www.nimh.nih.gov/index.shtml</a> 以及美国精神病学协会（APA） &raquo; 
+            <a href="#" onclick=" Titanium.App.fireEvent('htmlOpenURL', {url:'http://www.psychiatry.org/patients-families'}); return false;">www.psychiatry.org/patients-families</a>
+            </p>
+        </div>
+        
+    </section>
+</body>
+
+</html>

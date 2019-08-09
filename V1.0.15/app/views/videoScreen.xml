@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="videoScreen">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader"></Require>
+		</View>
+		<WebView id="videoUrl"></WebView>
+	</Window>
+</Alloy>

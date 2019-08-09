@@ -1,0 +1,74 @@
+<Alloy>
+	<Window id="activityScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Environment Data">
+			</Require>
+		</View>
+		<View id="tabView" top="60dp">
+			<View id="locationTab" onClick="locationTabClick">
+				<Label id="locationLabel" text="LOCATION" >
+				</Label>
+				<View id="locationTabDiv" visible="true" class="tabDivider">
+				</View>
+			</View>
+			<View id="environmentTab" onClick="environmentTabClick">
+				<Label id="environmentLabel" text="ENVIRONMENT" >
+				</Label>
+				<View id="cenvironmentTabDiv" visible="false" class="tabDivider">
+				</View>
+			</View>
+		</View>
+		<View id="contentView">
+			<Label id="noDataLabel" color="#000000" text="L('noDataLabel')">
+			</Label>
+			<ListView  id="locationList">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="locationListTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View height="Titanium.UI.SIZE" width="Titanium.UI.FILL">
+								<View id="adressView">
+									<Label id="addressLabel" bindId="addressLabel">
+									</Label>
+								</View>
+								<View id="timeview" layout="horizontal" >
+									<ImageView id="timerImage">
+									</ImageView>
+									<Label id="timeLabel" bindId="timeLabel" touchEnabled="false" >
+									</Label>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="environmentListTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View width="Titanium.UI.SIZE" height="Titanium.UI.SIZE" layout="vertical" >
+								<Label top="5dp" id="envPickLabel" bindId="envPickLabel">
+								</Label>
+								<View top="0dp" height="Titanium.UI.FILL" width="Titanium.UI.FILL">
+									<View height="Titanium.UI.SIZE" width="Titanium.UI.FILL">
+										<View id="envAdressView">
+											<Label id="envAddressLabel" bindId="envAddressLabel">
+											</Label>
+										</View>
+										<View id="envtimeview">
+											<ImageView id="timerImage">
+											</ImageView>
+											<Label id="envTimeLabel" bindId="envTimeLabel" touchEnabled="false" >
+											</Label>
+										</View>
+									</View>
+								</View>
+							</View>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection">
+				</ListSection>
+			</ListView>
+			<Label id="supportLabel"text="Copyright BIDMC © 2018. All rights reserved.">
+			</Label>
+		</View>
+	</Window>
+</Alloy>

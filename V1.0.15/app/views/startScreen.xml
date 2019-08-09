@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="startScreen">
+		<View id="contentView">
+			<View id="innerContentView">
+				<ImageView id="logoImage"></ImageView>
+				<Label id="titleLbl"></Label>
+				<View id="instButtonView" onClick="openVideo">
+					<Label id="instButton"></Label>
+				</View>
+			</View>
+			<View id="startContainer" onClick="onStartClick">
+				<Label id="startButton"  text="START"></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

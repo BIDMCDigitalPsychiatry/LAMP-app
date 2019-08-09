@@ -1,0 +1,64 @@
+<Alloy>
+	<Window id="figureCopyScreen" class="container">
+		<View id='headerContainer' class="headerContainer" >
+			<Require id = 'headerView' src ="innerHeader" title="3D Figure Copy" homeButtonImage="/images/home/home.png">
+			</Require>
+		</View>
+		<View id="contentView">
+			<Label id="countTimer" text="01:30">
+			</Label>
+			<View id="userDrawingView" visible="false">
+				<View id="questionNumberView">
+					<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical">
+						<Label id="numberLabel" text="1/4">
+						</Label>
+						<Label id="answerlabel" text="Answered">
+						</Label>>
+					</View>
+				</View>
+				<View id="progressBarContainer">
+					<ImageView id="progressBarBgImage" >
+					</ImageView>
+					<View id="progressBarLine">
+					</View>
+				</View>
+				<View id="drawingView">
+					<View id="toolbarView">
+						<Label id="drawLabel">
+						</Label>
+						<View id="toolImages"  >
+							<View width= "Titanium.UI.SIZE" top="10dp"  height="Ti.UI.SIZE" layout="horizontal">
+								<View width= "Titanium.UI.SIZE"  height="Ti.UI.SIZE"  onClick="onPencilClick"  >
+									<ImageView id="pencilImage" touchEnabled="false"  >
+									</ImageView>
+								</View>
+								<!-- <View width= "Titanium.UI.SIZE"  height="Ti.UI.SIZE" >
+								<ImageView id="eraserImage" onClick="onEraserClick"></ImageView>
+								</View> -->
+								<View width= "Titanium.UI.SIZE"  height="Ti.UI.SIZE" onClick="onClearClick" >
+									<ImageView id="brushImage" touchEnabled="false"  >
+									</ImageView>
+								</View>
+							</View>
+						</View>
+					</View>
+					<View id="seperator">
+					</View>
+					<View id="canvasView">
+					</View>
+				</View>
+				<Label id="nextButton"  text="Next" onClick="onNextButtonClick"  >
+				</Label>
+				<!-- <View id="nxtButtonView" onClick="onNextButtonClick">
+				<ImageView id="nextImage"></ImageView>
+				</View> -->
+			</View>
+			<View id="userViewing" visible="true">
+				<ImageView id="objectsImage" >
+				</ImageView>
+				<Label id="timeLabel" >
+				</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id='win' title='Quantity Samples'>
+		<RightNavButton platform='ios'>
+			<Button id='addButton' title='Add' onClick='onAddClick' />
+		</RightNavButton>
+		<TableView id='tableView' onClick='onTableViewClick'>
+			<TableViewRow title='All Weight' />
+			<TableViewRow title='Weight Created By App' />
+			<TableViewRow title='All Height' />
+			<TableViewRow title='Height Created By App' />
+		</TableView>
+	</Window>
+</Alloy>

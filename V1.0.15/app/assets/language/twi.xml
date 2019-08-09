@@ -1,0 +1,478 @@
+<resources>
+	
+	<appTitle>mindLAMP</appTitle>
+	<signIn>wura mu</signIn>
+	<next>nea edi so</next>
+	<notImplement>Wɔannyɛ.</notImplement>
+	<activityValidating>Wɔrohwɛ (Da odzi mu)...</activityValidating>
+	<activitySaving>Wɔdze resie ...</activitySaving>
+	<activitySubmitting>Ede rek)...</activitySubmitting>
+	<activityLoading>Erehyr hy3...</activityLoading>
+	
+	<unexpectedError>Mfomdo aba. Yɛ no bio .</unexpectedError>
+	<noNetwork>Internet no mmba. Yɛ no bio .</noNetwork>
+	<enableLocation>Bue Location Services na sɔw dza reyɛ no do .</enableLocation>
+	<sessionExpired>Dza ereyɛ no esi. Sɔw do.</sessionExpired>
+	<exitApp>Egye dzi dɛ epɛ dɛ igyae??</exitApp>
+	
+	<signInStudent>Fa study ID no yɛ edwuma</signInStudent>
+	<signInUserSignUp>Fa Guest user no yɛ edwuma</signInUserSignUp>
+	<userName>Wo dzin</userName>
+	<userNameEmailOrStudyId>Ahyɛnsew (Email/ Study ID)</userNameEmailOrStudyId>
+	<specifyUsername>Si wo dzin pi</specifyUsername>
+	<loginErrorAlert>Dza wɔka fa woho no nndzi mu.</loginErrorAlert>
+	<studyIdLbl>adzesua ahyɛnsew</studyIdLbl>
+	
+	<signInStudentPageTitle>Hyɛ ase</signInStudentPageTitle>
+	<signInSmall>wura mu</signInSmall>
+	<studyCode>Fa wo study code hyɛ mu</studyCode>
+	<studyId>Fa wo study ID hyɛ mu</studyId>
+	<createPassword>Fa biribi hyɛ woho nsew (password)</createPassword>
+	<confirmPassword>Si dzi afa no pi</confirmPassword>
+	<specifyStudyCode>Kyerɛ study code no.</specifyStudyCode>
+	<specifyStudyId>kyerɛ study ID no.</specifyStudyId>
+	<specifyPassword>Kyerɛ password.</specifyPassword>
+	<specifyConfirmPassword>Kyerɛ dza efae no (password) na si no pi.</specifyConfirmPassword>
+	<specifySameConfirmPassword>Password and Confirm Password entries must be the same.</specifySameConfirmPassword>
+	<errorSignInWithSudyId>Mfomdo aba. Yɛ no bio .</errorSignInWithSudyId>
+	<enterfirstNameLbl>wo dzin ahyɛse</enterfirstNameLbl>
+	<enterlastNameLbl>wo dzin ntoado</enterlastNameLbl>
+	
+	<quizHeading>Nsɔhwɛ</quizHeading>
+	<quizDescriptionLine1>Yiyi nsɛmbisa kakra yi ano. Yɛdze rosɔ wo</quizDescriptionLine1>
+	<quizDescriptionLine2>Ahwɛ</quizDescriptionLine2>
+	<pleaseAnswerQuestion>Kyerɛ nyiano a efae .</pleaseAnswerQuestion>
+	
+	<firstName>Wo dzin a odzi kan</firstName>
+	<specifyfirstName>Si dzin a odzin kan no pi.</specifyfirstName>
+	<lastName>Wo dzin a odzi ewiei</lastName>
+	<specifyLastName>Si dzin a odzi ewiei no pi.</specifyLastName>
+	<specifyEmail>si wo email no do</specifyEmail>
+	<emailId>Email ID</emailId>
+	<password>Password</password>
+	<createAndContinue>Hyɛ biribi ase na sɔw do </createAndContinue>
+	<specifyValidEmail>Kyerɛ Email Address a fi nnyi ho.</specifyValidEmail>
+	
+	<surveyMenu>ahɛn mu</surveyMenu>
+	<cognitionMenu>adwen agor</cognitionMenu>
+	<environmentMenu>Dze a etwa hɛn ho ehyia</environmentMenu>
+	<helpMenu>Mboa</helpMenu>
+	<dismissLabel>Twa mu</dismissLabel>
+	<noDataLabel>Akwama (Data) Nnyi Hɔ.</noDataLabel>
+	<environmentCapsMenu>Dze a etwa hɛn ho ehyia</environmentCapsMenu>
+	<locCapsMenu>bea etse</locCapsMenu>
+	<whereLbl>Ewɔ hen?</whereLbl>
+	
+	
+	<surveysLabel>ahɛn mu</surveysLabel>
+	<completedLabel>Woewie</completedLabel>
+	<startlabel>Hyɛ Ase</startlabel>
+	<resultlabel>Hwɛ dze a ennya no.</resultlabel>
+	<surveyListHeader>ahɛn mu</surveyListHeader>
+	
+	<appColor>Dwumadze ho color</appColor>
+	<symptomSurveyHeader>ahɛn mu</symptomSurveyHeader>
+	<cognitionTestHeader>Sɛntsir nsohwɛ</cognitionTestHeader>
+	<emergencyContact>Ahokyer ba frɛ number ye</emergencyContact>
+	<selectSlot>Yie adakaba mu kor</selectSlot>
+	<selectRepeat>kwan a damu si do</selectRepeat>
+	<settingsHeader>Ehyehyɛ</settingsHeader>
+	<sureSignout>Egye dɛ epɛ dɛ ifi mu a?</sureSignout>
+	<yes>Nyew</yes>
+	<no>Oho</no>
+	<validContactNumb>Ma "number" a wobotum dze afrɛ wo</validContactNumb>
+	<validPersonalNumb>Ma oara no "number"</validPersonalNumb>
+	<personalHelpLine>Number a ilhua mboa ibotum afrɛ</personalHelpLine>
+	<twentyfr>tetefon number</twentyfr>
+	
+	
+	<surveyDescriptionLabel>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do elusmod?</surveyDescriptionLabel>
+	<enterHere>woara ha</enterHere>
+	<slectSurveyType>Fa dze a ebuei enyiwa ahwɛ no kor</slectSurveyType>
+	<selectCognitionLblAlert>fa adwen agor kor</selectCognitionLblAlert>
+	<validSymptomTime>Adze a afa na ber a edze fae no wɔ dɛ ɔyɛ kor</validSymptomTime>
+	<validCognitionTime>Adze a afa na ber a edze fae no wɔ dɛ ɔyɛ kor</validCognitionTime>
+	<symptomTimeReminder>dza okae wo</symptomTimeReminder>
+	<cognitionTimeReminder>adwen agor a okae wo</cognitionTimeReminder>
+	
+	<surveyResultTitle>nsunsuando nkakae</surveyResultTitle>
+	<helpTitle>Mboa</helpTitle>
+	<emergencycontactTitle>Number a wo ho kyer wo ber biara a ibotum afrɛ</emergencycontactTitle>
+	<helpLineTitle>Number a ilhua mboa ibotum afrɛ</helpLineTitle>
+	<policyTitle>wɔ hɔn nsem ho nhwehwɛ</policyTitle>
+	<deleteAccountTitle>Yi me dzin fi mu</deleteAccountTitle>
+	<deleteConfirmation>Egye dzi dɛ epɛ dɛ woyi wo fir mu?</deleteConfirmation>
+
+	<cognitionTestTitle>adwen agor</cognitionTestTitle>
+	<cognitionCapsTestTitle>adwen agor a okae wo</cognitionCapsTestTitle>
+	<startGameLabel>Agor a wɔdze hyɛ ase</startGameLabel>
+	
+	<environmentTitle>Dze a etwa hɛn ho ehyi a</environmentTitle>
+	<pictureLabel>Ewɔ hen?</pictureLabel>
+	<surveyTypeHeader>ahɛn mu</surveyTypeHeader>
+	<helpconfirmation>Wo nyiano no kyerɛ dɛ bi a biribi haw wo.</helpconfirmation>
+	
+	<slectAnswerType>Wɔmma wo mboa a?</slectAnswerType>
+	<enterComment>Fa nyiano kor</enterComment>
+
+	<enterAnswer>Kyerɛ dze a aka no.</enterAnswer>
+	
+	<slectLikertAnswerType>Kyerɛ wo nyiano no</slectLikertAnswerType>
+	
+	<intructionLabel>Fa bi</intructionLabel>
+	<intructionLabel1>Woewie</intructionLabel1>
+	<intructionLabel2>1. Bɔ kor (1) no do na hyɛ nsɔhwɛ ase</intructionLabel2>
+	<restartGame>Hyɛ ase bio</restartGame>
+	<intructionLabel3>Gyae</intructionLabel3>
+
+	
+	<forgotYourPasswordLabel>Wo werɛ efir wo password?</forgotYourPasswordLabel>
+	<forgotPasswordTitle>Wo werɛ efir wo ahyɛnsew (password)</forgotPasswordTitle>
+	<questionLabel>Fa wo Email Address hyɛ ase na fa wo 'number'</questionLabel>
+	<sendLabel>'Send' (Ma ɔnkɔ)</sendLabel>
+	<emailLabel>Wo Email Address</emailLabel>
+	<alertLabel>Wo password no kɔ wo Email do</alertLabel>
+	
+	<digitLabel>Hyɛ 'Digit' ase</digitLabel>
+	<serial7LabelMessage>Yi 7 fi dza enya no mu na ma nsa nka dza aka no.</serial7LabelMessage>
+	
+	<SpatialSpanMessage1>Hyɛ ndakaba no nsew nkorkor.</SpatialSpanMessage1>	
+	<SpatialSpanMessage2>Fa wo ns aka ndakaba</SpatialSpanMessage2>	
+	<SpatialSpanMessage3>Fa wo nsa ka ndakaba no fi ekyir bra enyim</SpatialSpanMessage3>
+	<SimpleMemoryMessage1>Kae ahyɛnsew a wɔdze akyerɛ wo no</SimpleMemoryMessage1>
+	<SimpleMemoryMessage2>Fa wo nsa ka ahyɛnsew no</SimpleMemoryMessage2>	
+	
+	<CatandDogMessage1>Fa mbrɛ woesi ahyehyɛ asɛnsew no to wo tsir mu.</CatandDogMessage1>
+	<CatandDogMessage2>Fa wo ns aka no dɛ mbrɛ woahyehyɛ no no.</CatandDogMessage2>
+	<CatandDogInstruction1>Fa ufuyin yɛ ngyinambowa hɔn mfonyin</CatandDogInstruction1>
+	<CatandDogInstruction2>Fa mbɔdɔ hɔn mfonyin</CatandDogInstruction2>
+
+	<jewelsTrail1>Agor no no bokae nye dɛ ibenya ndɛnkyɛmbo (diamond) pii</jewelsTrail1>	
+	<jewelsTrail2>Epɛ ndɛnkyɛmbo no pii a fa wo nsa sisi do fir kor kɔ</jewelsTrail2>
+	<jewelsTrailB2>Epɛ ndɛnkyɛmbo no a edze wo nsa si</jewelsTrailB2>	
+	<jewelsTrail3>Itsi a, ɔbɔtwe wo ekyir, itwa a ebɔkɔ oenyim.</jewelsTrail3>
+
+	<nbackTest>amba nhwehwɛe</nbackTest>	
+	<trailsBTest>fa sosɔw do</trailsBTest>	
+	<spatialFrwd>agor adaka</spatialFrwd>	
+	<spatialBckwrd>agor adaka tsenenee</spatialBckwrd>
+	<spatialSpan>Pia Spatial Span</spatialSpan>	
+	<memoryTest>mfonyin nhwehwɛe</memoryTest>	
+	<digitFWrdGame>Pia 'Digit' Span</digitFWrdGame>
+	<serial7>nkontaa agor</serial7>	
+	<visualGame>nkae wosi enyim</visualGame>	
+	<temporalOrder>nkae wosi enyim tsenenee</temporalOrder>	
+	<digitFWrd>afir saafee mbuei</digitFWrd>	
+	<digitBckWrd>afir saafee mbui tsenenee</digitBckWrd>	
+	<catdog>ngyinambowa na mbodom</catdog>	
+	<trailsBTestNew>fa sosɔw do (New)</trailsBTestNew>	
+	<nbackTestNew>mfonyin nhwehwɛe</nbackTestNew>	
+	<trailsBTouch>fa nsa ka</trailsBTouch>	
+	<jwelA>egudzi</jwelA>	
+	<jwelB>egudzi-tsenenee</jwelB>
+	<figCopy>adrɔw</figCopy>
+	<scratchCard>card da wo kyerew do</scratchCard>
+	<memoryGame>nkae agor</memoryGame>
+	<attentionGame>agor ɔtwe ohia hɛn adwen</attentionGame>
+	
+	<scratchLbl>ayɛkrado dɛ ebɛgye wo ahom?</scratchLbl> 
+	<scratchLbl2>Twr3 do ma ompuei!</scratchLbl2>
+	<scoreBrainLbl>enyan wo adwen mu ntsin</scoreBrainLbl>
+	<checkinLbl>ahɛn mu</checkinLbl>
+	<braingameLbl>adwen agor</braingameLbl>
+
+
+	<dogBox>bɔ adakaba yi a bɔdɔm ekyir yi do</dogBox>	
+	<selectThe>Fa ndakaba</selectThe>
+	<imgCatBox>a wɔwɔ ngyinambowa hɔn mfonyin no</imgCatBox>	
+	<imgDogBox>a wɔwɔ mbɔdɔm hɔn mfonyin no.</imgDogBox>
+	<continueDogBox>Kɔ do fa wo nsa bɔ ndakaba a mbɔdɔm wɔ ekyir no do, mma mmfa wo nsa nnka dze a ɔwɔ ngyinambowa mfonyin wɔ ekyir no.</continueDogBox>
+	<continueCatBox>Afei fa wo nsa bɔ ndakaba a ngyinambowa wɔ ekyir no do, mma mmfa wo nsa nnka ndakakba a mbɔdɔm wɔ ekyir no.</continueCatBox>	
+	
+	
+	<soundalert>Buei dze a osi oenyim no ma kasa mbra</soundalert>	
+	<audioalert>Dzie dze a ɔrobɔ no yie</audioalert>
+	<digitalert>Fa 'digits' no gu mu</digitalert>
+	<digitReversealert>'Digits' no hyɛ ase wɔ ewiei kɔ ahyɛse</digitReversealert>	
+	
+	<tempAlert1>bɔ bea mfonyi nnyi yi</tempAlert1>
+	<tempAlert2>Kae ahyɛnsew a wɔdze akyerɛ wo no</tempAlert2>
+	<tempAlert3>kae adze ebien wɔ mfonyin no nyinara mu</tempAlert3>
+	<tempAlert4>bɔ mfonyin a ehu no do</tempAlert4>
+	<tempAlert5>Kae adze a ereyɛ, beebi a ɔwɔ na ne nhyehyɛe</tempAlert5>
+	<tempAlert6>me pa wo kyew twɛn na hw3</tempAlert6>
+	<tempAlert7>me wo kyew kae dza odzidzi do yi</tempAlert7>
+	
+	
+	
+	<articleLbl>Adzesua Ahorow Ho Nsɛm a wɔakyerɛw</articleLbl>	
+	<tipLbl>Afoto</tipLbl>
+	<profileLbl>Wo ho nsɛm</profileLbl>
+	<appUse>Adze a edze dze a esua no bɛyɛ</appUse>
+	<reprtLbl>Dwuma a edzi no ho pɔwbɔ</reprtLbl>
+	
+	
+	<tapfirstImg>Fa wo ns aka asɛnkyerɛdze a odzi kan</tapfirstImg>
+	<tapNxtImg>Fa wo ns aka asɛnkyerɛdze a ɔtoa do</tapNxtImg>
+	<tapREsBox>Fa wo ns aka adakaba prɛko no</tapREsBox>
+	<pickMatchingalphabet>Fa wo ns aka akyerɛwha a ɔnye adakaba no nam no.</pickMatchingalphabet>
+	
+	<exmLbl>pɔw a Abɔ</exmLbl>
+	<tapNxtNumber>Fa wo nsa si 2 do</tapNxtNumber>
+	<continueTap>sɔw do wo nsa sisi ‘numbers’ no do</continueTap>
+	<wrongTapLbl>Etsi</wrongTapLbl>
+	
+	<nbackLvl>amba nhwehwɛe nsɔhwɛ</nbackLvl>
+	<nbackNewLvl>mfonyin nhwehwɛe nsɔhwɛ</nbackNewLvl>
+	<oneBackTest>1-back nsɔhwɛ (1-back test)</oneBackTest>
+	<twoBackTest>2-back nsɔhwɛ</twoBackTest>
+	<treeBackTest>3-back nsɔhwɛ</treeBackTest>
+	
+	<pickdimnd>Fa 'Diamond' </pickdimnd>
+	<continueLbl>toado</continueLbl>
+	<exitLbl>fir ha</exitLbl>
+	
+	<resultLbL>Dze a ebɔ no pɔw</resultLbL>
+	<pointLbl>Apɔw a abɔ</pointLbl>
+	<scoregrapgLbl>Krakaa a ɔkyerɛ dze a enya (score Graph)</scoregrapgLbl>
+	<envLbl>Adze a etwa hɛn ho ehyia no ho adze a yesua</envLbl>
+	<cogscore>adwen agor, dza ennya</cogscore>
+	
+	<pointnextLvl>Kwan a ebɛfa do etu wo anan</pointnextLvl>
+	<maxLbl>Woana apem koraa</maxLbl>
+	<gameNameLbl>agor ne dzin</gameNameLbl>
+	
+	<learnLbl>sua</learnLbl>
+	<accessLbl>bubu</accessLbl>
+	<manageLbl>susu</manageLbl>
+	<prevntLbl>bɔ ho ban</prevntLbl>
+	
+	<instructionLbl>Dze a yɛ</instructionLbl>
+	<instructionsubmit>yɛ nnhyɛ as</instructionsubmit>
+	
+	<preventcontent>mindLAMP kwan no botae nye dɛ ɔnnkɛma obi enya adwen yarba, anaaso obi a wɔasa no yar, ne yarba no nnkɛsan aba. Adwen mu yarba nhweɛ no botae nye dɛ mindLAMP na dza okeka ho bɛna yarba no ho nyimdzee ayɛ kɛse. Hɛn enyidado nye dɛ adwen yarba no, wɔbɔbɔ ho ban no woesiw ano kwan.</preventcontent>
+
+	<manageContent>ber biara ma  nyia a onyim nhwɛ wo adwen ne yie yɛ do mindLAMP no wɔdze boaboa nsɛm a obotum aboa ma waahyɛ ma wo adwen atse ap)w. )yɛ adze a w)dze botum ahyɛ adwen ho ɔyarsanyi ne edwuama anan mu ɔnnkɛkyɛ pii na mindLAMP akyerɛ kwan a obiara boyum afa do ayɛ adwen ap)wmudzen ho edwuma akwan a wɔfa do boa adwen ma ɔtse apɔw, etsipɛn fo ekuw ne ntsetse wee kwan a wobotum aboa ankorrankor ma hɔn ara etum ahwɛ hɔn adwen mu yarba do</manageContent>
+	
+	
+	<copyrightLbl>Copyright BIDMC © 2019. All rights reserved.</copyrightLbl>
+	
+	
+	<SchoolLbl>skuul / gyinapɛn</SchoolLbl>
+	<wrkLbl>edwuma</wrkLbl>
+	<clicnicLbl>asopitsi</clicnicLbl>
+	<outsideLbl>abow ano</outsideLbl>
+	<shopingLbl>eguadzi / edzidzi bea</shopingLbl>
+	<trainLbl>bɔɔs / keteke / lorry</trainLbl>
+	<aloneLbl>ankotsee</aloneLbl>
+	<friendsLbl>nnye anyɛnkofo</friendsLbl>
+	<incrowdLbl>wɔ dɔ mu</incrowdLbl>
+	<withPeersLbl>nnye mfɛfo</withPeersLbl>
+	<whowithLbl>nnye wana woho</whowithLbl>
+	<submitLbl>ma nko</submitLbl>
+	<homeLbl>efie</homeLbl>
+	<familyLbl>nnye ebusua</familyLbl>
+	
+	<beginerLbl>ahyɛse nnyi</beginerLbl>
+	<expertLbl>nyim paa</expertLbl>
+	<intermediateLbl>nyim kakra</intermediateLbl>
+	<advancedLbl>akɔ ekyir</advancedLbl>
+	<difficultyLbl>ɔyɛ dzen</difficultyLbl>
+	
+	<emailNotconfigred>email na device nntom nnye adwuma mbom</emailNotconfigred>
+	
+	<cancelLbl>twa mu</cancelLbl>
+	<deleteLbl>pepa</deleteLbl>
+	<selectcognitionLbl>fa adwen agor</selectcognitionLbl>
+	<contactnumberLbl>24/7 CONTACT NUMBER</contactnumberLbl>
+	<personalHelpLine>nyimpa obotum aboa wo</personalHelpLine>
+	<protocolLbl>nhyehywɛ ohia</protocolLbl>
+	<signoutLbl>fir edze</signoutLbl>
+	<notAvailableLbl>Innyim</notAvailableLbl>
+	<selectTimeLbl>fa mbir</selectTimeLbl>
+	<repeatInterval>kwan a damu si do</repeatInterval>
+	<selectsurveytitle>fa check-in</selectsurveytitle>
+	
+	<totalScoreLbl>dza ennya</totalScoreLbl>
+	<totalScoreCapsLbl>wodzi ne nyinara bomu a</totalScoreCapsLbl>
+	<drawfigLbl>drɔw adze</drawfigLbl>
+	<secLbl>ka</secLbl>
+	<hintLbl>dza ɔboa</hintLbl>
+	<levelLbl>bea edu</levelLbl>
+	<lastnumberLbl>number odzi ekyir</lastnumberLbl>
+	<finishLbl>Woewie</finishLbl>
+	<nxtLbl>dza odzi do</nxtLbl>
+	<answeredLbl>nnyiano</answeredLbl>
+	<goLbl>kɔ</goLbl>
+	<backLbl>Ekyir (Back)</backLbl>
+	<jwelcollectedLbl>jewels ennya</jwelcollectedLbl>
+	<totalbonusLbl>bonus dodow</totalbonusLbl>
+	<okLbl>oyie</okLbl>
+	
+	<lastmnthLbl>bosom otwa tow</lastmnthLbl>
+	<lastweekLbl>ndɛ dapɛn</lastweekLbl>
+	<languageSelect>fa kasa</languageSelect>
+	<languageCapsSelect>fa kasa</languageCapsSelect>
+	
+	<repeatLbl>yɛ biom</repeatLbl>
+	<selectSurveyLbl>FA CHECK-IN</selectSurveyLbl>
+	<selectTimeLbl>fa mbir</selectTimeLbl>
+	<slottinmeLbl>ber a wodzi be hye mu</slottinmeLbl>
+	<repeatInterval>kwan a damu si do</repeatInterval>
+	<avgScoreLbl>Average score</avgScoreLbl>
+	<scoreLbl>amba enya</scoreLbl>
+	<bonusLbl>dza wodzi akyɛ wo</bonusLbl>
+	<healthDataTitle>nsɛm a ɔfa wo apɔumudzen ho</healthDataTitle>
+	
+	<scoreCardLbl>amba krataa</scoreCardLbl>
+	<closeLbl>tow mu</closeLbl>
+	<pointEarnedLbl>amba dodow enya</pointEarnedLbl>
+	<timetakenLbl>mber edzi</timetakenLbl>
+	
+	
+	
+	<term1>Me ntseasee wɔ mindLAMP ho nye dɛ, ɔnnka dɛ ɔbɛsa me yare, ɔbɔhwɛ me yar no do, anaa dɛ obesiw yar no ano.</term1>
+	<term2>Me ntseasee nye dɛ obiara nnyi hɔ a, ɔdze n’enyiwa dzi dɛm mindLAMP dwumadzi yi ekyir, dɛm ntsi sɛ mɛka dɛ mihia mboa mpo a…………</term2>
+	<term3>mindLAMP bɔboa wo ho nsɛm anon a wɔahwɛ mbrɛ misii dze no yɛɛ edwuma</term3>
+	<term4>mindLAMP bɔboa wo ho nsɛm anon a wɔahwɛ mbrɛ misii dze no yɛɛ edwuma Biribiara a mindLAMP bɛka afa mo ho no befir me nyiyiano a memae wɔ nsɛm a wobisaa me n adze a wohunii wɔrohwɛ me no. Sɛ migyae mindLAMP dwumadzi a, mindLAMP bɔkɔ do ara etsietse mo ho nsɛm, ahwehwɛ m’ekyir kwan na ɔahwehɛ m’abrabɔ mu.</term4>
+
+	<consentLbl>Pen do</consentLbl>
+	<consentNote>Kenkan dze a ɔsɔw do yi, epen a fa wo ns aka 'Agree'</consentNote>
+	<agree>Mepen</agree>
+	<disagree>Memmpen</disagree>
+	
+	<iamLbl>emi</iamLbl>
+	<atLbl>bea mo wɔ</atLbl>
+	<inLbl>mowo</inLbl>
+	
+	<morningLbl>Anapa</morningLbl>
+	<noonLbl>Ewiabir</noonLbl>
+	<eveningLbl>Ewimbir</eveningLbl>
+	
+	<threeHrLbl>Dɔnhwer Ebiasa Biara</threeHrLbl>
+	<sixHrLbl>Dɔnhwer Esia Biara</sixHrLbl>
+	<twelveLbl>Dɔnhwer Duebien Biara</twelveLbl>
+	
+	<dailLbl>Da biara (Dwowoda, Wukuda, Fida, etc)</dailLbl>
+	<biweekLbl>Nda ebien, ebien, (Dwowda, Wukuda, Fida, etc)</biweekLbl>
+	<triWeekLbl>Mpɛn ebien dabɛn biara.</triWeekLbl>
+	<weeklyLbl>Dapɛn, dapɛn.</weeklyLbl>
+	<monthlyLbl>Mbɛn ebien bosom biara</monthlyLbl>
+	<bimonthlyLbl>Bosom, bosom.</bimonthlyLbl>
+	
+	<heartLbl>Mbrɛ wo akoma si tow</heartLbl>
+	<stepLbl>Wo anan ntutui</stepLbl>
+	<sleepLbl>Wo nda</sleepLbl>
+	<BpLbl>Wo 'Blood Pressure'</BpLbl>
+	<respiratoryLbl>Mbrɛ wo ahomgye tse</respiratoryLbl>
+	<flightLbl>Atwer a efowee</flightLbl>
+	<segmnetLbl>Nkyɛm</segmnetLbl>
+	<heightLbl>Wo tsentsen</heightLbl>
+	<distanceLbl>Akwantsen a itwae</distanceLbl>
+	<wieghtLbl>Wo mu dur</wieghtLbl>
+	
+	<maleLbl>Banyin</maleLbl>
+	<femaleLbl>Ɔbaa</femaleLbl>
+	<otherLbl>Obi bio</otherLbl>
+	<notSetLbl>Wobesi no pi</notSetLbl>
+	<dobLbl>DOB</dobLbl>
+	<bloodtypeLbl>bogya ahorow</bloodtypeLbl>
+	<sexLbl>obaa anee bayin</sexLbl>
+	
+	
+	
+	<agreeTermLbl>Me mpendo.</agreeTermLbl>
+	<surveyPointLbl>be a nhwehywe mu pemee</surveyPointLbl>
+	<oneBiginLbl>fa wo nsa si kor do hya ase</oneBiginLbl>
+	<reminderLbl>nkae</reminderLbl>
+	<suggestionLbl>nso</suggestionLbl>
+	
+	<nwLbl>seiseiara</nwLbl>
+	<tapLbl>fa wo nsa si do</tapLbl>
+	
+	<severaltimesLbl>Mpɛn Pii</severaltimesLbl>
+	<notatallLbl>Dabi, me mmpen</notatallLbl>
+	<moreHalfTimeLbl>Mber ne fa no mboree.</moreHalfTimeLbl>
+	<nearlyalltimeLbl>Aber Biara</nearlyalltimeLbl>
+	
+	<sundayLbl>Kwesida</sundayLbl>
+	<monLbl>Dwowda</monLbl>
+	<tueLbl>Benada</tueLbl>
+	<wedLbl>Wukuda</wedLbl>
+	<thuLbl>Yawda</thuLbl>
+	<friLbl>Fida</friLbl>
+	<satLbl>Memenda</satLbl>
+	
+	<janLbl>Sanda</janLbl>
+	<febLbl>Kwakwa</febLbl>
+	<marLbl>Ebɔw</marLbl>
+	<aprLbl>Ebɔbira</aprLbl>
+	<mayLbl>Esusowaketseaba</mayLbl>
+	<junLbl>Ɔberɛdzi</junLbl>
+	<julLbl>Ayɛhowo</julLbl>
+	<augLbl>Dzifuu</augLbl>
+	<sepLbl>Dzifuu</sepLbl>
+	<octLbl>Ob3s3</octLbl>
+	<novLbl>Obraf3w</novLbl>
+	<decLbl>Mumu</decLbl>
+	<weekLbl>Adap3n</weekLbl>
+	<maybeLbl>Bi a na</maybeLbl>
+	<validLbl>Odzi mu</validLbl>
+	<yearLbl>Mfe</yearLbl>
+	<mnthLbl>Abosom</mnthLbl>
+	<dayLbl>Nda</dayLbl>
+	
+	
+	<highScoreLbl>amba kese enya</highScoreLbl>
+	<lowscoreLbl>amba kakraba enya</lowscoreLbl>
+	<daystreakLbl>nda twamu</daystreakLbl>
+	<boostScoreLbl>boa me</boostScoreLbl>
+	<boostLampScoreLbl>amba mindLAMP enya</boostLampScoreLbl>
+	<todayLbl>ndae</todayLbl>
+	<streakspinLbl>tow twamu</streakspinLbl>
+	<todaySpinLbl>ndae tow</todaySpinLbl>
+	<seemoreLbl>hwe amba inya eka ho</seemoreLbl>
+	<spinwinLbl>tow dzi kunyim</spinwinLbl>
+	<wonLbl>edzi nkoyim</wonLbl>
+	<starLbl>nworaba</starLbl>
+	<continueCapsLbl>toa do</continueCapsLbl>
+	<tryagainLbl>yɛ biom</tryagainLbl>
+	<badlickLbl>tsir a annye yie</badlickLbl>
+	
+	<youravgLbl>wo average</youravgLbl>
+	<totalavgLbl>eka ne yenara bom a ne average</totalavgLbl>
+	
+	<yourScoreLbl>amba enya</yourScoreLbl>
+	<weeklyScoreLbl>amba a inya wo dapem mu</weeklyScoreLbl>
+	
+	<gameSuccess>awie akor ye</gameSuccess>
+	<spinWheelLabel>aba a wo tow</spinWheelLabel>
+	<surveyResponse>wodzi wo nyiano no kor</surveyResponse>
+	<series7inst>ye essoun fir dzea nyea no mu na fa kor</series7inst>
+	<instVideo>INSTRUCTION VIDEO</instVideo>
+	<surveyTextArea>Type answer here...</surveyTextArea>
+	<textAreaValidation>Enter answer.</textAreaValidation>
+	
+	<nbackShortInst1>1-back test: select whether or not the letter is the same as the one before it.</nbackShortInst1>
+	<nbackShortInst2>2-back test: select whether or not the letter is the same as the one two before it.</nbackShortInst2>
+	<nbackShortInst3>3-back test: select whether or not the letter is the same as the one three before it.</nbackShortInst3>
+	<SPFShortInst>Watch the boxes light up on the screen. Then, copy the pattern by tapping the boxes in the same order.</SPFShortInst>
+	<SPBShortInst>Watch the boxes light up on the screen. Then, copy the pattern backwards by tapping the boxes in the reverse order.</SPBShortInst>
+	<SimpleMemShortInst>You will see 5 images appear one after another. Then, a pair of images will appear. One of them is new and the other is one of the original 5 images. Select which image is from the original 5 shown.</SimpleMemShortInst>
+	<serial7ShortInst>Subtract 7 from the number shown on the screen and enter that number. Then subtract 7 from the number you entered. Repeat until the game is over.</serial7ShortInst>
+	<visualShortInst>You will be shown several images. Then, you will be shown all of the images again but with an object missing from the image. Select the missing object from the choices.</visualShortInst>
+	<DSFShortInst>Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the same order.</DSFShortInst>
+	<DSBShortInst>Please turn your volume on. The app will say numbers out loud. Once all of the numbers have been read, enter the numbers in the reverse order they were read.</DSBShortInst>
+	<catsnDogsShortInst>Several boxes will appear on the screen. They will briefly show whether or not they have a cat, dog, or nothing behind them. Follow the instructions for the round and select the boxes that are asked for.</catsnDogsShortInst>
+	<tempShortInst>A 3x3 grid will be shown. Three images will be shown one after another, each in different box in the grid. Remember the image, location, and order of the images. Then, select the first item and corresponding box, followed by the second, and third.</tempShortInst>
+	<nbackNewShortInst1>1-back test: select whether or not the picture is the same as the one before it.</nbackNewShortInst1>
+	<nbackNewShortInst2>2-back test: select whether or not the picture is the same as the one two before it.</nbackNewShortInst2>
+	<nbackNewShortInst3>3-back test: select whether or not the picture is the same as the one three before it.</nbackNewShortInst3>
+	<trialsbNewShortInst>Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</trialsbNewShortInst>
+	<trialsBTouchShortInst>Tap the dots in order, alternating numbers and letters, starting with the number 1. For example, tap 1, then A, then 2, then B, and so on.</trialsBTouchShortInst>
+	<jewelsAShortInst>Tap the jewels in chronological order, starting with number 1.</jewelsAShortInst>
+	<jewelsBShortInst>Look at the bottom of the screen to see which jewel to collect first. Collect number 1 of that shape, and then number 1 of the second shape. Continue alternating the jewel pattern in chronological order until all of the jewels have been collected.</jewelsBShortInst>
+	<trialsBTestShortInst>Draw a line from dot to dot, alternating numbers and letters in order, starting with the number 1. For example, connect 1 to A, A to 2, 2 to B, B to 3, and so on.</trialsBTestShortInst>
+	<figCopyShortInst>An image will appear on the screen for 5 seconds. Remember the image. Then, copy the image onto the blank screen with your finger.</figCopyShortInst>
+
+</resources>

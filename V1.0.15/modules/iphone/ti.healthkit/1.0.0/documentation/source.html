@@ -1,0 +1,8 @@
+<h1>Ti.Healthkit.Source</h1>
+<h2>Description</h2>
+<p>Source objects represents the different data sources in HealthKit. These sources may include apps and devices whose data can be directly imported into the HealthKit store. Currently, HealthKit supports only the direct import of heart rate data from Bluetooth LE devices. All other devices need a companion app to collect and save the data to HealthKit.</p>
+<h2>Properties</h2>
+<h3>bundleIdentifier : String</h3>
+<p>For apps, this property holds the app's bundle identifier. For supported Bluetooth LE devices, this property holds a UUID for the device.</p>
+<h3>name : String</h3>
+<p>For apps, this property holds a localized name for the app. For supported Bluetooth LE devices, this property holds whatever string the device reports as its name. </p>

@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id='win' title='Add Quantity Sample'>
+		<ScrollView layout='vertical'>
+			<View class='inputParent'>
+				<Label text='Body weight:' class='inputLabel' />
+				<TextField id='bodyWeightInput' class='inputField' />
+				<Button id='bodyWeightSetButton' class='inputButton' onClick='onInputButtonClick' />
+			</View>
+			<View class='inputParent'>
+				<Label text='Height:' class='inputLabel' />
+				<TextField id='heightInput' class='inputField' />
+				<Button id='heightSetButton' class='inputButton' onClick='onInputButtonClick' />
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

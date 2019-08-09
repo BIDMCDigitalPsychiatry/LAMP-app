@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="jeweltrailsAExample" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Example"></Require>
+		</View>
+		<View id="contentView" >
+			<View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" bottom="20dp" backgroundColor="white" layout="horizontal">
+				<Label id="messageLabel" text="Pick diamond : " ></Label>
+				<View id="smallImageView" left="10dp" right="10dp">
+					<ImageView id="instructionImage" ></ImageView>
+					<Label id="messageLabel1" text="1"></Label>
+				</View>
+
+			</View>
+			<View id="messageView2" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" visible="false"  bottom="20dp" backgroundColor="white">
+			<Label id="messageLabel2" text="" visible="false" ></Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

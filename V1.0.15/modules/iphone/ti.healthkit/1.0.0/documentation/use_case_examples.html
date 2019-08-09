@@ -1,0 +1,286 @@
+<h1>Ti.Healthkit Module Use Case Examples</h1>
+<p>Throughout these examples we assume that the app loads the Ti.Healthkit Module
+into the <code>TiHealthkit</code> variable like so:</p>
+<pre><code>TiHealthkit = require('ti.healthkit');
+</code></pre>
+<p><strong>NOTE</strong>: These examples may not show complete code that can be exacuted as is.
+Please see the example app in the <code>example</code> folder for complete, runnable code.
+The example app also includes the <code>Entitlements.plist</code> file, which is a
+prerequisite to using any HealthKit related functionality.</p>
+<h2>Verifying the Availability of Health Data</h2>
+<p>Health data is not available on every iOS device. Before attempting to use
+any HealthKit related functionality, verify that the app is running on a device
+where health data is available:</p>
+<pre><code>if (TiHealthkit.isHealthDataAvailable === false) {
+    alert('Health data is not available on this device!');
+}
+</code></pre>
+<h2>Requesting Authorization</h2>
+<p>The primary function of HealthKit is to act as a data store. Due to the
+sensitive nature of the data, the app will need to request authorization
+before it can read/write data from/into the data store. This authorization
+must be requested separately for each data type the app is interested in, and
+it must be requested separately for reading and sharing (writing).</p>
+<p>The following code requests read authorization for height, weight and heart
+rate measurements, and share (write) authorization for heart rate measurements.</p>
+<pre><code>var typesToRead = [
+    TiHealthkit.OBJECT_TYPE_HEIGHT,
+    TiHealthkit.OBJECT_TYPE_BODY_MASS,
+    TiHealthkit.OBJECT_TYPE_HEART_RATE
+];
+var typesToShare = [
+    TiHealthkit.OBJECT_TYPE_HEART_RATE
+];
+TiHealthkit.requestAuthorization({
+    typesToRead: typesToRead,
+    typesToShare: typesToShare,
+    onCompletion: function(e) {
+        if (e.success) {
+            // The user completed the authorization process. Does not
+            // mean that the authorization request was actually granted!
+        } else {
+            // The user cancelled the authorization prompt.
+        }
+    }
+});
+</code></pre>
+<h2>Verifying Authorization Status</h2>
+<p>The <code>onCompletion</code> callback of the <code>requestAuthorization</code> function (see above)
+only tells reports whether the user completed the authorization process, not
+whether the authorization request was actually granted.</p>
+<p>The following code can be used to determine the authorization status of the app
+for heart rate measurements:</p>
+<pre><code>switch (TiHealthkit.getAuthorizationStatusForType(TiHealthkit.OBJECT_TYPE_HEART_RATE)) {
+    case TiHealthkit.AUTH_STATUS_SHARING_AUTHORIZED:
+        // The user granted the app's request to share heart rate measurements.
+        break;
+    case TiHealthkit.AUTH_STATUS_SHARING_DENIED:
+        // The user denied the app's request to share heart rate measurements.
+        break;
+    case TiHealthkit.AUTH_STATUS_SHARING_NOT_DETERMINED:
+        // The user has't yet granted the app's request to share heart rate measurements but hasn't denied it either.
+}
+</code></pre>
+<p>Use the other <code>OBJECT_TYPE_*</code> constants to determine the authorization status
+of the app for other type of measurements.</p>
+<p><strong>Note</strong> that it is not possible to determine whether the app has read access
+to a particular type of data in the HealthKit store. This is an intentional
+limitation enforced by the native API to ensure confidentiality of sensitive
+information -- the apps will not be able to distinguish between missing data
+and the user denying read access.</p>
+<h2>Accessing the User's Date of Birth, Gender, and Blood Type</h2>
+<p>Most of the data in the HealthKit data store can be accessed by executing
+queries. The user's birth date, gender, and blood type are exceptions -- these
+data can be accessed using dedicated properties on the module object:</p>
+<pre><code>var dob = TiHealthkit.userDateOfBirth;
+var gender = TiHealthkit.userBiologicalSex;
+var bloodType = TiHealthkit.userBloodType;
+</code></pre>
+<h2>Creating and Interpreting Quantities</h2>
+<p>A quantity is a numerical value combined with a unit of measurement, such as
+"2 miles", "100 calories", or "25 grams". Most of the entries in the HealthKit
+data store will have one or more quantities associated with them. For example,
+a workout entry might have a "distance" quantity associated with it, and a food
+entry might have a "protein content" quantity.</p>
+<p>The following code creates a quantity that represents 2 miles:</p>
+<pre><code>var twoMiles = TiHealthkit.createQuantity(2, TiHealthkit.createUnit('mi'));
+</code></pre>
+<p>The <code>twoMiles</code> variable is now a <a href="quantity.html">Ti.Healthkit.Quantity</a> object.</p>
+<p>See the <a href="https://developer.apple.com/library/prerelease/ios/documentation/HealthKit/Reference/HKUnit_Class/index.html#//apple_ref/occ/clm/HKUnit/unitFromString:">native documentation</a> for the rules of creating
+a valid unit string that can be used with the <code>createUnit</code> function.</p>
+<p>After it's created, the quantity object is <em>not</em> tied to a single unit -- its
+value can be retrieved in any compatible unit. For example, the value of the
+above created <code>twoMiles</code> quantity can be retrieved in feet or kilometers because
+miles, feet, and kilometers are all units for length measurement:</p>
+<pre><code>var twoMilesInFeet = twoMiles.valueForUnit(TiHealthkit.createUnit('ft'));
+var twoMilesInKilometers = twoMiles.valueForUnit(TiHealthkit.createUnit('km'));
+</code></pre>
+<p>The <code>twoMilesInFeet</code> and <code>twoMilesInKilometers</code> variables are floating point
+numbers.</p>
+<h2>Adding Weight and Height Measurements to the Data Store</h2>
+<p>One of the basic pieces of data an app can store in the HealthKit data store
+is the user's weight and height:</p>
+<pre><code>var timestamp = new Date();
+
+var poundUnit = TiHealthkit.createUnit('lb');
+var weightQuantity = TiHealthkit.createQuantity(200, poundUnit);
+var weightSample = TiHealthkit.createQuantitySample({
+    type: TiHealthkit.OBJECT_TYPE_BODY_MASS,
+    quantity: weightQuantity,
+    startDate: timestamp,
+    endDate: timestamp
+});
+
+var feetUnit = TiHealthkit.createUnit('ft');
+var heightQuantity = TiHealthkit.createQuantity(6, feetUnit);
+var heightSample = TiHealthkit.createQuantitySample({
+    type: TiHealthkit.OBJECT_TYPE_HEIGHT,
+    quantity: heightQuantity,
+    startDate: timestamp,
+    endDate: timestamp
+});
+
+TiHealthkit.saveObjects({
+    objects: [ weightSample, heightSample ],
+    onCompletion: function(e) {
+        if (e.success) {
+            // Weight sample was added.
+        } else {
+            // Weight sample was not added -- missing authorization?
+        }
+    }
+});
+</code></pre>
+<p>Other quantity samples such as body fat percentage, lean body mass,
+or heart rate can be stored in similar manner by creating the appropriate
+quantity and quantity sample objects using the corresponding units and type
+constants.</p>
+<h2>Retrieving Weight Measurements from the Data Store</h2>
+<p>To retrieve weight measurements (or most other types of data) from the
+data store, you create and execute a query:</p>
+<pre><code>var query = TiHealthkit.createObjectQuery({
+                type: TiHealthkit.OBJECT_TYPE_BODY_MASS,
+                onCompletion: function(e) {
+                    // The retrieved objects are in the e.results array.
+                }
+            });
+TiHealthkit.executeQuery(query);
+</code></pre>
+<h2>Retrieving Height Measurements created by Your App</h2>
+<p>You can limit the objects returned by a query to those that meet certain
+critaria by adding a filter to the query. For example, to retrieve only those
+height measurements that were added by your app, you first create a source
+filter, attach it to the query, and then execute the query:</p>
+<pre><code>var sourceFilter = TiHealthkit.createFilterForObjects({
+                sources: [ TiHealthkit.defaultSource ]
+            });
+var query = TiHealthkit.createObjectQuery({
+                type: TiHealthkit.OBJECT_TYPE_HEIGHT,
+                filter: sourceFilter,
+                onCompletion: function(e) {
+                    // The retrieved objects are in the e.results array.
+                }
+            });
+TiHealthkit.executeQuery(query);
+</code></pre>
+<p>The <code>TiHealthkit.defaultSource</code> property contains the <code>Ti.Healthkit.Source</code>
+object that corresponds to your app.</p>
+<h2>Adding a Workout Entry to the Data Store</h2>
+<p>HealthKit uses workouts to track a wide range of activities. The following
+example adds a workout entry for a running session that lasted for 30 minutes,
+covered a distance of 4 miles, and burned 350 (kilo)calories:</p>
+<pre><code>var energyBurned = TiHealthkit.createQuantity(350,  TiHealthkit.createUnit('kcal'));
+var distanceCovered = TiHealthkit.createQuantity(4, TiHealthkit.createUnit('mi'));
+var workout = TiHealthkit.createWorkout({
+    type: TiHealthkit.WORKOUT_ACTIVITY_TYPE_RUNNING,
+    startDate: new Date(2015, 06, 15, 16, 25),
+    endDate: new Date(2015, 06, 15, 16, 55),
+    duration: 1800,
+    totalDistance: distanceCovered,
+    totalEnergyBurned: energyBurned
+});
+TiHealthkit.saveObjects({
+    objects: [ workout ],
+    onCompletion: function(e) {
+        // e.success will be True if the workout was added.
+    }
+});
+</code></pre>
+<p>Use the other <code>WORKOUT_ACTIVITY_TYPE_*</code> constants to create workout entries for
+activities other than running.</p>
+<h2>Creating a Correlation to Capture Blood Pressure Data</h2>
+<p>Correlations are used to group multiple samples together. For example, all the
+samples describing the nutrition content (fat, protein, sugar, vitamins, etc) of
+a meal can be grouped into a correlation. The following example creates a
+correlation object that groups together the systolic and diastolic values
+of a blood pressure measurement:</p>
+<pre><code>var timestamp = new Date();
+var mmHg = TiHealthkit.createUnit('mmHg');
+
+var systolic = TiHealthkit.createQuantitySample({
+    type: TiHealthkit.OBJECT_TYPE_BLOOD_PRESSURE_SYSTOLIC,
+    quantity: TiHealthkit.createQuantity(118, mmHg),
+    startDate: timestamp,
+    endDate: timestamp
+});
+var diastolic = TiHealthkit.createQuantitySample({
+    type: TiHealthkit.OBJECT_TYPE_BLOOD_PRESSURE_DIASTOLIC,
+    quantity: TiHealthkit.createQuantity(76, mmHg),
+    startDate: timestamp,
+    endDate: timestamp
+});
+var correlation = TiHealthkit.createCorrelation({
+    type: TiHealthkit.OBJECT_TYPE_CORRELATION_BLOOD_PRESSURE,
+    startDate: timestamp,
+    endDate: timestamp,
+    objects: [ systolic, diastolic ]
+});
+
+TiHealthkit.saveObjects({
+    objects: [ correlation ],
+    onCompletion: function(e) {
+        // e.success will be True if the correlation was added.
+    }
+});
+</code></pre>
+<h2>Retrieving Correlation Entries Indicating High Blood Pressure</h2>
+<p>Use a correlation query with a sample filter to retrieve correlations that
+contain a sample that meets certain criteria. For example, the following code
+retrieves those correlations that include a systolic blood pressure sample, and
+only if that sample has a quantity higher than 120mmHg:</p>
+<pre><code>var mmHg = TiHealthkit.createUnit('mmHg');
+
+var sampleFilters = {};
+sampleFilters[TiHealthkit.OBJECT_TYPE_BLOOD_PRESSURE_SYSTOLIC] =
+                TiHealthkit.createFilterForQuantitySamples({
+                    operator: TiHealthkit.FILTER_OPERATOR_GREATER_THAN,
+                    quantity: TiHealthkit.createQuantity(120, mmHg)
+                });
+
+var query = TiHealthkit.createCorrelationQuery({
+    type: TiHealthkit.OBJECT_TYPE_CORRELATION_BLOOD_PRESSURE,
+    sampleFilters: sampleFilters,
+    onCompletion: function(e) {
+        // The retrieved objects are in the e.results array.
+    }
+});
+TiHealthkit.executeQuery(query);
+</code></pre>
+<h2>Deleting Entries from the Data Store</h2>
+<p>The <code>TiHealthkit.deleteObject</code> function can be used to delete entries from
+the HealthKit data store:</p>
+<pre><code>TiHealthkit.deleteObject({
+    object: healthKitObject,
+    onCompletion: function(e) {
+        // e.success will be True if the correlation was successfully deleted.
+    }
+});
+</code></pre>
+<p>Note that an app can only delete those entries that it created, not the entries
+created by other apps. Also, the user may revoke the sharing permission after
+an app created an entry in the data store, in which case the app will not be
+able to delete even its own entries.</p>
+<h2>Retrieving New Data Store Entries As They Are Created</h2>
+<p>Observer queries can run in the background and notify the app when an entry
+matching certain criteria is added or removed from the data store. An anchored
+query can be used to retrieve only the newly added entries:</p>
+<pre><code>var anchor;
+
+var anchoredQuery = TiHealthkit.createObjectQuery({
+    type: TiHealthkit.OBJECT_TYPE_BODY_FAT_PERCENTAGE,
+    anchor: anchor, // will be undefined during first execution
+    onCompletion: function(e) {
+        anchor = e.anchor; // next execution will start where this one finished
+
+        // e.results contains only the newly added entries
+});
+
+var observerQuery = TiHealthkit.createObserverQuery({
+    type: TiHealthkit.OBJECT_TYPE_BODY_FAT_PERCENTAGE,
+    onUpdate: function(e) {
+        TiHealthkit.executeQuery(anchoredQuery);
+    }
+});
+
+TiHealthkit.executeQuery(observerQuery);
+</code></pre>

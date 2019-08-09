@@ -1,0 +1,150 @@
+"#scoreScreen": {
+	backgroundColor: "#313C4A"
+	//backgroundImage: Alloy.Globals.BACKGROUND_IMAGE
+}
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '50dp'
+}
+"#backView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#backImage": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	touchEnabled: false,
+	image: '/images/common/cancel.png',
+	right: '10dp'
+}
+"#backImage[platform=ios]": {
+	bottom: '10dp'
+}
+"#backImage[platform=ios formFactor=tablet]": {
+	bottom: '15dp'
+}
+
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	top: "10dp"
+}
+
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	top: '60dp',
+	layout: "vertical"
+}
+"#scrollView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	layout: "vertical",
+	top: "60dp",
+	backgroundColor: 'transparent'
+}
+"#upperView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	//height: "25%",
+	top: '5dp'
+}
+"#middleView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.SIZE,
+	//height: "35%",
+	top: '5dp'
+}
+"#lowerView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '5dp'
+}
+"#brainImage":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE
+}
+"#lowScoreView":{
+	width: "30%",
+	height:Titanium.UI.SIZE,
+	layout: "vertical",
+	right: "10dp"
+}
+".titleLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: "#ffffff",
+	font:Alloy.Globals.HeaderFontLight
+}
+"#currentScoreLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: "#ffffff",
+	font:Alloy.Globals.HeaderFontBoldTablet,
+	top: "5dp"
+}
+".scoreLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: "#ffffff",
+	top: "5dp",
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+"#lowScoreLbl":{
+	text: "0"
+}
+"#highTitleLbl":{
+	text: "High Score"
+}
+"#highScoreLbl":{
+	text: "0"
+}
+"#lowTitleLbl":{
+	text: "Low Score"
+}
+"#seperatorView":{
+	width: "1dp",
+	height: "80dp",
+	backgroundColor: "#ffffff",
+	left: "52%"
+}
+"#highScoreView":{
+	width: "30%",
+	height:Titanium.UI.SIZE,
+	layout: "vertical",
+	left: "10dp"
+}
+
+"#brainText":{
+	width:"50%",
+	height:Titanium.UI.SIZE,
+	color: "#ffffff",
+	font:Alloy.Globals.HeaderFontLight,
+	left:"15dp",
+	textAlign:"center",
+	bottom:"15dp"
+}

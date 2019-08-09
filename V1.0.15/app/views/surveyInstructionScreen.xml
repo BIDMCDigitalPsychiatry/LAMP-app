@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="surveyInstructionScreen" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src = "innerHeader" title="Instructions">
+			</Require>
+		</View>
+		<View id="MainView">
+			<Label id="instructionText"></Label>
+		</View>
+		<View id="submitView" onClick="onSubmitClick"> 
+			<Label id="submitLabel">CONTINUE</Label>
+		</View>
+	</Window>
+</Alloy>

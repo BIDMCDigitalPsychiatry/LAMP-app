@@ -1,0 +1,31 @@
+<Alloy>
+	<Window  id="nBackLevel" class="container">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="L('nbackLvl')">
+			</Require>
+		</View>
+		<View id="contentView">
+			<ListView  id="surveyList">
+				<Templates>
+					<ItemTemplate id="lstTemplate" name="surveyListTemplate">
+						<View id="listOuterView" bindId="listOuterView">
+							<View id="gameNameView">
+								<Label id="gameNameLabel" bindId="gameNameLabel">
+								</Label>
+							</View>
+							<View id="startButton" onClick="onStartGame">
+								<Label id="startLabel" bindId="startLabel" touchEnabled="false" text="L('startGameLabel')" >
+								</Label>
+							</View>
+							<!-- <View id="totalScoreView">
+							<Label id="totalScoreLabel" bindId="totalScoreLabel"></Label>
+							</View> -->
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lstSection">
+				</ListSection>
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

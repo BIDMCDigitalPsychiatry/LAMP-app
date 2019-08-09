@@ -1,0 +1,581 @@
+
+"#contentView": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	bottom: '20dp',
+	backgroundColor: "#ffffff"
+	
+}
+"#contentView[formFactor=tablet]": {
+	//bottom: '80dp',
+}
+
+"#contentInnerView":{
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp',
+	bottom: '62dp',
+	backgroundColor: "#ffffff"
+}
+
+"#memoryGameView":{
+	height:"50%",
+	width: Titanium.UI.FILL,
+	backgroundColor:"#E7EAED",
+	layout:"vertical"
+}
+
+"#labelView":{
+	width:Titanium.UI.FILL,
+	height:"50dp",
+	backgroundColor:"#fff"
+}
+
+"#memoryGameLabel":{
+	left:"10dp",
+	textAlign:"center",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.MediumSemiBold14,
+	color: '#546e7a'
+}
+
+"#memoryGameLabel[formFactor=tablet]":{
+	left:"10dp",
+	textAlign:"center",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.LargeSemiBoldQuest,
+	color: '#546e7a'
+}
+
+"#mindGameView":{
+	height:"50%",
+	width: Titanium.UI.FILL,
+	backgroundColor:"#E7EAED",
+	//backgroundColor:"Green",
+	layout:"vertical"
+}
+
+"#mindGameLabel":{
+	left:"10dp",
+	textAlign:"center",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.MediumSemiBold14,
+	color: '#546e7a'
+}
+
+"#mindGameLabel[formFactor=tablet]":{
+	left:"10dp",
+	textAlign:"center",
+	height:Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	font:Alloy.Globals.LargeSemiBoldQuest,
+	color: '#546e7a'
+}
+
+"#footerView": {
+	bottom: '0dp',
+	height: '47dp',
+	width: Titanium.UI.FILL,
+	backgroundColor: '#ffffff',
+	layout: 'horizontal'
+}
+"#footerView[formFactor=tablet]": {
+	height: '80dp'
+}
+"#pendingLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.HeaderFont
+}
+"#completedLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.HeaderFont
+}
+
+"#surveyList": {
+	top: '0dp',
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	canScroll: true,
+	//bottom: '20dp'
+}
+
+"#mindGameList":{
+	height: Titanium.UI.FILL,
+	backgroundColor: 'transparent',
+	backgroundFocusedColor: "transparent",
+	width: Titanium.UI.FILL,
+	left: '0dp',
+	separatorColor: 'transparent',
+	canScroll: true,
+	bottom:"10dp"
+}
+
+"#lstTemplate": {
+	backgroundColor: 'transparent',
+	height: Titanium.UI.SIZE
+}
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+
+"#mindTemplate":{
+	backgroundColor: 'transparent',
+	height: '70dp',
+	top:"10dp",
+}
+
+"#mindTemplate[formFactor=tablet]":{
+	backgroundColor: 'transparent',
+	height: '80dp',
+	top:"10dp",
+}
+
+"#lstTemplate[formFactor=handheld platform=android]": {
+	backgroundColor: 'transparent',
+	height: '100dp',
+	top:"10dp",
+}
+
+"#lstTemplate[formFactor=tablet platform=android]": {
+	backgroundColor: 'transparent',
+	height: '100dp',
+	top:"10dp"
+}
+
+"#mindTemplate[formFactor=handheld platform=android]":{
+	backgroundColor: 'transparent',
+	height: '80dp',
+	top:"10dp",
+}
+
+"#mindTemplate[formFactor=tablet platform=android]":{
+	backgroundColor: 'transparent',
+	height: '100dp',
+	top:"10dp",
+}
+
+"#lstTemplate[platform=ios]": {
+	animation: 'false',
+	//selectionStyle:Ti.UI.iPhone.ListViewCellSelectionStyle.NONE
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+
+"#mindTemplate[platform=ios]": {
+	animation: 'false',
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE
+}
+
+"#mindOuterView": {
+	//backgroundColor: '#E7EAED',
+	width: Ti.UI.FILL,
+	height: Titanium.UI.SIZE
+}
+
+"#mindOuterView[formFactor=tablet]": {
+	height: Titanium.UI.SIZE
+}
+
+"#leftView": {
+	backgroundColor: 'transparent',
+	width: '50%',
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+
+"#rightView": {
+	backgroundColor: 'transparent',
+	width: "49.9%",
+	height: Ti.UI.FILL,
+	left: '50%'
+}
+
+"#mindLeftView": {
+	backgroundColor: 'transparent',
+	width: '50%',
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+
+"#mindRightView": {
+	backgroundColor: 'transparent',
+	width: "49.9%",
+	height: Ti.UI.FILL,
+	left: '50%'
+}
+
+
+"#mindGameViewLeft":{
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	right: '5dp',
+	left: '10dp',
+	top: "10dp"
+}
+
+"#mindGameViewRight":{
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	right: '10dp',
+	left: '5dp',
+	top: "10dp"
+}
+
+"#totalScoreView":{
+	backgroundColor: 'transparent',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	right: '100dp',
+	left: '0dp',
+	bottom: "10%"
+}
+
+"#totalScoreView[formFactor=tablet]":{
+	bottom: "20%"
+}
+
+"#totalScoreLabel":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font:Alloy.Globals.LargeFontLight,
+	left: '10dp'
+}
+"#totalScoreLabel[formFactor=tablet]": {
+	font:Alloy.Globals.LargeFontLightTablet
+}
+"#startButton": {
+	backgroundColor: 'transparent',
+	width: '90dp',
+	height: '28dp',
+	right: '10dp',
+	borderColor: '#90a4ae',
+	borderWidth: '1dp',
+	borderRadius: '13dp'
+}
+"#startButton[formFactor=tablet]": {
+	height: '36dp',
+	borderRadius: '18dp',
+	width: '110dp'
+}
+"#startLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	font:Alloy.Globals.SmallFontSemi
+}
+"#startLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumSemiBold
+}
+".footerTabView": {
+	width: '25%',
+	//	top: '5dp',
+	height: Ti.UI.FILL,
+	left: '0dp'
+}
+".footerTabImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	touchEnabled: false
+}
+".footerTabLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#90a4ae',
+	touchEnabled: false,
+	font:Alloy.Globals.ExtraSmallFontLight
+}
+".footerTabLabel[formFactor=tablet]": {
+	font:Alloy.Globals.MediumLargeFontLight
+}
+"#footerDivider": {
+	width: Ti.UI.FILL,
+	height: '1dp',
+	color: '#90a4ae',
+	bottom: '47dp'
+}
+"#cognitionImage": {
+	image:Alloy.Globals.COGINITION_ACTIVE
+}
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: '#50545d',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '2dp'
+},
+
+"#listOuterView": {
+	backgroundColor: '#ffffff',
+	width: Ti.UI.FILL,
+	height: '80dp',
+	right: '20dp',
+	left: '20dp',
+	top: '20dp',
+	borderColor:"#E7EAED",
+	borderRadius:15,
+	borderWidth:"2dp"
+}
+"#listOuterView[formFactor=tablet]": {
+	//height: '120dp',
+	right: '100dp',
+	left: '100dp',
+}
+"#listOuterView[platform=android formFactor=tablet]": {
+	//height: '120dp',
+	right: '50dp',
+	left: '50dp',
+}
+
+"#imageView":{
+	width:"80dp",
+	height:Titanium.UI.SIZE,
+	backgroundColor: 'transparent',
+	left:0
+}
+
+"#imageView[formFactor=tablet]":{
+	//width:"120dp",
+}
+
+"#gameNameView": {
+	backgroundColor: 'transparent',
+	width: Titanium.UI.FILL,
+	height: Ti.UI.SIZE,
+	//right: 0,
+	left: '80dp'
+}
+
+"#gameNameView[formFactor=tablet]": {
+	//left: '120dp'
+}
+
+"#notificationImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: '10dp',
+	image: '/images/common/notify-icon_lg.png'
+}
+
+"#gameNameLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: '#546e7a',
+	font:Alloy.Globals.LargeFontBold,
+	//textAlign:"right"
+	left: "30dp"
+}
+
+"#gameNameLabel[formFactor=tablet]": {
+	left: "50dp",
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+
+"#iconImage":{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	//left:"10dp"
+}
+
+"#seperatorView":{
+	width: "1dp",
+	height: Titanium.UI.FILL,
+	backgroundColor:"#E7EAED",
+	right:0
+}
+
+"#overLayer":{
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	backgroundColor:"transparent",
+	//opacity:"0.5",
+	visible:"false"
+}
+
+"#popupView":{
+	height: Titanium.UI.SIZE,
+	width:"70%",
+	zIndex:10,
+	layout:"vertical",
+	borderRadius:10,
+	visible:"false",
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE
+}
+
+"#iconView":{
+	top:"10dp",
+	height:"60dp",
+	width:"60dp",
+	borderRadius:10,
+	backgroundColor:"#ffffff"
+}
+
+"#iconView[formFactor=tablet]":{
+	top:"20dp",
+	height:"120dp",
+	width:"120dp"
+}
+
+"#gameIcon":{
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	image:"/images/dummy/dummyIcon.png"
+}
+
+"#gameName":{
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top:"10dp",
+	color:"#ffffff",
+	font:Alloy.Globals.HeaderFontBold
+}
+
+"#gameName[formFactor=tablet]":{
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	top:"10dp",
+	color:"#ffffff",
+	font:Alloy.Globals.mediumLargeSemiBold
+}
+
+"#contentLabel":{
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.FILL,
+	top:"10dp",
+	color:"#ffffff",
+	font:Alloy.Globals.LargeFontLight14,
+	left:"20dp",
+	right:"20dp"
+}
+
+"#contentLabel2":{
+	height: 0,
+	width:0,
+	top:0,
+	color:"#ffffff",
+	font:Alloy.Globals.LargeFontLight14,
+	left:"20dp",
+	right:"20dp",
+	visible:false
+}
+
+"#contentLabel3":{
+	height: 0,
+	width:0,
+	top:0,
+	color:"#ffffff",
+	font:Alloy.Globals.LargeFontLight14,
+	left:"20dp",
+	right:"20dp",
+	visible:false
+}
+
+"#contentLabel[formFactor=tablet]":{
+	font:Alloy.Globals.LargeSemiBoldQuest,
+	left:"40dp",
+	right:"40dp"
+}
+
+"#contentLabel2[formFactor=tablet]":{
+	font:Alloy.Globals.LargeSemiBoldQuest,
+	left:"40dp",
+	right:"40dp"
+}
+
+"#contentLabel3[formFactor=tablet]":{
+	font:Alloy.Globals.LargeSemiBoldQuest,
+	left:"40dp",
+	right:"40dp"
+}
+
+"#instructionButton":{
+	top:"10dp",
+	height: "40dp",
+	width:Titanium.UI.FILL,
+	backgroundColor:"#ffffff",
+	left:"20dp",
+	right:"20dp",
+	borderRadius:20
+}
+
+"#instructionButton[formFactor=tablet]":{
+	top:"20dp",
+	height: "50dp",
+	left:"40dp",
+	right:"40dp"
+}
+
+"#startButtonView":{
+	top:"10dp",
+	height: "40dp",
+	width:Titanium.UI.FILL,
+	backgroundColor:"#ffffff",
+	bottom:"10dp",
+	left:"20dp",
+	right:"20dp",
+	borderRadius:20
+}
+
+"#startButtonView[formFactor=tablet]":{
+	top:"20dp",
+	height: "50dp",
+	left:"40dp",
+	right:"40dp",
+	bottom:"20dp",
+}
+
+".labelClass":{
+	font:Alloy.Globals.MediumSemiBoldScore,
+	height: Titanium.UI.SIZE,
+	width:Titanium.UI.SIZE,
+	color:"#000000",
+}
+
+".labelClass[formFactor=tablet]":{
+	font:Alloy.Globals.LargeSemiBoldQuest,
+}
+
+"#scoreButton":{
+	//top:"10dp",
+	height: 0,
+	width:0,
+	backgroundColor:"#ffffff",
+	left:"20dp",
+	right:"20dp",
+	borderRadius:20
+}
+
+"#difficultyButton":{
+	//top:"10dp",
+	height: 0,
+	width:0,
+	backgroundColor:"#ffffff",
+	left:"20dp",
+	right:"20dp",
+	borderRadius:20
+}
+
+"#scoreButton[formFactor=tablet]":{
+	left:"40dp",
+	right:"40dp"
+}
+
+"#difficultyButton[formFactor=tablet]":{
+	left:"40dp",
+	right:"40dp",
+}

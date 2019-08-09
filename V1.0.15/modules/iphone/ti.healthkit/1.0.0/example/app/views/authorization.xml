@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id='win' title='Authorization' backgroundColor='white'>
+		<View top=0 height=20>
+			<Label text='Share' left='60%'/>
+			<Label text='Read' right=5 />
+		</View>
+		<TableView id='tableView' top=20 bottom=40/>
+		<Button title='Request Authorization' onClick='onRequestAuthClick' bottom=0/>
+	</Window>
+</Alloy>

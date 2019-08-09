@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:module xmlns:ti="http://ti.appcelerator.org" xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--
+	Similar to tiapp.xml, but contains module/platform specific
+	configuration in <iphone>, <android>, and <mobileweb> sections
+	-->
+	<iphone></iphone>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest>
+			<application>
+				<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+				<activity
+				android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+				android:excludeFromRecents="true"
+				android:exported="false"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+				<activity android:name="com.google.android.gms.common.api.GoogleApiActivity"
+				android:exported="false"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+				<activity android:name="com.zco.google.fit.GoogleFitActivity"/>
+				<service
+				android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+				android:exported="true"
+				android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+			</application>
+			<uses-permission android:name="android.permission.BODY_SENSORS"/>
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+			<uses-permission android:name="android.permission.INTERNET"/>
+		</manifest>
+	</android>
+	
+</ti:module>

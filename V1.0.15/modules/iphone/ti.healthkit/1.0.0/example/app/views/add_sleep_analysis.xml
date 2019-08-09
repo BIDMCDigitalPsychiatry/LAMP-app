@@ -1,0 +1,31 @@
+<Alloy>
+	<Window id='win' title='Add Sleep Analysis'>
+		<RightNavButton platform=ios>
+			<Button id='saveButton' title='Save' onClick='onSaveClick'
+				enabled='false' />
+		</RightNavButton>
+		<ScrollView layout='vertical'>
+			<TableView id='tableView' height='Ti.UI.SIZE' top=40
+				onClick='onTableViewClick' >
+				<TableViewRow id='inBedRow' title='In Bed' />
+				<TableViewRow id='asleepRow' title='Asleep' />
+			</TableView>
+			
+			<TableView id='timeTable' top=40 height='Ti.UI.SIZE'
+				onClick='onTimeTableClick'>
+				<TableViewRow>
+					<View height=40>
+						<Label text='Start time' left=20 />
+						<Label id='startDateValue' right=10 />
+					</View>
+				</TableViewRow>
+				<TableViewRow>
+					<View height=40>
+						<Label text='End time' left=20 />
+						<Label id='endDateValue' right=10 />
+					</View>
+				</TableViewRow>
+			</TableView>
+		</ScrollView>
+	</Window>
+</Alloy>

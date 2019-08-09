@@ -1,0 +1,49 @@
+<Alloy>
+	<Window id='win' title='Add Workout'>
+		<RightNavButton platform=ios>
+			<Button id='saveButton' title='Save' onClick='onSaveClick'
+					enabled='false'/>
+		</RightNavButton>
+		<ScrollView layout='vertical'>
+			<Label text='Choose workout type' top=10/>
+			<Picker id='typePicker' selectionIndicator=true/>
+			
+			<TableView id='timeTable' top=10 height='Ti.UI.SIZE'
+				onClick='onTimeTableClick'>
+				<TableViewRow>
+					<View height=40>
+						<Label text='Start time' left=20 />
+						<Label id='startDateValue' right=10 />
+					</View>
+				</TableViewRow>
+				<TableViewRow>
+					<View height=40>
+						<Label text='End time' left=20 />
+						<Label id='endDateValue' right=10 />
+					</View>
+				</TableViewRow>
+			</TableView>
+
+			<Button id='addEventButton' title='Add Event' top=10
+				onClick='onAddEventButtonClick'/>
+				
+			<TableView id='eventTable' top=10 height=0 />
+			
+			<View id='durationParent' class='inputParent'>
+				<Label text='Duration (sec):' class='inputLabel' />
+				<TextField id='durationInput' class='inputField' />
+			</View>
+
+			<View class='inputParent'>
+				<Label text='Energy burned (J): ' class='inputLabel' />
+				<TextField id='energyInput' class='inputField' />
+			</View>
+
+			<View class='inputParent'>
+				<Label text='Distance (m): ' class='inputLabel' />
+				<TextField id='distanceInput' class='inputField' />
+			</View>
+
+		</ScrollView>
+	</Window>
+</Alloy>

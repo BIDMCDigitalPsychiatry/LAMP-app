@@ -1,0 +1,269 @@
+"#scratchImageScreen":{
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	swipeToClose: false
+}
+
+'#scratchImageScreen[platform=android]': {
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}
+
+"#homeView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: '0dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#homeView[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#homeImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home/home.png',
+	left: '10dp'
+}
+
+"#homeImage[platform=android formFactor=tablet]": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: '/images/home.png'
+}
+
+"#homeImage[formFactor=tablet]": {
+	left: '15dp'
+}
+
+"#headerView": {
+	backgroundColor: 'transparent',
+	top: '10dp',
+	width: Ti.UI.FILL,
+	height: '50dp'
+}
+
+"#titleview": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	//top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#titleview[platform=ios formFactor=tablet]": {
+	top: '15dp'
+}
+
+"#headerLabel": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	font:Alloy.Globals.LargeMenuFontBoldTablet,
+	opacity: 1,
+	color: "#ffffff",
+	//top: "10dp",
+	bottom: '10dp'
+}
+
+"#headerLabel[formFactor=tablet]": {
+	font:Alloy.Globals.HeaderFontBoldTablet
+}
+
+"#quitView": {
+	right: '5dp',
+	width: '45dp',
+	height: '25dp',
+	borderColor: '#ffffff',
+	bottom: '10dp'
+}
+"#quitView[platform=android]": {
+	right: '5dp',
+	width: '45dp',
+	height: '25dp',
+	borderColor: '#ffffff',
+	borderWidth: 1,
+	top: "10dp"
+}
+"#quitView[platform=android formFactor=tablet]": {
+	right: '5dp',
+	width: '45dp',
+	height: '25dp',
+	borderColor: '#ffffff',
+	borderWidth: 1,
+	top: '16dp'
+}
+"#quitLabel": {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: '#ffffff',
+	//bottom: '10dp',
+	font:Alloy.Globals.MediumMenuFontBold,
+	opacity: 1
+}
+
+"#reportView": {
+	width: Titanium.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: '70dp',
+	top: '10dp',
+	backgroundColor: 'transparent'
+}
+
+"#reportView[formFactor=tablet]": {
+	right: '140dp'
+}
+
+"#reportImage": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	image: "/images/common/report_icn.png",
+	bottom: '10dp'
+}
+
+"#contentView":{
+	top: '60dp',
+	bottom: "62dp",
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL
+}
+"#innerView":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	layout:"vertical",
+	top: "0dp"
+}
+
+"#countTimer": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font:Alloy.Globals.ExtraLargeFontLight,
+	color: 'white',
+	top: "0dp"
+}
+
+"#commentLabel":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font: Alloy.Globals.LargeFontBold,
+	top: "10dp",
+	color:"#ffffff"
+}
+
+"#commentLabel2":{
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	font: Alloy.Globals.LargeFontBold,
+	//top: "10dp",
+	color:"#ffffff"
+}
+
+"#backView":{
+	height: "70%",
+	width: Titanium.UI.FILL
+}
+
+"#bgView":{
+	height: "350dp",
+	width: Titanium.UI.FILL,
+	visible: false,
+	touchEnabled: false
+}
+
+"#canvasView[platform=android]":{
+	//top: '60dp',
+	height: "350dp",
+	width: Titanium.UI.FILL,
+	//backgroundImage: "/images/scratchImage/sample1.png",
+	//bottom :'120dp',
+	//zIndex:10,
+	touchEnabled: false
+}
+
+
+"#canvasView":{
+	//top: '60dp',
+	height: "300dp",
+	width: Titanium.UI.FILL,
+	//backgroundImage: "/images/scratchImage/sample1.png",
+	//bottom :'120dp',
+	//zIndex:10,
+	touchEnabled: false
+}
+
+"#canvasView[formFactor=tablet]":{
+	//top: '60dp',
+	height: "500dp",
+	width: Titanium.UI.FILL,
+	//backgroundImage: "/images/scratchImage/sample1.png",
+	//bottom :'120dp',
+	//zIndex:10,
+	touchEnabled: false
+}
+
+"#outerView":{
+	height: "350dp",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent"
+}
+
+"#outerView[formFactor=tablet platform=android]":{
+	height: "500dp",
+	width: Titanium.UI.FILL,
+	backgroundColor: "transparent"
+}
+
+"#startButton[platform=android]":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	bottom: "20dp",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+"#startButton":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	bottom: "25dp",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+"#startButton[formFactor=tablet]":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	bottom: "35dp",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+"#startButton[formFactor=tablet platform=android]":{
+	width: '200dp',
+	height: '42dp',
+	color: 'white',
+	borderWidth: '2dp',
+	borderColor: '#ffffff',
+	borderRadius: '22dp',
+	textAlign: 'center',
+	bottom: "35dp",
+	font: Alloy.Globals.LargeMenuFontBoldTablet
+}
+
+"#supportLabel":{
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	color: 'white',
+	textAlign: 'center',
+	font: Alloy.Globals.MediumFontLight,
+	bottom: '3dp'
+}

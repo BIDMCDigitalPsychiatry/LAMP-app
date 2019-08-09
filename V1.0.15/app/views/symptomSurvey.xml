@@ -1,0 +1,185 @@
+<Alloy>
+	<Window id="symptomSurvey" class="container" onClick="windowClick">
+		<View id='headerContainer' class="headerContainer">
+			<Require id = 'headerView' src ="innerHeader" title="Symptom Survey">
+			</Require>
+		</View>
+		<View id="outerMostView">
+			<ScrollView id="mainView" >
+				<View id="contentView">
+					<View id="questionNumberView" onClick="tooFarClick">
+						<View height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" layout="vertical" touchEnabled="false">
+							<Label id="numberLabel">
+							</Label>
+							<Label id="answerlabel" text="Answered">
+							</Label>>
+						</View>
+					</View>
+					<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE" top="0dp" backgroundColor="#ffffff" onClick="tooFarClick">
+						<View id="progressBarContainer" touchEnabled="false" >
+							<ImageView id="progressBarBgImage" >
+							</ImageView>
+							<View id="progressBarLine">
+							</View>
+						</View>
+					</View>
+					<View id="QuestionContentFullview" >
+						<View id="QuestionContentTopView" >
+							<View height="Titanium.UI.SIZE" layout= 'vertical' width="Titanium.UI.SIZE">
+								<View id="questionView" class="questionViewStyle" onClick="nearbyClick">
+									<Label id="questionLabel" class="questionLabelStyle" touchEnabled="false">
+									</Label>
+								</View>
+								<View height="Titanium.UI.SIZE" top="20dp" width="Titanium.UI.FILL" >
+									<View id="checkBoxView" class="checkBoxViewStyle"  visible="false">
+										<ImageView id="checkYes" onClick="onYesAnswerClick" class="checkBoxImage" image="/images/surveyTypes/yes.png">
+										</ImageView>
+										<ImageView  id="checkNo" onClick="onNoAnswerClick" class="checkBoxImage" left="26dp" image="/images/surveyTypes/no.png">
+										</ImageView>
+									</View>
+									<View id="linkertView"  height="Titanium.UI.SIZE" visible="false" width="Titanium.UI.FILL">
+										<View id="linkertAnswerview1" onClick="answerOneClick">
+											<View class="singleView" id="ans1ButtonView">
+												<ImageView class="singleImageView" id="ans1Button">
+												</ImageView>
+												<Label id="ans1Label" class="selectiontypeLabel" text="Not at all">
+												</Label>
+											</View>
+											<View class="singleView"  id="ans2ButtonView">
+												<ImageView class="singleImageView" id="ans2Button">
+												</ImageView>
+												<Label id="ans2Label" class="selectiontypeLabel" text="Several Times">
+												</Label>
+											</View>
+											<View class="singleView"  id="ans3ButtonView">
+												<ImageView class="singleImageView" id="ans3Button">
+												</ImageView>
+												<Label id="ans3Label" class="selectiontypeLabel" text="More than Half the Time">
+												</Label>
+											</View>
+											<View class="singleView" width="24.5%" id="ans4ButtonView">
+												<ImageView class="singleImageView" id="ans4Button">
+												</ImageView>
+												<Label id="ans4Label" class="selectiontypeLabel" text="Nearly All the Time">
+												</Label>
+											</View>
+										</View>
+									</View>
+									<View id="commentBoxView" class="commentBoxViewStyle" visible="false">
+										<TextArea id="commentBoxText"  class="textBoxBroderLess"  value="Enter here...">
+										</TextArea>
+										<View class="textBottomLine" >
+										</View>
+									</View>
+									<View id="pickerView" class="pickerViewStyle" visible="false">
+									</View>
+									<Label id="pickerViewLabel" class="pickerViewLabelStyle" visible="false">
+									</Label>
+									<View id="selfQuestionView" visible="false">
+										<View class="singleRadioView"  id="yesButtonView" onClick="onYesRadioBtnClick">
+											<ImageView class="radioImageView" id="yesButton">
+											</ImageView>
+											<Label class="selectiontypeLabel" text="Yes">
+											</Label>
+										</View>
+										<View class="singleRadioView"  id="noButtonView" onClick="onNoRadioBtnClick">
+											<ImageView class="radioImageView" id="noButton">
+											</ImageView>
+											<Label class="selectiontypeLabel" text="No">
+											</Label>
+										</View>
+										<View class="singleRadioView"  id="maybeButtonView" onClick="onMaybeRadioBtnClick">
+											<ImageView class="radioImageView" id="maybeButton">
+											</ImageView>
+											<Label class="selectiontypeLabel" text="Maybe">
+											</Label>
+										</View>
+									</View>
+								</View>
+							</View>
+						</View>
+						<View id="QuestionContentBottomView">
+							<View id="questionDevider">
+							</View>
+							<View height="Titanium.UI.SIZE" layout= 'vertical'  width="Titanium.UI.SIZE">
+								<View id="questionViewBottom" class="questionViewStyle">
+									<Label id="questionLabelBottom" class="questionLabelStyle">
+									</Label>
+								</View>
+								<View height="Titanium.UI.SIZE" top="20dp" bottom="20dp" width="Titanium.UI.FILL">
+									<View id="checkBoxViewBottom" class="checkBoxViewStyle" visible="false">
+										<ImageView id="checkYesBottom" onClick="onYesAnswerBottomClick" class="checkBoxImage" image="/images/surveyTypes/yes.png">
+										</ImageView>
+										<ImageView  id="checkNoBottom" onClick="onNoAnswerBottomClick" class="checkBoxImage" left="26dp" image="/images/surveyTypes/no.png">
+										</ImageView>
+									</View>
+									<View id="linkertViewBottom"  height="Titanium.UI.SIZE"  visible="false" width="Titanium.UI.FILL">
+										<View id="linkertAnswerview2" onClick="answerTwoClick">
+											<View class="singleView" id="ans1ButtonViewBottom">
+												<ImageView class="singleImageView" id="ans1ButtonBottom">
+												</ImageView>
+												<Label  id="ans1LabelBottom" class="selectiontypeLabel" text="Not at all">
+												</Label>
+											</View>
+											<View class="singleView"  id="ans2ButtonViewBottom">
+												<ImageView class="singleImageView" id="ans2ButtonBottom">
+												</ImageView>
+												<Label id="ans2LabelBottom" class="selectiontypeLabel" text="Several Times">
+												</Label>
+											</View>
+											<View class="singleView"  id="ans3ButtonViewBottom">
+												<ImageView class="singleImageView" id="ans3ButtonBottom">
+												</ImageView>
+												<Label id="ans3LabelBottom" class="selectiontypeLabel" text="More than Half the Time">
+												</Label>
+											</View>
+											<View class="singleView" width="24.5%" id="ans4ButtonViewBottom">
+												<ImageView class="singleImageView" id="ans4ButtonBottom">
+												</ImageView>
+												<Label id="ans4LabelBottom" class="selectiontypeLabel" text="Nearly All the Time">
+												</Label>
+											</View>
+										</View>
+									</View>
+									<View id="commentBoxViewBottom" class="commentBoxViewStyle" visible="false">
+										<TextArea id="commentBoxTextBottom" class="textBoxBroderLess"  value="Enter here...">
+										</TextArea>
+										<View class="textBottomLine" >
+										</View>
+									</View>
+									<View id="pickerViewBottom" class="pickerViewStyle" visible="false">
+									</View>
+									<View id="selfQuestionViewBottom" visible="false">
+										<View class="singleRadioView"  id="yesButtonViewBottom" onClick="onYesRadioBtnBottomClick">
+											<ImageView class="radioImageView" id="yesButtonBottom">
+											</ImageView>
+											<Label class="selectiontypeLabel" text="Yes">
+											</Label>
+										</View>
+										<View class="singleRadioView"  id="noButtonViewBottom" onClick="onNoRadioBtnBottomClick">
+											<ImageView class="radioImageView" id="noButtonBottom">
+											</ImageView>
+											<Label class="selectiontypeLabel" text="No">
+											</Label>
+										</View>
+										<View class="singleRadioView"  id="maybeButtonViewBottom" onClick="onMaybeRadioBtnBottomClick">
+											<ImageView class="radioImageView" id="maybeButtonBottom">
+											</ImageView>
+											<Label class="selectiontypeLabel" text="Maybe">
+											</Label>
+										</View>
+									</View>
+								</View>
+							</View>
+						</View>
+					</View>
+				</View>
+			</ScrollView>
+			<!-- <View id="footerView">
+			<View id="submitButton" onClick="onSubmitClick">
+			<Label id="submitLabel" touchEnabled="false" text="SUBMIT & CONTINUE"></Label>
+			</View>
+			</View> -->
+		</View>
+	</Window>
+</Alloy>

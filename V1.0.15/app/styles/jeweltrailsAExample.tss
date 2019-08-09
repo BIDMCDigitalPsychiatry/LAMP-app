@@ -1,0 +1,47 @@
+"#contentView": {
+	backgroundImage: Alloy.Globals.BACKGROUND_IMAGE,
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	top: '60dp'
+}
+"#messageLabel": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	right: '10dp',
+	left: '10dp',
+	top: '10dp',
+	bottom: '10dp'
+}
+
+"#instructionImage": {
+	width:Titanium.UI.FILL,
+	height:Titanium.UI.FILL,
+	image: "/images/jewelTrails/diamond1-sm.png"
+}
+
+"#messageLabel1": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#ffffff',
+	font:Alloy.Globals.MediumMenuFontBold
+}
+"#messageLabel2": {
+	width:Titanium.UI.SIZE,
+	height:Titanium.UI.SIZE,
+	color: '#359ffe',
+	font:Alloy.Globals.LargeFontBoldTablet,
+	textAlign: 'center',
+	top: '10dp',
+	bottom: '10dp'
+	//bottom: '20dp'
+}
+"#smallImageView": {
+	width: '23dp',
+	height: '22dp'
+}
+"#smallImageView[formFactor=tablet]": {
+	width: '33dp',
+	height: '32dp'
+}

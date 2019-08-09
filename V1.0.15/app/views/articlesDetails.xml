@@ -1,0 +1,16 @@
+<Alloy>
+	<Window id="articlesDetails" class="container">
+		 <View id='headerContainer' class="headerContainer"> 
+			<Require id = 'headerView' src ="innerHeader" title="Article">
+			</Require>
+		 </View> 
+		<View id="contentView">
+			<ImageView id="mainImage">
+			</ImageView>
+			<Label id="headerLabel">
+			</Label>
+			<WebView id="contentWebView">
+			</WebView>
+		</View>
+	</Window>
+</Alloy>

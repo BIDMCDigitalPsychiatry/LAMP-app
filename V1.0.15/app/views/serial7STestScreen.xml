@@ -1,0 +1,28 @@
+<Alloy>
+	<Window  id="serial7STestScreen" class="container">
+		<View id='headerContainer' class="headerContainer" onClick="windowClick">
+			<Require id = 'headerView' src ="innerHeader" homeButtonImage="/images/home/home.png"></Require>
+		</View>
+		<ScrollView id="contentView">
+			<Label id="countTimer" text="01:00" onClick="windowClick"></Label>
+			<!-- <Label id="levelLabel" text="Version 1"></Label> -->
+			<Label id="selectedDigitLabel" onClick="windowClick"></Label>
+			<View id="hintView" onClick="windowClick">
+				<Label id="digitLabel"></Label>
+			</View>
+			<View id="selectionView">
+				<TextField id="answerTextArea" ></TextField>
+				<View id="textBorder"></View>
+			</View>
+			<Label id="nextButton" visible="true"  text="Next" onClick="onNextClick"></Label>
+			<!-- <ImageView id="nextButton" onClick="onNextClick"></ImageView> -->
+			<!-- <View id="commentView" visible="false">
+			<Label id="commentLabel"></Label>
+			</View> -->
+			<!-- <View id="messageView" height="Titanium.UI.SIZE" width="Titanium.UI.SIZE" top="30dp"  backgroundColor="#ffffff">
+				<Label id="messageLabel" ></Label>
+			</View> -->
+		</ScrollView>
+
+	</Window>
+</Alloy>

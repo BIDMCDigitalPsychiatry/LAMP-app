@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id='win' title='Filter Tests'>
+		<TableView id='tableView' onClick='onTableViewClick'>
+			<TableViewRow title='UUID Filter' />
+			<TableViewRow title='Metadata Filter' />
+			<TableViewRow title='No Correlation Filter' />
+			<TableViewRow title='Sample Filter' />
+			<TableViewRow title='Category Sample Filter' />
+			<TableViewRow title='Workout Filters' />
+		</TableView>
+	</Window>
+</Alloy>
